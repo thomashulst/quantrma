@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 ANOVA | Answering questions with data</title>
-  <meta name="description" content="An introductory statistics textbook for psychology students" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <title>Chapter 7 ANOVA | Quantitative Research Methods &amp; Analysis</title>
+  <meta name="description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 ANOVA | Answering questions with data" />
+  <meta property="og:title" content="Chapter 7 ANOVA | Quantitative Research Methods &amp; Analysis" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="An introductory statistics textbook for psychology students" />
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 ANOVA | Answering questions with data" />
+  <meta name="twitter:title" content="Chapter 7 ANOVA | Quantitative Research Methods &amp; Analysis" />
   
-  <meta name="twitter:description" content="An introductory statistics textbook for psychology students" />
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
+<meta name="author" content="Adapted for use at EUC by Thomas Hulst" />
 <meta name="author" content="Lead Author: Matthew J. C. Crump" />
 <meta name="author" content="Chapters 2 and 4 adapted from Navarro, D." />
 <meta name="author" content="Videos: Jeffrey Suzuki" />
@@ -51,21 +52,9 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79429674-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-79429674-3');
-</script>
-
-
-<script type="text/javascript">
-mattcrump=1;
-</script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -151,17 +140,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i><b>0.1</b> Important notes</a><ul>
-<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#textbook"><i class="fa fa-check"></i><b>0.1.1</b> Textbook</a></li>
-<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#lab-manual"><i class="fa fa-check"></i><b>0.1.2</b> Lab Manual</a></li>
-<li class="chapter" data-level="0.1.3" data-path="index.html"><a href="index.html#course-website"><i class="fa fa-check"></i><b>0.1.3</b> Course website</a></li>
-<li class="chapter" data-level="0.1.4" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i><b>0.1.4</b> Contributors</a></li>
-<li class="chapter" data-level="0.1.5" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.5</b> Attributions</a></li>
-<li class="chapter" data-level="0.1.6" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.6</b> CC BY-SA 4.0 license</a></li>
-</ul></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#copying-the-textbook"><i class="fa fa-check"></i><b>0.2</b> Copying the textbook</a><ul>
-<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#acknowledgments"><i class="fa fa-check"></i><b>0.2.1</b> Acknowledgments</a></li>
-<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#why-we-did-this"><i class="fa fa-check"></i><b>0.2.2</b> Why we did this</a></li>
-<li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#hypothes.is"><i class="fa fa-check"></i><b>0.2.3</b> Hypothes.is</a></li>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.1</b> Attributions</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.2</b> CC BY-SA 4.0 license</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="why-statistics.html"><a href="why-statistics.html"><i class="fa fa-check"></i><b>1</b> Why Statistics?</a><ul>
@@ -247,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.8.1" data-path="DescribingData.html"><a href="DescribingData.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.8.1</b> Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="2.8.2" data-path="DescribingData.html"><a href="DescribingData.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.8.2</b> Datasaurus Dozen</a></li>
 </ul></li>
-<li class="chapter" data-level="2.9" data-path="DescribingData.html"><a href="DescribingData.html#videos-1"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
+<li class="chapter" data-level="2.9" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
 <li class="chapter" data-level="2.9.1" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-mode"><i class="fa fa-check"></i><b>2.9.1</b> Measures of center: Mode</a></li>
 <li class="chapter" data-level="2.9.2" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-median-and-mean"><i class="fa fa-check"></i><b>2.9.2</b> Measures of center: Median and Mean</a></li>
 <li class="chapter" data-level="2.9.3" data-path="DescribingData.html"><a href="DescribingData.html#standard-deviation-part-i"><i class="fa fa-check"></i><b>2.9.3</b> Standard deviation part I</a></li>
@@ -278,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.6.2" data-path="Correlation.html"><a href="Correlation.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>3.6.2</b> Correlation and Random chance</a></li>
 <li class="chapter" data-level="3.6.3" data-path="Correlation.html"><a href="Correlation.html#some-more-movies"><i class="fa fa-check"></i><b>3.6.3</b> Some more movies</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="Correlation.html"><a href="Correlation.html#summary-1"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
+<li class="chapter" data-level="3.7" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html"><i class="fa fa-check"></i><b>4</b> Probability, Sampling, and Estimation</a><ul>
 <li class="chapter" data-level="4.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.1</b> How are probability and statistics different?</a></li>
@@ -328,8 +308,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.14" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#estimating-a-confidence-interval"><i class="fa fa-check"></i><b>4.14</b> Estimating a confidence interval</a><ul>
 <li class="chapter" data-level="4.14.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>4.14.1</b> A slight mistake in the formula</a></li>
 </ul></li>
-<li class="chapter" data-level="4.15" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#summary-2"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
-<li class="chapter" data-level="4.16" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#videos-2"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
+<li class="chapter" data-level="4.15" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
+<li class="chapter" data-level="4.16" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
 <li class="chapter" data-level="4.16.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#introduction-to-probability"><i class="fa fa-check"></i><b>4.16.1</b> Introduction to Probability</a></li>
 <li class="chapter" data-level="4.16.2" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#chebychevs-theorem"><i class="fa fa-check"></i><b>4.16.2</b> Chebychev’s Theorem</a></li>
 <li class="chapter" data-level="4.16.3" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#z-scores-1"><i class="fa fa-check"></i><b>4.16.3</b> Z-scores</a></li>
@@ -362,7 +342,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#pretend-example-does-chewing-gum-improve-your-grades"><i class="fa fa-check"></i><b>5.6.1</b> Pretend example does chewing gum improve your grades?</a></li>
 <li class="chapter" data-level="5.6.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#take-homes-so-far"><i class="fa fa-check"></i><b>5.6.2</b> Take homes so far</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#videos-3"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
+<li class="chapter" data-level="5.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
 <li class="chapter" data-level="5.7.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#null-and-alternate-hypotheses"><i class="fa fa-check"></i><b>5.7.1</b> Null and Alternate Hypotheses</a></li>
 <li class="chapter" data-level="5.7.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#types-of-errors"><i class="fa fa-check"></i><b>5.7.2</b> Types of Errors</a></li>
 </ul></li>
@@ -379,7 +359,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.3" data-path="t-tests.html"><a href="t-tests.html#paired-samples-t-test"><i class="fa fa-check"></i><b>6.3</b> Paired-samples t-test</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="t-tests.html"><a href="t-tests.html#mehr-song-and-spelke-2016"><i class="fa fa-check"></i><b>6.3.1</b> Mehr, Song, and Spelke (2016)</a></li>
 <li class="chapter" data-level="6.3.2" data-path="t-tests.html"><a href="t-tests.html#the-data"><i class="fa fa-check"></i><b>6.3.2</b> The data</a></li>
-<li class="chapter" data-level="6.3.3" data-path="t-tests.html"><a href="t-tests.html#the-difference-scores-1"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
+<li class="chapter" data-level="6.3.3" data-path="DescribingData.html"><a href="DescribingData.html#the-difference-scores"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
 <li class="chapter" data-level="6.3.4" data-path="t-tests.html"><a href="t-tests.html#the-mean-difference"><i class="fa fa-check"></i><b>6.3.4</b> The mean difference</a></li>
 <li class="chapter" data-level="6.3.5" data-path="t-tests.html"><a href="t-tests.html#calculate-t"><i class="fa fa-check"></i><b>6.3.5</b> Calculate t</a></li>
 <li class="chapter" data-level="6.3.6" data-path="t-tests.html"><a href="t-tests.html#interpreting-ts"><i class="fa fa-check"></i><b>6.3.6</b> Interpreting ts</a></li>
@@ -396,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.6.2" data-path="t-tests.html"><a href="t-tests.html#simulating-a-paired-samples-t-test"><i class="fa fa-check"></i><b>6.6.2</b> Simulating a paired samples t-test</a></li>
 <li class="chapter" data-level="6.6.3" data-path="t-tests.html"><a href="t-tests.html#simulating-an-independent-samples-t.test"><i class="fa fa-check"></i><b>6.6.3</b> Simulating an independent samples t.test</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="t-tests.html"><a href="t-tests.html#videos-4"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
+<li class="chapter" data-level="6.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
 <li class="chapter" data-level="6.7.1" data-path="t-tests.html"><a href="t-tests.html#one-or-two-tailed-tests"><i class="fa fa-check"></i><b>6.7.1</b> One or Two tailed tests</a></li>
 </ul></li>
 </ul></li>
@@ -407,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2.2" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>7.2.2</b> SS Total</a></li>
 <li class="chapter" data-level="7.2.3" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>7.2.3</b> SS Effect</a></li>
 <li class="chapter" data-level="7.2.4" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>7.2.4</b> SS Error</a></li>
-<li class="chapter" data-level="7.2.5" data-path="anova.html"><a href="anova.html#degrees-of-freedom-1"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
+<li class="chapter" data-level="7.2.5" data-path="t-tests.html"><a href="t-tests.html#degrees-of-freedom"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
 <li class="chapter" data-level="7.2.6" data-path="anova.html"><a href="anova.html#mean-squared-error"><i class="fa fa-check"></i><b>7.2.6</b> Mean Squared Error</a></li>
 <li class="chapter" data-level="7.2.7" data-path="anova.html"><a href="anova.html#calculate-f"><i class="fa fa-check"></i><b>7.2.7</b> Calculate F</a></li>
 <li class="chapter" data-level="7.2.8" data-path="anova.html"><a href="anova.html#the-anova-table"><i class="fa fa-check"></i><b>7.2.8</b> The ANOVA TABLE</a></li>
@@ -426,8 +406,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-design"><i class="fa fa-check"></i><b>8.1</b> Repeated measures design</a></li>
 <li class="chapter" data-level="8.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#partioning-the-sums-of-squares"><i class="fa fa-check"></i><b>8.2</b> Partioning the Sums of Squares</a></li>
 <li class="chapter" data-level="8.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#calculating-the-rm-anova"><i class="fa fa-check"></i><b>8.3</b> Calculating the RM ANOVA</a><ul>
-<li class="chapter" data-level="8.3.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-total-1"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
-<li class="chapter" data-level="8.3.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-effect-1"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
+<li class="chapter" data-level="8.3.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
+<li class="chapter" data-level="8.3.2" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
 <li class="chapter" data-level="8.3.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-within-conditions"><i class="fa fa-check"></i><b>8.3.3</b> SS Error (within-conditions)</a></li>
 <li class="chapter" data-level="8.3.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-subjects"><i class="fa fa-check"></i><b>8.3.4</b> SS Subjects</a></li>
 <li class="chapter" data-level="8.3.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-left-over"><i class="fa fa-check"></i><b>8.3.5</b> SS Error (left-over)</a></li>
@@ -441,7 +421,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.4.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-designs-are-more-sensitive"><i class="fa fa-check"></i><b>8.4.2</b> repeated measures designs are more sensitive</a></li>
 </ul></li>
 <li class="chapter" data-level="8.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>8.5</b> Real Data</a></li>
-<li class="chapter" data-level="8.6" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#summary-3"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
+<li class="chapter" data-level="8.6" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>9</b> Factorial ANOVA</a><ul>
 <li class="chapter" data-level="9.1" data-path="factorial-anova.html"><a href="factorial-anova.html#factorial-basics"><i class="fa fa-check"></i><b>9.1</b> Factorial basics</a><ul>
@@ -469,15 +449,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5.8" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-repeated-measures-anova"><i class="fa fa-check"></i><b>9.5.8</b> 2x2 Repeated Measures ANOVA</a></li>
 </ul></li>
 <li class="chapter" data-level="9.6" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-between-subjects-anova"><i class="fa fa-check"></i><b>9.6</b> 2x2 Between-subjects ANOVA</a><ul>
-<li class="chapter" data-level="9.6.1" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-total-2"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
+<li class="chapter" data-level="9.6.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
 <li class="chapter" data-level="9.6.2" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction"><i class="fa fa-check"></i><b>9.6.2</b> SS Distraction</a></li>
 <li class="chapter" data-level="9.6.3" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-reward"><i class="fa fa-check"></i><b>9.6.3</b> SS Reward</a></li>
 <li class="chapter" data-level="9.6.4" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction-by-reward"><i class="fa fa-check"></i><b>9.6.4</b> SS Distraction by Reward</a></li>
-<li class="chapter" data-level="9.6.5" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-error-1"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
+<li class="chapter" data-level="9.6.5" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
 <li class="chapter" data-level="9.6.6" data-path="factorial-anova.html"><a href="factorial-anova.html#check-your-work"><i class="fa fa-check"></i><b>9.6.6</b> Check your work</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="factorial-anova.html"><a href="factorial-anova.html#fireside-chat"><i class="fa fa-check"></i><b>9.7</b> Fireside chat</a></li>
-<li class="chapter" data-level="9.8" data-path="factorial-anova.html"><a href="factorial-anova.html#real-data-1"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
+<li class="chapter" data-level="9.8" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
 <li class="chapter" data-level="9.8.1" data-path="factorial-anova.html"><a href="factorial-anova.html#stand-at-attention"><i class="fa fa-check"></i><b>9.8.1</b> Stand at attention</a></li>
 <li class="chapter" data-level="9.8.2" data-path="factorial-anova.html"><a href="factorial-anova.html#plot-the-data"><i class="fa fa-check"></i><b>9.8.2</b> Plot the data</a></li>
 <li class="chapter" data-level="9.8.3" data-path="factorial-anova.html"><a href="factorial-anova.html#conduct-the-anova"><i class="fa fa-check"></i><b>9.8.3</b> Conduct the ANOVA</a></li>
@@ -490,7 +470,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="10" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html"><i class="fa fa-check"></i><b>10</b> More On Factorial Designs</a><ul>
 <li class="chapter" data-level="10.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#looking-at-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.1</b> Looking at main effects and interactions</a><ul>
-<li class="chapter" data-level="10.1.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#x2-designs-1"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
+<li class="chapter" data-level="10.1.1" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-designs"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
 </ul></li>
 <li class="chapter" data-level="10.2" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#interpreting-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.2</b> Interpreting main effects and interactions</a><ul>
 <li class="chapter" data-level="10.2.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#a-consistent-main-effect-and-an-interaction"><i class="fa fa-check"></i><b>10.2.1</b> A consistent main effect and an interaction</a></li>
@@ -569,7 +549,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Answering questions with data</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Quantitative Research Methods &amp; Analysis</a>
           </h1>
         </div>
 
@@ -906,7 +886,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </table>
 <p>Alright, we did almost the same thing as we did to find <span class="math inline">\(SS_\text{Effect}\)</span>. Can you spot the difference? This time for each score we first found the group mean, then we found the error in the group mean estimate for each score. In other words, the values in the <span class="math inline">\(diff\)</span> column are the differences between each score and it’s group mean. The values in the <code>diff_squared</code> column are the squared deviations. When we sum up the squared deviations, we get another Sums of Squares, this time it’s the <span class="math inline">\(SS_\text{Error}\)</span>. This is an appropriate name, because these deviations are the ones that the group means can’t explain!</p>
 </div>
-<div id="degrees-of-freedom-1" class="section level3">
+<div id="degrees-of-freedom" class="section level3">
 <h3><span class="header-section-number">7.2.5</span> Degrees of freedom</h3>
 <p>Degrees of freedom come into play again with ANOVA. This time, their purpose is a little bit more clear. <span class="math inline">\(Df\)</span>s can be fairly simple when we are doing a relatively simple ANOVA like this one, but they can become complicated when designs get more complicated.</p>
 <p>Let’s talk about the degrees of freedom for the <span class="math inline">\(SS_\text{Effect}\)</span> and <span class="math inline">\(SS_\text{Error}\)</span>.</p>
@@ -948,7 +928,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <table>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="right">Df</th>
 <th align="right">Sum Sq</th>
 <th align="right">Mean Sq</th>
@@ -958,7 +938,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </thead>
 <tbody>
 <tr class="odd">
-<td>groups</td>
+<td align="left">groups</td>
 <td align="right">2</td>
 <td align="right">72</td>
 <td align="right">36.00000</td>
@@ -966,7 +946,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="right">0.4417359</td>
 </tr>
 <tr class="even">
-<td>Residuals</td>
+<td align="left">Residuals</td>
 <td align="right">6</td>
 <td align="right">230</td>
 <td align="right">38.33333</td>
@@ -987,7 +967,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The only catch is that our magic pill does NOTHING AT ALL. The fake people in our fake experiment will all take sugar pills that do absolutely nothing to their smartness. Why would we want to simulate such a bunch of nonsense? The answer is that this kind of simulation is critical for making inferences about chance if you were to conduct a real experiment.</p>
 <p>Here are some more details for the experiment. Each group will have 10 different subjects, so there will be a total of 30 subjects. We are going to run this experiment 10,000 times. Each time drawing numbers randomly from the very same normal distribution. We are going to calculate <span class="math inline">\(F\)</span> from our sample data every time, and then we are going to draw the histogram of <span class="math inline">\(F\)</span>-values. This will show us the sampling distribution of <span class="math inline">\(F\)</span> for our situation. Let’s do that and see what it looks like:</p>
 <div class="figure"><span id="fig:7fnull"></span>
-<img src="statistics_files/figure-html/7fnull-1.png" alt="A simulation of 10,000 experiments from a null distribution where there is no differences. The histogram shows 10,000 $F$-values, one for each simulation. These are values that F can take in this situation. All of these $F$-values were produced by random sampling error" width="672" />
+<img src="quantrma_files/figure-html/7fnull-1.png" alt="A simulation of 10,000 experiments from a null distribution where there is no differences. The histogram shows 10,000 $F$-values, one for each simulation. These are values that F can take in this situation. All of these $F$-values were produced by random sampling error" width="672" />
 <p class="caption">
 Figure 7.1: A simulation of 10,000 experiments from a null distribution where there is no differences. The histogram shows 10,000 <span class="math inline">\(F\)</span>-values, one for each simulation. These are values that F can take in this situation. All of these <span class="math inline">\(F\)</span>-values were produced by random sampling error
 </p>
@@ -1004,7 +984,7 @@ Figure 7.1: A simulation of 10,000 experiments from a null distribution where th
 </ol>
 <p>Let’s do that. I’ve drawn the line for the critical value onto the histogram:</p>
 <div class="figure"><span id="fig:7criticalF"></span>
-<img src="statistics_files/figure-html/7criticalF-1.png" alt="The critical value for F where 5% of all $F$-values lie beyond this point" width="672" />
+<img src="quantrma_files/figure-html/7criticalF-1.png" alt="The critical value for F where 5% of all $F$-values lie beyond this point" width="672" />
 <p class="caption">
 Figure 7.2: The critical value for F where 5% of all <span class="math inline">\(F\)</span>-values lie beyond this point
 </p>
@@ -1041,7 +1021,7 @@ Figure 7.2: The critical value for F where 5% of all <span class="math inline">\
 <h4><span class="header-section-number">7.3.2.2</span> Looking at a bunch of group means</h4>
 <p>We ran 10,000 experiments just before, and we didn’t even once look at the group means for any of the experiments. Let’s quickly do that, so we get a better sense of what is going on.</p>
 <div class="figure"><span id="fig:7manyDiffs"></span>
-<img src="statistics_files/figure-html/7manyDiffs-1.png" alt="Different patterns of group means under the null (all scores for each group sampled from the same distribution)" width="672" />
+<img src="quantrma_files/figure-html/7manyDiffs-1.png" alt="Different patterns of group means under the null (all scores for each group sampled from the same distribution)" width="672" />
 <p class="caption">
 Figure 7.3: Different patterns of group means under the null (all scores for each group sampled from the same distribution)
 </p>
@@ -1054,7 +1034,7 @@ Figure 7.3: Different patterns of group means under the null (all scores for eac
 <h4><span class="header-section-number">7.3.2.3</span> Looking at bar graphs</h4>
 <p>Let’s look at the exact same graph as above, but this time use bars to visually illustrate the means, instead of dots. We’ll re-do our simulation of 10 experiments, so the pattern will be a little bit different:</p>
 <div class="figure"><span id="fig:7manyDiffsBar"></span>
-<img src="statistics_files/figure-html/7manyDiffsBar-1.png" alt="Different patterns of group means under the null (all scores for each group sampled from the same distribution)" width="672" />
+<img src="quantrma_files/figure-html/7manyDiffsBar-1.png" alt="Different patterns of group means under the null (all scores for each group sampled from the same distribution)" width="672" />
 <p class="caption">
 Figure 7.4: Different patterns of group means under the null (all scores for each group sampled from the same distribution)
 </p>
@@ -1066,7 +1046,7 @@ Figure 7.4: Different patterns of group means under the null (all scores for eac
 <p>We are now giving you some visual experience looking at what means look like from a particular experiment. This is for your stats intuition. We’re trying to improve your data senses.</p>
 <p>What we are going to do now is similar to what we did before. Except this time we are going to look at 10 simulated experiments, where all of the <span class="math inline">\(F\)</span>-values were less than 1. All of these <span class="math inline">\(F\)</span>-values would also be associated with fairly large <span class="math inline">\(p\)</span>-values. When F is less than one, we would not reject the hypothesis of no differences. So, when we look at patterns of means when F is less than 1, we should see mostly the same means, and no big differences.</p>
 <div class="figure"><span id="fig:7flesshthanone"></span>
-<img src="statistics_files/figure-html/7flesshthanone-1.png" alt="Different patterns of group means under the null (sampled from same distribution) when F is less than 1" width="672" />
+<img src="quantrma_files/figure-html/7flesshthanone-1.png" alt="Different patterns of group means under the null (sampled from same distribution) when F is less than 1" width="672" />
 <p class="caption">
 Figure 7.5: Different patterns of group means under the null (sampled from same distribution) when F is less than 1
 </p>
@@ -1078,7 +1058,7 @@ Figure 7.5: Different patterns of group means under the null (sampled from same 
 <h4><span class="header-section-number">7.3.2.5</span> What mean differences look like when F &gt; 3.35</h4>
 <p>Earlier we found that the critical value for <span class="math inline">\(F\)</span> in our situation was 3.35, this was the location on the <span class="math inline">\(F\)</span> distribution where only 5% of <span class="math inline">\(F\)</span>s were 3.35 or greater. We would reject the hypothesis of no differences whenever <span class="math inline">\(F\)</span> was greater than 3.35. In this case, whenever we did that, we would be making a type I error. That is because we are simulating the distribution of no differences (remember all of our sample means are coming from the exact same distribution). So, now we can take a look at what type I errors look like. In other words, we can run some simulations and look at the pattern in the means, only when F happens to be 3.35 or greater (this only happens 5% of the time, so we might have to let the computer simulate for a while). Let’s see what that looks like:</p>
 <div class="figure"><span id="fig:7sigdiffs"></span>
-<img src="statistics_files/figure-html/7sigdiffs-1.png" alt="Different patterns of group means under the null when F is above critical value (these are all type I Errors)" width="672" />
+<img src="quantrma_files/figure-html/7sigdiffs-1.png" alt="Different patterns of group means under the null when F is above critical value (these are all type I Errors)" width="672" />
 <p class="caption">
 Figure 7.6: Different patterns of group means under the null when F is above critical value (these are all type I Errors)
 </p>
@@ -1106,7 +1086,7 @@ Figure 7.6: Different patterns of group means under the null when F is above cri
 <p>For reasons we elaborate on in the lab, the researchers hypothesized that the <code>Reactivation+Tetris</code> group would have fewer intrusive memories over the week than the other groups.</p>
 <p>Let’s look at the findings. Note you will learn how to do all of these steps in the lab. For now, we just show the findings and the ANOVA table. Then we walk through how to interpret it.</p>
 <div class="figure"><span id="fig:7tetrisData"></span>
-<img src="statistics_files/figure-html/7tetrisData-1.png" alt="Mean number of intrusive memories per week as a function of experimental treatments" width="672" />
+<img src="quantrma_files/figure-html/7tetrisData-1.png" alt="Mean number of intrusive memories per week as a function of experimental treatments" width="672" />
 <p class="caption">
 Figure 7.7: Mean number of intrusive memories per week as a function of experimental treatments
 </p>
@@ -1117,7 +1097,7 @@ Figure 7.7: Mean number of intrusive memories per week as a function of experime
 <table>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="right">Df</th>
 <th align="right">Sum Sq</th>
 <th align="right">Mean Sq</th>
@@ -1127,7 +1107,7 @@ Figure 7.7: Mean number of intrusive memories per week as a function of experime
 </thead>
 <tbody>
 <tr class="odd">
-<td>Condition</td>
+<td align="left">Condition</td>
 <td align="right">3</td>
 <td align="right">114.8194</td>
 <td align="right">38.27315</td>
@@ -1135,7 +1115,7 @@ Figure 7.7: Mean number of intrusive memories per week as a function of experime
 <td align="right">0.0140858</td>
 </tr>
 <tr class="even">
-<td>Residuals</td>
+<td align="left">Residuals</td>
 <td align="right">68</td>
 <td align="right">685.8333</td>
 <td align="right">10.08578</td>
@@ -1159,7 +1139,7 @@ Figure 7.7: Mean number of intrusive memories per week as a function of experime
 <h4><span class="header-section-number">7.4.2.1</span> Control vs. Reactivation+Tetris</h4>
 <p>What we really want to know is if Reactivation+Tetris caused fewer intrusive memories…but compared to what? Well, if it did something, the Reactivation+Tetris group should have a smaller mean than the Control group. So, let’s do that comparison:</p>
 <pre><code>## 
-##  Two Sample t-test
+## 	Two Sample t-test
 ## 
 ## data:  Days_One_to_Seven_Number_of_Intrusions by Condition
 ## t = 2.9893, df = 34, p-value = 0.005167
@@ -1177,7 +1157,7 @@ Figure 7.7: Mean number of intrusive memories per week as a function of experime
 <h4><span class="header-section-number">7.4.2.2</span> Control vs. Tetris_only</h4>
 <p>Now we can really start wondering what caused the difference. Was it just playing Tetris? Does just playing Tetris reduce the number of intrusive memories during the week? Let’s compare that to control:</p>
 <pre><code>## 
-##  Two Sample t-test
+## 	Two Sample t-test
 ## 
 ## data:  Days_One_to_Seven_Number_of_Intrusions by Condition
 ## t = 1.0129, df = 34, p-value = 0.3183
@@ -1239,12 +1219,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -1259,7 +1238,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["statistics.pdf"],
+"view": {
+"link": null,
+"text": null
+},
+"download": ["quantrma.pdf"],
 "toc": {
 "collapse": "subsection"
 }

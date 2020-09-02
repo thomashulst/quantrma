@@ -1,6 +1,4 @@
-book_filename: "statistics"
-repo: https://github.com/CrumpLab/statistics
-edit: https://github.com/CrumpLab/statistics/%s
+book_filename: "quantrma"
 output_dir: "docs"
 language:
   ui:

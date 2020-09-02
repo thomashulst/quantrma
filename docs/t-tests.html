@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 t-Tests | Answering questions with data</title>
-  <meta name="description" content="An introductory statistics textbook for psychology students" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <title>Chapter 6 t-Tests | Quantitative Research Methods &amp; Analysis</title>
+  <meta name="description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 t-Tests | Answering questions with data" />
+  <meta property="og:title" content="Chapter 6 t-Tests | Quantitative Research Methods &amp; Analysis" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="An introductory statistics textbook for psychology students" />
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 t-Tests | Answering questions with data" />
+  <meta name="twitter:title" content="Chapter 6 t-Tests | Quantitative Research Methods &amp; Analysis" />
   
-  <meta name="twitter:description" content="An introductory statistics textbook for psychology students" />
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
+<meta name="author" content="Adapted for use at EUC by Thomas Hulst" />
 <meta name="author" content="Lead Author: Matthew J. C. Crump" />
 <meta name="author" content="Chapters 2 and 4 adapted from Navarro, D." />
 <meta name="author" content="Videos: Jeffrey Suzuki" />
@@ -51,21 +52,9 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79429674-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-79429674-3');
-</script>
-
-
-<script type="text/javascript">
-mattcrump=1;
-</script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -151,17 +140,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i><b>0.1</b> Important notes</a><ul>
-<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#textbook"><i class="fa fa-check"></i><b>0.1.1</b> Textbook</a></li>
-<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#lab-manual"><i class="fa fa-check"></i><b>0.1.2</b> Lab Manual</a></li>
-<li class="chapter" data-level="0.1.3" data-path="index.html"><a href="index.html#course-website"><i class="fa fa-check"></i><b>0.1.3</b> Course website</a></li>
-<li class="chapter" data-level="0.1.4" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i><b>0.1.4</b> Contributors</a></li>
-<li class="chapter" data-level="0.1.5" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.5</b> Attributions</a></li>
-<li class="chapter" data-level="0.1.6" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.6</b> CC BY-SA 4.0 license</a></li>
-</ul></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#copying-the-textbook"><i class="fa fa-check"></i><b>0.2</b> Copying the textbook</a><ul>
-<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#acknowledgments"><i class="fa fa-check"></i><b>0.2.1</b> Acknowledgments</a></li>
-<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#why-we-did-this"><i class="fa fa-check"></i><b>0.2.2</b> Why we did this</a></li>
-<li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#hypothes.is"><i class="fa fa-check"></i><b>0.2.3</b> Hypothes.is</a></li>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.1</b> Attributions</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.2</b> CC BY-SA 4.0 license</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="why-statistics.html"><a href="why-statistics.html"><i class="fa fa-check"></i><b>1</b> Why Statistics?</a><ul>
@@ -247,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.8.1" data-path="DescribingData.html"><a href="DescribingData.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.8.1</b> Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="2.8.2" data-path="DescribingData.html"><a href="DescribingData.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.8.2</b> Datasaurus Dozen</a></li>
 </ul></li>
-<li class="chapter" data-level="2.9" data-path="DescribingData.html"><a href="DescribingData.html#videos-1"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
+<li class="chapter" data-level="2.9" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
 <li class="chapter" data-level="2.9.1" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-mode"><i class="fa fa-check"></i><b>2.9.1</b> Measures of center: Mode</a></li>
 <li class="chapter" data-level="2.9.2" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-median-and-mean"><i class="fa fa-check"></i><b>2.9.2</b> Measures of center: Median and Mean</a></li>
 <li class="chapter" data-level="2.9.3" data-path="DescribingData.html"><a href="DescribingData.html#standard-deviation-part-i"><i class="fa fa-check"></i><b>2.9.3</b> Standard deviation part I</a></li>
@@ -278,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.6.2" data-path="Correlation.html"><a href="Correlation.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>3.6.2</b> Correlation and Random chance</a></li>
 <li class="chapter" data-level="3.6.3" data-path="Correlation.html"><a href="Correlation.html#some-more-movies"><i class="fa fa-check"></i><b>3.6.3</b> Some more movies</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="Correlation.html"><a href="Correlation.html#summary-1"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
+<li class="chapter" data-level="3.7" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html"><i class="fa fa-check"></i><b>4</b> Probability, Sampling, and Estimation</a><ul>
 <li class="chapter" data-level="4.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.1</b> How are probability and statistics different?</a></li>
@@ -328,8 +308,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.14" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#estimating-a-confidence-interval"><i class="fa fa-check"></i><b>4.14</b> Estimating a confidence interval</a><ul>
 <li class="chapter" data-level="4.14.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>4.14.1</b> A slight mistake in the formula</a></li>
 </ul></li>
-<li class="chapter" data-level="4.15" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#summary-2"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
-<li class="chapter" data-level="4.16" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#videos-2"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
+<li class="chapter" data-level="4.15" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
+<li class="chapter" data-level="4.16" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
 <li class="chapter" data-level="4.16.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#introduction-to-probability"><i class="fa fa-check"></i><b>4.16.1</b> Introduction to Probability</a></li>
 <li class="chapter" data-level="4.16.2" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#chebychevs-theorem"><i class="fa fa-check"></i><b>4.16.2</b> Chebychev’s Theorem</a></li>
 <li class="chapter" data-level="4.16.3" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#z-scores-1"><i class="fa fa-check"></i><b>4.16.3</b> Z-scores</a></li>
@@ -362,7 +342,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#pretend-example-does-chewing-gum-improve-your-grades"><i class="fa fa-check"></i><b>5.6.1</b> Pretend example does chewing gum improve your grades?</a></li>
 <li class="chapter" data-level="5.6.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#take-homes-so-far"><i class="fa fa-check"></i><b>5.6.2</b> Take homes so far</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#videos-3"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
+<li class="chapter" data-level="5.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
 <li class="chapter" data-level="5.7.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#null-and-alternate-hypotheses"><i class="fa fa-check"></i><b>5.7.1</b> Null and Alternate Hypotheses</a></li>
 <li class="chapter" data-level="5.7.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#types-of-errors"><i class="fa fa-check"></i><b>5.7.2</b> Types of Errors</a></li>
 </ul></li>
@@ -379,7 +359,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.3" data-path="t-tests.html"><a href="t-tests.html#paired-samples-t-test"><i class="fa fa-check"></i><b>6.3</b> Paired-samples t-test</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="t-tests.html"><a href="t-tests.html#mehr-song-and-spelke-2016"><i class="fa fa-check"></i><b>6.3.1</b> Mehr, Song, and Spelke (2016)</a></li>
 <li class="chapter" data-level="6.3.2" data-path="t-tests.html"><a href="t-tests.html#the-data"><i class="fa fa-check"></i><b>6.3.2</b> The data</a></li>
-<li class="chapter" data-level="6.3.3" data-path="t-tests.html"><a href="t-tests.html#the-difference-scores-1"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
+<li class="chapter" data-level="6.3.3" data-path="DescribingData.html"><a href="DescribingData.html#the-difference-scores"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
 <li class="chapter" data-level="6.3.4" data-path="t-tests.html"><a href="t-tests.html#the-mean-difference"><i class="fa fa-check"></i><b>6.3.4</b> The mean difference</a></li>
 <li class="chapter" data-level="6.3.5" data-path="t-tests.html"><a href="t-tests.html#calculate-t"><i class="fa fa-check"></i><b>6.3.5</b> Calculate t</a></li>
 <li class="chapter" data-level="6.3.6" data-path="t-tests.html"><a href="t-tests.html#interpreting-ts"><i class="fa fa-check"></i><b>6.3.6</b> Interpreting ts</a></li>
@@ -396,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.6.2" data-path="t-tests.html"><a href="t-tests.html#simulating-a-paired-samples-t-test"><i class="fa fa-check"></i><b>6.6.2</b> Simulating a paired samples t-test</a></li>
 <li class="chapter" data-level="6.6.3" data-path="t-tests.html"><a href="t-tests.html#simulating-an-independent-samples-t.test"><i class="fa fa-check"></i><b>6.6.3</b> Simulating an independent samples t.test</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="t-tests.html"><a href="t-tests.html#videos-4"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
+<li class="chapter" data-level="6.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
 <li class="chapter" data-level="6.7.1" data-path="t-tests.html"><a href="t-tests.html#one-or-two-tailed-tests"><i class="fa fa-check"></i><b>6.7.1</b> One or Two tailed tests</a></li>
 </ul></li>
 </ul></li>
@@ -407,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2.2" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>7.2.2</b> SS Total</a></li>
 <li class="chapter" data-level="7.2.3" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>7.2.3</b> SS Effect</a></li>
 <li class="chapter" data-level="7.2.4" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>7.2.4</b> SS Error</a></li>
-<li class="chapter" data-level="7.2.5" data-path="anova.html"><a href="anova.html#degrees-of-freedom-1"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
+<li class="chapter" data-level="7.2.5" data-path="t-tests.html"><a href="t-tests.html#degrees-of-freedom"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
 <li class="chapter" data-level="7.2.6" data-path="anova.html"><a href="anova.html#mean-squared-error"><i class="fa fa-check"></i><b>7.2.6</b> Mean Squared Error</a></li>
 <li class="chapter" data-level="7.2.7" data-path="anova.html"><a href="anova.html#calculate-f"><i class="fa fa-check"></i><b>7.2.7</b> Calculate F</a></li>
 <li class="chapter" data-level="7.2.8" data-path="anova.html"><a href="anova.html#the-anova-table"><i class="fa fa-check"></i><b>7.2.8</b> The ANOVA TABLE</a></li>
@@ -426,8 +406,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-design"><i class="fa fa-check"></i><b>8.1</b> Repeated measures design</a></li>
 <li class="chapter" data-level="8.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#partioning-the-sums-of-squares"><i class="fa fa-check"></i><b>8.2</b> Partioning the Sums of Squares</a></li>
 <li class="chapter" data-level="8.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#calculating-the-rm-anova"><i class="fa fa-check"></i><b>8.3</b> Calculating the RM ANOVA</a><ul>
-<li class="chapter" data-level="8.3.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-total-1"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
-<li class="chapter" data-level="8.3.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-effect-1"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
+<li class="chapter" data-level="8.3.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
+<li class="chapter" data-level="8.3.2" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
 <li class="chapter" data-level="8.3.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-within-conditions"><i class="fa fa-check"></i><b>8.3.3</b> SS Error (within-conditions)</a></li>
 <li class="chapter" data-level="8.3.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-subjects"><i class="fa fa-check"></i><b>8.3.4</b> SS Subjects</a></li>
 <li class="chapter" data-level="8.3.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-left-over"><i class="fa fa-check"></i><b>8.3.5</b> SS Error (left-over)</a></li>
@@ -441,7 +421,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.4.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-designs-are-more-sensitive"><i class="fa fa-check"></i><b>8.4.2</b> repeated measures designs are more sensitive</a></li>
 </ul></li>
 <li class="chapter" data-level="8.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>8.5</b> Real Data</a></li>
-<li class="chapter" data-level="8.6" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#summary-3"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
+<li class="chapter" data-level="8.6" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>9</b> Factorial ANOVA</a><ul>
 <li class="chapter" data-level="9.1" data-path="factorial-anova.html"><a href="factorial-anova.html#factorial-basics"><i class="fa fa-check"></i><b>9.1</b> Factorial basics</a><ul>
@@ -469,15 +449,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5.8" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-repeated-measures-anova"><i class="fa fa-check"></i><b>9.5.8</b> 2x2 Repeated Measures ANOVA</a></li>
 </ul></li>
 <li class="chapter" data-level="9.6" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-between-subjects-anova"><i class="fa fa-check"></i><b>9.6</b> 2x2 Between-subjects ANOVA</a><ul>
-<li class="chapter" data-level="9.6.1" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-total-2"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
+<li class="chapter" data-level="9.6.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
 <li class="chapter" data-level="9.6.2" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction"><i class="fa fa-check"></i><b>9.6.2</b> SS Distraction</a></li>
 <li class="chapter" data-level="9.6.3" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-reward"><i class="fa fa-check"></i><b>9.6.3</b> SS Reward</a></li>
 <li class="chapter" data-level="9.6.4" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction-by-reward"><i class="fa fa-check"></i><b>9.6.4</b> SS Distraction by Reward</a></li>
-<li class="chapter" data-level="9.6.5" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-error-1"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
+<li class="chapter" data-level="9.6.5" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
 <li class="chapter" data-level="9.6.6" data-path="factorial-anova.html"><a href="factorial-anova.html#check-your-work"><i class="fa fa-check"></i><b>9.6.6</b> Check your work</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="factorial-anova.html"><a href="factorial-anova.html#fireside-chat"><i class="fa fa-check"></i><b>9.7</b> Fireside chat</a></li>
-<li class="chapter" data-level="9.8" data-path="factorial-anova.html"><a href="factorial-anova.html#real-data-1"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
+<li class="chapter" data-level="9.8" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
 <li class="chapter" data-level="9.8.1" data-path="factorial-anova.html"><a href="factorial-anova.html#stand-at-attention"><i class="fa fa-check"></i><b>9.8.1</b> Stand at attention</a></li>
 <li class="chapter" data-level="9.8.2" data-path="factorial-anova.html"><a href="factorial-anova.html#plot-the-data"><i class="fa fa-check"></i><b>9.8.2</b> Plot the data</a></li>
 <li class="chapter" data-level="9.8.3" data-path="factorial-anova.html"><a href="factorial-anova.html#conduct-the-anova"><i class="fa fa-check"></i><b>9.8.3</b> Conduct the ANOVA</a></li>
@@ -490,7 +470,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="10" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html"><i class="fa fa-check"></i><b>10</b> More On Factorial Designs</a><ul>
 <li class="chapter" data-level="10.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#looking-at-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.1</b> Looking at main effects and interactions</a><ul>
-<li class="chapter" data-level="10.1.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#x2-designs-1"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
+<li class="chapter" data-level="10.1.1" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-designs"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
 </ul></li>
 <li class="chapter" data-level="10.2" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#interpreting-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.2</b> Interpreting main effects and interactions</a><ul>
 <li class="chapter" data-level="10.2.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#a-consistent-main-effect-and-an-interaction"><i class="fa fa-check"></i><b>10.2.1</b> A consistent main effect and an interaction</a></li>
@@ -569,7 +549,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Answering questions with data</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Quantitative Research Methods &amp; Analysis</a>
           </h1>
         </div>
 
@@ -649,7 +629,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s do one more thing to build our intuitions about what <span class="math inline">\(t\)</span> can look like. How about we sample some numbers and then measure the sample mean <strong>and</strong> the standard error of the mean, and then plot those two things against each each. This will show us how a sample mean typically varies with respect to the standard error of the mean.</p>
 <p>In the following figure, I pulled 1,000 samples of N=10 from a normal distribution (mean = 0, sd = 1). Each time I measured the mean and standard error of the sample. That gave two descriptive statistics for each sample, letting us plot each sample as dot in a scatterplot</p>
 <div class="figure"><span id="fig:6sampleMSEM"></span>
-<img src="statistics_files/figure-html/6sampleMSEM-1.png" alt="A scatterplot with sample mean on the x-axis, and standard error of the mean on the y-axis" width="672" />
+<img src="quantrma_files/figure-html/6sampleMSEM-1.png" alt="A scatterplot with sample mean on the x-axis, and standard error of the mean on the y-axis" width="672" />
 <p class="caption">
 Figure 6.1: A scatterplot with sample mean on the x-axis, and standard error of the mean on the y-axis
 </p>
@@ -657,7 +637,7 @@ Figure 6.1: A scatterplot with sample mean on the x-axis, and standard error of 
 <p>What we get is a cloud of dots. You might notice the cloud has a circular quality. There’s more dots in the middle, and fewer dots as they radiate out from the middle. The dot cloud shows us the general range of the sample mean, for example most of the dots are in between -1 and 1. Similarly, the range for the sample standard error is roughly between .2 and .5. Remember, each dot represents one sample.</p>
 <p>We can look at the same data a different way. For example, rather than using a scatterplot, we can divide the mean for each dot, by the standard error for each dot. Below is a histogram showing what this looks like:</p>
 <div class="figure"><span id="fig:6thisexample"></span>
-<img src="statistics_files/figure-html/6thisexample-1.png" alt="A histogram of the sample means divided by the sample standard errors, this is a t-distribution" width="672" />
+<img src="quantrma_files/figure-html/6thisexample-1.png" alt="A histogram of the sample means divided by the sample standard errors, this is a t-distribution" width="672" />
 <p class="caption">
 Figure 6.2: A histogram of the sample means divided by the sample standard errors, this is a t-distribution
 </p>
@@ -797,7 +777,7 @@ Figure 6.2: A histogram of the sample means divided by the sample standard error
 <p>And, that is you how calculate <span class="math inline">\(t\)</span>, by hand. It’s a pain. I was annoyed doing it this way. In the lab, you learn how to calculate <span class="math inline">\(t\)</span> using software, so it will just spit out <span class="math inline">\(t\)</span>. For example in R, all you have to do is this:</p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="t-tests.html#cb30-1"></a><span class="kw">t.test</span>(scores, <span class="dt">mu=</span><span class="dv">50</span>)</span></code></pre></div>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  scores
 ## t = 1.9412, df = 9, p-value = 0.08415
@@ -814,7 +794,7 @@ Figure 6.2: A histogram of the sample means divided by the sample standard error
 <p>Remember back to the chapter on sampling and distributions, that’s where we discussed the sampling distribution of the sample mean. Remember, we made a lot of samples, then computed the mean for each sample, then we plotted a histogram of the sample means. Later, in that same section, we mentioned that we could generate sampling distributions for any statistic. For each sample, we could compute the mean, the standard deviation, the standard error, and now even <span class="math inline">\(t\)</span>, if we wanted to. We could generate 10,000 samples, and draw four histograms, one for each sampling distribution for each statistic.</p>
 <p>This is exactly what I did, and the results are shown in the four figures below. I used a sample size of 20, and drew random observations for each sample from a normal distribution, with mean = 0, and standard deviation = 1. Let’s look at the sampling distributions for each of the statistics. <span class="math inline">\(t\)</span> was computed assuming with the population mean assumed to be 0.</p>
 <div class="figure"><span id="fig:6sampdists"></span>
-<img src="statistics_files/figure-html/6sampdists-1.png" alt="Sampling distributions for the mean, standard deviation, standard error of the mean, and t" width="672" />
+<img src="quantrma_files/figure-html/6sampdists-1.png" alt="Sampling distributions for the mean, standard deviation, standard error of the mean, and t" width="672" />
 <p class="caption">
 Figure 6.3: Sampling distributions for the mean, standard deviation, standard error of the mean, and t
 </p>
@@ -835,7 +815,7 @@ Figure 6.3: Sampling distributions for the mean, standard deviation, standard er
 <p>We’ll formalize this in a second. I just want you to know that what you will be doing is something that you have already done before. For example, in the Crump test and the Randomization test we focused on the distribution of mean differences. We could do that again here, but instead, we will focus on the distribution of <span class="math inline">\(t\)</span> values. We then apply the same kinds of decision rules to the <span class="math inline">\(t\)</span> distribution, as we did for the other distributions. Below you will see a graph you have already seen, except this time it is a distribution of <span class="math inline">\(t\)</span>s, not mean differences:</p>
 <p>Remember, if we obtained a single <span class="math inline">\(t\)</span> from one sample we collected, we could consult this chance window below to find out the <span class="math inline">\(t\)</span> we obtained from the sample was likely or unlikely to occur by chance.</p>
 <div class="figure"><span id="fig:6tdecision"></span>
-<img src="statistics_files/figure-html/6tdecision-1.png" alt="Applying decision criteria to the t-distribution." width="672" />
+<img src="quantrma_files/figure-html/6tdecision-1.png" alt="Applying decision criteria to the t-distribution." width="672" />
 <p class="caption">
 Figure 6.4: Applying decision criteria to the t-distribution.
 </p>
@@ -912,7 +892,7 @@ Figure 6.4: Applying decision criteria to the t-distribution.
 <p>Great, so what are we really interested in here? We want to know if the mean looking time toward the singer of the familiar song for the Test phase is higher than the Baseline phase. We are comparing the two sample means against each other and looking for a difference. We already know that differences could be obtained by chance alone, simply because we took two sets of samples, and we know that samples can be different. So, we are interested in knowing whether chance was likely or unlikely to have produced any difference we might observe.</p>
 <p>In other words, we are interested in looking at the difference scores between the baseline and test phase for each infant. The question here is, for each infant, did their proportion looking time to the singer of the familiar song, increase during the test phase as compared to the baseline phase.</p>
 </div>
-<div id="the-difference-scores-1" class="section level3">
+<div id="the-difference-scores" class="section level3">
 <h3><span class="header-section-number">6.3.3</span> The difference scores</h3>
 <p>Let’s add the difference scores to the table of data so it is easier to see what we are talking about. The first step in creating difference scores is to decide how you will take the difference, there are two options:</p>
 <ol style="list-style-type: decimal">
@@ -1126,7 +1106,7 @@ Figure 6.4: Applying decision criteria to the t-distribution.
 </table>
 <p>If we did this test using R, we would obtain almost the same numbers (there is a little bit of rounding in the table).</p>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  differences
 ## t = 0.72381, df = 4, p-value = 0.5092
@@ -1143,7 +1123,7 @@ Figure 6.4: Applying decision criteria to the t-distribution.
 <h3><span class="header-section-number">6.3.6</span> Interpreting ts</h3>
 <p>Remember what it is we are doing here. We are evaluating whether our sample data could have come from a particular kind of distribution. The null distribution of no differences. This is the distribution of <span class="math inline">\(t\)</span>-values that would occur for samples of size 5, with a mean difference of 0, and a standard error of the sample mean of .075 (this is the SEM that we calculated from our sample). We can see what this particular null-distribution looks like by plotting it like this:</p>
 <div class="figure"><span id="fig:6tnull"></span>
-<img src="statistics_files/figure-html/6tnull-1.png" alt="A distribution of t-values that can occur by chance alone, when there is no difference between the sample and a population" width="672" />
+<img src="quantrma_files/figure-html/6tnull-1.png" alt="A distribution of t-values that can occur by chance alone, when there is no difference between the sample and a population" width="672" />
 <p class="caption">
 Figure 6.5: A distribution of t-values that can occur by chance alone, when there is no difference between the sample and a population
 </p>
@@ -1158,7 +1138,7 @@ Figure 6.5: A distribution of t-values that can occur by chance alone, when ther
 <p>We can answer all of those questions just by looking at our t-distribution, and dividing it into two equal regions, the left side (containing 50% of the <span class="math inline">\(t\)</span> values), and the right side containing 50% of the <span class="math inline">\(t\)</span>-values).</p>
 <p>What if we wanted to take a more fine-grained approach, let’s say we were interested in regions of 10%. What kinds of <span class="math inline">\(t\)</span>s occur 10% of the time. We would apply lines like the following. Notice, the likelihood of bigger numbers (positive or negative) gets smaller, so we have to increase the width of the bars for each of the intervals between the bars to contain 10% of the <span class="math inline">\(t\)</span>-values, it looks like this:</p>
 <div class="figure"><span id="fig:6percentregions"></span>
-<img src="statistics_files/figure-html/6percentregions-1.png" alt="Splitting the t distribution up into regions each containing 5% of the t-values. The width between the bars narrows as they approach the center of the distribution, where there are more t-values" width="672" />
+<img src="quantrma_files/figure-html/6percentregions-1.png" alt="Splitting the t distribution up into regions each containing 5% of the t-values. The width between the bars narrows as they approach the center of the distribution, where there are more t-values" width="672" />
 <p class="caption">
 Figure 6.6: Splitting the t distribution up into regions each containing 5% of the t-values. The width between the bars narrows as they approach the center of the distribution, where there are more t-values
 </p>
@@ -1184,7 +1164,7 @@ Figure 6.6: Splitting the t distribution up into regions each containing 5% of t
 <p>A <strong>one-tailed test</strong> is sometimes also called a directional test. It is called a directional test, because a researcher might have a hypothesis in mind suggesting that the difference they observe in their means is going to have a particular direction, either a positive difference, or a negative difference.</p>
 <p>Typically, a researcher would set an <strong>alpha criterion</strong>. The alpha criterion describes a line in the sand for the researcher. Often, the alpha criterion is set at p=.05. What does this mean? Let’s look at again at the graph of the <span class="math inline">\(t\)</span>-distribution, and show the alpha criterion.</p>
 <div class="figure"><span id="fig:6critT"></span>
-<img src="statistics_files/figure-html/6critT-1.png" alt="The critical value of t for an alpha criterion of 0.05. 5% of all ts are at this value or larger" width="672" />
+<img src="quantrma_files/figure-html/6critT-1.png" alt="The critical value of t for an alpha criterion of 0.05. 5% of all ts are at this value or larger" width="672" />
 <p class="caption">
 Figure 6.7: The critical value of t for an alpha criterion of 0.05. 5% of all ts are at this value or larger
 </p>
@@ -1199,7 +1179,7 @@ Figure 6.7: The critical value of t for an alpha criterion of 0.05. 5% of all ts
 </ol>
 <p>Let’s see what the <span class="math inline">\(p\)</span>-value for <span class="math inline">\(t\)</span> (4) = .72 using a one-directional test would be, and what it would look like:</p>
 <div class="figure"><span id="fig:6tonedirection"></span>
-<img src="statistics_files/figure-html/6tonedirection-1.png" alt="Critical value for a one-directional t-test" width="672" />
+<img src="quantrma_files/figure-html/6tonedirection-1.png" alt="Critical value for a one-directional t-test" width="672" />
 <p class="caption">
 Figure 6.8: Critical value for a one-directional t-test
 </p>
@@ -1214,7 +1194,7 @@ Figure 6.8: Critical value for a one-directional t-test
 <p>The same basic things as before are involved. We define an alpha criterion (<span class="math inline">\(\alpha = 0.05\)</span>). And, we say that any observed <span class="math inline">\(t\)</span> value that has a probability of <span class="math inline">\(p\)</span> &lt;.05 (<span class="math inline">\(p\)</span> is less than .05) will be called <strong>statistically signficant</strong>, and ones that are more likely (<span class="math inline">\(p\)</span> &gt;.05, <span class="math inline">\(p\)</span> is greater than .05) will be called null-results, or not statistically significant. The only difference is how we draw the alpha range. Before it was on the right side of the <span class="math inline">\(t\)</span> distribution (we were conducting a one-sided test remember, so we were only interested in one side).</p>
 <p>Let’s just take a look at what the most extreme 5% of the t-values are, when we ignore if they are positive or negative:</p>
 <div class="figure"><span id="fig:6twotailedt"></span>
-<img src="statistics_files/figure-html/6twotailedt-1.png" alt="Critical values for a two-tailed test. Each line represents the location where 2.5% of all ts are larger or smaller than critical value. The total for both tails is 5%" width="672" />
+<img src="quantrma_files/figure-html/6twotailedt-1.png" alt="Critical values for a two-tailed test. Each line represents the location where 2.5% of all ts are larger or smaller than critical value. The total for both tails is 5%" width="672" />
 <p class="caption">
 Figure 6.9: Critical values for a two-tailed test. Each line represents the location where 2.5% of all ts are larger or smaller than critical value. The total for both tails is 5%
 </p>
@@ -1249,7 +1229,7 @@ Figure 6.9: Critical values for a two-tailed test. Each line represents the loca
 <p>There are at least two ways to think the degrees of freedom for a <span class="math inline">\(t\)</span>-test. For example, if you want to use math to compute aspects of the <span class="math inline">\(t\)</span> distribution, then you need the degrees of freedom to plug in to the formula… If you want to see the formulas I’m talking about, scroll down on the <a href="https://en.wikipedia.org/wiki/Student%27s_t-distribution">t-test wikipedia page</a> and look for the probability density or cumulative distribution functions…We think that is quite scary for most people, and one reason why degrees of freedom are not well-understood.</p>
 <p>If we wanted to simulate the <span class="math inline">\(t\)</span> distribution we could more easily see what influence degrees of freedom has on the shape of the distribution. Remember, <span class="math inline">\(t\)</span> is a sample statistic, it is something we measure from the sample. So, we could simulate the process of measuring <span class="math inline">\(t\)</span> from many different samples, then plot the histogram of <span class="math inline">\(t\)</span> to show us the simulated <span class="math inline">\(t\)</span> distribution.</p>
 <div class="figure"><span id="fig:6dft"></span>
-<img src="statistics_files/figure-html/6dft-1.png" alt="The width of the t distribution shrinks as sample size increases" width="672" />
+<img src="quantrma_files/figure-html/6dft-1.png" alt="The width of the t distribution shrinks as sample size increases" width="672" />
 <p class="caption">
 Figure 6.10: The width of the t distribution shrinks as sample size increases
 </p>
@@ -1358,7 +1338,7 @@ Figure 6.10: The width of the t distribution shrinks as sample size increases
 </tbody>
 </table>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  round(differences, digits = 2)
 ## t = 0.72381, df = 4, p-value = 0.5092
@@ -1372,7 +1352,7 @@ Figure 6.10: The width of the t distribution shrinks as sample size increases
 <p>We can say that a <span class="math inline">\(t\)</span> value with an absolute of .72 or larger occurs 50.9% of the time. More precisely, the distribution of no differences (the null), will produce a <span class="math inline">\(t\)</span> value this large or larger 50.9% of the time. In other words, chance alone good have easily produced the <span class="math inline">\(t\)</span> value from our sample, and the mean difference we observed or .054, could easily have been a result of chance.</p>
 <p>Let’s quickly put all of the data in the <span class="math inline">\(t\)</span>-test, and re-run the test using all of the infant subjects.</p>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  differences
 ## t = 2.4388, df = 31, p-value = 0.02066
@@ -1426,7 +1406,7 @@ Figure 6.10: The width of the t distribution shrinks as sample size increases
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="t-tests.html#cb37-1"></a><span class="co"># using the R function t.test</span></span>
 <span id="cb37-2"><a href="t-tests.html#cb37-2"></a><span class="kw">t.test</span>(a,b, <span class="dt">paired=</span><span class="ot">FALSE</span>, <span class="dt">var.equal =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
 <pre><code>## 
-##  Two Sample t-test
+## 	Two Sample t-test
 ## 
 ## data:  a and b
 ## t = -2.018, df = 8, p-value = 0.0783
@@ -1463,15 +1443,15 @@ Figure 6.10: The width of the t distribution shrinks as sample size increases
 <span id="cb39-11"><a href="t-tests.html#cb39-11"></a></span>
 <span id="cb39-12"><a href="t-tests.html#cb39-12"></a><span class="co">#plot histograms of t and p values for 1000 simulations</span></span>
 <span id="cb39-13"><a href="t-tests.html#cb39-13"></a><span class="kw">hist</span>(save_ts)</span></code></pre></div>
-<div class="figure"><span id="fig:6flatp1"></span>
-<img src="statistics_files/figure-html/6flatp-1.png" alt="The distribution of p-values is flat under the null" width="672" />
+<div class="figure"><span id="fig:6flatp-1"></span>
+<img src="quantrma_files/figure-html/6flatp-1.png" alt="The distribution of p-values is flat under the null" width="672" />
 <p class="caption">
 Figure 6.11: The distribution of p-values is flat under the null
 </p>
 </div>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="t-tests.html#cb40-1"></a><span class="kw">hist</span>(save_ps)</span></code></pre></div>
-<div class="figure"><span id="fig:6flatp2"></span>
-<img src="statistics_files/figure-html/6flatp-2.png" alt="The distribution of p-values is flat under the null" width="672" />
+<div class="figure"><span id="fig:6flatp-2"></span>
+<img src="quantrma_files/figure-html/6flatp-2.png" alt="The distribution of p-values is flat under the null" width="672" />
 <p class="caption">
 Figure 6.12: The distribution of p-values is flat under the null
 </p>
@@ -1482,7 +1462,7 @@ Figure 6.12: The distribution of p-values is flat under the null
 <span id="cb41-2"><a href="t-tests.html#cb41-2"></a>                          <span class="kw">t.test</span>(<span class="kw">rnorm</span>(<span class="dv">30</span>,<span class="dv">50</span>,<span class="dv">25</span>))<span class="op">$</span>statistic)</span>
 <span id="cb41-3"><a href="t-tests.html#cb41-3"></a><span class="kw">hist</span>(simulated_ts)</span></code></pre></div>
 <div class="figure"><span id="fig:6simtsRep"></span>
-<img src="statistics_files/figure-html/6simtsRep-1.png" alt="Simulating ts in R" width="672" />
+<img src="quantrma_files/figure-html/6simtsRep-1.png" alt="Simulating ts in R" width="672" />
 <p class="caption">
 Figure 6.13: Simulating ts in R
 </p>
@@ -1491,7 +1471,7 @@ Figure 6.13: Simulating ts in R
 <span id="cb42-2"><a href="t-tests.html#cb42-2"></a>                          <span class="kw">t.test</span>(<span class="kw">rnorm</span>(<span class="dv">30</span>,<span class="dv">50</span>,<span class="dv">25</span>))<span class="op">$</span>p.value)</span>
 <span id="cb42-3"><a href="t-tests.html#cb42-3"></a><span class="kw">hist</span>(simulated_ps)</span></code></pre></div>
 <div class="figure"><span id="fig:6simpsRep"></span>
-<img src="statistics_files/figure-html/6simpsRep-1.png" alt="Simulating ps in R" width="672" />
+<img src="quantrma_files/figure-html/6simpsRep-1.png" alt="Simulating ps in R" width="672" />
 <p class="caption">
 Figure 6.14: Simulating ps in R
 </p>
@@ -1511,13 +1491,13 @@ Figure 6.14: Simulating ps in R
 <span id="cb43-9"><a href="t-tests.html#cb43-9"></a>  save_ts[i] &lt;-<span class="st"> </span>t_test<span class="op">$</span>statistic</span>
 <span id="cb43-10"><a href="t-tests.html#cb43-10"></a>}</span></code></pre></div>
 <div class="figure"><span id="fig:6simps1000"></span>
-<img src="statistics_files/figure-html/6simps1000-1.png" alt="1000 simulated ts from the null distribution" width="672" />
+<img src="quantrma_files/figure-html/6simps1000-1.png" alt="1000 simulated ts from the null distribution" width="672" />
 <p class="caption">
 Figure 6.15: 1000 simulated ts from the null distribution
 </p>
 </div>
 <div class="figure"><span id="fig:6simts1000"></span>
-<img src="statistics_files/figure-html/6simts1000-1.png" alt="1000 simulated ps from the null distribution" width="672" />
+<img src="quantrma_files/figure-html/6simts1000-1.png" alt="1000 simulated ps from the null distribution" width="672" />
 <p class="caption">
 Figure 6.16: 1000 simulated ps from the null distribution
 </p>
@@ -1525,10 +1505,10 @@ Figure 6.16: 1000 simulated ps from the null distribution
 <p>According to the simulation. When there are no differences between the conditions, and the samples are being pulled from the very same distribution, you get these two distributions for <span class="math inline">\(t\)</span> and <span class="math inline">\(p\)</span>. These again show how the null distribution of no differences behaves.</p>
 <p>For any of these simulations, if you rejected the null-hypothesis (that your difference was only due to chance), you would be making a type I error. If you set your alpha criteria to <span class="math inline">\(\alpha = .05\)</span>, we can ask how many type I errors were made in these 1000 simulations. The answer is:</p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="t-tests.html#cb44-1"></a><span class="kw">length</span>(save_ps[save_ps<span class="op">&lt;</span>.<span class="dv">05</span>])</span></code></pre></div>
-<pre><code>## [1] 55</code></pre>
+<pre><code>## [1] 52</code></pre>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="t-tests.html#cb46-1"></a><span class="kw">length</span>(save_ps[save_ps<span class="op">&lt;</span>.<span class="dv">05</span>])<span class="op">/</span><span class="dv">1000</span></span></code></pre></div>
-<pre><code>## [1] 0.055</code></pre>
-<p>We happened to make 55. The expectation over the long run is 5% type I error rates (if your alpha is .05).</p>
+<pre><code>## [1] 0.052</code></pre>
+<p>We happened to make 52. The expectation over the long run is 5% type I error rates (if your alpha is .05).</p>
 <p>What happens if there actually is a difference in the simulated data, let’s set one condition to have a larger mean than the other:</p>
 <div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="t-tests.html#cb48-1"></a>save_ps &lt;-<span class="st"> </span><span class="kw">length</span>(<span class="dv">1000</span>)</span>
 <span id="cb48-2"><a href="t-tests.html#cb48-2"></a>save_ts &lt;-<span class="st"> </span><span class="kw">length</span>(<span class="dv">1000</span>)</span>
@@ -1541,13 +1521,13 @@ Figure 6.16: 1000 simulated ps from the null distribution
 <span id="cb48-9"><a href="t-tests.html#cb48-9"></a>  save_ts[i] &lt;-<span class="st"> </span>t_test<span class="op">$</span>statistic</span>
 <span id="cb48-10"><a href="t-tests.html#cb48-10"></a>}</span></code></pre></div>
 <div class="figure"><span id="fig:6simtruets"></span>
-<img src="statistics_files/figure-html/6simtruets-1.png" alt="1000 ts when there is a true difference" width="672" />
+<img src="quantrma_files/figure-html/6simtruets-1.png" alt="1000 ts when there is a true difference" width="672" />
 <p class="caption">
 Figure 6.17: 1000 ts when there is a true difference
 </p>
 </div>
 <div class="figure"><span id="fig:6simtrueps"></span>
-<img src="statistics_files/figure-html/6simtrueps-1.png" alt="1000 ps when there is a true difference" width="672" />
+<img src="quantrma_files/figure-html/6simtrueps-1.png" alt="1000 ps when there is a true difference" width="672" />
 <p class="caption">
 Figure 6.18: 1000 ps when there is a true difference
 </p>
@@ -1555,10 +1535,10 @@ Figure 6.18: 1000 ps when there is a true difference
 <p>Now you can see that the <span class="math inline">\(p\)</span>-value distribution is skewed to the left. This is because when there is a true effect, you will get p-values that are less than .05 more often. Or, rather, you get larger <span class="math inline">\(t\)</span> values than you normally would if there were no differences.</p>
 <p>In this case, we wouldn’t be making a type I error if we rejected the null when p was smaller than .05. How many times would we do that out of our 1000 experiments?</p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="t-tests.html#cb49-1"></a><span class="kw">length</span>(save_ps[save_ps<span class="op">&lt;</span>.<span class="dv">05</span>])</span></code></pre></div>
-<pre><code>## [1] 216</code></pre>
+<pre><code>## [1] 234</code></pre>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="t-tests.html#cb51-1"></a><span class="kw">length</span>(save_ps[save_ps<span class="op">&lt;</span>.<span class="dv">05</span>])<span class="op">/</span><span class="dv">1000</span></span></code></pre></div>
-<pre><code>## [1] 0.216</code></pre>
-<p>We happened to get 216 simulations where p was less than .05, that’s only 0.216 experiments. If you were the researcher, would you want to run an experiment that would be successful only 0.216 of the time? I wouldn’t. I would run a better experiment.</p>
+<pre><code>## [1] 0.234</code></pre>
+<p>We happened to get 234 simulations where p was less than .05, that’s only 0.234 experiments. If you were the researcher, would you want to run an experiment that would be successful only 0.234 of the time? I wouldn’t. I would run a better experiment.</p>
 <p>How would you run a better simulated experiment? Well, you could increase <span class="math inline">\(n\)</span>, the number of subjects in the experiment. Let’s increase <span class="math inline">\(n\)</span> from 10 to 100, and see what happens to the number of “significant” simulated experiments.</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="t-tests.html#cb53-1"></a>save_ps &lt;-<span class="st"> </span><span class="kw">length</span>(<span class="dv">1000</span>)</span>
 <span id="cb53-2"><a href="t-tests.html#cb53-2"></a>save_ts &lt;-<span class="st"> </span><span class="kw">length</span>(<span class="dv">1000</span>)</span>
@@ -1571,19 +1551,19 @@ Figure 6.18: 1000 ps when there is a true difference
 <span id="cb53-9"><a href="t-tests.html#cb53-9"></a>  save_ts[i] &lt;-<span class="st"> </span>t_test<span class="op">$</span>statistic</span>
 <span id="cb53-10"><a href="t-tests.html#cb53-10"></a>}</span></code></pre></div>
 <div class="figure"><span id="fig:6simtsB"></span>
-<img src="statistics_files/figure-html/6simtsB-1.png" alt="1000 ts for n =100, when there is a true effect" width="672" />
+<img src="quantrma_files/figure-html/6simtsB-1.png" alt="1000 ts for n =100, when there is a true effect" width="672" />
 <p class="caption">
 Figure 6.19: 1000 ts for n =100, when there is a true effect
 </p>
 </div>
 <div class="figure"><span id="fig:6simpsB"></span>
-<img src="statistics_files/figure-html/6simpsB-1.png" alt="1000 ps for n =100, when there is a true effect" width="672" />
+<img src="quantrma_files/figure-html/6simpsB-1.png" alt="1000 ps for n =100, when there is a true effect" width="672" />
 <p class="caption">
 Figure 6.20: 1000 ps for n =100, when there is a true effect
 </p>
 </div>
-<pre><code>## [1] 985</code></pre>
-<pre><code>## [1] 0.985</code></pre>
+<pre><code>## [1] 988</code></pre>
+<pre><code>## [1] 0.988</code></pre>
 <p>Cool, now almost all of the experiments show a <span class="math inline">\(p\)</span>-value of less than .05 (using a two-tailed test, that’s the default in R). See, you could use this simulation process to determine how many subjects you need to reliably find your effect.</p>
 </div>
 <div id="simulating-an-independent-samples-t.test" class="section level3">
@@ -1599,22 +1579,22 @@ Figure 6.20: 1000 ps for n =100, when there is a true effect
 <span id="cb56-8"><a href="t-tests.html#cb56-8"></a>  save_ts[i] &lt;-<span class="st"> </span>t_test<span class="op">$</span>statistic</span>
 <span id="cb56-9"><a href="t-tests.html#cb56-9"></a>}</span></code></pre></div>
 <div class="figure"><span id="fig:6simtsC"></span>
-<img src="statistics_files/figure-html/6simtsC-1.png" alt="1000 ts for n =100, when there is a true effect" width="672" />
+<img src="quantrma_files/figure-html/6simtsC-1.png" alt="1000 ts for n =100, when there is a true effect" width="672" />
 <p class="caption">
 Figure 6.21: 1000 ts for n =100, when there is a true effect
 </p>
 </div>
 <div class="figure"><span id="fig:6simpsC"></span>
-<img src="statistics_files/figure-html/6simpsC-1.png" alt="1000 ps for n =100, when there is a true effect" width="672" />
+<img src="quantrma_files/figure-html/6simpsC-1.png" alt="1000 ps for n =100, when there is a true effect" width="672" />
 <p class="caption">
 Figure 6.22: 1000 ps for n =100, when there is a true effect
 </p>
 </div>
-<pre><code>## [1] 38</code></pre>
-<pre><code>## [1] 0.038</code></pre>
+<pre><code>## [1] 41</code></pre>
+<pre><code>## [1] 0.041</code></pre>
 </div>
 </div>
-<div id="videos-4" class="section level2">
+<div id="videos" class="section level2">
 <h2><span class="header-section-number">6.7</span> Videos</h2>
 <div id="one-or-two-tailed-tests" class="section level3">
 <h3><span class="header-section-number">6.7.1</span> One or Two tailed tests</h3>
@@ -1658,12 +1638,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -1678,7 +1657,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["statistics.pdf"],
+"view": {
+"link": null,
+"text": null
+},
+"download": ["quantrma.pdf"],
 "toc": {
 "collapse": "subsection"
 }

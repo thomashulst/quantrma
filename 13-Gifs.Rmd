@@ -283,7 +283,11 @@ ggplot(all_df,aes(x=North_pole,y=South_pole))+
 We look at how the residuals (error from points to line) behave as the regression lines moves above and below it's true value. The total error associated with all of the red lines is represents by the grey area. This total error is smallest (minimized) when the black line overlaps with the blue regression line (the best fit line). The total error expands as the black line moves away from the regression. That's why the regression line is the least wrong (best fit) line to skewer the data (according to least squares definition)
 
 ```{r, echo=F,eval=T}
-knitr::include_graphics(path="gifs/regression-1.gif")
+if (knitr:::is_latex_output()) {
+  knitr::asis_output('\\url{....}')
+} else {
+  knitr::include_graphics("gifs/regression-1.gif")
+}
 ```
 
 ```{r regressiongif,echo=T, fig.path='gifs/', message=F, warning=F, eval=F}

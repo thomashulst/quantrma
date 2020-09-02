@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Repeated Measures ANOVA | Answering questions with data</title>
-  <meta name="description" content="An introductory statistics textbook for psychology students" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <title>Chapter 8 Repeated Measures ANOVA | Quantitative Research Methods &amp; Analysis</title>
+  <meta name="description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Repeated Measures ANOVA | Answering questions with data" />
+  <meta property="og:title" content="Chapter 8 Repeated Measures ANOVA | Quantitative Research Methods &amp; Analysis" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="An introductory statistics textbook for psychology students" />
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Repeated Measures ANOVA | Answering questions with data" />
+  <meta name="twitter:title" content="Chapter 8 Repeated Measures ANOVA | Quantitative Research Methods &amp; Analysis" />
   
-  <meta name="twitter:description" content="An introductory statistics textbook for psychology students" />
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
+<meta name="author" content="Adapted for use at EUC by Thomas Hulst" />
 <meta name="author" content="Lead Author: Matthew J. C. Crump" />
 <meta name="author" content="Chapters 2 and 4 adapted from Navarro, D." />
 <meta name="author" content="Videos: Jeffrey Suzuki" />
@@ -51,21 +52,9 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79429674-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-79429674-3');
-</script>
-
-
-<script type="text/javascript">
-mattcrump=1;
-</script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -151,17 +140,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i><b>0.1</b> Important notes</a><ul>
-<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#textbook"><i class="fa fa-check"></i><b>0.1.1</b> Textbook</a></li>
-<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#lab-manual"><i class="fa fa-check"></i><b>0.1.2</b> Lab Manual</a></li>
-<li class="chapter" data-level="0.1.3" data-path="index.html"><a href="index.html#course-website"><i class="fa fa-check"></i><b>0.1.3</b> Course website</a></li>
-<li class="chapter" data-level="0.1.4" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i><b>0.1.4</b> Contributors</a></li>
-<li class="chapter" data-level="0.1.5" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.5</b> Attributions</a></li>
-<li class="chapter" data-level="0.1.6" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.6</b> CC BY-SA 4.0 license</a></li>
-</ul></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#copying-the-textbook"><i class="fa fa-check"></i><b>0.2</b> Copying the textbook</a><ul>
-<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#acknowledgments"><i class="fa fa-check"></i><b>0.2.1</b> Acknowledgments</a></li>
-<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#why-we-did-this"><i class="fa fa-check"></i><b>0.2.2</b> Why we did this</a></li>
-<li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#hypothes.is"><i class="fa fa-check"></i><b>0.2.3</b> Hypothes.is</a></li>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.1</b> Attributions</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.2</b> CC BY-SA 4.0 license</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="why-statistics.html"><a href="why-statistics.html"><i class="fa fa-check"></i><b>1</b> Why Statistics?</a><ul>
@@ -247,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.8.1" data-path="DescribingData.html"><a href="DescribingData.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.8.1</b> Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="2.8.2" data-path="DescribingData.html"><a href="DescribingData.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.8.2</b> Datasaurus Dozen</a></li>
 </ul></li>
-<li class="chapter" data-level="2.9" data-path="DescribingData.html"><a href="DescribingData.html#videos-1"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
+<li class="chapter" data-level="2.9" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
 <li class="chapter" data-level="2.9.1" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-mode"><i class="fa fa-check"></i><b>2.9.1</b> Measures of center: Mode</a></li>
 <li class="chapter" data-level="2.9.2" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-median-and-mean"><i class="fa fa-check"></i><b>2.9.2</b> Measures of center: Median and Mean</a></li>
 <li class="chapter" data-level="2.9.3" data-path="DescribingData.html"><a href="DescribingData.html#standard-deviation-part-i"><i class="fa fa-check"></i><b>2.9.3</b> Standard deviation part I</a></li>
@@ -278,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.6.2" data-path="Correlation.html"><a href="Correlation.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>3.6.2</b> Correlation and Random chance</a></li>
 <li class="chapter" data-level="3.6.3" data-path="Correlation.html"><a href="Correlation.html#some-more-movies"><i class="fa fa-check"></i><b>3.6.3</b> Some more movies</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="Correlation.html"><a href="Correlation.html#summary-1"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
+<li class="chapter" data-level="3.7" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html"><i class="fa fa-check"></i><b>4</b> Probability, Sampling, and Estimation</a><ul>
 <li class="chapter" data-level="4.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.1</b> How are probability and statistics different?</a></li>
@@ -328,8 +308,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.14" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#estimating-a-confidence-interval"><i class="fa fa-check"></i><b>4.14</b> Estimating a confidence interval</a><ul>
 <li class="chapter" data-level="4.14.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>4.14.1</b> A slight mistake in the formula</a></li>
 </ul></li>
-<li class="chapter" data-level="4.15" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#summary-2"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
-<li class="chapter" data-level="4.16" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#videos-2"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
+<li class="chapter" data-level="4.15" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
+<li class="chapter" data-level="4.16" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
 <li class="chapter" data-level="4.16.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#introduction-to-probability"><i class="fa fa-check"></i><b>4.16.1</b> Introduction to Probability</a></li>
 <li class="chapter" data-level="4.16.2" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#chebychevs-theorem"><i class="fa fa-check"></i><b>4.16.2</b> Chebychev’s Theorem</a></li>
 <li class="chapter" data-level="4.16.3" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#z-scores-1"><i class="fa fa-check"></i><b>4.16.3</b> Z-scores</a></li>
@@ -362,7 +342,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#pretend-example-does-chewing-gum-improve-your-grades"><i class="fa fa-check"></i><b>5.6.1</b> Pretend example does chewing gum improve your grades?</a></li>
 <li class="chapter" data-level="5.6.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#take-homes-so-far"><i class="fa fa-check"></i><b>5.6.2</b> Take homes so far</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#videos-3"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
+<li class="chapter" data-level="5.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
 <li class="chapter" data-level="5.7.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#null-and-alternate-hypotheses"><i class="fa fa-check"></i><b>5.7.1</b> Null and Alternate Hypotheses</a></li>
 <li class="chapter" data-level="5.7.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#types-of-errors"><i class="fa fa-check"></i><b>5.7.2</b> Types of Errors</a></li>
 </ul></li>
@@ -379,7 +359,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.3" data-path="t-tests.html"><a href="t-tests.html#paired-samples-t-test"><i class="fa fa-check"></i><b>6.3</b> Paired-samples t-test</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="t-tests.html"><a href="t-tests.html#mehr-song-and-spelke-2016"><i class="fa fa-check"></i><b>6.3.1</b> Mehr, Song, and Spelke (2016)</a></li>
 <li class="chapter" data-level="6.3.2" data-path="t-tests.html"><a href="t-tests.html#the-data"><i class="fa fa-check"></i><b>6.3.2</b> The data</a></li>
-<li class="chapter" data-level="6.3.3" data-path="t-tests.html"><a href="t-tests.html#the-difference-scores-1"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
+<li class="chapter" data-level="6.3.3" data-path="DescribingData.html"><a href="DescribingData.html#the-difference-scores"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
 <li class="chapter" data-level="6.3.4" data-path="t-tests.html"><a href="t-tests.html#the-mean-difference"><i class="fa fa-check"></i><b>6.3.4</b> The mean difference</a></li>
 <li class="chapter" data-level="6.3.5" data-path="t-tests.html"><a href="t-tests.html#calculate-t"><i class="fa fa-check"></i><b>6.3.5</b> Calculate t</a></li>
 <li class="chapter" data-level="6.3.6" data-path="t-tests.html"><a href="t-tests.html#interpreting-ts"><i class="fa fa-check"></i><b>6.3.6</b> Interpreting ts</a></li>
@@ -396,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.6.2" data-path="t-tests.html"><a href="t-tests.html#simulating-a-paired-samples-t-test"><i class="fa fa-check"></i><b>6.6.2</b> Simulating a paired samples t-test</a></li>
 <li class="chapter" data-level="6.6.3" data-path="t-tests.html"><a href="t-tests.html#simulating-an-independent-samples-t.test"><i class="fa fa-check"></i><b>6.6.3</b> Simulating an independent samples t.test</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="t-tests.html"><a href="t-tests.html#videos-4"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
+<li class="chapter" data-level="6.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
 <li class="chapter" data-level="6.7.1" data-path="t-tests.html"><a href="t-tests.html#one-or-two-tailed-tests"><i class="fa fa-check"></i><b>6.7.1</b> One or Two tailed tests</a></li>
 </ul></li>
 </ul></li>
@@ -407,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2.2" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>7.2.2</b> SS Total</a></li>
 <li class="chapter" data-level="7.2.3" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>7.2.3</b> SS Effect</a></li>
 <li class="chapter" data-level="7.2.4" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>7.2.4</b> SS Error</a></li>
-<li class="chapter" data-level="7.2.5" data-path="anova.html"><a href="anova.html#degrees-of-freedom-1"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
+<li class="chapter" data-level="7.2.5" data-path="t-tests.html"><a href="t-tests.html#degrees-of-freedom"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
 <li class="chapter" data-level="7.2.6" data-path="anova.html"><a href="anova.html#mean-squared-error"><i class="fa fa-check"></i><b>7.2.6</b> Mean Squared Error</a></li>
 <li class="chapter" data-level="7.2.7" data-path="anova.html"><a href="anova.html#calculate-f"><i class="fa fa-check"></i><b>7.2.7</b> Calculate F</a></li>
 <li class="chapter" data-level="7.2.8" data-path="anova.html"><a href="anova.html#the-anova-table"><i class="fa fa-check"></i><b>7.2.8</b> The ANOVA TABLE</a></li>
@@ -426,8 +406,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-design"><i class="fa fa-check"></i><b>8.1</b> Repeated measures design</a></li>
 <li class="chapter" data-level="8.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#partioning-the-sums-of-squares"><i class="fa fa-check"></i><b>8.2</b> Partioning the Sums of Squares</a></li>
 <li class="chapter" data-level="8.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#calculating-the-rm-anova"><i class="fa fa-check"></i><b>8.3</b> Calculating the RM ANOVA</a><ul>
-<li class="chapter" data-level="8.3.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-total-1"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
-<li class="chapter" data-level="8.3.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-effect-1"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
+<li class="chapter" data-level="8.3.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
+<li class="chapter" data-level="8.3.2" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
 <li class="chapter" data-level="8.3.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-within-conditions"><i class="fa fa-check"></i><b>8.3.3</b> SS Error (within-conditions)</a></li>
 <li class="chapter" data-level="8.3.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-subjects"><i class="fa fa-check"></i><b>8.3.4</b> SS Subjects</a></li>
 <li class="chapter" data-level="8.3.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-left-over"><i class="fa fa-check"></i><b>8.3.5</b> SS Error (left-over)</a></li>
@@ -441,7 +421,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.4.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-designs-are-more-sensitive"><i class="fa fa-check"></i><b>8.4.2</b> repeated measures designs are more sensitive</a></li>
 </ul></li>
 <li class="chapter" data-level="8.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>8.5</b> Real Data</a></li>
-<li class="chapter" data-level="8.6" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#summary-3"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
+<li class="chapter" data-level="8.6" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>9</b> Factorial ANOVA</a><ul>
 <li class="chapter" data-level="9.1" data-path="factorial-anova.html"><a href="factorial-anova.html#factorial-basics"><i class="fa fa-check"></i><b>9.1</b> Factorial basics</a><ul>
@@ -469,15 +449,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5.8" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-repeated-measures-anova"><i class="fa fa-check"></i><b>9.5.8</b> 2x2 Repeated Measures ANOVA</a></li>
 </ul></li>
 <li class="chapter" data-level="9.6" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-between-subjects-anova"><i class="fa fa-check"></i><b>9.6</b> 2x2 Between-subjects ANOVA</a><ul>
-<li class="chapter" data-level="9.6.1" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-total-2"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
+<li class="chapter" data-level="9.6.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
 <li class="chapter" data-level="9.6.2" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction"><i class="fa fa-check"></i><b>9.6.2</b> SS Distraction</a></li>
 <li class="chapter" data-level="9.6.3" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-reward"><i class="fa fa-check"></i><b>9.6.3</b> SS Reward</a></li>
 <li class="chapter" data-level="9.6.4" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction-by-reward"><i class="fa fa-check"></i><b>9.6.4</b> SS Distraction by Reward</a></li>
-<li class="chapter" data-level="9.6.5" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-error-1"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
+<li class="chapter" data-level="9.6.5" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
 <li class="chapter" data-level="9.6.6" data-path="factorial-anova.html"><a href="factorial-anova.html#check-your-work"><i class="fa fa-check"></i><b>9.6.6</b> Check your work</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="factorial-anova.html"><a href="factorial-anova.html#fireside-chat"><i class="fa fa-check"></i><b>9.7</b> Fireside chat</a></li>
-<li class="chapter" data-level="9.8" data-path="factorial-anova.html"><a href="factorial-anova.html#real-data-1"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
+<li class="chapter" data-level="9.8" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
 <li class="chapter" data-level="9.8.1" data-path="factorial-anova.html"><a href="factorial-anova.html#stand-at-attention"><i class="fa fa-check"></i><b>9.8.1</b> Stand at attention</a></li>
 <li class="chapter" data-level="9.8.2" data-path="factorial-anova.html"><a href="factorial-anova.html#plot-the-data"><i class="fa fa-check"></i><b>9.8.2</b> Plot the data</a></li>
 <li class="chapter" data-level="9.8.3" data-path="factorial-anova.html"><a href="factorial-anova.html#conduct-the-anova"><i class="fa fa-check"></i><b>9.8.3</b> Conduct the ANOVA</a></li>
@@ -490,7 +470,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="10" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html"><i class="fa fa-check"></i><b>10</b> More On Factorial Designs</a><ul>
 <li class="chapter" data-level="10.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#looking-at-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.1</b> Looking at main effects and interactions</a><ul>
-<li class="chapter" data-level="10.1.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#x2-designs-1"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
+<li class="chapter" data-level="10.1.1" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-designs"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
 </ul></li>
 <li class="chapter" data-level="10.2" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#interpreting-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.2</b> Interpreting main effects and interactions</a><ul>
 <li class="chapter" data-level="10.2.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#a-consistent-main-effect-and-an-interaction"><i class="fa fa-check"></i><b>10.2.1</b> A consistent main effect and an interaction</a></li>
@@ -569,7 +549,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Answering questions with data</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Quantitative Research Methods &amp; Analysis</a>
           </h1>
         </div>
 
@@ -712,7 +692,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Whoa, hold on a minute. Haven’t we switched back to talking about a <strong>between-subjects</strong> ANOVA. YES! Then why are we using the word <strong>within</strong>, what does that mean? YES! We think this is very confusing for people. Here the word <strong>within</strong> has a special meaning. It <strong>does not</strong> refer to a within-subjects design. Let’s explain. First, <span class="math inline">\(SS_\text{Between}\)</span> (which we have been calling <span class="math inline">\(SS_\text{Effect}\)</span>) refers to variation <strong>between</strong> the group means, that’s why it is called <span class="math inline">\(SS_\text{Between}\)</span>. Second, and most important, <span class="math inline">\(SS_\text{Within}\)</span> (which we have been calling <span class="math inline">\(SS_\text{Error}\)</span>), refers to the leftover variation within each group mean. Specifically, it is the variation between each group mean and each score in the group. “AAGGH, you’ve just used the word between to describe within group variation!”. Yes! We feel your pain. Remember, for each group mean, every score is probably off a little bit from the mean. So, the scores within each group have some variation. This is the within group variation, and it is why the leftover error that we can’t explain is often called <span class="math inline">\(SS_\text{Within}\)</span>.</p>
 <p>OK. So why did we introduce this new confusing way of talking about things? Why can’t we just use <span class="math inline">\(SS_\text{Error}\)</span> to talk about this instead of <span class="math inline">\(SS_\text{Within}\)</span>, which you might (we do) find confusing. We’re getting there, but perhaps a picture will help to clear things up.</p>
 <div class="figure"><span id="fig:8splitSS"></span>
-<img src="figures/SS_ANOVA.png" alt="Illustration showing how the total sums of squares are partitioned differently for a between versus repeated-measures design" width="760" />
+<img src="figures/SS_ANOVA.png" alt="Illustration showing how the total sums of squares are partitioned differently for a between versus repeated-measures design"  />
 <p class="caption">
 Figure 8.1: Illustration showing how the total sums of squares are partitioned differently for a between versus repeated-measures design
 </p>
@@ -723,7 +703,7 @@ Figure 8.1: Illustration showing how the total sums of squares are partitioned d
 <p>The critical feature of the repeated-measures ANOVA, is that the <span class="math inline">\(SS_\text{Error}\)</span> that we will later use to compute the MSE in the denominator for the <span class="math inline">\(F\)</span>-value, is smaller in a repeated-measures design, compared to a between subjects design. This is because the <span class="math inline">\(SS_\text{Error (within-groups)}\)</span> is split into two parts, <span class="math inline">\(SS_\text{Subjects (error variation about the subject mean)}\)</span> and <span class="math inline">\(SS_\text{Error (left-over variation we can&#39;t explain)}\)</span>.</p>
 <p>To make this more clear, we made another figure:</p>
 <div class="figure"><span id="fig:8moresplit"></span>
-<img src="figures/SS_RMANOVA.png" alt="Close-up showing that the Error term is split into two parts in the repeated measures design" width="610" />
+<img src="figures/SS_RMANOVA.png" alt="Close-up showing that the Error term is split into two parts in the repeated measures design"  />
 <p class="caption">
 Figure 8.2: Close-up showing that the Error term is split into two parts in the repeated measures design
 </p>
@@ -734,13 +714,13 @@ Figure 8.2: Close-up showing that the Error term is split into two parts in the 
 <h2><span class="header-section-number">8.3</span> Calculating the RM ANOVA</h2>
 <p>Now that you are familiar with the concept of an ANOVA table (remember the table from last chapter where we reported all of the parts to calculate the <span class="math inline">\(F\)</span>-value?), we can take a look at the things we need to find out to make the ANOVA table. The figure below presents an abstract for the repeated-measures ANOVA table. It shows us all the thing we need to calculate to get the <span class="math inline">\(F\)</span>-value for our data.</p>
 <div class="figure"><span id="fig:8rmtable"></span>
-<img src="figures/RMANOVA_table.png" alt="Equations for computing the ANOVA table for a repeated measures design" width="707" />
+<img src="figures/RMANOVA_table.png" alt="Equations for computing the ANOVA table for a repeated measures design"  />
 <p class="caption">
 Figure 8.3: Equations for computing the ANOVA table for a repeated measures design
 </p>
 </div>
 <p>So, what we need to do is calculate all the <span class="math inline">\(SS\)</span>es that we did before for the between-subjects ANOVA. That means the next three steps are identical to the ones you did before. In fact, I will just basically copy the next three steps to find <span class="math inline">\(SS_\text{TOTAL}\)</span>, <span class="math inline">\(SS_\text{Effect}\)</span> , and <span class="math inline">\(SS_\text{Error (within-conditions)}\)</span>. After that we will talk about splitting up <span class="math inline">\(SS_\text{Error (within-conditions)}\)</span> into two parts, this is the new thing for this chapter. Here we go!</p>
-<div id="ss-total-1" class="section level3">
+<div id="ss-total" class="section level3">
 <h3><span class="header-section-number">8.3.1</span> SS Total</h3>
 <p>The total sums of squares, or <span class="math inline">\(SS\text{Total}\)</span> measures the total variation in a set of data. All we do is find the difference between each score and the grand mean, then we square the differences and add them all up.</p>
 <table>
@@ -841,7 +821,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 <p><span class="math inline">\(SS_\text{total} = 302\)</span> and</p>
 <p><span class="math inline">\(302 = SS_\text{Effect} + SS_\text{Error}\)</span></p>
 </div>
-<div id="ss-effect-1" class="section level3">
+<div id="ss-effect" class="section level3">
 <h3><span class="header-section-number">8.3.2</span> SS Effect</h3>
 <p><span class="math inline">\(SS_\text{Total}\)</span> gave us a number representing all of the change in our data, how they all are different from the grand mean.</p>
 <p>What we want to do next is estimate how much of the total change in the data might be due to the experimental manipulation. For example, if we ran an experiment that causes causes change in the measurement, then the means for each group will be different from other, and the scores in each group will be different from each. As a result, the manipulation forces change onto the numbers, and this will naturally mean that some part of the total variation in the numbers is caused by the manipulation.</p>
@@ -1186,7 +1166,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 <table>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="right">Df</th>
 <th align="right">Sum Sq</th>
 <th align="right">Mean Sq</th>
@@ -1196,7 +1176,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 </thead>
 <tbody>
 <tr class="odd">
-<td>Residuals</td>
+<td align="left">Residuals</td>
 <td align="right">2</td>
 <td align="right">52.66667</td>
 <td align="right">26.33333</td>
@@ -1204,7 +1184,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 <td align="right">NA</td>
 </tr>
 <tr class="even">
-<td>conditions</td>
+<td align="left">conditions</td>
 <td align="right">2</td>
 <td align="right">72.00000</td>
 <td align="right">36.00000</td>
@@ -1212,7 +1192,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 <td align="right">0.505848</td>
 </tr>
 <tr class="odd">
-<td>Residuals</td>
+<td align="left">Residuals</td>
 <td align="right">4</td>
 <td align="right">177.33333</td>
 <td align="right">44.33333</td>
@@ -1245,7 +1225,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 <table>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="right">Df</th>
 <th align="right">Sum Sq</th>
 <th align="right">Mean Sq</th>
@@ -1255,7 +1235,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 </thead>
 <tbody>
 <tr class="odd">
-<td>Residuals</td>
+<td align="left">Residuals</td>
 <td align="right">2</td>
 <td align="right">52.66667</td>
 <td align="right">26.33333</td>
@@ -1263,7 +1243,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 <td align="right">NA</td>
 </tr>
 <tr class="even">
-<td>conditions</td>
+<td align="left">conditions</td>
 <td align="right">2</td>
 <td align="right">72.00000</td>
 <td align="right">36.00000</td>
@@ -1271,7 +1251,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 <td align="right">0.505848</td>
 </tr>
 <tr class="odd">
-<td>Residuals</td>
+<td align="left">Residuals</td>
 <td align="right">4</td>
 <td align="right">177.33333</td>
 <td align="right">44.33333</td>
@@ -1302,7 +1282,7 @@ Figure 8.3: Equations for computing the ANOVA table for a repeated measures desi
 </ol>
 <p>We run 1000 simulated experiments for each design. We calculate the <span class="math inline">\(F\)</span> for each experiment, for both the between and repeated measures designs. Here are the two sampling distributions of <span class="math inline">\(F\)</span> for both designs.</p>
 <div class="figure"><span id="fig:8critcompare"></span>
-<img src="statistics_files/figure-html/8critcompare-1.png" alt="Comparing critical F values for a between and repeated measures design" width="672" />
+<img src="quantrma_files/figure-html/8critcompare-1.png" alt="Comparing critical F values for a between and repeated measures design" width="672" />
 <p class="caption">
 Figure 8.4: Comparing critical F values for a between and repeated measures design
 </p>
@@ -1319,24 +1299,24 @@ Figure 8.4: Comparing critical F values for a between and repeated measures desi
 <p>With a real difference in the means, we should now reject the hypothesis of no differences more often. We should find <span class="math inline">\(F\)</span> values larger than the critical value more often. And, we should find <span class="math inline">\(p\)</span>-values for each experiment that are smaller than .05 more often, those should occur more than 5% of the time.</p>
 <p>To look at this we conduct 1000 experiments for each design, we conduct the ANOVA, then we save the <span class="math inline">\(p\)</span>-value we obtained for each experiment. This is like asking how many times will we find a <span class="math inline">\(p\)</span>-value less than 0.05, when there is a real difference (in this case an average of 5) between some of the means. We will plot histograms of the <span class="math inline">\(p\)</span>-values:</p>
 <div class="figure"><span id="fig:8fpvaluedist"></span>
-<img src="statistics_files/figure-html/8fpvaluedist-1.png" alt="p-value distributions for a between and within-subjects ANOVA" width="672" />
+<img src="quantrma_files/figure-html/8fpvaluedist-1.png" alt="p-value distributions for a between and within-subjects ANOVA" width="672" />
 <p class="caption">
 Figure 8.5: p-value distributions for a between and within-subjects ANOVA
 </p>
 </div>
 <p>Here we have two distributions of observed p-values for the simulations. The red line shows the location of 0.05. Overall, we can see that for both designs, we got a full range of <span class="math inline">\(p\)</span>-values from 0 to 1. This means that many times we would not have rejected the hypothesis of no differences (even though we know there is a small difference). We would have rejected the null every time the <span class="math inline">\(p\)</span>-value was less than 0.05.</p>
-<p>For the between subject design, there were 599 experiments with a <span class="math inline">\(p\)</span> less than 0.05, or 0.599 of experiments were “significant”, with alpha=.05.</p>
-<p>For the within subject design, there were 570 experiments with a <span class="math inline">\(p\)</span> less than 0.05, or 0.57 of experiments were “significant”, with alpha=.05.</p>
+<p>For the between subject design, there were 579 experiments with a <span class="math inline">\(p\)</span> less than 0.05, or 0.579 of experiments were “significant”, with alpha=.05.</p>
+<p>For the within subject design, there were 552 experiments with a <span class="math inline">\(p\)</span> less than 0.05, or 0.552 of experiments were “significant”, with alpha=.05.</p>
 <p>OK, well, you still might not be impressed. In this case, the between-subjects design detected the true effect slightly more often than the repeated measures design. Both them were right around 55% of the time. Based on this, we could say the two designs are pretty comparable in their sensitivity, or ability to detect a true difference when there is one.</p>
 <p>However, remember that the between-subjects design uses 30 subjects, and the repeated measures design only uses 10. We had to make a big investment to get our 30 subjects. And, we’re kind of unfairly comparing the between design (which is more sensitive because it has more subjects) with the repeated measures design that has fewer subjects.</p>
 <p>What do you think would happen if we ran 30 subjects in the repeated measures design? Let’s find out. Here we redo the above, but this time only for the repeated measures design. We increase <span class="math inline">\(N\)</span> from 10 to 30.</p>
 <div class="figure"><span id="fig:8pdistwithin"></span>
-<img src="statistics_files/figure-html/8pdistwithin-1.png" alt="p-value distribution for within-subjects design with n= 30" width="672" />
+<img src="quantrma_files/figure-html/8pdistwithin-1.png" alt="p-value distribution for within-subjects design with n= 30" width="672" />
 <p class="caption">
 Figure 8.6: p-value distribution for within-subjects design with n= 30
 </p>
 </div>
-<p>Wowsers! Look at that. When we ran 30 subjects in the repeated measures design almost all of the <span class="math inline">\(p\)</span>-values were less than .05. There were 982 experiments with a <span class="math inline">\(p\)</span> less than 0.05, or 0.982 of experiments were “significant”, with alpha=.05. That’s huge! If we ran the repeated measures design, we would almost always detect the true difference when it is there. This is why the repeated measures design can be more sensitive than the between-subjects design.</p>
+<p>Wowsers! Look at that. When we ran 30 subjects in the repeated measures design almost all of the <span class="math inline">\(p\)</span>-values were less than .05. There were 973 experiments with a <span class="math inline">\(p\)</span> less than 0.05, or 0.973 of experiments were “significant”, with alpha=.05. That’s huge! If we ran the repeated measures design, we would almost always detect the true difference when it is there. This is why the repeated measures design can be more sensitive than the between-subjects design.</p>
 </div>
 </div>
 <div id="real-data" class="section level2">
@@ -1346,7 +1326,7 @@ Figure 8.6: p-value distribution for within-subjects design with n= 30
 <p>From prior work we knew that people type words way faster than than random letters, but if you made the random letters a little bit more English-like, then people type those letter strings a little bit faster, but not as slow as random string.</p>
 <p>In the study, 38 participants sat in front of a computer and typed 5 letter strings one at a time. Sometimes the 5 letter made a word (Normal condition, TRUCK), sometimes they were completely random (Random Condition, JWYFG), and sometimes they followed patterns like you find in English (Bigram Condition, QUEND), but were not actual words. So, the independent variable for the typing material had three levels. We measured every single keystroke that participants made. This gave us a few different dependent measures. Let’s take a look a the reaction times. This is how long it took for participants to start typing the first letter in the string.</p>
 <div class="figure"><span id="fig:8behmcrump"></span>
-<img src="statistics_files/figure-html/8behmcrump-1.png" alt="Results from Behmer &amp; Crump (2017)" width="672" />
+<img src="quantrma_files/figure-html/8behmcrump-1.png" alt="Results from Behmer &amp; Crump (2017)" width="672" />
 <p class="caption">
 Figure 8.7: Results from Behmer &amp; Crump (2017)
 </p>
@@ -1360,7 +1340,7 @@ Figure 8.7: Results from Behmer &amp; Crump (2017)
 <table>
 <thead>
 <tr class="header">
-<th></th>
+<th align="left"></th>
 <th align="right">Df</th>
 <th align="right">Sum Sq</th>
 <th align="right">Mean Sq</th>
@@ -1370,7 +1350,7 @@ Figure 8.7: Results from Behmer &amp; Crump (2017)
 </thead>
 <tbody>
 <tr class="odd">
-<td>Residuals</td>
+<td align="left">Residuals</td>
 <td align="right">37</td>
 <td align="right">2452611.9</td>
 <td align="right">66286.808</td>
@@ -1378,7 +1358,7 @@ Figure 8.7: Results from Behmer &amp; Crump (2017)
 <td align="right">NA</td>
 </tr>
 <tr class="even">
-<td>Stimulus</td>
+<td align="left">Stimulus</td>
 <td align="right">2</td>
 <td align="right">1424914.0</td>
 <td align="right">712457.010</td>
@@ -1386,7 +1366,7 @@ Figure 8.7: Results from Behmer &amp; Crump (2017)
 <td align="right">0</td>
 </tr>
 <tr class="odd">
-<td>Residuals1</td>
+<td align="left">Residuals1</td>
 <td align="right">74</td>
 <td align="right">223649.4</td>
 <td align="right">3022.289</td>
@@ -1398,7 +1378,7 @@ Figure 8.7: Results from Behmer &amp; Crump (2017)
 <p>Alright, we might report the results like this. There was a significant main effect of Stimulus type, F(2, 74) = 235.73, MSE = 3022.289, p &lt; 0.001.</p>
 <p>Notice a couple things. First, this is a huge <span class="math inline">\(F\)</span>-value. It’s 253! Notice also that the p-value is listed as 0. That doesn’t mean there is zero chance of getting an F-value this big under the null. This is a rounding error. The true p-value is 0.00000000000000… The zeros keep going for a while. This means there is only a vanishingly small probability that these differences could have been produced by sampling error. So, we reject the idea that the differences between our means could be explained by chance. Instead, we are pretty confident, based on this evidence and and previous work showing the same thing, that our experimental manipulation caused the difference. In other words, people really do type normal words faster than random letters, and they type English-like strings somewhere in the middle in terms of speed.</p>
 </div>
-<div id="summary-3" class="section level2">
+<div id="summary" class="section level2">
 <h2><span class="header-section-number">8.6</span> Summary</h2>
 <p>In this chapter you were introduced to the repeated-measures ANOVA. This analyis is appropriate for within-subjects or repeated measures designs. The main difference between the independent factor ANOVA and the repeated measures ANOVA, is the ability to partial out variance due to the individual subject means. This can often result in the repeated-measures ANOVA being more sensitive to true effects than the between-subjects ANOVA.</p>
 
@@ -1435,12 +1415,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -1455,7 +1434,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["statistics.pdf"],
+"view": {
+"link": null,
+"text": null
+},
+"download": ["quantrma.pdf"],
 "toc": {
 "collapse": "subsection"
 }

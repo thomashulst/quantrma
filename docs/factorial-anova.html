@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 9 Factorial ANOVA | Answering questions with data</title>
-  <meta name="description" content="An introductory statistics textbook for psychology students" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <title>Chapter 9 Factorial ANOVA | Quantitative Research Methods &amp; Analysis</title>
+  <meta name="description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 9 Factorial ANOVA | Answering questions with data" />
+  <meta property="og:title" content="Chapter 9 Factorial ANOVA | Quantitative Research Methods &amp; Analysis" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="An introductory statistics textbook for psychology students" />
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 9 Factorial ANOVA | Answering questions with data" />
+  <meta name="twitter:title" content="Chapter 9 Factorial ANOVA | Quantitative Research Methods &amp; Analysis" />
   
-  <meta name="twitter:description" content="An introductory statistics textbook for psychology students" />
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
   
 
+<meta name="author" content="Adapted for use at EUC by Thomas Hulst" />
 <meta name="author" content="Lead Author: Matthew J. C. Crump" />
 <meta name="author" content="Chapters 2 and 4 adapted from Navarro, D." />
 <meta name="author" content="Videos: Jeffrey Suzuki" />
@@ -51,21 +52,9 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-79429674-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-79429674-3');
-</script>
-
-
-<script type="text/javascript">
-mattcrump=1;
-</script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -151,17 +140,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i><b>0.1</b> Important notes</a><ul>
-<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#textbook"><i class="fa fa-check"></i><b>0.1.1</b> Textbook</a></li>
-<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#lab-manual"><i class="fa fa-check"></i><b>0.1.2</b> Lab Manual</a></li>
-<li class="chapter" data-level="0.1.3" data-path="index.html"><a href="index.html#course-website"><i class="fa fa-check"></i><b>0.1.3</b> Course website</a></li>
-<li class="chapter" data-level="0.1.4" data-path="index.html"><a href="index.html#contributors"><i class="fa fa-check"></i><b>0.1.4</b> Contributors</a></li>
-<li class="chapter" data-level="0.1.5" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.5</b> Attributions</a></li>
-<li class="chapter" data-level="0.1.6" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.6</b> CC BY-SA 4.0 license</a></li>
-</ul></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#copying-the-textbook"><i class="fa fa-check"></i><b>0.2</b> Copying the textbook</a><ul>
-<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#acknowledgments"><i class="fa fa-check"></i><b>0.2.1</b> Acknowledgments</a></li>
-<li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#why-we-did-this"><i class="fa fa-check"></i><b>0.2.2</b> Why we did this</a></li>
-<li class="chapter" data-level="0.2.3" data-path="index.html"><a href="index.html#hypothes.is"><i class="fa fa-check"></i><b>0.2.3</b> Hypothes.is</a></li>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i><b>0.1.1</b> Attributions</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i><b>0.1.2</b> CC BY-SA 4.0 license</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="why-statistics.html"><a href="why-statistics.html"><i class="fa fa-check"></i><b>1</b> Why Statistics?</a><ul>
@@ -247,7 +227,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.8.1" data-path="DescribingData.html"><a href="DescribingData.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.8.1</b> Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="2.8.2" data-path="DescribingData.html"><a href="DescribingData.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.8.2</b> Datasaurus Dozen</a></li>
 </ul></li>
-<li class="chapter" data-level="2.9" data-path="DescribingData.html"><a href="DescribingData.html#videos-1"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
+<li class="chapter" data-level="2.9" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>2.9</b> Videos</a><ul>
 <li class="chapter" data-level="2.9.1" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-mode"><i class="fa fa-check"></i><b>2.9.1</b> Measures of center: Mode</a></li>
 <li class="chapter" data-level="2.9.2" data-path="DescribingData.html"><a href="DescribingData.html#measures-of-center-median-and-mean"><i class="fa fa-check"></i><b>2.9.2</b> Measures of center: Median and Mean</a></li>
 <li class="chapter" data-level="2.9.3" data-path="DescribingData.html"><a href="DescribingData.html#standard-deviation-part-i"><i class="fa fa-check"></i><b>2.9.3</b> Standard deviation part I</a></li>
@@ -278,7 +258,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.6.2" data-path="Correlation.html"><a href="Correlation.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>3.6.2</b> Correlation and Random chance</a></li>
 <li class="chapter" data-level="3.6.3" data-path="Correlation.html"><a href="Correlation.html#some-more-movies"><i class="fa fa-check"></i><b>3.6.3</b> Some more movies</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="Correlation.html"><a href="Correlation.html#summary-1"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
+<li class="chapter" data-level="3.7" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>3.7</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html"><i class="fa fa-check"></i><b>4</b> Probability, Sampling, and Estimation</a><ul>
 <li class="chapter" data-level="4.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.1</b> How are probability and statistics different?</a></li>
@@ -328,8 +308,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.14" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#estimating-a-confidence-interval"><i class="fa fa-check"></i><b>4.14</b> Estimating a confidence interval</a><ul>
 <li class="chapter" data-level="4.14.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>4.14.1</b> A slight mistake in the formula</a></li>
 </ul></li>
-<li class="chapter" data-level="4.15" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#summary-2"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
-<li class="chapter" data-level="4.16" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#videos-2"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
+<li class="chapter" data-level="4.15" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>4.15</b> Summary</a></li>
+<li class="chapter" data-level="4.16" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>4.16</b> Videos</a><ul>
 <li class="chapter" data-level="4.16.1" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#introduction-to-probability"><i class="fa fa-check"></i><b>4.16.1</b> Introduction to Probability</a></li>
 <li class="chapter" data-level="4.16.2" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#chebychevs-theorem"><i class="fa fa-check"></i><b>4.16.2</b> Chebychev’s Theorem</a></li>
 <li class="chapter" data-level="4.16.3" data-path="probability-sampling-and-estimation.html"><a href="probability-sampling-and-estimation.html#z-scores-1"><i class="fa fa-check"></i><b>4.16.3</b> Z-scores</a></li>
@@ -362,7 +342,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#pretend-example-does-chewing-gum-improve-your-grades"><i class="fa fa-check"></i><b>5.6.1</b> Pretend example does chewing gum improve your grades?</a></li>
 <li class="chapter" data-level="5.6.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#take-homes-so-far"><i class="fa fa-check"></i><b>5.6.2</b> Take homes so far</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#videos-3"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
+<li class="chapter" data-level="5.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>5.7</b> Videos</a><ul>
 <li class="chapter" data-level="5.7.1" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#null-and-alternate-hypotheses"><i class="fa fa-check"></i><b>5.7.1</b> Null and Alternate Hypotheses</a></li>
 <li class="chapter" data-level="5.7.2" data-path="foundations-for-inference.html"><a href="foundations-for-inference.html#types-of-errors"><i class="fa fa-check"></i><b>5.7.2</b> Types of Errors</a></li>
 </ul></li>
@@ -379,7 +359,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.3" data-path="t-tests.html"><a href="t-tests.html#paired-samples-t-test"><i class="fa fa-check"></i><b>6.3</b> Paired-samples t-test</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="t-tests.html"><a href="t-tests.html#mehr-song-and-spelke-2016"><i class="fa fa-check"></i><b>6.3.1</b> Mehr, Song, and Spelke (2016)</a></li>
 <li class="chapter" data-level="6.3.2" data-path="t-tests.html"><a href="t-tests.html#the-data"><i class="fa fa-check"></i><b>6.3.2</b> The data</a></li>
-<li class="chapter" data-level="6.3.3" data-path="t-tests.html"><a href="t-tests.html#the-difference-scores-1"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
+<li class="chapter" data-level="6.3.3" data-path="DescribingData.html"><a href="DescribingData.html#the-difference-scores"><i class="fa fa-check"></i><b>6.3.3</b> The difference scores</a></li>
 <li class="chapter" data-level="6.3.4" data-path="t-tests.html"><a href="t-tests.html#the-mean-difference"><i class="fa fa-check"></i><b>6.3.4</b> The mean difference</a></li>
 <li class="chapter" data-level="6.3.5" data-path="t-tests.html"><a href="t-tests.html#calculate-t"><i class="fa fa-check"></i><b>6.3.5</b> Calculate t</a></li>
 <li class="chapter" data-level="6.3.6" data-path="t-tests.html"><a href="t-tests.html#interpreting-ts"><i class="fa fa-check"></i><b>6.3.6</b> Interpreting ts</a></li>
@@ -396,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.6.2" data-path="t-tests.html"><a href="t-tests.html#simulating-a-paired-samples-t-test"><i class="fa fa-check"></i><b>6.6.2</b> Simulating a paired samples t-test</a></li>
 <li class="chapter" data-level="6.6.3" data-path="t-tests.html"><a href="t-tests.html#simulating-an-independent-samples-t.test"><i class="fa fa-check"></i><b>6.6.3</b> Simulating an independent samples t.test</a></li>
 </ul></li>
-<li class="chapter" data-level="6.7" data-path="t-tests.html"><a href="t-tests.html#videos-4"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
+<li class="chapter" data-level="6.7" data-path="why-statistics.html"><a href="why-statistics.html#videos"><i class="fa fa-check"></i><b>6.7</b> Videos</a><ul>
 <li class="chapter" data-level="6.7.1" data-path="t-tests.html"><a href="t-tests.html#one-or-two-tailed-tests"><i class="fa fa-check"></i><b>6.7.1</b> One or Two tailed tests</a></li>
 </ul></li>
 </ul></li>
@@ -407,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2.2" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>7.2.2</b> SS Total</a></li>
 <li class="chapter" data-level="7.2.3" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>7.2.3</b> SS Effect</a></li>
 <li class="chapter" data-level="7.2.4" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>7.2.4</b> SS Error</a></li>
-<li class="chapter" data-level="7.2.5" data-path="anova.html"><a href="anova.html#degrees-of-freedom-1"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
+<li class="chapter" data-level="7.2.5" data-path="t-tests.html"><a href="t-tests.html#degrees-of-freedom"><i class="fa fa-check"></i><b>7.2.5</b> Degrees of freedom</a></li>
 <li class="chapter" data-level="7.2.6" data-path="anova.html"><a href="anova.html#mean-squared-error"><i class="fa fa-check"></i><b>7.2.6</b> Mean Squared Error</a></li>
 <li class="chapter" data-level="7.2.7" data-path="anova.html"><a href="anova.html#calculate-f"><i class="fa fa-check"></i><b>7.2.7</b> Calculate F</a></li>
 <li class="chapter" data-level="7.2.8" data-path="anova.html"><a href="anova.html#the-anova-table"><i class="fa fa-check"></i><b>7.2.8</b> The ANOVA TABLE</a></li>
@@ -426,8 +406,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-design"><i class="fa fa-check"></i><b>8.1</b> Repeated measures design</a></li>
 <li class="chapter" data-level="8.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#partioning-the-sums-of-squares"><i class="fa fa-check"></i><b>8.2</b> Partioning the Sums of Squares</a></li>
 <li class="chapter" data-level="8.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#calculating-the-rm-anova"><i class="fa fa-check"></i><b>8.3</b> Calculating the RM ANOVA</a><ul>
-<li class="chapter" data-level="8.3.1" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-total-1"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
-<li class="chapter" data-level="8.3.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-effect-1"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
+<li class="chapter" data-level="8.3.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>8.3.1</b> SS Total</a></li>
+<li class="chapter" data-level="8.3.2" data-path="anova.html"><a href="anova.html#ss-effect"><i class="fa fa-check"></i><b>8.3.2</b> SS Effect</a></li>
 <li class="chapter" data-level="8.3.3" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-within-conditions"><i class="fa fa-check"></i><b>8.3.3</b> SS Error (within-conditions)</a></li>
 <li class="chapter" data-level="8.3.4" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-subjects"><i class="fa fa-check"></i><b>8.3.4</b> SS Subjects</a></li>
 <li class="chapter" data-level="8.3.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#ss-error-left-over"><i class="fa fa-check"></i><b>8.3.5</b> SS Error (left-over)</a></li>
@@ -441,7 +421,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.4.2" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#repeated-measures-designs-are-more-sensitive"><i class="fa fa-check"></i><b>8.4.2</b> repeated measures designs are more sensitive</a></li>
 </ul></li>
 <li class="chapter" data-level="8.5" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>8.5</b> Real Data</a></li>
-<li class="chapter" data-level="8.6" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#summary-3"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
+<li class="chapter" data-level="8.6" data-path="why-statistics.html"><a href="why-statistics.html#summary"><i class="fa fa-check"></i><b>8.6</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>9</b> Factorial ANOVA</a><ul>
 <li class="chapter" data-level="9.1" data-path="factorial-anova.html"><a href="factorial-anova.html#factorial-basics"><i class="fa fa-check"></i><b>9.1</b> Factorial basics</a><ul>
@@ -469,15 +449,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5.8" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-repeated-measures-anova"><i class="fa fa-check"></i><b>9.5.8</b> 2x2 Repeated Measures ANOVA</a></li>
 </ul></li>
 <li class="chapter" data-level="9.6" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-between-subjects-anova"><i class="fa fa-check"></i><b>9.6</b> 2x2 Between-subjects ANOVA</a><ul>
-<li class="chapter" data-level="9.6.1" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-total-2"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
+<li class="chapter" data-level="9.6.1" data-path="anova.html"><a href="anova.html#ss-total"><i class="fa fa-check"></i><b>9.6.1</b> SS Total</a></li>
 <li class="chapter" data-level="9.6.2" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction"><i class="fa fa-check"></i><b>9.6.2</b> SS Distraction</a></li>
 <li class="chapter" data-level="9.6.3" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-reward"><i class="fa fa-check"></i><b>9.6.3</b> SS Reward</a></li>
 <li class="chapter" data-level="9.6.4" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-distraction-by-reward"><i class="fa fa-check"></i><b>9.6.4</b> SS Distraction by Reward</a></li>
-<li class="chapter" data-level="9.6.5" data-path="factorial-anova.html"><a href="factorial-anova.html#ss-error-1"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
+<li class="chapter" data-level="9.6.5" data-path="anova.html"><a href="anova.html#ss-error"><i class="fa fa-check"></i><b>9.6.5</b> SS Error</a></li>
 <li class="chapter" data-level="9.6.6" data-path="factorial-anova.html"><a href="factorial-anova.html#check-your-work"><i class="fa fa-check"></i><b>9.6.6</b> Check your work</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="factorial-anova.html"><a href="factorial-anova.html#fireside-chat"><i class="fa fa-check"></i><b>9.7</b> Fireside chat</a></li>
-<li class="chapter" data-level="9.8" data-path="factorial-anova.html"><a href="factorial-anova.html#real-data-1"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
+<li class="chapter" data-level="9.8" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html#real-data"><i class="fa fa-check"></i><b>9.8</b> Real Data</a><ul>
 <li class="chapter" data-level="9.8.1" data-path="factorial-anova.html"><a href="factorial-anova.html#stand-at-attention"><i class="fa fa-check"></i><b>9.8.1</b> Stand at attention</a></li>
 <li class="chapter" data-level="9.8.2" data-path="factorial-anova.html"><a href="factorial-anova.html#plot-the-data"><i class="fa fa-check"></i><b>9.8.2</b> Plot the data</a></li>
 <li class="chapter" data-level="9.8.3" data-path="factorial-anova.html"><a href="factorial-anova.html#conduct-the-anova"><i class="fa fa-check"></i><b>9.8.3</b> Conduct the ANOVA</a></li>
@@ -490,7 +470,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="10" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html"><i class="fa fa-check"></i><b>10</b> More On Factorial Designs</a><ul>
 <li class="chapter" data-level="10.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#looking-at-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.1</b> Looking at main effects and interactions</a><ul>
-<li class="chapter" data-level="10.1.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#x2-designs-1"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
+<li class="chapter" data-level="10.1.1" data-path="factorial-anova.html"><a href="factorial-anova.html#x2-designs"><i class="fa fa-check"></i><b>10.1.1</b> 2x2 designs</a></li>
 </ul></li>
 <li class="chapter" data-level="10.2" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#interpreting-main-effects-and-interactions"><i class="fa fa-check"></i><b>10.2</b> Interpreting main effects and interactions</a><ul>
 <li class="chapter" data-level="10.2.1" data-path="more-on-factorial-designs.html"><a href="more-on-factorial-designs.html#a-consistent-main-effect-and-an-interaction"><i class="fa fa-check"></i><b>10.2.1</b> A consistent main effect and an interaction</a></li>
@@ -569,7 +549,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Answering questions with data</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Quantitative Research Methods &amp; Analysis</a>
           </h1>
         </div>
 
@@ -613,7 +593,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">9.1.1</span> 2x2 Designs</h3>
 <p>We’ve just started talking about a <strong>2x2 Factorial design</strong>. We said this means the IVs are crossed. To illustrate this, take a look at the following tables. We show an abstract version and a concrete version using time of day and caffeine as the two IVs, each with two levels in the design:</p>
 <div class="figure"><span id="fig:9designs"></span>
-<img src="figures/2x2Design.png" alt="Structure of 2x2 factorial designs" width="685" />
+<img src="figures/2x2Design.png" alt="Structure of 2x2 factorial designs"  />
 <p class="caption">
 Figure 9.1: Structure of 2x2 factorial designs
 </p>
@@ -636,7 +616,7 @@ Figure 9.1: Structure of 2x2 factorial designs
 <h3><span class="header-section-number">9.1.3</span> 2 x 3 designs</h3>
 <p>Just for fun, let’s illustrate a 2x3 design using the same kinds of tables we looked at before for the 2x2 design.</p>
 <div class="figure"><span id="fig:923design"></span>
-<img src="figures/2x3Design.png" alt="Structure of 2x3 factorial design" width="687" />
+<img src="figures/2x3Design.png" alt="Structure of 2x3 factorial design"  />
 <p class="caption">
 Figure 9.2: Structure of 2x3 factorial design
 </p>
@@ -665,7 +645,7 @@ Figure 9.2: Structure of 2x3 factorial design
 <h3><span class="header-section-number">9.2.2</span> Spot the difference</h3>
 <p>Let’s elaborate this with another fake example. First, we pick a task. It’s called <strong>spot the difference</strong>. You may have played this game before. You look at two pictures side-by-side, and then you locate as many differences as you can find. here is an example:</p>
 <div class="figure"><span id="fig:9spotdiff"></span>
-<img src="figures/spot_dif.png" alt="Spot the differences between the two images" width="375" />
+<img src="figures/spot_dif.png" alt="Spot the differences between the two images"  />
 <p class="caption">
 Figure 9.3: Spot the differences between the two images
 </p>
@@ -686,7 +666,7 @@ Figure 9.3: Spot the differences between the two images
 <p>If our distraction manipulation is super-distracting, then what should we expect to find when we compare spot-the-difference performance between the no-distraction and distraction conditions? We should find a difference!</p>
 <p>If our manipulation works, then we should find that people find more differences when they are not distracted, and less differences when they are distracted. For example, the data might look something like this:</p>
 <div class="figure"><span id="fig:9meandiff"></span>
-<img src="statistics_files/figure-html/9meandiff-1.png" alt="Example data from pretend experiment showing number of differences spotted in a distraction versus no distraction condition" width="672" />
+<img src="quantrma_files/figure-html/9meandiff-1.png" alt="Example data from pretend experiment showing number of differences spotted in a distraction versus no distraction condition" width="672" />
 <p class="caption">
 Figure 9.4: Example data from pretend experiment showing number of differences spotted in a distraction versus no distraction condition
 </p>
@@ -702,14 +682,14 @@ Figure 9.4: Example data from pretend experiment showing number of differences s
 <p>We are going to add a second IV to our task. The second IV will manipulate reward. In one condition, people will get 5 dollars for every difference they find (so they could leave the study with lots of money if they find lots of differences). In the other condition, people will get no money, but they will still have find differences. Remember, this will be a factorial design, so everybody will have to find differences when they are distracted and when they are not distracted.</p>
 <p>The question we are now asking is: Will manipulating reward cause a change in the size of the distraction effect. We could predict that people receiving rewards will have a smaller distraction effect than people not receiving rewards. If that happened, the data would look something like this:</p>
 <div class="figure"><span id="fig:9reward"></span>
-<img src="statistics_files/figure-html/9reward-1.png" alt="Example data showing how the distraction effect could be modulated by a reward manipulation. Distraction condition plotted on the x-axis, makes it more difficult to compare the changes in the distraction effect between reward conditions" width="672" />
+<img src="quantrma_files/figure-html/9reward-1.png" alt="Example data showing how the distraction effect could be modulated by a reward manipulation. Distraction condition plotted on the x-axis, makes it more difficult to compare the changes in the distraction effect between reward conditions" width="672" />
 <p class="caption">
 Figure 9.5: Example data showing how the distraction effect could be modulated by a reward manipulation. Distraction condition plotted on the x-axis, makes it more difficult to compare the changes in the distraction effect between reward conditions
 </p>
 </div>
 <p>I’ve just shown you a new kind of graph. I apologize right now for showing this to you first. It’s more unhelpful than the next graph. What I did was keep the x-axis the same as before (to be consistent). So, we have distraction vs. no distraction on the x-axis. In the distraction condition, there are means for spot-the-difference performance in the no-reward (red), and reward (aqua) conditions. The same goes for the no-distraction condition, a red and an aqua bar for the no-reward and reward conditions. We can try to interpret this graph, but the next graph plots the same data in a different way, which makes it easier to see what we are talking about.</p>
 <div class="figure"><span id="fig:9rewardB"></span>
-<img src="statistics_files/figure-html/9rewardB-1.png" alt="Example data showing how the distraction effect could be modulated by a reward manipulation. Reward condition plotted on the x-axis, makes it easier to compare the changes in the distraction effect between reward conditions" width="672" />
+<img src="quantrma_files/figure-html/9rewardB-1.png" alt="Example data showing how the distraction effect could be modulated by a reward manipulation. Reward condition plotted on the x-axis, makes it easier to compare the changes in the distraction effect between reward conditions" width="672" />
 <p class="caption">
 Figure 9.6: Example data showing how the distraction effect could be modulated by a reward manipulation. Reward condition plotted on the x-axis, makes it easier to compare the changes in the distraction effect between reward conditions
 </p>
@@ -725,7 +705,7 @@ Figure 9.6: Example data showing how the distraction effect could be modulated b
 <h2><span class="header-section-number">9.3</span> Graphing the means</h2>
 <p>In our example above we showed you two bar graphs of the very same means for our 2x2 design. Even though the graphs plot identical means, they look different, so they are more or less easy to interpret by looking at them. Results from 2x2 designs are also often plotted with line graphs. Those look different too. Here are four different graphs, using bars and lines to plot the very same means from before. We are showing you this so that you realize <strong>how you graph your data</strong> matters, and it makes it more or less easy for people to understand the results. Also, how the data is plotted matters for what you need to look at to interpret the results.</p>
 <div class="figure"><span id="fig:9visualdiffs"></span>
-<img src="statistics_files/figure-html/9visualdiffs-1.png" alt="The same example means plotted using bar graphs or line graphs, and with Distraction or Reward on the x-axis" width="672" />
+<img src="quantrma_files/figure-html/9visualdiffs-1.png" alt="The same example means plotted using bar graphs or line graphs, and with Distraction or Reward on the x-axis" width="672" />
 <p class="caption">
 Figure 9.7: The same example means plotted using bar graphs or line graphs, and with Distraction or Reward on the x-axis
 </p>
@@ -736,7 +716,7 @@ Figure 9.7: The same example means plotted using bar graphs or line graphs, and 
 <p>When you conduct a design with more than one IV, you get more means to look at. As a result, there are more kinds of questions that you can ask of the data. Sometimes it turns out that the questions that you can ask, are not the ones that you want to ask, or have an interest in asking. Because you ran the design with more than one IV, you have the opportunity to ask these kinds of extra questions.</p>
 <p>What kinds of new things are we talking about? Let’s keep going with our distraction effect experiment. We have the first IV where we manipulated distraction. So, we could find the overall means in spot-the difference for the distraction vs. no-distraction conditions (that’s two means). The second IV was reward. We could find the overall means in spot-the-difference performance for the reward vs. no-reward conditions (that’s two more means). We could do what we already did, and look at the means for each combination, that is the mean for distraction/reward, distraction/no-reward, no-distraction/reward, and no-distraction/no-reward (that’s four more means, if you’re counting). There’s even more. We could look at the mean distraction effect (the difference between distraction and no-distraction) for the reward condition, and the mean distraction effect for the no-reward condition (that’s two more). I hope you see here that there are a lot of means to look. And they are all different means. Let’s look at all of them together in one graph with four panels.</p>
 <div class="figure"><span id="fig:9alleffects"></span>
-<img src="statistics_files/figure-html/9alleffects-1.png" alt="Each panel shows the mean for different effects in the design" width="672" />
+<img src="quantrma_files/figure-html/9alleffects-1.png" alt="Each panel shows the mean for different effects in the design" width="672" />
 <p class="caption">
 Figure 9.8: Each panel shows the mean for different effects in the design
 </p>
@@ -772,38 +752,38 @@ Figure 9.8: Each panel shows the mean for different effects in the design
 <table>
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
@@ -938,74 +918,74 @@ D
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 All Conditions
 </div>
 </th>
-<th style="border-bottom:hidden" colspan="3">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="3">
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction Means
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction Effect
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Difference
 </div>
@@ -1198,7 +1178,7 @@ Means
 <p>Now, what if we wanted to know if this main effect of distraction (the difference of 4.3) could have been caused by chance, or sampling error. You could do two things. You could run a paired samples <span class="math inline">\(t\)</span>-test between the mean no-distraction scores for each subject (column AC) and the mean distraction scores for each subject (column BD). Or, you could run a one-sample <span class="math inline">\(t\)</span>-test on the difference scores column, testing against a mean difference of 0. Either way you will get the same answer.</p>
 <p>Here’s the paired samples version:</p>
 <pre><code>## 
-##  Paired t-test
+## 	Paired t-test
 ## 
 ## data:  AC and BD
 ## t = 7.6615, df = 4, p-value = 0.00156
@@ -1210,7 +1190,7 @@ Means
 ##                     4.3</code></pre>
 <p>Here’s the one sample version:</p>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  AC - BD
 ## t = 7.6615, df = 4, p-value = 0.00156
@@ -1233,74 +1213,74 @@ Means
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 All Conditions
 </div>
 </th>
-<th style="border-bottom:hidden" colspan="3">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="3">
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward Means
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward Effect
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Difference
 </div>
@@ -1493,7 +1473,7 @@ Means
 <p>Is a difference of this size likely o unlikey due to chance? We could conduct a paired-samples <span class="math inline">\(t\)</span>-test on the AB vs. CD means, or a one-sample <span class="math inline">\(t\)</span>-test on the difference scores. They both give the same answer:</p>
 <p>Here’s the paired samples version:</p>
 <pre><code>## 
-##  Paired t-test
+## 	Paired t-test
 ## 
 ## data:  CD and AB
 ## t = 8.3742, df = 4, p-value = 0.001112
@@ -1505,7 +1485,7 @@ Means
 ##                     4.7</code></pre>
 <p>Here’s the one sample version:</p>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  CD - AB
 ## t = 8.3742, df = 4, p-value = 0.001112
@@ -1529,74 +1509,74 @@ Means
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 All Conditions
 </div>
 </th>
-<th style="border-bottom:hidden" colspan="3">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="3">
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction Effects
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Interaction Effect
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Difference
 </div>
@@ -1789,7 +1769,7 @@ Means
 <p>How can we test whether the interaction effect was likely or unlikely due to chance? We could run another paired-sample <span class="math inline">\(t\)</span>-test between the two distraction effect measures for each subject, or a one sample <span class="math inline">\(t\)</span>-test on the green column (representing the difference between the differences). Both of these <span class="math inline">\(t\)</span>-tests will give the same results:</p>
 <p>Here’s the paired samples version:</p>
 <pre><code>## 
-##  Paired t-test
+## 	Paired t-test
 ## 
 ## data:  A_B and C_D
 ## t = 2.493, df = 4, p-value = 0.06727
@@ -1801,7 +1781,7 @@ Means
 ##                     3.4</code></pre>
 <p>Here’s the one sample version:</p>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  A_B - C_D
 ## t = 2.493, df = 4, p-value = 0.06727
@@ -2006,124 +1986,124 @@ NA
 <p>Remember the logic of the ANOVA is to partition the variance into different parts. The SS formula for the between-subjects 2x2 ANOVA looks like this:</p>
 <p><span class="math inline">\(SS_\text{Total} = SS_\text{Effect IV1} + SS_\text{Effect IV2} + SS_\text{Effect IV1xIV2} + SS_\text{Error}\)</span></p>
 <p>In the following sections we use tables to show the calculation of each SS. We use the same example as before with the exception that <strong>we are turning this into a between-subjects design</strong>. There are now 5 different subjects in each condition, for a total of 20 subjects. As a result, we remove the subjects column.</p>
-<div id="ss-total-2" class="section level3">
+<div id="ss-total" class="section level3">
 <h3><span class="header-section-number">9.6.1</span> SS Total</h3>
 <p>We calculate the grand mean (mean of all of the score). Then, we calculate the differences between each score and the grand mean. We square the difference scores, and sum them up. That is <span class="math inline">\(SS_\text{Total}\)</span>, reported in the bottom yellow row.</p>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 All Conditions
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Difference from Grand Mean
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Squared Differences
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
@@ -2510,117 +2490,117 @@ SS Total
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 All Conditions
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction Mean - GM
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Squared Differences
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
@@ -3012,117 +2992,117 @@ SS Distraction
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 All Conditions
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward Mean - GM
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Squared Differences
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
@@ -3522,117 +3502,117 @@ SS Reward
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 All Conditions
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Interaction Differences
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Squared Differences
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Reward
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Reward
 </div>
 </th>
 </tr>
 <tr>
-<th style="border-bottom:hidden" colspan="1">
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 No Distraction
 </div>
 </th>
-<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
 <div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
 Distraction
 </div>
@@ -4012,7 +3992,7 @@ SS Interaction
 </table>
 </div>
 </div>
-<div id="ss-error-1" class="section level3">
+<div id="ss-error" class="section level3">
 <h3><span class="header-section-number">9.6.5</span> SS Error</h3>
 <p>The last thing we need to find is the SS Error. We can solve for that because we found everything else in this formula:</p>
 <p><span class="math inline">\(SS_\text{Total} = SS_\text{Effect IV1} + SS_\text{Effect IV2} + SS_\text{Effect IV1xIV2} + SS_\text{Error}\)</span></p>
@@ -4138,7 +4118,7 @@ NA
 <p>Here’s a couple of options. We could work through, by hand, more and more ANOVAs. Do you want to do that? I don’t, making these tables isn’t too bad, but it takes a lot of time. It’s really good to see everything that we do laid bare in the table form a few times. We’ve done that already. It’s really good for you to attempt to calculate an ANOVA by hand at least once in your life. It builds character. It helps you know that you know what you are doing, and what the ANOVA is doing. We can’t make you do this, we can only make the suggestion. If we keep doing these by hand, it is not good for us, and it is not you doing them by hand. So, what are the other options.</p>
 <p>The other options are to work at a slightly higher level. We will discuss some research designs, and the ANOVAs that are appropriate for their analysis. We will conduct the ANOVAs using R, and print out the ANOVA tables. This is what you do in the lab, and what most researchers do. They use software most of the time to make the computer do the work. Because of this, it is most important that you know what the software is doing. You can make mistakes when telling software what to do, so you need to be able to check the software’s work so you know when the software is giving you wrong answers. All of these skills are built up over time through the process of analyzing different data sets. So, for the remainder of our discussion on ANOVAs we stick to that higher level. No more monster tables of SSes. You are welcome.</p>
 </div>
-<div id="real-data-1" class="section level2">
+<div id="real-data" class="section level2">
 <h2><span class="header-section-number">9.8</span> Real Data</h2>
 <p>Let’s go through the process of looking at a 2x2 factorial design in the wild. This will be the very same data that you will analyze in the lab for factorial designs.</p>
 <div id="stand-at-attention" class="section level3">
@@ -4147,7 +4127,7 @@ NA
 <p>The paper we look at is called “Stand by your Stroop: Standing up enhances selective attention and cognitive control” <span class="citation">(Rosenbaum, Mama, and Algom <a href="#ref-rosenbaum2017stand" role="doc-biblioref">2017</a>)</span>. This paper asked whether sitting versus standing would influence a measure of selective attention, the ability to ignore distracting information.</p>
 <p>They used a classic test of selective attention, called the Stroop effect. You may already know what the Stroop effect is. In a typical Stroop experiment, subjects name the color of words as fast as they can. The trick is that sometimes the color of the word is the same as the name of the word, and sometimes it is not. Here are some examples:</p>
 <div class="figure"><span id="fig:9stroop"></span>
-<img src="figures/Stroop.png" alt="Exampls of congruent and incongruent Stroop stimuli. The task is to name the color, not the word" width="420" />
+<img src="figures/Stroop.png" alt="Exampls of congruent and incongruent Stroop stimuli. The task is to name the color, not the word"  />
 <p class="caption">
 Figure 9.9: Exampls of congruent and incongruent Stroop stimuli. The task is to name the color, not the word
 </p>
@@ -4164,7 +4144,7 @@ Figure 9.9: Exampls of congruent and incongruent Stroop stimuli. The task is to 
 <h3><span class="header-section-number">9.8.2</span> Plot the data</h3>
 <p>They had subjects perform many individual trials responding to single Stroop stimuli, both congruent and incongruent. And they had subjects stand up sometimes and do it, and sit-down sometimes and do it. Here is a graph of what they found:</p>
 <div class="figure"><span id="fig:9strp"></span>
-<img src="statistics_files/figure-html/9strp-1.png" alt="Means from Rosenbaum et al (2017)" width="672" />
+<img src="quantrma_files/figure-html/9strp-1.png" alt="Means from Rosenbaum et al (2017)" width="672" />
 <p class="caption">
 Figure 9.10: Means from Rosenbaum et al (2017)
 </p>
@@ -4176,166 +4156,71 @@ Figure 9.10: Means from Rosenbaum et al (2017)
 <p>Let’s conduct a 2x2 repeated measures ANOVA on the data to evaluate whether the differences in the means are likely or unlikely to be due to chance. The ANOVA will give us main effects for congruency and posture (the two IVs), as well as one interaction effect to evaluate (congruency X posture). Remember, the interaction effect tells us whether the congruency effect changes across the levels of the posture manipulation.</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Df
-</th>
-<th style="text-align:right;">
-Sum Sq
-</th>
-<th style="text-align:right;">
-Mean Sq
-</th>
-<th style="text-align:right;">
-F value
-</th>
-<th style="text-align:right;">
-Pr(&gt;F)
-</th>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Df</th>
+<th align="right">Sum Sq</th>
+<th align="right">Mean Sq</th>
+<th align="right">F value</th>
+<th align="right">Pr(&gt;F)</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-49
-</td>
-<td style="text-align:right;">
-2250738.636
-</td>
-<td style="text-align:right;">
-45933.4416
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
+<tr class="odd">
+<td align="left">Residuals</td>
+<td align="right">49</td>
+<td align="right">2250738.636</td>
+<td align="right">45933.4416</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Congruency
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-576821.635
-</td>
-<td style="text-align:right;">
-576821.6349
-</td>
-<td style="text-align:right;">
-342.452244
-</td>
-<td style="text-align:right;">
-0.0000000
-</td>
+<tr class="even">
+<td align="left">Congruency</td>
+<td align="right">1</td>
+<td align="right">576821.635</td>
+<td align="right">576821.6349</td>
+<td align="right">342.452244</td>
+<td align="right">0.0000000</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-49
-</td>
-<td style="text-align:right;">
-82534.895
-</td>
-<td style="text-align:right;">
-1684.3856
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
+<tr class="odd">
+<td align="left">Residuals</td>
+<td align="right">49</td>
+<td align="right">82534.895</td>
+<td align="right">1684.3856</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Posture
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-32303.453
-</td>
-<td style="text-align:right;">
-32303.4534
-</td>
-<td style="text-align:right;">
-7.329876
-</td>
-<td style="text-align:right;">
-0.0093104
-</td>
+<tr class="even">
+<td align="left">Posture</td>
+<td align="right">1</td>
+<td align="right">32303.453</td>
+<td align="right">32303.4534</td>
+<td align="right">7.329876</td>
+<td align="right">0.0093104</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Residuals1
-</td>
-<td style="text-align:right;">
-49
-</td>
-<td style="text-align:right;">
-215947.614
-</td>
-<td style="text-align:right;">
-4407.0942
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
+<tr class="odd">
+<td align="left">Residuals1</td>
+<td align="right">49</td>
+<td align="right">215947.614</td>
+<td align="right">4407.0942</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Congruency:Posture
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-6560.339
-</td>
-<td style="text-align:right;">
-6560.3389
-</td>
-<td style="text-align:right;">
-8.964444
-</td>
-<td style="text-align:right;">
-0.0043060
-</td>
+<tr class="even">
+<td align="left">Congruency:Posture</td>
+<td align="right">1</td>
+<td align="right">6560.339</td>
+<td align="right">6560.3389</td>
+<td align="right">8.964444</td>
+<td align="right">0.0043060</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Residuals
-</td>
-<td style="text-align:right;">
-49
-</td>
-<td style="text-align:right;">
-35859.069
-</td>
-<td style="text-align:right;">
-731.8177
-</td>
-<td style="text-align:right;">
-NA
-</td>
-<td style="text-align:right;">
-NA
-</td>
+<tr class="odd">
+<td align="left">Residuals</td>
+<td align="right">49</td>
+<td align="right">35859.069</td>
+<td align="right">731.8177</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 </tbody>
 </table>
@@ -4346,49 +4231,25 @@ NA
 <p>What were the overall mean differences between mean RTs in the congruent and incongruent conditions? We would have to look at thos means to find out. Here’s a table:</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-Congruency
-</th>
-<th style="text-align:right;">
-mean_rt
-</th>
-<th style="text-align:right;">
-sd
-</th>
-<th style="text-align:right;">
-SEM
-</th>
+<tr class="header">
+<th align="left">Congruency</th>
+<th align="right">mean_rt</th>
+<th align="right">sd</th>
+<th align="right">SEM</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Congruent
-</td>
-<td style="text-align:right;">
-814.9415
-</td>
-<td style="text-align:right;">
-111.3193
-</td>
-<td style="text-align:right;">
-11.13193
-</td>
+<tr class="odd">
+<td align="left">Congruent</td>
+<td align="right">814.9415</td>
+<td align="right">111.3193</td>
+<td align="right">11.13193</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Incongruent
-</td>
-<td style="text-align:right;">
-922.3493
-</td>
-<td style="text-align:right;">
-118.7960
-</td>
-<td style="text-align:right;">
-11.87960
-</td>
+<tr class="even">
+<td align="left">Incongruent</td>
+<td align="right">922.3493</td>
+<td align="right">118.7960</td>
+<td align="right">11.87960</td>
 </tr>
 </tbody>
 </table>
@@ -4400,49 +4261,25 @@ Incongruent
 <p>Let’s look at the overall means for the sitting and standing conditions and see what this is all about:</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-Posture
-</th>
-<th style="text-align:right;">
-mean_rt
-</th>
-<th style="text-align:right;">
-sd
-</th>
-<th style="text-align:right;">
-SEM
-</th>
+<tr class="header">
+<th align="left">Posture</th>
+<th align="right">mean_rt</th>
+<th align="right">sd</th>
+<th align="right">SEM</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Sit
-</td>
-<td style="text-align:right;">
-881.3544
-</td>
-<td style="text-align:right;">
-135.3842
-</td>
-<td style="text-align:right;">
-13.53842
-</td>
+<tr class="odd">
+<td align="left">Sit</td>
+<td align="right">881.3544</td>
+<td align="right">135.3842</td>
+<td align="right">13.53842</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Stand
-</td>
-<td style="text-align:right;">
-855.9365
-</td>
-<td style="text-align:right;">
-116.9436
-</td>
-<td style="text-align:right;">
-11.69436
-</td>
+<tr class="even">
+<td align="left">Stand</td>
+<td align="right">855.9365</td>
+<td align="right">116.9436</td>
+<td align="right">11.69436</td>
 </tr>
 </tbody>
 </table>
@@ -4456,92 +4293,42 @@ Stand
 <p>We can see from the figure the direction of this difference, but let’s look at the table to see the numbers more clearly.</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-Posture
-</th>
-<th style="text-align:left;">
-Congruency
-</th>
-<th style="text-align:right;">
-mean_rt
-</th>
-<th style="text-align:right;">
-sd
-</th>
-<th style="text-align:right;">
-SEM
-</th>
+<tr class="header">
+<th align="left">Posture</th>
+<th align="left">Congruency</th>
+<th align="right">mean_rt</th>
+<th align="right">sd</th>
+<th align="right">SEM</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Sit
-</td>
-<td style="text-align:left;">
-Congruent
-</td>
-<td style="text-align:right;">
-821.9232
-</td>
-<td style="text-align:right;">
-117.4069
-</td>
-<td style="text-align:right;">
-16.60384
-</td>
+<tr class="odd">
+<td align="left">Sit</td>
+<td align="left">Congruent</td>
+<td align="right">821.9232</td>
+<td align="right">117.4069</td>
+<td align="right">16.60384</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Sit
-</td>
-<td style="text-align:left;">
-Incongruent
-</td>
-<td style="text-align:right;">
-940.7855
-</td>
-<td style="text-align:right;">
-126.6457
-</td>
-<td style="text-align:right;">
-17.91041
-</td>
+<tr class="even">
+<td align="left">Sit</td>
+<td align="left">Incongruent</td>
+<td align="right">940.7855</td>
+<td align="right">126.6457</td>
+<td align="right">17.91041</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Stand
-</td>
-<td style="text-align:left;">
-Congruent
-</td>
-<td style="text-align:right;">
-807.9599
-</td>
-<td style="text-align:right;">
-105.6079
-</td>
-<td style="text-align:right;">
-14.93521
-</td>
+<tr class="odd">
+<td align="left">Stand</td>
+<td align="left">Congruent</td>
+<td align="right">807.9599</td>
+<td align="right">105.6079</td>
+<td align="right">14.93521</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Stand
-</td>
-<td style="text-align:left;">
-Incongruent
-</td>
-<td style="text-align:right;">
-903.9131
-</td>
-<td style="text-align:right;">
-108.5366
-</td>
-<td style="text-align:right;">
-15.34939
-</td>
+<tr class="even">
+<td align="left">Stand</td>
+<td align="left">Incongruent</td>
+<td align="right">903.9131</td>
+<td align="right">108.5366</td>
+<td align="right">15.34939</td>
 </tr>
 </tbody>
 </table>
@@ -4600,12 +4387,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -4620,7 +4406,11 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["statistics.pdf"],
+"view": {
+"link": null,
+"text": null
+},
+"download": ["quantrma.pdf"],
 "toc": {
 "collapse": "subsection"
 }
