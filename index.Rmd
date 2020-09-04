@@ -1,10 +1,10 @@
 --- 
 title: "Quantitative Research Methods & Analysis"
 author:
-- "Adapted for use at EUC by Thomas Hulst"
 - "Lead Author: Matthew J. C. Crump"
 - "Chapters 2 and 4 adapted from Navarro, D."
 - "Videos: Jeffrey Suzuki"
+- "Adapted for use at EUC by Thomas Hulst"
 date: "Last Compiled `r Sys.Date()`"
 site: bookdown::bookdown_site
 output: 
@@ -20,23 +20,18 @@ biblio-style: apalike
 link-citations: yes
 description: "An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from \"Answering questions with data\" by Matthew J.C. Crump (https://crumplab.github.io/statistics/)"
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE, cache=TRUE)
 library(dplyr)
 ```
-
-# Preface
-
-----
+# Preface {-}
 
 ## Important notes
-This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump. The original text is part of a larger OER (Open Educational Resource) course package for teaching undergraduate statistics in Psychology. The main OSF (Open Science Framework) project link is [https://osf.io/3s68c/](https://osf.io/3s68c/).
+This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump. Adapted is maybe to generous of a word. In fact, most of the text was copied verbatim from the original source, with minor changes to suit the learning environment at EUC. 
 
-All resources are released under a creative commons licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Click the link to read more about the license, or read more below in the license section.
+The original text is part of a [larger OER (Open Educational Resource) course](https://osf.io/3s68c/) for teaching undergraduate statistics in psychology. As such, the text assumes you are a psychology student and many of the examples are drawn from the field of psychology. This does not mean that what you will learn in this course is only useful if you have an interest in psychology. The field of psychology will serve as a vehicle to explain important concepts, but the skills in quantitative research methods and data analysis are universal.
 
 ### Attributions
-
 Two of the chapters were adapted from Danielle Navarro's wonderful (and bigger) free textbook, also licensed under the same creative commons license. The citation for that textbook is: Navarro, D. (2018). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). The website is [https://learningstatisticswithr.com](https://learningstatisticswithr.com)
 
 Chapter notes within the book are provided to indicate sections where material from Navarro was included. A short summary is here:
@@ -46,6 +41,7 @@ Chapter notes within the book are provided to indicate sections where material f
 **Chapter 4: Probability, Sampling, and Estimation**, Adapted and expanded from Chapters 9 and 10, Navarro D.
 
 ### CC BY-SA 4.0 license
+All resources are released under a creative commons licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Click the link to read more about the license, or read more below:
 
 This license means that you are free to:
 
