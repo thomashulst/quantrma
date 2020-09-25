@@ -40,12 +40,12 @@ We already tried one way of looking at the numbers, and it wasn't useful. Let's 
 Let's turn all of the numbers into dots, then show them in a graph. Note, when we do this, we have not yet summarized anything about the data. Instead, we just look at all of the data in a visual format, rather than looking at the numbers. 
 
 ```{r 2happyPlot, echo=F, fig.cap="Pretend happiness ratings from 500 people"}
-plot(happiness)
+plot(happiness,ylim=c(-1500,1500),las=1)
 ```
 
 Figure \@ref(fig:2happyPlot) shows 500 measurements of happiness. The graph has two axes. The horizontal **x-axis**, going from left to right is labeled "Index". The vertical **y-axis**, going up and down, is labelled "happiness". Each dot represents one measurement of every person's happiness from our pretend study. Before we talk about what we can and cannot see about the data, it is worth mentioning that the way you plot the data will make some things easier to see and some things harder to see. So, what can we now see about the data?
 
-There are lots of dots everywhere. It looks like there are 500 of them because the index goes to 500. It looks like some dots go as high as 1000-1500 and as low as -1500. It looks like there are more dots in the middle-ish area of the plot, sort of spread about 0. 
+There are lots of dots everywhere. It looks like there are 500 of them because the index goes to 500. It looks like some dots go as high as -1500 and as low as -1500. It looks like there are more dots in the middle-ish area of the plot, sort of spread about 0. 
 
 >Take home: we can see all the numbers at once by putting them in a plot, and that is much easier and more helpful than looking at the raw numbers.
 

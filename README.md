@@ -1,27 +1,29 @@
-## What is this?
+## Important notes
+This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump. Adapted is maybe to generous of a word. In fact, most of the text was copied verbatim from the original source, with minor changes to suit the learning environment at EUC. 
 
-This is a FREE Statistics for Undergrads in Psychology Textbook, on a creative commons license. Yes, there are so many existing OERs (open-educational resources) for statistics, but there is always room for one more. Source code for everything available in the respective repos.
+The original text is part of a [larger OER (Open Educational Resource) course](https://osf.io/3s68c/) for teaching undergraduate statistics in psychology. As such, the text assumes you are a psychology student and many of the examples are drawn from the field of psychology. This does not mean that this course is only useful for you if you have an interest in psychology. The field of psychology will serve as a vehicle to teach you important concepts and skills in quantitative research methods and data analysis, but the concepts and skills taught are universal. 
 
-Web-book is here: [https://crumplab.github.io/statistics/](https://crumplab.github.io/statistics/)
+## Attributions
+Two of the chapters were adapted from Danielle Navarro's wonderful (and bigger) free textbook, also licensed under the same creative commons license. The citation for that textbook is: Navarro, D. (2018). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). The website is [https://learningstatisticswithr.com](https://learningstatisticswithr.com)
 
-Lab manual is here: [https://crumplab.github.io/statisticsLab/](https://crumplab.github.io/statisticsLab/)
+Chapter notes within the book are provided to indicate sections where material from Navarro was included. A short summary is here:
 
-Course website is here: [https://crumplab.github.io/psyc3400/](https://crumplab.github.io/psyc3400/)
+**Chapter 1: Why statistics**, Adapted nearly verbatim with some editorial changes from Chapters 1 and 2, Navarro, D.
 
-## We are remixing, editing, revising, these amazing resources:
+**Chapter 4: Probability, Sampling, and Estimation**, Adapted and expanded from Chapters 9 and 10, Navarro D.
 
-1. Danielle Navarro's "Learning Statistics with R" [https://compcogscisydney.org/learning-statistics-with-r/](https://compcogscisydney.org/learning-statistics-with-r/)
+## CC BY-SA 4.0 license
+All resources are released under a creative commons licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Click the link to read more about the license, or read more below:
 
-3. We are adding our own stuff too! 
+This license means that you are free to:
 
-## Project notes
+- Share: copy and redistribute the material in any medium or format
+- Adapt: remix, transform, and build upon the material for any purpose, even commercially.
 
-The major work for this project was completed in Summer 2018, with updates continuously from that point.
+The licensor cannot revoke these freedoms as long as you follow the license terms.
 
-1. We wrote the book in Rmarkdown, using the bookdown package. All of the source code for compiling the book is in this repo.
+Under the following terms:
 
-3. We wrote a companion lab manual with weekly exercises, covering how to do things using R, Excel, SPSS, and JAMOVE. Major focus is to get R into the undergrad curriculum @ BC. The github repo for the lab manual is here: [https://github.com/CrumpLab/statisticsLab](https://github.com/CrumpLab/statisticsLab)
-
-
-
-
+- Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- ShareAlike: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+- No additional restrictions: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
