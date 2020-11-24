@@ -15,7 +15,7 @@ This chapter is about **descriptive statistics**. These are tools for describing
   2. There is more than one "correct" way, and you get to choose the most "useful" way for the data that you are describing
   3. It is possible to invent new ways of describing data
   4. Describing data is necessary because there is usually too much of it, so it doesn't make any sense by itself.
-  
+
 ## This is what too many numbers looks like
 
 Let's say you wanted to know how happy people are. So, you ask 500 people on the street how happy they are. You let them pick any number they want from negative infinity to positive infinity and record all the numbers. Now what?
