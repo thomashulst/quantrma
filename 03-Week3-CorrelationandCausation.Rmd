@@ -1,4 +1,4 @@
-# Correlation {#Correlation}
+# Week 3: Correlation and Causation {#CorrelationCausation}
 
 <span class="newthought">
 Correlation does not equal causation

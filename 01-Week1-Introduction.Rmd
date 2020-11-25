@@ -1,17 +1,15 @@
-# Why Statistics?
+# Week 1: Introduction {#Introduction}
 
 <span class="newthought">
 To call in statisticians after the experiment is done may be no more than asking them to perform a post-mortem examination: They may be able to say what the experiment died of.
 ---Sir Ronald Fisher
 </span>
 
-## On the psychology of statistics
-
 <div class="marginnote">
-Adapted nearly verbatim from Chapter 1 in Navarro, D. ["Learning Statistics with R."](https://learningstatisticswithr.com)
+Adapted nearly verbatim from Chapter 1 and 2 in Navarro, D. ["Learning Statistics with R."](https://learningstatisticswithr.com)
 </div>
 
-To the surprise of many students, statistics is a fairly significant part of a psychological education. To the surprise of no-one, statistics is very rarely the *favorite* part of one’s psychological education. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics class right now, not a psychology class. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact that psychology has so much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…
+To the surprise of many students, statistics is a fairly significant part of liberal arts and science (LAS) education. To the surprise of no-one, statistics is very rarely the *favorite* part of one’s LAS education. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics program right now, not a university college. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact this program has much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…
 
 A big part of this issue at hand relates to the very idea of statistics. What is it? What’s it there for? And why are scientists so bloody obsessed with it? These are all good questions, when you think about it. So let’s start with the last one. As a group, scientists seem to be bizarrely fixated on running statistical tests on everything. In fact, we use statistics so often that we sometimes forget to explain to people why we do. It’s a kind of article of faith among scientists – and especially social scientists – that your findings can’t be trusted until you’ve done some statistics. Undergraduate students might be forgiven for thinking that we’re all completely mad, because no-one takes the time to answer one very simple question:
 
@@ -19,9 +17,9 @@ A big part of this issue at hand relates to the very idea of statistics. What is
 
 It’s a naive question in some ways, but most good questions are. There’s a lot of good answers to it, but for my money, the best answer is a really simple one: we don’t trust ourselves enough. We worry that we’re human, and susceptible to all of the biases, temptations and frailties that humans suffer from. Much of statistics is basically a safeguard. Using “common sense” to evaluate evidence means trusting gut instincts, relying on verbal arguments and on using the raw power of human reason to come up with the right answer. Most scientists don’t think this approach is likely to work.
 
-In fact, come to think of it, this sounds a lot like a psychological question to me, and since I do work in a psychology department, it seems like a good idea to dig a little deeper here. Is it really plausible to think that this “common sense” approach is very trustworthy? Verbal arguments have to be constructed in language, and all languages have biases – some things are harder to say than others, and not necessarily because they’re false (e.g., quantum electrodynamics is a good theory, but hard to explain in words). The instincts of our “gut” aren’t designed to solve scientific problems, they’re designed to handle day to day inferences – and given that biological evolution is slower than cultural change, we should say that they’re designed to solve the day to day problems for a *different world* than the one we live in. Most fundamentally, reasoning sensibly requires people to engage in “induction”, making wise guesses and going beyond the immediate evidence of the senses to make generalisations about the world. If you think that you can do that without being influenced by various distractors, well, I have a bridge in Brooklyn I’d like to sell you. Heck, as the next section shows, we can’t even solve “deductive” problems (ones where no guessing is required) without being influenced by our pre-existing biases.
+Is it plausible to think that this “common sense” approach is very trustworthy? Verbal arguments have to be constructed in language, and all languages have biases – some things are harder to say than others, and not necessarily because they’re false (e.g., quantum electrodynamics is a good theory, but hard to explain in words). The instincts of our “gut” aren’t designed to solve scientific problems, they’re designed to handle day to day inferences – and given that biological evolution is slower than cultural change, we should say that they’re designed to solve the day to day problems for a *different world* than the one we live in. Most fundamentally, reasoning sensibly requires people to engage in “induction”, making wise guesses and going beyond the immediate evidence of the senses to make generalisations about the world. If you think that you can do that without being influenced by various distractors, well, I have a bridge in Brooklyn I’d like to sell you. Heck, as the next section shows, we can’t even solve “deductive” problems (ones where no guessing is required) without being influenced by our pre-existing biases.
 
-### The curse of belief bias
+## The curse of belief bias
 
 People are mostly pretty smart. We’re certainly smarter than the other species that we share the planet with (though many people might disagree). Our minds are quite amazing things, and we seem to be capable of the most incredible feats of thought and reason. That doesn’t make us perfect though. And among the many things that psychologists have shown over the years is that we really do find it hard to be neutral, to evaluate evidence impartially and without being swayed by pre-existing biases. A good example of this is the **belief bias effect** in logical reasoning: if you ask people to decide whether a particular argument is logically valid (i.e., conclusion would be true if the premises were true), we tend to be influenced by the believability of the conclusion, even when we shouldn’t. For instance, here’s a valid argument where the conclusion is believable:
 
@@ -57,7 +55,7 @@ Now, suppose that people really are perfectly able to set aside their pre-existi
   argument is invalid     0% say “valid”        0% say “valid”
   -------------------- ---------------------- ------------------------
 
-If the psychological data looked like this (or even a good approximation to this), we might feel safe in just trusting our gut instincts. That is, it’d be perfectly okay just to let scientists evaluate data based on their common sense, and not bother with all this murky statistics stuff. By now you probably know where this is going.
+If the data looked like this (or even a good approximation to this), we might feel safe in just trusting our gut instincts. That is, it’d be perfectly okay just to let scientists evaluate data based on their common sense, and not bother with all this murky statistics stuff. By now you probably know where this is going.
 
 In a classic study, @Evans1983 ran an experiment looking at exactly this. What they found is that when pre-existing biases (i.e., beliefs) were in agreement with the structure of the data, everything went the way you’d hope:
                          
@@ -120,7 +118,7 @@ knitr::include_graphics("figures/1Simpson.png")
 
 Before leaving this topic entirely, I want to point out something else really critical that is often overlooked in a research methods class. Statistics only solves *part* of the problem. Remember that we started all this with the concern that Berkeley’s admissions processes might be unfairly biased against female applicants. When we looked at the “aggregated” data, it did seem like the university was discriminating against women, but when we “disaggregate” and looked at the individual behaviour of all the departments, it turned out that the actual departments were, if anything, slightly biased in favour of women. The gender bias in total admissions was caused by the fact that women tended to self-select for harder departments. From a legal perspective, that would probably put the university in the clear. Postgraduate admissions are determined at the level of the individual department (and there are good reasons to do that), and at the level of individual departments, the decisions are more or less unbiased (the weak bias in favour of females at that level is small, and not consistent across departments). Since the university can’t dictate which departments people choose to apply to, and the decision making takes place at the level of the department it can hardly be held accountable for any biases that those choices produce.
 
-That was the basis for my somewhat glib remarks earlier, but that’s not exactly the whole story, is it? After all, if we’re interested in this from a more sociological and psychological perspective, we might want to ask *why* there are such strong gender differences in applications. Why do males tend to apply to engineering more often than females, and why is this reversed for the English department? And why is it it the case that the departments that tend to have a female-application bias tend to have lower overall admission rates than those departments that have a male-application bias? Might this not still reflect a gender bias, even though every single department is itself unbiased? It might. 
+But that’s not exactly the whole story, is it? After all, if we’re interested in this from a more sociological and psychological perspective, we might want to ask *why* there are such strong gender differences in applications. Why do males tend to apply to engineering more often than females, and why is this reversed for the English department? And why is it it the case that the departments that tend to have a female-application bias tend to have lower overall admission rates than those departments that have a male-application bias? Might this not still reflect a gender bias, even though every single department is itself unbiased? It might. 
 Suppose, hypothetically, that males preferred to apply to “hard sciences” and females prefer “humanities”. And suppose further that the reason for why the humanities departments have low admission rates is because the government doesn’t want to fund the humanities (spots in Ph.D. programs, for instance, are often tied to government funded research projects). Does that constitute a gender bias? Or just an unenlightened view of the value of the humanities? What if someone at a high level in the government cut the humanities funds because they felt that the humanities are “useless chick stuff”. That seems pretty *blatantly* gender biased. None of this falls within the purview of statistics, but it matters to the research project. If you’re interested in the overall structural effects of subtle gender biases, then you probably want to look at *both* the aggregated and disaggregated data. If you’re interested in the decision making process at Berkeley itself then you’re probably only interested in the disaggregated data.
 
 In short there are a lot of critical questions that you can’t answer with statistics, but the answers to those questions will have a huge impact on how you analyse and interpret data. And this is the reason why you should always think of statistics as a *tool* to help you learn about your data, no more and no less. It’s a powerful tool to that end, but there’s no substitute for careful thought.
@@ -151,7 +149,7 @@ Note that a lot of these reasons generalize beyond researchers. If you want to b
 
 -   **I don’t care about jobs, research, or clinical work. Do I need statistics?**
 
-Okay, now you’re just messing with me. Still, I think it should matter to you too. Statistics should matter to you in the same way that statistics should matter to *everyone*: we live in the 21st century, and data are *everywhere*. Frankly, given the world in which we live these days, a basic knowledge of statistics is pretty damn close to a survival tool! Which is the topic of the next section...
+Okay, now you’re just messing with me. Still, I think it should matter to you too. Statistics should matter to you in the same way that statistics should matter to *everyone*: we live in the 21st century, and data are *everywhere*. Frankly, given the world in which we live these days, a basic knowledge of statistics is pretty damn close to a survival tool!
 
 ## Statistics in everyday life
 
@@ -166,6 +164,118 @@ When I started writing up my lecture notes I took the 20 most recent news articl
 
 So far, most of what I’ve talked about is statistics, and so you’d be forgiven for thinking that statistics is all I care about in life. To be fair, you wouldn’t be far wrong, but research methodology is a broader concept than statistics. So most research methods courses will cover a lot of topics that relate much more to the pragmatics of research design, and in particular the issues that you encounter when trying to do research with humans. However, about 99% of student *fears* relate to the statistics part of the course, so I’ve focused on the stats in this discussion, and hopefully I’ve convinced you that statistics matters, and more importantly, that it’s not to be feared. That being said, it’s pretty typical for introductory research methods classes to be very stats-heavy. This is not (usually) because the lecturers are evil people. Quite the contrary, in fact. Introductory classes focus a lot on the statistics because you almost always find yourself needing statistics before you need the other research methods training. Why? Because almost all of your assignments in other classes will rely on statistical training, to a much greater extent than they rely on other methodological tools. It’s not common for undergraduate assignments to require you to design your own study from the ground up (in which case you would need to know a lot about research design), but it *is* common for assignments to ask you to analyse and interpret data that were collected in a study that someone else designed (in which case you need statistics). In that sense, from the perspective of allowing you to do well in all your other classes, the statistics is more urgent.
 
-But note that “urgent” is different from “important” – they both matter. I really do want to stress that research design is just as important as data analysis, and this book does spend a fair amount of time on it. However, while statistics has a kind of universality, and provides a set of core tools that are useful for most types of psychological research, the research methods side isn’t quite so universal. There are some general principles that everyone should think about, but a lot of research design is very idiosyncratic, and is specific to the area of research that you want to engage in. Throughout the course you will be introduced to some of the core principles of research methods, but research methodology is an incredibly extensive and diverse field. To the extent that it’s the details of research methods that matter, those details don’t usually show up in an introductory class, as is the case for this course. 
+But note that “urgent” is different from “important” – they both matter. I really do want to stress that research design is just as important as data analysis, and this book does spend a fair amount of time on it. However, while statistics has a kind of universality, and provides a set of core tools that are useful for most types of research, the research methods side isn’t quite so universal. There are some general principles that everyone should think about, but a lot of research design is very idiosyncratic, and is specific to the area of research that you want to engage in. Throughout the course you will be introduced to some of the core principles of research methods, but research methodology is an incredibly extensive and diverse field. To the extent that it’s the details of research methods that matter, those details don’t usually show up in an introductory class, as is the case for this course. 
+
+## A brief introduction to research methods
+In this section, we’re going to start thinking about the basic ideas that go into designing a study, collecting data, checking whether your data collection works, and so on. It won’t give you enough information to allow you to design studies of your own, but it will give you a lot of the basic tools that you need to assess the studies done by other people. However, since the focus of this book is much more on data analysis than on data collection, I’m only giving a very brief overview. Note that this section is “special” in two ways. Firstly, it’s much more psychology-specific than the later parts of this book. Secondly, it focuses much more heavily on the scientific problem of research methodology, and much less on the statistical problem of data analysis. Nevertheless, the two problems are related to one another, so it’s traditional for stats textbooks to discuss the problem in at least some detail. This section relies heavily on @Campbell1963 for the discussion of study design.
+
+## Some thoughts about measurement
+
+The first thing to understand is data collection can be thought of as a kind of **measurement**. That is, in psychological research, what we’re trying to do is measure something about human behaviour. What do I mean by “measurement”?
+
+Measurement itself is a subtle concept, but basically it comes down to finding some way of assigning numbers, or labels, or some other kind of well-defined descriptions to “stuff”. So, any of the following would count as a psychological measurement:
+
+-   My <span>**age**</span> is <span>*33 years*</span>.
+
+-   I <span>*do not*</span> <span>**like anchovies**</span>.
+
+-   My <span>**chromosomal gender**</span> is <span>*male*</span>.
+
+-   My <span>**self-identified gender**</span> is <span>*male*</span>.
+
+In the short list above, the <span>**bolded part**</span> is “the thing to be measured”, and the <span>*italicized part*</span> is “the measurement itself”. In fact, we can expand on this a little bit, by thinking about the set of possible measurements that could have arisen in each case:
+
+-   My <span>**age**</span> (in years) could have been <span>*0, 1, 2, 3 …*</span>, etc. The upper bound on what my age could possibly be is a bit fuzzy, but in practice you’d be safe in saying that the largest possible age is <span>*150*</span>, since no human has ever lived that long.
+
+-   When asked if I <span>**like anchovies**</span>, I might have said that <span>*I do*</span>, or <span>*I do not*</span>, or <span>*I have no opinion*</span>, or <span>*I sometimes do*</span>.
+
+-   My <span>**chromosomal gender**</span> is almost certainly going to be <span>*male (XY)*</span> or <span>*female (XX)*</span>, but there are a few other possibilities. I could also have <span>*Klinfelter’s syndrome (XXY)*</span>, which is more similar to male than to female. And I imagine there are other possibilities too.
+
+-   My <span>**self-identified gender**</span> is also very likely to be <span>*male*</span> or <span>*female*</span>, but it doesn’t have to agree with my chromosomal gender. I may also choose to identify with <span>*neither*</span>, or to explicitly call myself <span>*transgender*</span>.
+
+As you can see, for some things (like age) it seems fairly obvious what the set of possible measurements should be, whereas for other things it gets a bit tricky. But I want to point out that even in the case of someone’s age, it’s much more subtle than this. For instance, in the example above, I assumed that it was okay to measure age in years. But if you’re a developmental psychologist, that’s way too crude, and so you often measure age in <span>*years and months*</span> (if a child is 2 years and 11 months, this is usually written as “2;11”). If you’re interested in newborns, you might want to measure age in <span>*days since birth*</span>, maybe even <span>*hours since birth*</span>. In other words, the way in which you specify the allowable measurement values is important.
+
+Looking at this a bit more closely, you might also realise that the concept of “age” isn’t actually all that precise. In general, when we say “age” we implicitly mean “the length of time since birth”. But that’s not always the right way to do it. Suppose you’re interested in how newborn babies control their eye movements. If you’re interested in kids that young, you might also start to worry that “birth” is not the only meaningful point in time to care about. If Baby Alice is born 3 weeks premature and Baby Bianca is born 1 week late, would it really make sense to say that they are the “same age” if we encountered them “2 hours after birth”? In one sense, yes: by social convention, we use birth as our reference point for talking about age in everyday life, since it defines the amount of time the person has been operating as an independent entity in the world, but from a scientific perspective that’s not the only thing we care about. When we think about the biology of human beings, it’s often useful to think of ourselves as organisms that have been growing and maturing since conception, and from that perspective Alice and Bianca aren’t the same age at all. So you might want to define the concept of “age” in two different ways: the length of time since conception, and the length of time since birth. When dealing with adults, it won’t make much difference, but when dealing with newborns it might.
+
+Moving beyond these issues, there’s the question of methodology. What specific “measurement method” are you going to use to find out someone’s age? As before, there are lots of different possibilities:
+
+-   You could just ask people “how old are you?” The method of self-report is fast, cheap and easy, but it only works with people old enough to understand the question, and some people lie about their age.
+
+-   You could ask an authority (e.g., a parent) “how old is your child?” This method is fast, and when dealing with kids it’s not all that hard since the parent is almost always around. It doesn’t work as well if you want to know “age since conception”, since a lot of parents can’t say for sure when conception took place. For that, you might need a different authority (e.g., an obstetrician).
+
+-   You could look up official records, like birth certificates. This is time consuming and annoying, but it has its uses (e.g., if the person is now dead).
+
+## Operationalization: defining your measurement
+
+All of the ideas discussed in the previous section all relate to the concept of **operationalization**. To be a bit more precise about the idea, operationalization is the process by which we take a meaningful but somewhat vague concept, and turn it into a precise measurement. The process of operationalization can involve several different things:
+
+-   Being precise about what you are trying to measure: For instance, does “age” mean “time since birth” or “time since conception” in the context of your research?
+
+-   Determining what method you will use to measure it: Will you use self-report to measure age, ask a parent, or look up an official record? If you’re using self-report, how will you phrase the question?
+
+-   Defining the set of the allowable values that the measurement can take: Note that these values don’t always have to be numerical, though they often are. When measuring age, the values are numerical, but we still need to think carefully about what numbers are allowed. Do we want age in years, years and months, days, hours? Etc. For other types of measurements (e.g., gender), the values aren’t numerical. But, just as before, we need to think about what values are allowed. If we’re asking people to self-report their gender, what options to we allow them to choose between? Is it enough to allow only “male” or “female”? Do you need an “other” option? Or should we not give people any specific options, and let them answer in their own words? And if you open up the set of possible values to include all verbal response, how will you interpret their answers?
+
+Operationalization is a tricky business, and there’s no “one, true way” to do it. The way in which you choose to operationalize the informal concept of “age” or “gender” into a formal measurement depends on what you need to use the measurement for. Often you’ll find that the community of scientists who work in your area have some fairly well-established ideas for how to go about it. In other words, operationalization needs to be thought through on a case by case basis. Nevertheless, while there a lot of issues that are specific to each individual research project, there are some aspects to it that are pretty general.
+
+Before moving on, I want to take a moment to clear up our terminology, and in the process introduce one more term. Here are four different things that are closely related to each other:
+
+-   **A theoretical construct**. This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
+
+-   **A measure**. The measure refers to the method or the tool that you use to make your observations. A question in a survey, a behavioural observation or a brain scan could all count as a measure.
+
+-   **An operationalization**. The term “operationalization” refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.
+
+-   **A variable**. Finally, a new term. A variable is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.
+
+In practice, even scientists tend to blur the distinction between these things, but it’s very helpful to try to understand the differences.
+
+## Assessing the reliability of a measurement
+
+At this point we’ve thought a little bit about how to operationalize a theoretical construct and thereby create a psychological measure. Now, we should start discussing the obvious question: is the measurement any good? We’ll do this in terms of two related ideas: <span>*reliability*</span> and <span>*validity*</span>. Put simply, the **reliability** of a measure tells you how <span>*precisely*</span> you are measuring something, whereas the validity of a measure tells you how <span>*accurate*</span> the measure is. 
+
+Reliability is actually a very simple concept: it refers to the repeatability or consistency of your measurement. The measurement of my weight by means of a “bathroom scale” is very reliable: if I step on and off the scales over and over again, it’ll keep giving me the same answer. Measuring my intelligence by means of “asking my mom” is very unreliable: some days she tells me I’m a bit thick, and other days she tells me I’m a complete moron. Notice that this concept of reliability is different to the question of whether the measurements are correct (the correctness of a measurement relates to it’s validity). If I’m holding a sack of potatos when I step on and off of the bathroom scales, the measurement will still be reliable: it will always give me the same answer. However, this highly reliable answer doesn’t match up to my true weight at all, therefore it’s wrong. In technical terms, this is a <span>*reliable but invalid*</span> measurement. Similarly, while my mom’s estimate of my intelligence is a bit unreliable, she might be right. Maybe I’m just not too bright, and so while her estimate of my intelligence fluctuates pretty wildly from day to day, it’s basically right. So that would be an <span>*unreliable but valid*</span> measure. Of course, to some extent, notice that if my mum’s estimates are too unreliable, it’s going to be very hard to figure out which one of her many claims about my intelligence is actually the right one. To some extent, then, a very unreliable measure tends to end up being invalid for practical purposes; so much so that many people would say that reliability is necessary (but not sufficient) to ensure validity.
+
+Okay, now that we’re clear on the distinction between reliability and validity, let’s have a think about the different ways in which we might measure reliability:
+
+-   **Test-retest reliability**. This relates to consistency over time: if we repeat the measurement at a later date, do we get a the same answer?
+
+-   **Inter-rater reliability**. This relates to consistency across people: if someone else repeats the measurement (e.g., someone else rates my intelligence) will they produce the same answer?
+
+-   **Parallel forms reliability**. This relates to consistency across theoretically-equivalent measurements: if I use a different set of bathroom scales to measure my weight, does it give the same answer?
+
+-   **Internal consistency reliability**. If a measurement is constructed from lots of different parts that perform similar functions (e.g., a personality questionnaire result is added up across several questions) do the individual parts tend to give similar answers?
+
+Not all measurements need to possess all forms of reliability. For instance, educational assessment can be thought of as a form of measurement. One of the subjects that I teach, <span>*Computational Cognitive Science*</span>, has an assessment structure that has a research component and an exam component (plus other things). The exam component is <span>*intended*</span> to measure something different from the research component, so the assessment as a whole has low internal consistency. However, within the exam there are several questions that are intended to (approximately) measure the same things, and those tend to produce similar outcomes; so the exam on its own has a fairly high internal consistency. Which is as it should be. You should only demand reliability in those situations where you want to be measure the same thing!
+
+## The role of variables: predictors and outcomes
+
+I’ve got one last piece of terminology that I need to explain to you. Remember, the outcome of a psychological measurement is called a variable. Normally, when we do some research we end up with lots of different variables. Then, when we analyse our data we usually try to explain some of the variables in terms of some of the other variables. It’s important to keep the two roles “thing doing the explaining” and “thing being explained” distinct. So let’s be clear about this now. Firstly, we might as well get used to the idea of using mathematical symbols to describe variables, since it’s going to happen over and over again. Let’s denote the “to be explained” variable $Y$, and denote the variables “doing the explaining” as $X_1$, $X_2$, etc.
+
+Now, when we doing an analysis, we have different names for $X$ and $Y$, since they play different roles in the analysis. The classical names for these roles are **independent variable** (IV) and **dependent variable** (DV). The IV is the variable that you use to do the explaining (i.e., $X$) and the DV is the variable being explained (i.e., $Y$). The logic behind these names goes like this: if there really is a relationship between $X$ and $Y$ then we can say that $Y$ depends on $X$, and if we have designed our study “properly” then $X$ isn’t dependent on anything else. However, some people have suggested these names are horrible: they’re hard to remember and they can be misleading, because (a) the IV is never actually “independent of everything else” and (b) if there’s no relationship, then the DV doesn’t actually depend on the IV. There are a number of alternatives that some people find more appealing. 
+
+For example, in an experiment the IV refers to the **manipulation**, and the DV refers to the **measurement**. So, we could use **manipulated variable** (independent variable) and **measured variable** (dependent variable). 
+
+```{r ivdv, tidy=FALSE, echo=FALSE}
+knitr::kable(rbind
+             (c("to be explained", "dependent variable (DV)", "measurement"),
+             c("to do the explaining", "independent variable (IV)", "manipulation")),
+caption = 'The terminology used to distinguish between different roles that a variable can play when analysing a data set.',col.names = c(
+  "role of the variable", "classical name","modern name"),
+  booktabs = TRUE
+)
+```
+
+We could also use **predictors** and **outcomes**. The idea here is that what you’re trying to do is use $X$ (the predictors) to make guesses about $Y$ (the outcomes). This is summarized in the table:
+
+```{r ivdv2, tidy=FALSE, echo=FALSE}
+knitr::kable(rbind
+             (c("to be explained", "dependent variable (DV)", "outcome"),
+             c("to do the explaining", "independent variable (IV)", "predictor")),
+caption = 'The terminology used to distinguish between different roles that a variable can play when analysing a data set.',col.names = c(
+  "role of the variable", "classical name","modern name"),
+  booktabs = TRUE
+)
+```
+
 
 
