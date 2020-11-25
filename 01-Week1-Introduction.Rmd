@@ -277,5 +277,11 @@ caption = 'The terminology used to distinguish between different roles that a va
 )
 ```
 
+## RM content still missing in week 1 according to Thanos
 
+- Additional on de Vaus: Pg. 24 – 27 (nominal/operational definitions with extra examples)
+
+- Pg. 29 – 31 (measurement: validity and reliability & measurement error)
+
+- Could you also look at https://thomashulst.github.io/quantrma/for-thanos-to-look-at.html ? That has content which was originally in this chapter/week, but we decided (I think) to move that to other weeks. 
 
