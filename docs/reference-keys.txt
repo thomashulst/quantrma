@@ -1,5 +1,6 @@
 tab:simpsontable
 fig:1simpson
+fig:1construct
 tab:ivdv
 tab:ivdv2
 fig:2happyPlot
@@ -33,8 +34,9 @@ a-brief-introduction-to-research-methods
 some-thoughts-about-measurement
 operationalization-defining-your-measurement
 assessing-the-reliability-of-a-measurement
+forms-of-measurement-error
 the-role-of-variables-predictors-and-outcomes
-rm-content-still-missing-in-week-1-according-to-thanos
+thats-it-for-this-week
 DescribingData
 this-is-what-too-many-numbers-looks-like
 look-at-the-data

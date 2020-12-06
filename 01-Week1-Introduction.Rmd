@@ -1,15 +1,10 @@
 # Week 1: Introduction {#Introduction}
 
-<span class="newthought">
-To call in statisticians after the experiment is done may be no more than asking them to perform a post-mortem examination: They may be able to say what the experiment died of.
----Sir Ronald Fisher
-</span>
-
 <div class="marginnote">
 Adapted nearly verbatim from Chapter 1 and 2 in Navarro, D. ["Learning Statistics with R."](https://learningstatisticswithr.com)
 </div>
 
-To the surprise of many students, statistics is a fairly significant part of liberal arts and science (LAS) education. To the surprise of no-one, statistics is very rarely the *favorite* part of one’s LAS education. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics program right now, not a university college. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact this program has much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…
+To the surprise of many students, statistics is a fairly significant part of any bachelor program. To the surprise of no-one, statistics is very rarely the *favorite* part of one’s bachelor studies. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics program right now, not a university college. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact this program has much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…
 
 A big part of this issue at hand relates to the very idea of statistics. What is it? What’s it there for? And why are scientists so bloody obsessed with it? These are all good questions, when you think about it. So let’s start with the last one. As a group, scientists seem to be bizarrely fixated on running statistical tests on everything. In fact, we use statistics so often that we sometimes forget to explain to people why we do. It’s a kind of article of faith among scientists – and especially social scientists – that your findings can’t be trusted until you’ve done some statistics. Undergraduate students might be forgiven for thinking that we’re all completely mad, because no-one takes the time to answer one very simple question:
 
@@ -164,7 +159,7 @@ When I started writing up my lecture notes I took the 20 most recent news articl
 
 So far, most of what I’ve talked about is statistics, and so you’d be forgiven for thinking that statistics is all I care about in life. To be fair, you wouldn’t be far wrong, but research methodology is a broader concept than statistics. So most research methods courses will cover a lot of topics that relate much more to the pragmatics of research design, and in particular the issues that you encounter when trying to do research with humans. However, about 99% of student *fears* relate to the statistics part of the course, so I’ve focused on the stats in this discussion, and hopefully I’ve convinced you that statistics matters, and more importantly, that it’s not to be feared. That being said, it’s pretty typical for introductory research methods classes to be very stats-heavy. This is not (usually) because the lecturers are evil people. Quite the contrary, in fact. Introductory classes focus a lot on the statistics because you almost always find yourself needing statistics before you need the other research methods training. Why? Because almost all of your assignments in other classes will rely on statistical training, to a much greater extent than they rely on other methodological tools. It’s not common for undergraduate assignments to require you to design your own study from the ground up (in which case you would need to know a lot about research design), but it *is* common for assignments to ask you to analyse and interpret data that were collected in a study that someone else designed (in which case you need statistics). In that sense, from the perspective of allowing you to do well in all your other classes, the statistics is more urgent.
 
-But note that “urgent” is different from “important” – they both matter. I really do want to stress that research design is just as important as data analysis, and this book does spend a fair amount of time on it. However, while statistics has a kind of universality, and provides a set of core tools that are useful for most types of research, the research methods side isn’t quite so universal. There are some general principles that everyone should think about, but a lot of research design is very idiosyncratic, and is specific to the area of research that you want to engage in. Throughout the course you will be introduced to some of the core principles of research methods, but research methodology is an incredibly extensive and diverse field. To the extent that it’s the details of research methods that matter, those details don’t usually show up in an introductory class, as is the case for this course. 
+But note that “urgent” is different from “important” – they both matter. I really do want to stress that research design is just as important as data analysis, and this book does spend a fair amount of time on it. However, while statistics has a kind of universality, and provides a set of core tools that are useful for most types of research, the research methods side isn’t quite so universal. There are some general principles that everyone should think about, but a lot of research design is very idiosyncratic and specific to the area of research that you want to engage in. Throughout the course you will be introduced to some core principles of research methods, but research methodology is an incredibly extensive and diverse field. To the extent that it’s the details of research methods that matter, those details don’t usually show up in an introductory class, as is the case for this course. 
 
 ## A brief introduction to research methods
 In this section, we’re going to start thinking about the basic ideas that go into designing a study, collecting data, checking whether your data collection works, and so on. It won’t give you enough information to allow you to design studies of your own, but it will give you a lot of the basic tools that you need to assess the studies done by other people. However, since the focus of this book is much more on data analysis than on data collection, I’m only giving a very brief overview. Note that this section is “special” in two ways. Firstly, it’s much more psychology-specific than the later parts of this book. Secondly, it focuses much more heavily on the scientific problem of research methodology, and much less on the statistical problem of data analysis. Nevertheless, the two problems are related to one another, so it’s traditional for stats textbooks to discuss the problem in at least some detail. This section relies heavily on @Campbell1963 for the discussion of study design.
@@ -217,15 +212,36 @@ All of the ideas discussed in the previous section all relate to the concept of 
 
 Operationalization is a tricky business, and there’s no “one, true way” to do it. The way in which you choose to operationalize the informal concept of “age” or “gender” into a formal measurement depends on what you need to use the measurement for. Often you’ll find that the community of scientists who work in your area have some fairly well-established ideas for how to go about it. In other words, operationalization needs to be thought through on a case by case basis. Nevertheless, while there a lot of issues that are specific to each individual research project, there are some aspects to it that are pretty general.
 
-Before moving on, I want to take a moment to clear up our terminology, and in the process introduce one more term. Here are four different things that are closely related to each other:
+Before moving on, I want to take a moment to clear up our terminology, and in the process introduce more terms. Here are four different things that are closely related to each other:
 
--   **A theoretical construct**. This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
+-   **A theoretical construct** or concept. This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.
 
 -   **A measure**. The measure refers to the method or the tool that you use to make your observations. A question in a survey, a behavioural observation or a brain scan could all count as a measure.
 
--   **An operationalization**. The term “operationalization” refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.
+-   **A variable**. A variable is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.
 
--   **A variable**. Finally, a new term. A variable is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.
+-   **An operationalization**. The term operationalization refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.
+
+The process of operationalization consists of two steps, each of which entails some kind of definition of the theoretical construct we are interested in measuring. The first step of operationalization is specifying the **nominal definition** of a theoretical construct. This is when you specify the meaning of a theoretical construct but remain quite abstract. For instance, when defining "children", we could be asking the following questions: is a child defined by a blood relationship, a legal relationship, a social relationship, chronological age, level of dependency or some other criterion? 
+
+Different nominal definitions will produce different results; hence it is important that nominal definitions are derived carefully and transparently. Usually, it is good practice to develop and narrow down a nominal definition as follows:
+
+  1. Obtain a range of different definitions: search the (academic) literature for explicit and implicit definitions.
+  
+  2. Decide on a definition: from your list, either pick one definition, or create a new one that serves the purposes of your study best. Explain and justify your approach. 
+  
+  3. Delineate the dimensions of the theoretical construct. Almost any theoretical construct has a number of dimensions associated with it and it is helpful to spell these out as they can help you get closer to the measure that best serves the purposes of your study. For example, the theoretical construct "child’s well-being" has a number of dimensions: emotional, psychological, physical, educational, financial, social, environmental, legal, etc. If you are interested in the effect of marriage breakdown on children’s well-being, which dimensions are relevant to you? You may examine all of the possible dimensions or limit yourself to one or two. To answer this question you can borrow from literature and theoretical frameworks used by other researchers to motivate and explain the context of research. What is most important is that you explain and justify your approach.
+
+In addition to the aforementioned dimensions, theoretical constructs can also have subdimensions. Suppose we decide to focus on social well-being. In this case, the following subdimensions could be of some relevance: the level of safety in the neighborhood or the nature of a child’s relationships and experiences with discrimination. Given that we are interested in the effect of marriage breakdown on children’s well-being, we might want to focus on the child’s relationships with others, especially people like their mother, father, siblings, etc. Again, what is important here is to explain and justify your approach. 
+
+```{r 1construct, fig.cap="Operationalization of child's well-being. Adapted from @de_vaus_research_2001"}
+
+knitr::include_graphics("figures/1construct.png")
+```
+
+The next step of operationalization is specifying the **operational definition** of a theoretical construct. This specifies the **indicators** that reflect the nominal definition. Working with our example of marriage breakdown on children’s well-being and our decision to focus on social well-being and a child’s relationship with his or her father, we can use the following indicators: amount of contact, level of conflict, feelings of closeness, amount of helping, type of activities engaged in. 
+
+How well the indicators match the theoretical construct has a bit impact on the value of the conclusions that can be drawn from the study. Once the indicators have been chosen, the researcher can move to the next stage which is to **measure** the chosen indicators.  
 
 In practice, even scientists tend to blur the distinction between these things, but it’s very helpful to try to understand the differences.
 
@@ -246,6 +262,18 @@ Okay, now that we’re clear on the distinction between reliability and validity
 -   **Internal consistency reliability**. If a measurement is constructed from lots of different parts that perform similar functions (e.g., a personality questionnaire result is added up across several questions) do the individual parts tend to give similar answers?
 
 Not all measurements need to possess all forms of reliability. For instance, educational assessment can be thought of as a form of measurement. One of the subjects that I teach, <span>*Computational Cognitive Science*</span>, has an assessment structure that has a research component and an exam component (plus other things). The exam component is <span>*intended*</span> to measure something different from the research component, so the assessment as a whole has low internal consistency. However, within the exam there are several questions that are intended to (approximately) measure the same things, and those tend to produce similar outcomes; so the exam on its own has a fairly high internal consistency. Which is as it should be. You should only demand reliability in those situations where you want to be measure the same thing!
+
+## Forms of measurement error
+
+The aim of the process of operationalization is to identify measures with the highest possible <span>validity</span> and <span>reliability</span>. However, such endeavors turn out to be trickier in practice than they sound in theory and several errors might occur along the way. As we will see here, different forms of measurement error have different implications and consequences in the conclusions of the study.
+
+The first and least harmful form of error is **random error**. As the name suggests, it occurs randomly which means there is no systematic pattern underlying its occurrence. For instance, if we employ a self-reported measure of conflict with one’s own father, participants in our study might overestimate or underestimate the actual level of conflict with their father. If we believe that people are equally likely to under- or overestimate, there will be no systematic pattern of under- or overestimation in our data as the former will cancel out the latter. 
+
+**Constant error** occurs where there is some amount of error for every case. When this is the case, values of any measure are systemetically overestimated or underestimated. For instance, people tend to overestimate their driving skills: significantly more than 50% of drivers believe their driving skills are better than average, which of course cannot be true! When such patterns of bias occur in the data, our measures are affected because errors do not cancel each other out. 
+
+**Correlated error** occurs when the measurement error correlates with a characteristic that varies across the observations of our data. For instance, overweight people tend to underestimate their weight, whereas underweight people tend to overestimate it [@rowland1990self]. This is subtly distinct from random error: even if at the aggregate the amount of overestimated weights is the same as the amount of underestimated weights, the underlying pattern of weight biased measurements can affect the conclusions of a study as it might generate alternative explanations related to weight differences. 
+
+It is one of the main goals of any measure to minimize such errors. To achieve this, the researcher should pay careful attention to indicator quality, socially desirable responses and other forms of deliberate (mis)representation by respondents. Despite the fact it is often difficult to identify when such errors actually occur, researchers should pay a fair amount of attention trying to minimize them. 
 
 ## The role of variables: predictors and outcomes
 
@@ -277,11 +305,5 @@ caption = 'The terminology used to distinguish between different roles that a va
 )
 ```
 
-## RM content still missing in week 1 according to Thanos
-
-- Additional on de Vaus: Pg. 24 – 27 (nominal/operational definitions with extra examples)
-
-- Pg. 29 – 31 (measurement: validity and reliability & measurement error)
-
-- Could you also look at https://thomashulst.github.io/quantrma/for-thanos-to-look-at.html ? That has content which was originally in this chapter/week, but we decided (I think) to move that to other weeks. 
-
+## That's it for this week
+That's it for the readings of the first week. Next, make sure to complete the ["Getting started"](https://thomashulst.github.io/quantrma_ex/getting-started.html) section of the exercise manual before your first tutorial. In this section you will install and learn about the very basics of the statistical software we will be using during this course: R. 
