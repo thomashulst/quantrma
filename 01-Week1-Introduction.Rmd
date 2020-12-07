@@ -1,10 +1,8 @@
-# Week 1: Introduction {#Introduction}
+# Week 1: Introduction[^Adapted1]
 
-<div class="marginnote">
-Adapted nearly verbatim from Chapter 1 and 2 in Navarro, D. ["Learning Statistics with R."](https://learningstatisticswithr.com)
-</div>
+[^Adapted1]:Adapted nearly verbatim from Chapter 1 and 2 in Navarro, D. ["Learning Statistics with R."](https://learningstatisticswithr.com)
 
-To the surprise of many students, statistics is a fairly significant part of any bachelor program. To the surprise of no-one, statistics is very rarely the *favorite* part of one’s bachelor studies. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics program right now, not a university college. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact this program has much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…
+To the surprise of many students, statistics is a fairly significant part of any bachelor program at university. To the surprise of no-one, statistics is very rarely the *favorite* part of one’s bachelor studies. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics program right now, not a university college. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact university studies have so much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…
 
 A big part of this issue at hand relates to the very idea of statistics. What is it? What’s it there for? And why are scientists so bloody obsessed with it? These are all good questions, when you think about it. So let’s start with the last one. As a group, scientists seem to be bizarrely fixated on running statistical tests on everything. In fact, we use statistics so often that we sometimes forget to explain to people why we do. It’s a kind of article of faith among scientists – and especially social scientists – that your findings can’t be trusted until you’ve done some statistics. Undergraduate students might be forgiven for thinking that we’re all completely mad, because no-one takes the time to answer one very simple question:
 
@@ -83,11 +81,9 @@ The following is a true story (I think...). In 1973, the University of Californi
   Females            4321                 35%
   --------- ---------------------- ------------------
 
-and they were worried about being sued. Given that there were nearly 13,000 applicants, a difference of 9% in admission rates between males and females is just way too big to be a coincidence. Pretty compelling data, right? And if I were to say to you that these data *actually* reflect a weak bias in favour of women (sort of!), you’d probably think that I was either crazy or sexist.
+and they were worried about being sued. Given that there were nearly 13,000 applicants, a difference of 9% in admission rates between males and females is just way too big to be a coincidence. Pretty compelling data, right? And if I were to say to you that these data *actually* reflect a weak bias in favour of women (sort of!), you’d probably think that I was either crazy or sexist.[^Simpsons]
 
-<div class="marginnote">
-Earlier versions of these notes incorrectly suggested that they actually were sued – apparently that’s not true. There’s a nice commentary on this here: https://www.refsmmat.com/posts/2016-05-08-simpsons-paradox-berkeley.html. A big thank you to Wilfried Van Hirtum for pointing this out to me!
-</div>
+[^Simpsons]: Earlier versions of these notes incorrectly suggested that they actually were sued – apparently that’s not true. There’s a nice commentary on this here: https://www.refsmmat.com/posts/2016-05-08-simpsons-paradox-berkeley.html. A big thank you to Wilfried Van Hirtum for pointing this out to me!
 
 When people started looking more carefully at the admissions data [@Bickel1975] they told a rather different story. Specifically, when they looked at it on a department by department basis, it turned out that most of the departments actually had a slightly *higher* success rate for female applicants than for male applicants. The table below shows the admission figures for the six largest departments (with the names of the departments removed for privacy reasons):
 
@@ -118,10 +114,10 @@ Suppose, hypothetically, that males preferred to apply to “hard sciences” an
 
 In short there are a lot of critical questions that you can’t answer with statistics, but the answers to those questions will have a huge impact on how you analyse and interpret data. And this is the reason why you should always think of statistics as a *tool* to help you learn about your data, no more and no less. It’s a powerful tool to that end, but there’s no substitute for careful thought.
 
-## Statistics in psychology
-<div class="marginnote">
-As stated in the preface, this text was originally written for psychology students. Regardless of your interest in psychology, the reasons stated here are also relevant many other research fields (e.g. medicine, economics, sociology, sustainability etc.)
-</div>
+## Statistics in psychology [^Psych]
+
+[^Psych]:As stated in the preface, this text was originally written for psychology students. Regardless of your interest in psychology, the reasons stated here are also relevant many other research fields (e.g. medicine, economics, sociology, sustainability etc.)
+
 I hope that the discussion above helped explain why science in general is so focused on statistics. But I’m guessing that you have a lot more questions about what role statistics plays in psychology, and specifically why psychology classes always devote so many lectures to stats. So here’s my attempt to answer a few of them...
 
 -   **Why does psychology have so much statistics?**
@@ -170,9 +166,9 @@ The first thing to understand is data collection can be thought of as a kind of 
 
 Measurement itself is a subtle concept, but basically it comes down to finding some way of assigning numbers, or labels, or some other kind of well-defined descriptions to “stuff”. So, any of the following would count as a psychological measurement:
 
--   My <span>**age**</span> is <span>*33 years*</span>.
+-   My <span>**age**</span> is <span>*32 years*</span>.
 
--   I <span>*do not*</span> <span>**like anchovies**</span>.
+-   I <span>*do not*</span> <span>**white chocolate**</span>.
 
 -   My <span>**chromosomal gender**</span> is <span>*male*</span>.
 
@@ -182,7 +178,7 @@ In the short list above, the <span>**bolded part**</span> is “the thing to be 
 
 -   My <span>**age**</span> (in years) could have been <span>*0, 1, 2, 3 …*</span>, etc. The upper bound on what my age could possibly be is a bit fuzzy, but in practice you’d be safe in saying that the largest possible age is <span>*150*</span>, since no human has ever lived that long.
 
--   When asked if I <span>**like anchovies**</span>, I might have said that <span>*I do*</span>, or <span>*I do not*</span>, or <span>*I have no opinion*</span>, or <span>*I sometimes do*</span>.
+-   When asked if I <span>**like white chocolate**</span>, I might have said that <span>*I do*</span>, or <span>*I do not*</span>, or <span>*I have no opinion*</span>, or <span>*I sometimes do*</span>.
 
 -   My <span>**chromosomal gender**</span> is almost certainly going to be <span>*male (XY)*</span> or <span>*female (XX)*</span>, but there are a few other possibilities. I could also have <span>*Klinfelter’s syndrome (XXY)*</span>, which is more similar to male than to female. And I imagine there are other possibilities too.
 
@@ -306,4 +302,4 @@ caption = 'The terminology used to distinguish between different roles that a va
 ```
 
 ## That's it for this week
-That's it for the readings of the first week. Next, make sure to complete the ["Getting started"](https://thomashulst.github.io/quantrma_ex/getting-started.html) section of the exercise manual before your first tutorial. In this section you will install and learn about the very basics of the statistical software we will be using during this course: R. 
+That's it for the readings of the first week. Next, make sure to complete the ["Getting started"](https://thomashulst.github.io/quantrma_ex/getting-started.html) section of the exercise manual before your first tutorial. The "Getting started" section will ask you to install and learn about the very basics of the statistical software we will be using during this course: R. 

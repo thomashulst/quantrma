@@ -21,13 +21,10 @@ fig:3corrandN
 fig:3corRandfour
 fig:3realcorFour
 tab:scalescont
-important-notes
-attributions
-cc-by-sa-4.0-license
-Introduction
+week-1-introductionadapted1
 the-curse-of-belief-bias
 the-cautionary-tale-of-simpsons-paradox
-statistics-in-psychology
+statistics-in-psychology-psych
 statistics-in-everyday-life
 theres-more-to-research-methods-than-statistics
 a-brief-introduction-to-research-methods
@@ -37,7 +34,7 @@ assessing-the-reliability-of-a-measurement
 forms-of-measurement-error
 the-role-of-variables-predictors-and-outcomes
 thats-it-for-this-week
-DescribingData
+week-2-describing-data-adapted2
 this-is-what-too-many-numbers-looks-like
 look-at-the-data
 stop-plotting-time-o-o-oh-u-can-plot-this
@@ -71,7 +68,7 @@ measures-of-center-mode
 measures-of-center-median-and-mean
 standard-deviation-part-i
 standard-deviation-part-ii
-CorrelationCausation
+week-3-correlation-and-causation-adapted3
 if-something-caused-something-else-to-change-what-would-that-look-like
 charlie-and-the-chocolate-factory
 scatter-plots

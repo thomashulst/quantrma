@@ -1,13 +1,8 @@
-# Week 2: Describing Data {#DescribingData}
+# Week 2: Describing Data [^Adapted2]
+>Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
+>---John W. Tukey
 
-<span class="newthought">
-Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
----John W. Tukey
-</span>
-
-<div class="marginnote">
-Chapter by Matthew Crump
-</div>
+[^Adapted2]: Chapter by Matthew Crump
 
 This chapter is about **descriptive statistics**. These are tools for describing data. Some things to keep in mind as we go along are:
 
@@ -311,13 +306,11 @@ These are little problems that can be solved by computing the **variance** and t
 
 Variability, variation, variance, vary, variable, varying, variety. Confused yet? Before we describe **the variance**, we want to you be OK with how this word is used. First, don't forget the big picture. We know that variability and variation refers to the big idea of differences between numbers. We can even use the word variance in the same way. When numbers are different, they have variance.
 
-<div class="marginnote">
-The formulas for variance and standard deviation depend on whether you think your data represents an entire population of numbers, or is sample from the population. We discuss this issue in later on. For now, we divide by N, later we discuss why you will often divide by N-1 instead.
-</div>
-
-The word **variance** also refers to a specific summary statistic, the sum of the squared deviations from the mean. Hold on what? Plain English please. The variance is the sum of the squared difference scores, where the difference scores are computed between each score and the mean. What are these scores? The scores are the numbers in the data set. Let's see the formula in English first:
+The word **variance** also refers to a specific summary statistic, the sum of the squared deviations from the mean. Hold on what? Plain English please. The variance is the sum of the squared difference scores, where the difference scores are computed between each score and the mean. What are these scores? The scores are the numbers in the data set. Let's see the formula in English first[^Formulas]:
 
 $variance = \frac{\text{Sum of squared difference scores}}{\text{Number of Scores}}$
+
+[^Formulas]:The formulas for variance and standard deviation depend on whether you think your data represents an entire population of numbers, or is sample from the population. We discuss this issue later on. For now, we divide by N (the number of observations), later we discuss why you will often divide by N-1 instead.
 
 #### Deviations from the mean, Difference scores from the mean
 
@@ -463,7 +456,9 @@ Perhaps you haven't heard, but there is more than one way to skin a cat, but we 
 
 ### Absolute deviations
 
-How about just taking the absolute value of the difference scores. Remember, the absolute value converts any number to a positive value. Check out the following table:
+How about just taking the absolute value of the difference scores[^Abs]. Remember, the absolute value converts any number to a positive value. Check out the following table:
+
+[^Abs]:For a discussion on why we tend to use squared deviations in statistics instead of absolute deviations see [here](https://stats.stackexchange.com/questions/118/why-square-the-difference-instead-of-taking-the-absolute-value-in-standard-devia)
 
 ```{r 2absolute,echo=F}
 scores<-1:6
@@ -479,10 +474,6 @@ the_df <- the_df %>%
 knitr::kable(the_df)
 
 ```
-
-<div class="marginnote">
-For a discussion on why we tend to use squared deviations in statistics instead of absolute deviations see [here](https://stats.stackexchange.com/questions/118/why-square-the-difference-instead-of-taking-the-absolute-value-in-standard-devia)
-</div>
 
 This works pretty well too. By converting the difference scores from the mean to positive values, we can now add them up and get a non-zero value (if there are differences). Then, we can find the mean of the sum of the absolute deviations. If we were to map the terms sum of squares (SS), variance and standard deviation onto these new measures based off of the absolute deviation, how would the mapping go? For example, what value in the table corresponds to the SS? That would be the sum of absolute deviations in the last column. How about the variance and standard deviation, what do those correspond to? Remember that the variance is mean ($SS/N$), and the standard deviation is a square-rooted mean ($\sqrt{SS/N}$). In the table above we only have one corresponding mean, the mean of the sum of the absolute deviations. So, we have a **variance** measure that does not need to be square rooted. We might say the mean absolute deviation, is doing double-duty as a variance and a standard-deviation. Neat.
 

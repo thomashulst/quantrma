@@ -1,13 +1,9 @@
-# Week 3: Correlation and Causation {#CorrelationCausation}
+# Week 3: Correlation and Causation [^Adapted3]
 
-<span class="newthought">
-Correlation does not equal causation
----Every Statistics and Research Methods Instructor Ever
-</span>
+>Correlation does not equal causation
+>---Every Statistics and Research Methods Instructor Ever
 
-<div class="marginnote">
-Chapter by Matthew Crump
-</div>
+[^Adapted3]:Chapter by Matthew Crump
 
 In the last chapter we had some data. It was too much too look at and it didn't make sense. So, we talked about how to look at the data visually using plots and histograms, and we talked about how to summarize lots of numbers so we could determine their central tendencies (sameness) and variability (differentness). And, all was well with the world.
 
@@ -114,27 +110,18 @@ ggplot(all_data,aes(x=chocolate_x,y=happiness_x))+
 
 ```
 
+The first panel shows a **negative correlation**. Happiness goes down as chocolate supply increases. Negative correlation occurs when one thing goes up and the other thing goes down; or, when more of X is less of Y, and vice-versa. The second panel shows a **positive correlation**. Happiness goes up as chocolate as chocolate supply increases. Positive correlation occurs when both things go up together, and go down together: more of X is more of Y, and vice-versa. The third panel shows **no correlation**. Here, there doesn't appear to be any obvious relationship between chocolate supply and happiness. The dots are scattered all over the place, the truest of the scatter plots[^Corr].
 
-
-The first panel shows a **negative correlation**. Happiness goes down as chocolate supply increases. Negative correlation occurs when one thing goes up and the other thing goes down; or, when more of X is less of Y, and vice-versa. The second panel shows a **positive correlation**. Happiness goes up as chocolate as chocolate supply increases. Positive correlation occurs when both things go up together, and go down together: more of X is more of Y, and vice-versa. The third panel shows **no correlation**. Here, there doesn't appear to be any obvious relationship between chocolate supply and happiness. The dots are scattered all over the place, the truest of the scatter plots. 
-
-
-<div class="marginnote">
-We are wading into the idea that measures of two things can be related, or correlated with one another. It is possible for the relationships to be more complicated than just going up, or going down. For example, we could have a relationship that where the dots go up for the first half of X, and then go down for the second half.
-</div>
+[^Corr]: We are wading into the idea that measures of two things can be related, or correlated with one another. It is possible for the relationships to be more complicated than just going up, or going down. For example, we could have a relationship that where the dots go up for the first half of X, and then go down for the second half.
 
 Zero correlation occurs when one thing is not related in any way to another things: changes in X do not relate to any changes in Y, and vice-versa.
 
 ## Pearson's r
+If Beyoncé was a statistician, she might look at these scatter plots and want to "put a number on it". We think this is a good idea too. We've already learned how to create descriptive statistics for a single measure, like chocolate, or happiness (i.e., means, variances, etc.). A descriptive statistic that summarizes the relationship between two measures, all in one number, was invented by Karl Pearson[^Stories]. Everyone now calls it, "Pearson's $r$". 
 
-<div class="marginnote">
-The stories about the invention of various statistics are very interesting, you can read more about them in the book, "The Lady Tasting Tea" [@salsburg2001lady]
-</div>
+[^Stories]:The stories about the invention of various statistics are very interesting, you can read more about them in the book, "The Lady Tasting Tea" [@salsburg2001lady]
 
-If Beyoncé was a statistician, she might look at these scatter plots and want to "put a number on it". We think this is a good idea too. We've already learned how to create descriptive statistics for a single measure, like chocolate, or happiness (i.e., means, variances, etc.). A descriptive statistic that summarizes the relationship between two measures, all in one number, was invented by Karl Pearson. Everyone now calls it, "Pearson's $r$". 
-
-
->Karl Pearson was a big-wig editor at Biometrika in the 1930s and all around horrible person. He took a hating to another big-wig statistician, Sir Ronald Fisher (who we learn about later, but was also generally a horrible person), and they had some stats fights...why can't we all just get along in statistics? Seen as the founding fathers of modern statistics, both Pearson and Fisher held deeply racist views and actively contributed to the field of eugenics. You can read more about the troubled history of modern statistics in [many](https://statmodeling.stat.columbia.edu/2020/08/01/ra-fisher-and-the-science-of-hatred/), [many](https://www.bayesianspectacles.org/karl-pearsons-worst-quotation/) different [places](https://njoselson.github.io/Fisher-Pearson/). For now, we will focus about how different statistics work and how to use statistics (for good, hopefully), but I think it's important to keep this troubled history in mind. 
+>Karl Pearson was a big-wig editor at Biometrika in the 1930s and all around horrible person. He took a hating to another big-wig statistician, Sir Ronald Fisher (who we learn about later, but was also generally a horrible person), and they had some fights about statistics...why can't we all just get along in statistics? Seen as the founding fathers of modern statistics, both Pearson and Fisher held deeply racist views and actively contributed to the field of eugenics. You can read more about the troubled history of modern statistics in [many](https://statmodeling.stat.columbia.edu/2020/08/01/ra-fisher-and-the-science-of-hatred/), [many](https://www.bayesianspectacles.org/karl-pearsons-worst-quotation/) different [places](https://njoselson.github.io/Fisher-Pearson/). For now, we will focus about how different statistics work and how to use statistics (for good, hopefully), but I think it's important to keep this troubled history in mind. 
 
 How does Pearson's $r$ work? Let's look again at the first 10 subjects in our fake experiment:
 
@@ -277,11 +264,9 @@ $r = \frac{cov(X,Y)}{\sigma_{X}\sigma_{Y}} = \frac{cov(X,Y)}{SD_{X}SD_{Y}}$
 
 We see the symbol $\sigma$ here, that's more Greek for you. $\sigma$ is often used as a symbol for the standard deviation (SD). If we read out the formula in English, we see that r is the co-variance of X and Y, divided by the product of the standard deviation of X and the standard deviation of Y. Why are we dividing the co-variance by the product of the standard deviations. This operation has the effect of **normalizing** the co-variance into the range -1 to 1. 
 
-<div class="marginnote">
-But, we will fill this part in as soon as we can...promissory note to explain the magic. FYI, it's not magic. Brief explanation here is that dividing each measure by its standard deviation ensures that the values in each measure are in the same range as one another. 
-</div>
+For now, we will call this mathematical magic[^Cov]. It works, but we don't have space to tell you why it works right now.
 
-For now, we will call this mathematical magic. It works, but we don't have space to tell you why it works right now.
+[^Cov]:But, we will fill this part in as soon as we can... promissory note to explain the magic. FYI, it's not magic. Brief explanation here is that dividing each measure by its standard deviation ensures that the values in each measure are in the same range as one another. 
 
 > It's worth saying that there are loads of different formulas for computing Pearson's $r$. You can find them by Googling them. We will probably include more of them here, when we get around to it. However, they all give you the same answer. And, they are all not as pretty as each other. Some of them might even look scary. In other statistics textbook you will often find formulas that are easier to use for calculation purposes. For example, if you only had a pen and paper, you might use one or another formula because it helps you compute the answer faster by hand. To be honest, we are not very interested in teaching you how to plug numbers into formulas. We give one lesson on that here: Put the numbers into the letters, then compute the answer. Sorry to be snarky. Nowadays you have a computer that you should use for this kind of stuff. So, we are more interested in teaching you what the calculations mean, rather than how to do them. Of course, every week we are showing you how to do the calculations in class with computers.
 
@@ -564,12 +549,9 @@ How about $r = .5$? The bar is much smaller here, you might think, "well, I can 
 How about an $r = .95$?. You might see that the bar for .95 is very very small, perhaps too small to see. What does this tell you? It tells you that chance does not produce .95 very often, hardly if at all, pretty much never. So, if you found a .95 in your data, what would you infer? Perhaps you would be comfortable inferring that chance did not produce your .95, after all, .95 is mostly outside the window of chance.
 
 #### Increasing sample-size decreases the opportunity for spurious correlations
+Before moving on, let's do one more thing with correlations. In our pretend lottery game, each participant only sampled 10 balls each. We found that this could lead to a range of correlations between the numbers randomly drawn from either sides of the pole. Indeed, we even found some correlations that were medium to large in size. If you were a researcher who found such correlations, you might be tempted to believe there was a relationship between your measurements. However, we know in our little game, that those correlations would be spurious, just a product of random sampling[^Spur].
 
-<div class="marginnote">
-See [this website](https://www.tylervigen.com/spurious-correlations) by Tyler Vigen for some interesting spurious correlations. You can even use his website to [discover a spurious correlation](https://tylervigen.com/discover) of your own!
-</div>
-
-Before moving on, let's do one more thing with correlations. In our pretend lottery game, each participant only sampled 10 balls each. We found that this could lead to a range of correlations between the numbers randomly drawn from either sides of the pole. Indeed, we even found some correlations that were medium to large in size. If you were a researcher who found such correlations, you might be tempted to believe there was a relationship between your measurements. However, we know in our little game, that those correlations would be spurious, just a product of random sampling.
+[^Spur]:See [this website](https://www.tylervigen.com/spurious-correlations) by Tyler Vigen for some interesting spurious correlations. You can even use his website to [discover a spurious correlation](https://tylervigen.com/discover) of your own!
 
 The good news is that, as a researcher, you get to make the rules of the game. You get to determine how chance can play. This is all still a little bit metaphorical, so let's make it concrete.
 
