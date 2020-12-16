@@ -329,9 +329,8 @@ We put a blue line on the scatterplot to visualize the positive relationship. It
 
 The actual correlation, as measured by Pearson's $r$ is:
 
-```{r}
+```{r, echo=TRUE,eval=TRUE}
 # calculate correlation
-
 cor(smaller_df$`Freedom to make life choices`,
     smaller_df$`Confidence in national government`)
 ```
@@ -498,7 +497,13 @@ ggplot(all_data,aes(x=chocolate_x,y=happiness_x))+
 OK, now we are ready for the animation. You are looking at the process of sampling two sets of numbers randomly, one for the X variable, and one for the Y variable. Each time we sample 10 numbers for each, plot them, then draw a line through them. Remember, these numbers are all completely random, so we should expect, on average that there should be no correlation between the numbers. However, this is not what happens. You can the line going all over the place. Sometimes we find a negative correlation (line goes down), sometimes we see a positive correlation (line goes up), and sometimes it looks like zero correlation (line is more flat). 
 
 ```{r 3randcor10gif, fig.cap="Completely random data points drawn from a uniform distribution with a small sample-size of 10. The blue line twirls around sometimes showing large correlations that are produced by chance", echo=F}
-knitr::include_graphics(path="gifs/corUnifn10-1.gif")
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("figures/gifs/corUnifn10-1.png")
+} else {
+  knitr::include_graphics("figures/gifs/corUnifn10-1.gif")
+}
+
 ```
 
 ```{r,echo=F, eval=FALSE}
@@ -600,7 +605,13 @@ Below we randomly sample numbers for two variables, plot them, and show the corr
 Remember, because we are randomly sampling numbers, there should be no relationship between the X and Y variables. But, as we have been discussing, because of chance, we can sometimes observe a correlation (due to chance). The important thing to watch is how the line behaves across the four panels. The line twirls around in all directions when the sample size is 10. It is also moves around quite a bit when the sample size is 50 or 100. It still moves a bit when the sample size is 1000, but much less. In all cases we expect the line to be flat, but sometimes the line shows us a pseudo relationship.
 
 ```{r 3corRandfour, fig.cap="Animation of how correlation behaves for completely random X and Y variables as a function of sample size. The best fit line is not very stable for small sample-sizes, but becomes more reliably flat as sample-size increases", echo=F,eval=T}
-knitr::include_graphics(path="gifs/corUnifFourNs-1.gif")
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("figures/gifs/corUnifFourNs-1.png")
+} else {
+  knitr::include_graphics("figures/gifs/corUnifFourNs-1.gif")
+}
+
 ```
 
 ```{r, eval=F}
@@ -646,7 +657,13 @@ Sometimes there really are correlations between two variables that are not cause
 Notice that in the top left panel (sample-size 10), the line is twirling around much more than the other panels. Every new set of samples produces different correlations. Sometimes, the line even goes flat or downward. However, as we increase sample-size, we can see that the line doesn't change very much, it is always going up showing a positive correlation.
 
 ```{r 3realcorFour, fig.cap="How correlation behaves as a function of sample-size when there is a true correlation between X and Y variables", echo=F,eval=T}
-knitr::include_graphics(path="gifs/corRealgif-1.gif")
+
+if (knitr:::is_latex_output()) {
+  knitr::include_graphics("figures/gifs/corRealgif-1.png")
+} else {
+  knitr::include_graphics("figures/gifs/corRealgif-1.gif")
+}
+
 ```
 
 The main takeaway here is that even when there is a positive correlation between two things, you might not be able to see it if your sample size is small. For example, you might get unlucky with the one sample that you measured. Your sample could show a negative correlation, even when the actual correlation is positive! Unfortunately, in the real world we usually only have the sample that we collected, so we always have to wonder if we got lucky or unlucky. If you want to remove luck, you need to collect larger samples. Then you will be much more likely to observe the real pattern, rather the a pattern that can be introduced by chance.
