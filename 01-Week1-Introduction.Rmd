@@ -230,7 +230,7 @@ Different nominal definitions will produce different results; hence it is import
 
 In addition to the aforementioned dimensions, theoretical constructs can also have subdimensions. Suppose we decide to focus on social well-being. In this case, the following subdimensions could be of some relevance: the level of safety in the neighborhood or the nature of a child’s relationships and experiences with discrimination. Given that we are interested in the effect of marriage breakdown on children’s well-being, we might want to focus on the child’s relationships with others, especially people like their mother, father, siblings, etc. Again, what is important here is to explain and justify your approach. 
 
-```{r 1construct, fig.cap="Operationalization of child's well-being. Adapted from @de_vaus_research_2001"}
+```{r 1construct, fig.cap="Operationalization of a child's well-being. Adapted from @de_vaus_research_2001"}
 
 knitr::include_graphics("figures/1construct.png")
 ```
@@ -241,7 +241,7 @@ How well the indicators match the theoretical construct has a bit impact on the 
 
 In practice, even scientists tend to blur the distinction between these things, but it’s very helpful to try to understand the differences.
 
-## Assessing the reliability and validity of a measurement (#reliab-valid-measurement)
+## Assessing the reliability and validity of a measurement {#reliab-valid-measurement}
 
 At this point we’ve thought a little bit about how to operationalize a theoretical construct and thereby create a psychological measure. Now, we should start discussing the obvious question: is the measurement any good? We’ll do this in terms of two related ideas: *reliability* and *validity*. Put simply, the **reliability** of a measure tells you how *precisely* you are measuring something, whereas the **validity** of a measure tells you how *accurate* the measure is. 
 

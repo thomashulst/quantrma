@@ -29,7 +29,7 @@ theres-more-to-research-methods-than-statistics
 a-brief-introduction-to-research-methods
 thoughts-measurement
 operationalize
-assessing-the-reliability-and-validity-of-a-measurement-reliab-valid-measurement
+reliab-valid-measurement
 forms-of-measurement-error
 variables
 thats-it-for-this-week

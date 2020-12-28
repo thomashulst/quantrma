@@ -142,7 +142,7 @@ Likert scales are very handy, if somewhat limited, tools. The question is, what 
 But are they ordinal scale or interval scale? One argument says that we can’t really prove that the difference between “strongly agree” and “agree” is of the same size as the difference between “agree” and “neither agree nor disagree”. In fact, in everyday life it’s pretty obvious that they’re not the same at all. So this suggests that we ought to treat Likert scales as ordinal variables. On the other hand, in practice most participants do seem to take the whole “on a scale from 1 to 5” part fairly seriously, and they tend to act as if the differences between the five response options were fairly similar to one another. As a consequence, a lot of researchers treat Likert scale data as if it were interval scale. It’s not interval scale, but in practice it’s close enough that we usually think of it as being **quasi-interval scale**.
 
 ## This is what too many numbers looks like
-What that out of the way, we can start look at some actual measurements. Let's say you want to know how happy people are. So, you ask 500 people on the street how happy they are. You let them pick any number they want from negative infinity to positive infinity and record all the numbers in a continuous interval variable.
+What that out of the way, we can start looking at some actual measurements. Let's say you want to know how happy people are. So, you ask 500 people on the street how happy they are. You let them pick any number they want from negative infinity to positive infinity and record all the numbers in a continuous interval variable.
 
 We could look at the numbers and see if that helps determine anything about how happy people are. Perhaps it would look something like this:
 
