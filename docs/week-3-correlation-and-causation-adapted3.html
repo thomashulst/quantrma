@@ -301,128 +301,62 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb5-13"><a href="week-3-correlation-and-causation-adapted3.html#cb5-13"></a>df_charlie_short &lt;-<span class="st"> </span>df_charlie[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, ]</span></code></pre></div>
 <table>
 <thead>
-<tr>
-<th style="text-align:right;">
-subject
-</th>
-<th style="text-align:right;">
-chocolate
-</th>
-<th style="text-align:right;">
-happiness
-</th>
+<tr class="header">
+<th align="right">subject</th>
+<th align="right">chocolate</th>
+<th align="right">happiness</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-1
-</td>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">1</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-1
-</td>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">2</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-2
-</td>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">3</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-3
-</td>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">2</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-4
-</td>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">5</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-5
-</td>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">4</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-4
-</td>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">4</td>
+<td align="right">7</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-7
-</td>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">5</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-7
-</td>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">5</td>
+<td align="right">7</td>
 </tr>
-<tr>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-6
-</td>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">6</td>
 </tr>
 </tbody>
 </table>
@@ -462,150 +396,72 @@ Figure 3.2: Three scatterplots showing negative, positive, and zero correlation
 <p>How does Pearson’s <span class="math inline">\(r\)</span> work? Let’s look again at the first 10 subjects in our fake experiment:</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-subject
-</th>
-<th style="text-align:left;">
-chocolate
-</th>
-<th style="text-align:left;">
-happiness
-</th>
+<tr class="header">
+<th align="left">subject</th>
+<th align="left">chocolate</th>
+<th align="left">happiness</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">2</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-2
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">3</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-3
-</td>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">3</td>
+<td align="left">2</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-4
-</td>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">5</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-5
-</td>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">4</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-4
-</td>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">7</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-7
-</td>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">6</td>
+<td align="left">5</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-7
-</td>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">7</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-6
-</td>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">10</td>
+<td align="left">6</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Sums
-</td>
-<td style="text-align:left;">
-36
-</td>
-<td style="text-align:left;">
-40
-</td>
+<tr class="odd">
+<td align="left">Sums</td>
+<td align="left">41</td>
+<td align="left">42</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Means
-</td>
-<td style="text-align:left;">
-3.6
-</td>
-<td style="text-align:left;">
-4
-</td>
+<tr class="even">
+<td align="left">Means</td>
+<td align="left">4.1</td>
+<td align="left">4.2</td>
 </tr>
 </tbody>
 </table>
@@ -628,189 +484,85 @@ Means
 <p>Back to our table…notice anything new?</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-subject
-</th>
-<th style="text-align:left;">
-chocolate
-</th>
-<th style="text-align:left;">
-happiness
-</th>
-<th style="text-align:left;">
-chocolate_X_happiness
-</th>
+<tr class="header">
+<th align="left">subject</th>
+<th align="left">chocolate</th>
+<th align="left">happiness</th>
+<th align="left">chocolate_X_happiness</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">2</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-4
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">6</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-9
-</td>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">6</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-12
-</td>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">20</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-20
-</td>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">20</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-16
-</td>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">28</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-35
-</td>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">30</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-49
-</td>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">35</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-36
-</td>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">10</td>
+<td align="left">6</td>
+<td align="left">60</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Sums
-</td>
-<td style="text-align:left;">
-36
-</td>
-<td style="text-align:left;">
-40
-</td>
-<td style="text-align:left;">
-183
-</td>
+<tr class="odd">
+<td align="left">Sums</td>
+<td align="left">41</td>
+<td align="left">42</td>
+<td align="left">208</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Means
-</td>
-<td style="text-align:left;">
-3.6
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-18.3
-</td>
+<tr class="even">
+<td align="left">Means</td>
+<td align="left">4.1</td>
+<td align="left">4.2</td>
+<td align="left">20.8</td>
 </tr>
 </tbody>
 </table>
@@ -822,306 +574,124 @@ Means
 <p>The next step is to think about how the products of two measures sum together, depending on how they line up. Let’s look at another table:</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-scores
-</th>
-<th style="text-align:left;">
-X
-</th>
-<th style="text-align:left;">
-Y
-</th>
-<th style="text-align:left;">
-A
-</th>
-<th style="text-align:left;">
-B
-</th>
-<th style="text-align:left;">
-XY
-</th>
-<th style="text-align:left;">
-AB
-</th>
+<tr class="header">
+<th align="left">scores</th>
+<th align="left">X</th>
+<th align="left">Y</th>
+<th align="left">A</th>
+<th align="left">B</th>
+<th align="left">XY</th>
+<th align="left">AB</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-10
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">10</td>
+<td align="left">1</td>
+<td align="left">10</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-18
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">9</td>
+<td align="left">4</td>
+<td align="left">18</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-24
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">3</td>
+<td align="left">3</td>
+<td align="left">3</td>
+<td align="left">8</td>
+<td align="left">9</td>
+<td align="left">24</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-16
-</td>
-<td style="text-align:left;">
-28
-</td>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">4</td>
+<td align="left">4</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">16</td>
+<td align="left">28</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-25
-</td>
-<td style="text-align:left;">
-30
-</td>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">5</td>
+<td align="left">5</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">25</td>
+<td align="left">30</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-36
-</td>
-<td style="text-align:left;">
-30
-</td>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">36</td>
+<td align="left">30</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-49
-</td>
-<td style="text-align:left;">
-28
-</td>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">7</td>
+<td align="left">7</td>
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">49</td>
+<td align="left">28</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-64
-</td>
-<td style="text-align:left;">
-24
-</td>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">8</td>
+<td align="left">8</td>
+<td align="left">8</td>
+<td align="left">3</td>
+<td align="left">64</td>
+<td align="left">24</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-81
-</td>
-<td style="text-align:left;">
-18
-</td>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">9</td>
+<td align="left">9</td>
+<td align="left">9</td>
+<td align="left">2</td>
+<td align="left">81</td>
+<td align="left">18</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-100
-</td>
-<td style="text-align:left;">
-10
-</td>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">10</td>
+<td align="left">10</td>
+<td align="left">10</td>
+<td align="left">1</td>
+<td align="left">100</td>
+<td align="left">10</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Sums
-</td>
-<td style="text-align:left;">
-55
-</td>
-<td style="text-align:left;">
-55
-</td>
-<td style="text-align:left;">
-55
-</td>
-<td style="text-align:left;">
-55
-</td>
-<td style="text-align:left;">
-385
-</td>
-<td style="text-align:left;">
-220
-</td>
+<tr class="odd">
+<td align="left">Sums</td>
+<td align="left">55</td>
+<td align="left">55</td>
+<td align="left">55</td>
+<td align="left">55</td>
+<td align="left">385</td>
+<td align="left">220</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Means
-</td>
-<td style="text-align:left;">
-5.5
-</td>
-<td style="text-align:left;">
-5.5
-</td>
-<td style="text-align:left;">
-5.5
-</td>
-<td style="text-align:left;">
-5.5
-</td>
-<td style="text-align:left;">
-38.5
-</td>
-<td style="text-align:left;">
-22
-</td>
+<tr class="even">
+<td align="left">Means</td>
+<td align="left">5.5</td>
+<td align="left">5.5</td>
+<td align="left">5.5</td>
+<td align="left">5.5</td>
+<td align="left">38.5</td>
+<td align="left">22</td>
 </tr>
 </tbody>
 </table>
@@ -1144,267 +714,111 @@ Then, I multiplied <span class="math inline">\(X\)</span> and <span class="math 
 <p>Let’s see what this look like in a table:</p>
 <table>
 <thead>
-<tr>
-<th style="text-align:left;">
-subject
-</th>
-<th style="text-align:left;">
-chocolate
-</th>
-<th style="text-align:left;">
-happiness
-</th>
-<th style="text-align:left;">
-c_d
-</th>
-<th style="text-align:left;">
-h_d
-</th>
-<th style="text-align:left;">
-cd_X_hd
-</th>
+<tr class="header">
+<th align="left">subject</th>
+<th align="left">chocolate</th>
+<th align="left">happiness</th>
+<th align="left">c_d</th>
+<th align="left">h_d</th>
+<th align="left">cd_X_hd</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
--2.6
-</td>
-<td style="text-align:left;">
--3
-</td>
-<td style="text-align:left;">
-7.8
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">-3.1</td>
+<td align="left">-3.2</td>
+<td align="left">9.92</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
--2.6
-</td>
-<td style="text-align:left;">
--3
-</td>
-<td style="text-align:left;">
-7.8
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">-3.1</td>
+<td align="left">-2.2</td>
+<td align="left">6.82</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
--1.6
-</td>
-<td style="text-align:left;">
--2
-</td>
-<td style="text-align:left;">
-3.2
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">-2.1</td>
+<td align="left">-1.2</td>
+<td align="left">2.52</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
--0.6
-</td>
-<td style="text-align:left;">
--1
-</td>
-<td style="text-align:left;">
-0.6
-</td>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left">-1.1</td>
+<td align="left">-2.2</td>
+<td align="left">2.42</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
--0.6
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-0
-</td>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">-0.1</td>
+<td align="left">0.8</td>
+<td align="left">-0.08</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-0.4
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-0.4
-</td>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">4</td>
+<td align="left">0.9</td>
+<td align="left">-0.2</td>
+<td align="left">-0.18</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-0.4
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-0
-</td>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">4</td>
+<td align="left">7</td>
+<td align="left">-0.1</td>
+<td align="left">2.8</td>
+<td align="left">-0.28</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-1.4
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-4.2
-</td>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">6</td>
+<td align="left">5</td>
+<td align="left">1.9</td>
+<td align="left">0.8</td>
+<td align="left">1.52</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-3.4
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-10.2
-</td>
+<tr class="odd">
+<td align="left">9</td>
+<td align="left">5</td>
+<td align="left">7</td>
+<td align="left">0.9</td>
+<td align="left">2.8</td>
+<td align="left">2.52</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-2.4
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-4.8
-</td>
+<tr class="even">
+<td align="left">10</td>
+<td align="left">10</td>
+<td align="left">6</td>
+<td align="left">5.9</td>
+<td align="left">1.8</td>
+<td align="left">10.62</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Sums
-</td>
-<td style="text-align:left;">
-36
-</td>
-<td style="text-align:left;">
-40
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-39
-</td>
+<tr class="odd">
+<td align="left">Sums</td>
+<td align="left">41</td>
+<td align="left">42</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">36</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Means
-</td>
-<td style="text-align:left;">
-3.6
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-3.9
-</td>
+<tr class="even">
+<td align="left">Means</td>
+<td align="left">4.1</td>
+<td align="left">4.2</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.58</td>
 </tr>
 </tbody>
 </table>
@@ -1472,7 +886,7 @@ Figure 3.4: Relationship between freedom to make life choices and confidence in 
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="week-3-correlation-and-causation-adapted3.html#cb8-1"></a><span class="co"># calculate correlation</span></span>
 <span id="cb8-2"><a href="week-3-correlation-and-causation-adapted3.html#cb8-2"></a><span class="kw">cor</span>(smaller_df<span class="op">$</span><span class="st">`</span><span class="dt">Freedom to make life choices</span><span class="st">`</span>,</span>
 <span id="cb8-3"><a href="week-3-correlation-and-causation-adapted3.html#cb8-3"></a>    smaller_df<span class="op">$</span><span class="st">`</span><span class="dt">Confidence in national government</span><span class="st">`</span>)</span></code></pre></div>
-<pre><code>## [1] 0.4080963</code></pre>
+<pre><code>## [1] 0.4419082</code></pre>
 <p>You will do a lot more of this kind of thing during the lab. Looking at the graph you might start to wonder: Does freedom to make life choices cause changes how confident people are in their national government? Our does it work the other way? Does being confident in your national government give you a greater sense of freedom to make life choices? Or, is this just a random relationship that doesn’t mean anything? All good questions. These data do not provide the answers, they just suggest a possible relationship.</p>
 </div>
 <div id="interpreting-correlations" class="section level2">
@@ -1492,7 +906,7 @@ Figure 3.5: Illustration of a possible relationship between amount of water and 
 </div>
 <p>Granted this looks more like an inverted V, than an inverted U, but you get the picture right? There is clearly a relationship between watering and snake plant growth. But, the relationship isn’t in one direction. As a result, when we compute the correlation in terms of Pearson’s r, we get a value very close to 0, suggesting no relationship.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="week-3-correlation-and-causation-adapted3.html#cb10-1"></a><span class="kw">cor</span>(growth,water)</span></code></pre></div>
-<pre><code>## [1] 0.003863817</code></pre>
+<pre><code>## [1] -0.003107585</code></pre>
 <p>What this really means is there is no linear relationship that can be described by a single straight line. When we need lines or curves going in more than one direction, we have a nonlinear relationship.</p>
 <p>This example illustrates some conundrums in interpreting correlations. We already know that water is needed for plants to grow, so we are rightly expecting there to be a relationship between our measure of amount of water and plant growth. If we look at the first half of the data we see a positive correlation, if we look at the last half of the data we see a negative correlation, and if we look at all of the data we see no correlation. Yikes. So, even when there is a causal connection between two measures, we won’t necessarily obtain clear evidence of the connection just by computing a correlation coefficient.</p>
 <blockquote>
