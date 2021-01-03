@@ -309,12 +309,12 @@ whr_data <- fread('https://raw.githubusercontent.com/thomashulst/quantrma/master
 
 # select the relevant variables and filter missing data (NA)
 smaller_df <- whr_data %>%
-               dplyr::select(country,
+              select(country,
                       `Freedom to make life choices`,
                       `Confidence in national government`,
                       `year`) %>%
-               dplyr::filter(`year` == 2017) %>%
-               dplyr::filter(!is.na(`Freedom to make life choices`),
+              filter(`year` == 2017) %>%
+              filter(!is.na(`Freedom to make life choices`),
                       !is.na(`Confidence in national government`))
 
 # plot the data with best fit line
@@ -335,12 +335,12 @@ whr_data <- fread('data/WHR2018.csv')
 
 # select the relevant variables and filter missing data (NA)
 smaller_df <- whr_data %>%
-               dplyr::select(country,
+              select(country,
                       `Freedom to make life choices`,
                       `Confidence in national government`,
                       `year`) %>%
-               dplyr::filter(`year` == 2017) %>%
-               dplyr::filter(!is.na(`Freedom to make life choices`),
+              filter(`year` == 2017) %>%
+              filter(!is.na(`Freedom to make life choices`),
                       !is.na(`Confidence in national government`))
 
 # plot the data with best fit line
