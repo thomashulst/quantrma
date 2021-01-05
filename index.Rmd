@@ -1,9 +1,9 @@
 --- 
 title: "Quantitative Research Methods & Analysis"
 author:
-- "Lead Author: Matthew J. C. Crump"
-- "Chapters 2 and 4 adapted from Navarro, D."
-- "Adapted for use at EUC by Thomas Hulst and Thanos Kostopoulos"
+- "Original Author: Matthew J. C. Crump"
+- "Chapters 2 and 4 adapted from Danielle Navarro"
+- "Adapted for EUC by Thomas Hulst and Thanos Kostopoulos"
 date: "Last Compiled `r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -19,7 +19,7 @@ library(dplyr)
 # Preface {-}
 
 ## Important notes {-}
-This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump. Adapted is maybe to generous of a word. In fact, large parts of this text were copied verbatim from the original source with minor changes to suit the learning environment at EUC. 
+This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump. 
 
 The original text is part of a [larger OER (Open Educational Resource) course](https://osf.io/3s68c/) for teaching undergraduate statistics in psychology. As such, the text assumes you are a psychology student and many of the examples are drawn from the field of psychology. This does not mean that this course is only useful for you if you have an interest in psychology. The field of psychology will serve as a vehicle to teach you important concepts and skills in quantitative research methods and data analysis, but the concepts and skills taught are universal. 
 
