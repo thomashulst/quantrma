@@ -300,4 +300,4 @@ caption = 'The terminology used to distinguish between different roles that a va
 ```
 
 ## That's it for this week
-That's it for the readings of the first week. Next, make sure to complete the ["Getting started"](https://thomashulst.github.io/quantrma_lab/getting-started.html) section of the lab manual before your first tutorial. The "Getting started" section will ask you to install and learn about the very basics of the statistical software we will be using during this course: R. 
+That's it for the readings of the first week. Next, make sure to complete the ["Getting started"](https://thomashulst.github.io/quantrma_lab/getting-started-adapted1.html) section of the lab manual before your first tutorial. The "Getting started" section will ask you to install and learn about the very basics of the statistical software we will be using during this course: R. 
