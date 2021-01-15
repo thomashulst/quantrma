@@ -1,4 +1,5 @@
 book_filename: "quantrma"
+delete_merged_file: TRUE
 output_dir: "docs"
 repo: https://github.com/thomashulst/quantrma
 language:

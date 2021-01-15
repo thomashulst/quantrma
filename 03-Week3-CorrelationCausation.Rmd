@@ -1,4 +1,4 @@
-# Week 3: Correlation and Causation [^Adapted3]
+# Week 3: Correlation and Causation [^Adapted3] {#chcorrelationandcaus}
 
 >Correlation does not equal causation
 >---Every Statistics and Research Methods Instructor Ever
@@ -111,7 +111,7 @@ The first panel shows a **negative correlation**. Happiness goes down as chocola
 
 [^Corr]: We are wading into the idea that measures of two things can be related, or correlated with one another. It is possible for the relationships to be more complicated than just going up, or going down. For example, we could have a relationship that where the dots go up for the first half of X, and then go down for the second half.
 
-## Pearson's $r$
+## Pearson's $r$ {#pears-r}
 If Beyoncé was a statistician, she might look at these scatterplots and want to "put a number on it". We think this is a good idea too. We've already learned how to create descriptive statistics for a single measure, like chocolate, or happiness (i.e., means, variances, etc.). A descriptive statistic that summarizes the relationship between two measures, all in one number, was invented by Karl Pearson[^Stories]. Everyone now calls it: "Pearson's $r$". 
 
 [^Stories]:The stories about the invention of various statistics are very interesting, you can read more about them in the book, "The Lady Tasting Tea" [@salsburg2001lady]
@@ -372,7 +372,7 @@ Perhaps you have heard that correlation does not equal causation. There are lots
 
 Like most plants, snake plants need some water to stay alive. However, they also need just the right amount of water. Imagine an experiment where 1000 snake plants were grown in a house. Each snake plant is given a different amount of water per day, from zero teaspoons of water per day to 1000 teaspoons of water per day. We will assume that water is part of the causal process that allows snake plants to grow. The amount of water given to each snake plant per day is our first measure. Imagine further that every week the experimenter measures snake plant growth, which will be the second measurement. Now, can you imagine for yourself what a scatter plot of weekly snake plant growth by tablespoons of water would look like?
 
-### Causation without correlation
+### Causation without correlation {#caus-without-corr}
 
 The first plant given no water at all would have a very hard time and eventually die. It should have the least amount of weekly growth. How about the plants given only a few teaspoons of water per day. This could be just enough water to keep the plants alive, so they will grow a little bit but not a lot. If you are imagining a scatter plot, with each dot being a snake plant, then you should imagine some dots starting in the bottom left hand corner (no water & no plant growth), moving up and to the right (a bit of water, and a bit of growth). As we look at snake plants getting more and more water, we should see more and more plant growth, right? But only up to a point... There's a likely positive correlation with increasing plant growth as amount of water per day increases. But, what happens when you give snake plants too much water? From personal experience, they tend to die. So, at some point, the dots in the scatter plot will start moving back down again. Snake plants that get way too much water will not grow very well.
 
@@ -406,7 +406,7 @@ This example illustrates some conundrums in interpreting correlations. We alread
 
 > Note: This is one reason why plotting your data is so important. If you see an upside U shape pattern, then a correlation is probably not the best way of analyzing your data.
 
-### Third variables
+### Third variables {#third-var}
 
 Anybody can correlate any two things that can be quantified and measured. For example, we could find a hundred people, ask them all sorts of questions like:
 
@@ -736,7 +736,7 @@ To get a bit more specific about some of the ways in which the mere fact of bein
 The **placebo effect** is a specific type of demand effect that we worry a lot about. It refers to the situation where the mere fact of being treated causes an improvement in outcomes. The classic example comes from clinical trials: if you give people a completely chemically inert drug and tell them that it’s a cure for a disease, they will tend to get better faster than people who aren’t treated at all. In other words, it is people’s belief that they are being treated that causes the improved outcomes, not the drug.
 
 ## That's it for this week
-Whew. That's it for the readings of the third week. It is perfectly normal if you feel that all this information is overwhelming and perhaps to some extent redundant. However, by discussing all these threats the aim is to explore different flavors of the same key principles, hoping that the examples of different manifestations will make it easier for you to identify various threats in yours’ or others’ studies. You have the opportunity to refine your critical skills by reading some mini case-studies on SOIWSO and trying to identify, if any, relevant threats to internal validity.
+Whew. That's it for the readings of the third week. It is perfectly normal if you feel that all this information is overwhelming and perhaps to some extent redundant. However, discussing all these threats allows us to explore different flavors of the same key principles, hoping that the examples of different manifestations will make it easier for you to identify various threats in yours’ or others’ studies. Practice materials for this week can be found on [SOWISO](https://cloud.sowiso.nl). The practice materials are not mandatory, but give you the opportunity to refine your critical skills by reading some mini case-studies and trying to identify, if any, relevant threats to internal validity.
 
 
 
