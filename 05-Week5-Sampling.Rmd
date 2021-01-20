@@ -1,4 +1,4 @@
-# Sampling Theory and Estimation^[Mix of Matthew Crump & Danielle Navarro. Code for figures from Emily Kothe's Bookdown adaptation of [Learning statistics with R](https://github.com/ekothe/rbook)]
+# Week 5: Sampling Theory and Estimation^[Mix of Matthew Crump & Danielle Navarro. Code for figures from Emily Kothe's Bookdown adaptation of [Learning statistics with R](https://github.com/ekothe/rbook)]
 Remember, the role of descriptive statistics is to concisely summarize what we **do** know. In contrast, the purpose of inferential statistics is to "learn what we do not know from what we do". What kinds of things would we like to learn about? And how do we learn them? These are the questions that lie at the heart of inferential statistics.
 
 **Sampling theory** plays a huge role in specifying the assumptions upon which your statistical inferences rely. And in order to talk about "making inferences" the way statisticians think about it, we need to be a bit more explicit about what it is that we're drawing inferences **from** (the sample) and what it is that we're drawing inferences **about** (the population).
@@ -435,6 +435,6 @@ The critical difference here is that the Bayesian claim makes a probability stat
 I know that this seems a little pedantic, but it does matter. It matters because the difference in interpretation leads to a difference in the mathematics. There is a Bayesian alternative to confidence intervals, known as *credible intervals*. In most situations credible intervals are quite similar to confidence intervals, but in other cases they are drastically different. If you are interested in learning more about Bayesian statistics, I can recommend Danielle Navarro's book chapter about it in [Learning statistics with R](https://learningstatisticswithr.com), or have a look at John Kruschke's ["Doing Bayesian Data Analysis"](https://sites.google.com/site/doingbayesiandataanalysis/).
 
 ## That's it for this week! 
-Yay, rejoice. See you during the labs! 
+Yay, rejoice. That wasn't too bad, I hope! See you during the labs! 
 
 
