@@ -5,25 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 1 Week 1: Introduction1 | Quantitative Research Methods &amp; Analysis</title>
-  <meta name="description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 1 Week 1: Introduction1 | Quantitative Research Methods &amp; Analysis" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content=" 1 Week 1: Introduction1 | Quantitative Research Methods &amp; Analysis" />
   
-  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   
 
 <meta name="author" content="Original Author: Matthew J. C. Crump" />
-<meta name="author" content="Chapters 2 and 4 adapted from Danielle Navarro" />
-<meta name="author" content="Adapted for EUC by Thomas Hulst and Thanos Kostopoulos" />
+<meta name="author" content="Chapter 1 and Chapters 4-7 adapted from Danielle Navarro" />
+<meta name="author" content="Edited for EUC by Thomas Hulst and Thanos Kostopoulos" />
 
 
 
@@ -34,6 +34,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="week-2-describing-data-adapted2.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,22 +52,20 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -86,7 +85,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -135,13 +134,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">QuantRMA</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i>Important notes</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i>Important notes</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i>Attributions</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i>CC BY-SA 4.0 license</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html"><i class="fa fa-check"></i><b>1</b> Week 1: Introduction</a><ul>
+<li class="chapter" data-level="1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html"><i class="fa fa-check"></i><b>1</b> Week 1: Introduction</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#the-curse-of-belief-bias"><i class="fa fa-check"></i><b>1.1</b> The curse of belief bias</a></li>
 <li class="chapter" data-level="1.2" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#the-cautionary-tale-of-simpsons-paradox"><i class="fa fa-check"></i><b>1.2</b> The cautionary tale of Simpson’s paradox</a></li>
 <li class="chapter" data-level="1.3" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#statistics-in-psychology-psych"><i class="fa fa-check"></i><b>1.3</b> Statistics in psychology</a></li>
@@ -155,8 +157,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.11" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#variables"><i class="fa fa-check"></i><b>1.11</b> The role of variables: predictors and outcomes</a></li>
 <li class="chapter" data-level="1.12" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#thats-it-for-this-week"><i class="fa fa-check"></i><b>1.12</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html"><i class="fa fa-check"></i><b>2</b> Week 2: Describing Data</a><ul>
-<li class="chapter" data-level="2.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.1</b> Scales of measurement</a><ul>
+<li class="chapter" data-level="2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html"><i class="fa fa-check"></i><b>2</b> Week 2: Describing Data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.1</b> Scales of measurement</a>
+<ul>
 <li class="chapter" data-level="2.1.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#nominal-scale"><i class="fa fa-check"></i><b>2.1.1</b> Nominal scale</a></li>
 <li class="chapter" data-level="2.1.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#ordinal-scale"><i class="fa fa-check"></i><b>2.1.2</b> Ordinal scale</a></li>
 <li class="chapter" data-level="2.1.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#interval-scale"><i class="fa fa-check"></i><b>2.1.3</b> Interval scale</a></li>
@@ -165,68 +169,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#some-complexities"><i class="fa fa-check"></i><b>2.1.6</b> Some complexities</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#this-is-what-too-many-numbers-looks-like"><i class="fa fa-check"></i><b>2.2</b> This is what too many numbers looks like</a></li>
-<li class="chapter" data-level="2.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-graphs"><i class="fa fa-check"></i><b>2.3</b> Describing data using graphs</a><ul>
+<li class="chapter" data-level="2.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-graphs"><i class="fa fa-check"></i><b>2.3</b> Describing data using graphs</a>
+<ul>
 <li class="chapter" data-level="2.3.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scatterplot"><i class="fa fa-check"></i><b>2.3.1</b> Scatterplot</a></li>
 <li class="chapter" data-level="2.3.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#histogram"><i class="fa fa-check"></i><b>2.3.2</b> Histogram</a></li>
 <li class="chapter" data-level="2.3.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#other-graphs"><i class="fa fa-check"></i><b>2.3.3</b> Other graphs</a></li>
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-numbers"><i class="fa fa-check"></i><b>2.4</b> Describing data using numbers</a></li>
-<li class="chapter" data-level="2.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-central-tendency-sameness"><i class="fa fa-check"></i><b>2.5</b> Measures of central tendency (sameness)</a><ul>
+<li class="chapter" data-level="2.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-central-tendency-sameness"><i class="fa fa-check"></i><b>2.5</b> Measures of central tendency (sameness)</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#mode"><i class="fa fa-check"></i><b>2.5.1</b> Mode</a></li>
 <li class="chapter" data-level="2.5.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#median"><i class="fa fa-check"></i><b>2.5.2</b> Median</a></li>
 <li class="chapter" data-level="2.5.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#mean"><i class="fa fa-check"></i><b>2.5.3</b> Mean</a></li>
 <li class="chapter" data-level="2.5.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#what-does-the-mean-mean"><i class="fa fa-check"></i><b>2.5.4</b> What does the mean mean?</a></li>
 <li class="chapter" data-level="2.5.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#all-together-now"><i class="fa fa-check"></i><b>2.5.5</b> All together now</a></li>
 </ul></li>
-<li class="chapter" data-level="2.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-variation-differentness"><i class="fa fa-check"></i><b>2.6</b> Measures of variation (differentness)</a><ul>
+<li class="chapter" data-level="2.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-variation-differentness"><i class="fa fa-check"></i><b>2.6</b> Measures of variation (differentness)</a>
+<ul>
 <li class="chapter" data-level="2.6.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#the-range"><i class="fa fa-check"></i><b>2.6.1</b> The range</a></li>
 <li class="chapter" data-level="2.6.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#difference-scores"><i class="fa fa-check"></i><b>2.6.2</b> Difference scores</a></li>
 <li class="chapter" data-level="2.6.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#var-form"><i class="fa fa-check"></i><b>2.6.3</b> The variance</a></li>
 <li class="chapter" data-level="2.6.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#the-standard-deviation"><i class="fa fa-check"></i><b>2.6.4</b> The standard deviation</a></li>
 <li class="chapter" data-level="2.6.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#closing-thoughts-on-measures-of-variation"><i class="fa fa-check"></i><b>2.6.5</b> Closing thoughts on measures of variation</a></li>
 </ul></li>
-<li class="chapter" data-level="2.7" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#remember-to-look-at-your-data"><i class="fa fa-check"></i><b>2.7</b> Remember to look at your data</a><ul>
+<li class="chapter" data-level="2.7" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#remember-to-look-at-your-data"><i class="fa fa-check"></i><b>2.7</b> Remember to look at your data</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.7.1</b> Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="2.7.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.7.2</b> Datasaurus Dozen</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#thats-it-for-this-week-1"><i class="fa fa-check"></i><b>2.8</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html"><i class="fa fa-check"></i><b>3</b> Week 3: Correlation and Causation</a><ul>
-<li class="chapter" data-level="3.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#if-something-caused-something-else-to-change-what-would-that-look-like"><i class="fa fa-check"></i><b>3.1</b> If something caused something else to change, what would that look like?</a><ul>
+<li class="chapter" data-level="3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html"><i class="fa fa-check"></i><b>3</b> Week 3: Correlation and Causation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#if-something-caused-something-else-to-change-what-would-that-look-like"><i class="fa fa-check"></i><b>3.1</b> If something caused something else to change, what would that look like?</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#charlie-and-the-chocolate-factory"><i class="fa fa-check"></i><b>3.1.1</b> Charlie and the chocolate factory</a></li>
 <li class="chapter" data-level="3.1.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#positive-negative-or-no-correlation"><i class="fa fa-check"></i><b>3.1.2</b> Positive, negative or no correlation</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#pears-r"><i class="fa fa-check"></i><b>3.2</b> Pearson’s <span class="math inline">\(r\)</span></a><ul>
+<li class="chapter" data-level="3.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#pears-r"><i class="fa fa-check"></i><b>3.2</b> Pearson’s <span class="math inline">\(r\)</span></a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-idea-of-covariance"><i class="fa fa-check"></i><b>3.2.1</b> The idea of covariance</a></li>
 <li class="chapter" data-level="3.2.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-measure-of-covariance"><i class="fa fa-check"></i><b>3.2.2</b> A measure of covariance</a></li>
 <li class="chapter" data-level="3.2.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#covariance-formalized"><i class="fa fa-check"></i><b>3.2.3</b> Covariance formalized</a></li>
 <li class="chapter" data-level="3.2.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#corrform"><i class="fa fa-check"></i><b>3.2.4</b> <span class="math inline">\(r\)</span> we there yet?</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#examples-of-r-with-data"><i class="fa fa-check"></i><b>3.3</b> Examples of <span class="math inline">\(r\)</span> with data</a></li>
-<li class="chapter" data-level="3.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#interpreting-correlations"><i class="fa fa-check"></i><b>3.4</b> Interpreting correlations</a><ul>
+<li class="chapter" data-level="3.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#interpreting-correlations"><i class="fa fa-check"></i><b>3.4</b> Interpreting correlations</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#caus-without-corr"><i class="fa fa-check"></i><b>3.4.1</b> Causation without correlation</a></li>
 <li class="chapter" data-level="3.4.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#third-var"><i class="fa fa-check"></i><b>3.4.2</b> Third variables</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#relationships-between-variables"><i class="fa fa-check"></i><b>3.5</b> Relationships between variables</a></li>
-<li class="chapter" data-level="3.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#establishing-causal-relationships"><i class="fa fa-check"></i><b>3.6</b> Establishing causal relationships</a><ul>
+<li class="chapter" data-level="3.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#establishing-causal-relationships"><i class="fa fa-check"></i><b>3.6</b> Establishing causal relationships</a>
+<ul>
 <li class="chapter" data-level="3.6.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-frame-of-reference"><i class="fa fa-check"></i><b>3.6.1</b> A frame of reference</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#meaningful-comparisons"><i class="fa fa-check"></i><b>3.7</b> Meaningful comparisons</a><ul>
+<li class="chapter" data-level="3.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#meaningful-comparisons"><i class="fa fa-check"></i><b>3.7</b> Meaningful comparisons</a>
+<ul>
 <li class="chapter" data-level="3.7.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#random"><i class="fa fa-check"></i><b>3.7.1</b> Randomization</a></li>
 <li class="chapter" data-level="3.7.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#matching"><i class="fa fa-check"></i><b>3.7.2</b> Matching</a></li>
 </ul></li>
 <li class="chapter" data-level="3.8" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#taxonomy-of-research-design"><i class="fa fa-check"></i><b>3.8</b> Taxonomy of research design</a></li>
-<li class="chapter" data-level="3.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#range-of-research-design"><i class="fa fa-check"></i><b>3.9</b> Range of research design</a><ul>
+<li class="chapter" data-level="3.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#range-of-research-design"><i class="fa fa-check"></i><b>3.9</b> Range of research design</a>
+<ul>
 <li class="chapter" data-level="3.9.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#experimental-designs"><i class="fa fa-check"></i><b>3.9.1</b> Experimental designs</a></li>
 <li class="chapter" data-level="3.9.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#longitudinal-designs"><i class="fa fa-check"></i><b>3.9.2</b> Longitudinal designs</a></li>
 <li class="chapter" data-level="3.9.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#cross-sectional-designs"><i class="fa fa-check"></i><b>3.9.3</b> Cross-sectional designs</a></li>
 </ul></li>
-<li class="chapter" data-level="3.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-validity-of-your-study"><i class="fa fa-check"></i><b>3.10</b> The validity of your study</a><ul>
+<li class="chapter" data-level="3.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-validity-of-your-study"><i class="fa fa-check"></i><b>3.10</b> The validity of your study</a>
+<ul>
 <li class="chapter" data-level="3.10.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#internal-validity"><i class="fa fa-check"></i><b>3.10.1</b> Internal validity</a></li>
 <li class="chapter" data-level="3.10.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#external-validity"><i class="fa fa-check"></i><b>3.10.2</b> External validity</a></li>
 <li class="chapter" data-level="3.10.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#construct-validity"><i class="fa fa-check"></i><b>3.10.3</b> Construct validity</a></li>
 </ul></li>
-<li class="chapter" data-level="3.11" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#threats-to-experimental-validity"><i class="fa fa-check"></i><b>3.11</b> Threats to experimental validity</a><ul>
+<li class="chapter" data-level="3.11" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#threats-to-experimental-validity"><i class="fa fa-check"></i><b>3.11</b> Threats to experimental validity</a>
+<ul>
 <li class="chapter" data-level="3.11.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#history-effects"><i class="fa fa-check"></i><b>3.11.1</b> History effects</a></li>
 <li class="chapter" data-level="3.11.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#maturation-effects"><i class="fa fa-check"></i><b>3.11.2</b> Maturation effects</a></li>
 <li class="chapter" data-level="3.11.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#repeated-testing-effects"><i class="fa fa-check"></i><b>3.11.3</b> Repeated testing effects</a></li>
@@ -240,21 +257,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3.12" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#thats-it-for-this-week-2"><i class="fa fa-check"></i><b>3.12</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="chance.html"><a href="chance.html"><i class="fa fa-check"></i><b>4</b> Week 4: Chance and Probability Theory</a><ul>
-<li class="chapter" data-level="4.1" data-path="chance.html"><a href="chance.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>4.1</b> Correlation and random chance</a><ul>
+<li class="chapter" data-level="4" data-path="chance.html"><a href="chance.html"><i class="fa fa-check"></i><b>4</b> Week 4: Chance and Probability Theory</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="chance.html"><a href="chance.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>4.1</b> Correlation and random chance</a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="chance.html"><a href="chance.html#monte-carlo-simulation-of-random-correlations"><i class="fa fa-check"></i><b>4.1.1</b> Monte-carlo simulation of random correlations</a></li>
 <li class="chapter" data-level="4.1.2" data-path="chance.html"><a href="chance.html#increasing-sample-size-decreases-the-opportunity-for-spurious-correlations"><i class="fa fa-check"></i><b>4.1.2</b> Increasing sample-size decreases the opportunity for spurious correlations</a></li>
 <li class="chapter" data-level="4.1.3" data-path="chance.html"><a href="chance.html#animation-of-no-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.3</b> Animation of no relationship between variables</a></li>
 <li class="chapter" data-level="4.1.4" data-path="chance.html"><a href="chance.html#animation-with-a-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.4</b> Animation with a relationship between variables</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="chance.html"><a href="chance.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.2</b> How are probability and statistics different?</a></li>
-<li class="chapter" data-level="4.3" data-path="chance.html"><a href="chance.html#mean-prob"><i class="fa fa-check"></i><b>4.3</b> What does probability mean?</a><ul>
+<li class="chapter" data-level="4.3" data-path="chance.html"><a href="chance.html#mean-prob"><i class="fa fa-check"></i><b>4.3</b> What does probability mean?</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="chance.html"><a href="chance.html#the-frequentist-view"><i class="fa fa-check"></i><b>4.3.1</b> The frequentist view</a></li>
 <li class="chapter" data-level="4.3.2" data-path="chance.html"><a href="chance.html#the-bayesian-view"><i class="fa fa-check"></i><b>4.3.2</b> The Bayesian view</a></li>
 <li class="chapter" data-level="4.3.3" data-path="chance.html"><a href="chance.html#whats-the-difference-and-who-is-right"><i class="fa fa-check"></i><b>4.3.3</b> What’s the difference? And who is right?</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="chance.html"><a href="chance.html#basic-probability-theory"><i class="fa fa-check"></i><b>4.4</b> Basic probability theory</a></li>
-<li class="chapter" data-level="4.5" data-path="chance.html"><a href="chance.html#prob-dist"><i class="fa fa-check"></i><b>4.5</b> Probability distributions</a><ul>
+<li class="chapter" data-level="4.5" data-path="chance.html"><a href="chance.html#prob-dist"><i class="fa fa-check"></i><b>4.5</b> Probability distributions</a>
+<ul>
 <li class="chapter" data-level="4.5.1" data-path="chance.html"><a href="chance.html#the-binomial-distribution"><i class="fa fa-check"></i><b>4.5.1</b> The binomial distribution</a></li>
 <li class="chapter" data-level="4.5.2" data-path="chance.html"><a href="chance.html#working-with-the-binomial-distribution-in-r"><i class="fa fa-check"></i><b>4.5.2</b> Working with the binomial distribution in R</a></li>
 <li class="chapter" data-level="4.5.3" data-path="chance.html"><a href="chance.html#norm-dist"><i class="fa fa-check"></i><b>4.5.3</b> The normal distribution</a></li>
@@ -264,28 +285,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.6" data-path="chance.html"><a href="chance.html#z-scores"><i class="fa fa-check"></i><b>4.6</b> z-scores</a></li>
 <li class="chapter" data-level="4.7" data-path="chance.html"><a href="chance.html#thats-it-for-this-week-3"><i class="fa fa-check"></i><b>4.7</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html"><i class="fa fa-check"></i><b>5</b> Sampling Theory and Estimation</a><ul>
-<li class="chapter" data-level="5.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#def-pop"><i class="fa fa-check"></i><b>5.1</b> Defining a population</a><ul>
-<li class="chapter" data-level="5.1.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#simple-random-samples"><i class="fa fa-check"></i><b>5.1.1</b> Simple random samples</a></li>
-<li class="chapter" data-level="5.1.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#most-samples-are-not-simple-random-samples"><i class="fa fa-check"></i><b>5.1.2</b> Most samples are not simple random samples</a></li>
-<li class="chapter" data-level="5.1.3" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#how-much-does-it-matter-if-you-dont-have-a-simple-random-sample"><i class="fa fa-check"></i><b>5.1.3</b> How much does it matter if you don’t have a simple random sample?</a></li>
-<li class="chapter" data-level="5.1.4" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#population-parameters-and-sample-statistics"><i class="fa fa-check"></i><b>5.1.4</b> Population parameters and sample statistics</a></li>
+<li class="chapter" data-level="5" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html"><i class="fa fa-check"></i><b>5</b> Week 5: Sampling Theory and Estimation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#def-pop"><i class="fa fa-check"></i><b>5.1</b> Defining a population</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#simple-random-samples"><i class="fa fa-check"></i><b>5.1.1</b> Simple random samples</a></li>
+<li class="chapter" data-level="5.1.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#most-samples-are-not-simple-random-samples"><i class="fa fa-check"></i><b>5.1.2</b> Most samples are not simple random samples</a></li>
+<li class="chapter" data-level="5.1.3" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#how-much-does-it-matter-if-you-dont-have-a-simple-random-sample"><i class="fa fa-check"></i><b>5.1.3</b> How much does it matter if you don’t have a simple random sample?</a></li>
+<li class="chapter" data-level="5.1.4" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#population-parameters-and-sample-statistics"><i class="fa fa-check"></i><b>5.1.4</b> Population parameters and sample statistics</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#the-law-of-large-numbers"><i class="fa fa-check"></i><b>5.2</b> The law of large numbers</a></li>
-<li class="chapter" data-level="5.3" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#sampling-distributions"><i class="fa fa-check"></i><b>5.3</b> Sampling distributions</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#samplingdists"><i class="fa fa-check"></i><b>5.3.1</b> Sampling distribution of the sample mean</a></li>
-<li class="chapter" data-level="5.3.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#sampling-distributions-exist-for-any-sample-statistic"><i class="fa fa-check"></i><b>5.3.2</b> Sampling distributions exist for any sample statistic</a></li>
+<li class="chapter" data-level="5.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#the-law-of-large-numbers"><i class="fa fa-check"></i><b>5.2</b> The law of large numbers</a></li>
+<li class="chapter" data-level="5.3" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#sampling-distributions"><i class="fa fa-check"></i><b>5.3</b> Sampling distributions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#samplingdists"><i class="fa fa-check"></i><b>5.3.1</b> Sampling distribution of the sample mean</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#sampling-distributions-exist-for-any-sample-statistic"><i class="fa fa-check"></i><b>5.3.2</b> Sampling distributions exist for any sample statistic</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#clt"><i class="fa fa-check"></i><b>5.4</b> The central limit theorem</a></li>
-<li class="chapter" data-level="5.5" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#pointestimates"><i class="fa fa-check"></i><b>5.5</b> Estimating population parameters</a><ul>
-<li class="chapter" data-level="5.5.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#estimating-the-population-mean"><i class="fa fa-check"></i><b>5.5.1</b> Estimating the population mean</a></li>
-<li class="chapter" data-level="5.5.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#estimating-the-population-standard-deviation"><i class="fa fa-check"></i><b>5.5.2</b> Estimating the population standard deviation</a></li>
+<li class="chapter" data-level="5.4" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#clt"><i class="fa fa-check"></i><b>5.4</b> The central limit theorem</a></li>
+<li class="chapter" data-level="5.5" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#pointestimates"><i class="fa fa-check"></i><b>5.5</b> Estimating population parameters</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#estimating-the-population-mean"><i class="fa fa-check"></i><b>5.5.1</b> Estimating the population mean</a></li>
+<li class="chapter" data-level="5.5.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#estimating-the-population-standard-deviation"><i class="fa fa-check"></i><b>5.5.2</b> Estimating the population standard deviation</a></li>
 </ul></li>
-<li class="chapter" data-level="5.6" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#ci"><i class="fa fa-check"></i><b>5.6</b> Estimating a confidence interval</a><ul>
-<li class="chapter" data-level="5.6.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>5.6.1</b> A slight mistake in the formula</a></li>
-<li class="chapter" data-level="5.6.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#interpreting-a-confidence-interval"><i class="fa fa-check"></i><b>5.6.2</b> Interpreting a confidence interval</a></li>
+<li class="chapter" data-level="5.6" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#ci"><i class="fa fa-check"></i><b>5.6</b> Estimating a confidence interval</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>5.6.1</b> A slight mistake in the formula</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#interpreting-a-confidence-interval"><i class="fa fa-check"></i><b>5.6.2</b> Interpreting a confidence interval</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#thats-it-for-this-week-4"><i class="fa fa-check"></i><b>5.7</b> That’s it for this week!</a></li>
+<li class="chapter" data-level="5.7" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#thats-it-for-this-week-4"><i class="fa fa-check"></i><b>5.7</b> That’s it for this week!</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
@@ -308,7 +334,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="week-1-introductionadapted1" class="section level1">
+<div id="week-1-introductionadapted1" class="section level1" number="1">
 <h1><span class="header-section-number"> 1</span> Week 1: Introduction<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h1>
 <p>To the surprise of many students, statistics is a fairly significant part of any bachelor program at university. To the surprise of no-one, statistics is very rarely the <em>favorite</em> part of one’s bachelor studies. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics program right now, not a university college. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact university studies have so much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…</p>
 <p>A big part of this issue at hand relates to the very idea of statistics. What is it? What’s it there for? And why are scientists so bloody obsessed with it? These are all good questions, when you think about it. So let’s start with the last one. As a group, scientists seem to be bizarrely fixated on running statistical tests on everything. In fact, we use statistics so often that we sometimes forget to explain to people why we do. It’s a kind of article of faith among scientists – and especially social scientists – that your findings can’t be trusted until you’ve done some statistics. Undergraduate students might be forgiven for thinking that we’re all completely mad, because no-one takes the time to answer one very simple question:</p>
@@ -316,8 +342,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><em>Why do you do statistics? Why don’t scientists just use common sense?</em></p>
 </blockquote>
 <p>It’s a naive question in some ways, but most good questions are. There’s a lot of good answers to it, but for my money, the best answer is a really simple one: we don’t trust ourselves enough. We worry that we’re human, and susceptible to all of the biases, temptations and frailties that humans suffer from. Much of statistics is basically a safeguard. Using “common sense” to evaluate evidence means trusting gut instincts, relying on verbal arguments and on using the raw power of human reason to come up with the right answer. Most scientists don’t think this approach is likely to work.</p>
-<p>Is it plausible to think that this “common sense” approach is very trustworthy? Verbal arguments have to be constructed in language, and all languages have biases – some things are harder to say than others, and not necessarily because they’re false (e.g., quantum electrodynamics is a good theory, but hard to explain in words). The instincts of our “gut” aren’t designed to solve scientific problems, they’re designed to handle day to day inferences – and given that biological evolution is slower than cultural change, we should say that they’re designed to solve the day to day problems for a <em>different world</em> than the one we live in. Most fundamentally, reasoning sensibly requires people to engage in “induction”, making wise guesses and going beyond the immediate evidence of the senses to make generalisations about the world. If you think that you can do that without being influenced by various distractors, well, I have a bridge in Brooklyn I’d like to sell you. Heck, as the next section shows, we can’t even solve “deductive” problems (ones where no guessing is required) without being influenced by our pre-existing biases.</p>
-<div id="the-curse-of-belief-bias" class="section level2">
+<p>Is it plausible to think that this “common sense” approach is very trustworthy? Verbal arguments have to be constructed in language, and all languages have biases – some things are harder to say than others, and not necessarily because they’re false (e.g., quantum electrodynamics is a good theory, but hard to explain in words). The instincts of our “gut” aren’t designed to solve scientific problems, they’re designed to handle day to day inferences – and given that biological evolution is slower than cultural change, we should say that they’re designed to solve the day to day problems for a <em>different world</em> than the one we live in. Most fundamentally, reasoning sensibly requires people to engage in “induction,” making wise guesses and going beyond the immediate evidence of the senses to make generalisations about the world. If you think that you can do that without being influenced by various distractors, well, I have a bridge in Brooklyn I’d like to sell you. Heck, as the next section shows, we can’t even solve “deductive” problems (ones where no guessing is required) without being influenced by our pre-existing biases.</p>
+<div id="the-curse-of-belief-bias" class="section level2" number="1.1">
 <h2><span class="header-section-number">1.1</span> The curse of belief bias</h2>
 <p>People are mostly pretty smart. We’re certainly smarter than the other species that we share the planet with (though many people might disagree). Our minds are quite amazing things, and we seem to be capable of the most incredible feats of thought and reason. That doesn’t make us perfect though. And among the many things that psychologists have shown over the years is that we really do find it hard to be neutral, to evaluate evidence impartially and without being swayed by pre-existing biases. A good example of this is the <strong>belief bias effect</strong> in logical reasoning: if you ask people to decide whether a particular argument is logically valid (i.e., conclusion would be true if the premises were true), we tend to be influenced by the believability of the conclusion, even when we shouldn’t. For instance, here’s a valid argument where the conclusion is believable:</p>
 <ul>
@@ -367,7 +393,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <p>If the data looked like this (or even a good approximation to this), we might feel safe in just trusting our gut instincts. That is, it’d be perfectly okay just to let scientists evaluate data based on their common sense, and not bother with all this murky statistics stuff. By now you probably know where this is going.</p>
-<p>In a classic study, <span class="citation">Evans, Barston, and Pollard (<a href="#ref-Evans1983" role="doc-biblioref">1983</a>)</span> ran an experiment looking at exactly this. What they found is that when pre-existing biases (i.e., beliefs) were in agreement with the structure of the data, everything went the way you’d hope:</p>
+<p>In a classic study, <span class="citation"><a href="references.html#ref-Evans1983" role="doc-biblioref">Evans, Barston, and Pollard</a> (<a href="references.html#ref-Evans1983" role="doc-biblioref">1983</a>)</span> ran an experiment looking at exactly this. What they found is that when pre-existing biases (i.e., beliefs) were in agreement with the structure of the data, everything went the way you’d hope:</p>
 <table>
 <thead>
 <tr class="header">
@@ -412,9 +438,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <p>Oh dear, that’s not as good. Apparently, when people are presented with a strong argument that contradicts our pre-existing beliefs, we find it pretty hard to even perceive it to be a strong argument (people only did so 46% of the time). Even worse, when people are presented with a weak argument that agrees with our pre-existing biases, almost no-one can see that the argument is weak (people got that one wrong 92% of the time!)</p>
-<p>If you think about it, it’s not as if these data are horribly damning. Overall, people did do better than chance at compensating for their prior biases, since about 60% of people’s judgements were correct (you’d expect 50% by chance). Even so, if you were a professional “evaluator of evidence”, and someone came along and offered you a magic tool that improves your chances of making the right decision from 60% to (say) 95%, you’d probably jump at it, right? Of course you would. Thankfully, we actually do have a tool that can do this. But it’s not magic, it’s statistics. So that’s reason #1 why scientists love statistics. It’s just <em>too easy</em> for us to “believe what we want to believe”; so if we want to “believe in the data” instead, we’re going to need a bit of help to keep our personal biases under control. That’s what statistics does: it helps keep us honest.</p>
+<p>If you think about it, it’s not as if these data are horribly damning. Overall, people did do better than chance at compensating for their prior biases, since about 60% of people’s judgements were correct (you’d expect 50% by chance). Even so, if you were a professional “evaluator of evidence,” and someone came along and offered you a magic tool that improves your chances of making the right decision from 60% to (say) 95%, you’d probably jump at it, right? Of course you would. Thankfully, we actually do have a tool that can do this. But it’s not magic, it’s statistics. So that’s reason #1 why scientists love statistics. It’s just <em>too easy</em> for us to “believe what we want to believe”; so if we want to “believe in the data” instead, we’re going to need a bit of help to keep our personal biases under control. That’s what statistics does: it helps keep us honest.</p>
 </div>
-<div id="the-cautionary-tale-of-simpsons-paradox" class="section level2">
+<div id="the-cautionary-tale-of-simpsons-paradox" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> The cautionary tale of Simpson’s paradox</h2>
 <p>The following is a true story (I think…). In 1973, the University of California, Berkeley had some worries about the admissions of students into their postgraduate courses. Specifically, the thing that caused the problem was that the gender breakdown of their admissions, which looked like this:</p>
 <table>
@@ -437,7 +463,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 <p>and they were worried about being sued. Given that there were nearly 13,000 applicants, a difference of 9% in admission rates between males and females is just way too big to be a coincidence. Pretty compelling data, right? And if I were to say to you that these data <em>actually</em> reflect a weak bias in favour of women (sort of!), you’d probably think that I was either crazy or sexist.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-<p>When people started looking more carefully at the admissions data <span class="citation">(Bickel, Hammel, and O’Connell <a href="#ref-Bickel1975" role="doc-biblioref">1975</a>)</span> they told a rather different story. Specifically, when they looked at it on a department by department basis, it turned out that most of the departments actually had a slightly <em>higher</em> success rate for female applicants than for male applicants. The table below shows the admission figures for the six largest departments (with the names of the departments removed for privacy reasons):</p>
+<p>When people started looking more carefully at the admissions data <span class="citation">(<a href="references.html#ref-Bickel1975" role="doc-biblioref">Bickel, Hammel, and O’Connell 1975</a>)</span> they told a rather different story. Specifically, when they looked at it on a department by department basis, it turned out that most of the departments actually had a slightly <em>higher</em> success rate for female applicants than for male applicants. The table below shows the admission figures for the six largest departments (with the names of the departments removed for privacy reasons):</p>
 <!-- From https://github.com/ekothe/rbook/blob/master/bookdown/01.01-intro.Rmd so it includes the correct column names -->
 <table>
 <caption><span id="tab:simpsontable">Table 1.1: </span>Admission figures for the six largest departments by gender</caption>
@@ -512,17 +538,17 @@ Figure 1.1: The Berkeley 1973 college admissions data. This figure plots the adm
 </div>
 <p>Before leaving this topic entirely, I want to point out something else really critical that is often overlooked in a research methods class. Statistics only solves <em>part</em> of the problem. Remember that we started all this with the concern that Berkeley’s admissions processes might be unfairly biased against female applicants. When we looked at the “aggregated” data, it did seem like the university was discriminating against women, but when we “disaggregate” and looked at the individual behaviour of all the departments, it turned out that the actual departments were, if anything, slightly biased in favour of women. The gender bias in total admissions was caused by the fact that women tended to self-select for harder departments. From a legal perspective, that would probably put the university in the clear. Postgraduate admissions are determined at the level of the individual department (and there are good reasons to do that), and at the level of individual departments, the decisions are more or less unbiased (the weak bias in favour of females at that level is small, and not consistent across departments). Since the university can’t dictate which departments people choose to apply to, and the decision making takes place at the level of the department it can hardly be held accountable for any biases that those choices produce.</p>
 <p>But that’s not exactly the whole story, is it? After all, if we’re interested in this from a more sociological and psychological perspective, we might want to ask <em>why</em> there are such strong gender differences in applications. Why do males tend to apply to engineering more often than females, and why is this reversed for the English department? And why is it it the case that the departments that tend to have a female-application bias tend to have lower overall admission rates than those departments that have a male-application bias? Might this not still reflect a gender bias, even though every single department is itself unbiased? It might.
-Suppose, hypothetically, that males preferred to apply to “hard sciences” and females prefer “humanities”. And suppose further that the reason for why the humanities departments have low admission rates is because the government doesn’t want to fund the humanities (spots in Ph.D. programs, for instance, are often tied to government funded research projects). Does that constitute a gender bias? Or just an unenlightened view of the value of the humanities? What if someone at a high level in the government cut the humanities funds because they felt that the humanities are “useless chick stuff”. That seems pretty <em>blatantly</em> gender biased. None of this falls within the purview of statistics, but it matters to the research project. If you’re interested in the overall structural effects of subtle gender biases, then you probably want to look at <em>both</em> the aggregated and disaggregated data. If you’re interested in the decision making process at Berkeley itself then you’re probably only interested in the disaggregated data.</p>
+Suppose, hypothetically, that males preferred to apply to “hard sciences” and females prefer “humanities.” And suppose further that the reason for why the humanities departments have low admission rates is because the government doesn’t want to fund the humanities (spots in Ph.D. programs, for instance, are often tied to government funded research projects). Does that constitute a gender bias? Or just an unenlightened view of the value of the humanities? What if someone at a high level in the government cut the humanities funds because they felt that the humanities are “useless chick stuff.” That seems pretty <em>blatantly</em> gender biased. None of this falls within the purview of statistics, but it matters to the research project. If you’re interested in the overall structural effects of subtle gender biases, then you probably want to look at <em>both</em> the aggregated and disaggregated data. If you’re interested in the decision making process at Berkeley itself then you’re probably only interested in the disaggregated data.</p>
 <p>In short there are a lot of critical questions that you can’t answer with statistics, but the answers to those questions will have a huge impact on how you analyse and interpret data. And this is the reason why you should always think of statistics as a <em>tool</em> to help you learn about your data, no more and no less. It’s a powerful tool to that end, but there’s no substitute for careful thought.</p>
 </div>
-<div id="statistics-in-psychology-psych" class="section level2">
+<div id="statistics-in-psychology-psych" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Statistics in psychology<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></h2>
 <p>I hope that the discussion above helped explain why science in general is so focused on statistics. But I’m guessing that you have a lot more questions about what role statistics plays in psychology, and specifically why psychology classes always devote so many lectures to stats. So here’s my attempt to answer a few of them…</p>
 <ul>
 <li><strong>Why does psychology have so much statistics?</strong></li>
 </ul>
 <p>To be perfectly honest, there’s a few different reasons, some of which are better than others. The most important reason is that psychology is a statistical science. What I mean by that is that the “things” that we study are <em>people</em>. Real, complicated, gloriously messy, infuriatingly perverse people. The “things” of physics include objects like electrons, and while there are all sorts of complexities that arise in physics, electrons don’t have minds of their own. They don’t have opinions, they don’t differ from each other in weird and arbitrary ways, they don’t get bored in the middle of an experiment, and they don’t get angry at the experimenter and then deliberately try to sabotage the data set. At a fundamental level psychology is harder than physics.</p>
-<p>Basically, we teach statistics to you as psychologists because you need to be better at stats than physicists. There’s actually a saying used sometimes in physics, to the effect that “if your experiment needs statistics, you should have done a better experiment”. They have the luxury of being able to say that because their objects of study are pathetically simple in comparison to the vast mess that confronts social scientists. It’s not just psychology, really: most social sciences are desperately reliant on statistics. Not because we’re bad experimenters, but because we’ve picked a harder problem to solve. We teach you stats because you really, really need it.</p>
+<p>Basically, we teach statistics to you as psychologists because you need to be better at stats than physicists. There’s actually a saying used sometimes in physics, to the effect that “if your experiment needs statistics, you should have done a better experiment.” They have the luxury of being able to say that because their objects of study are pathetically simple in comparison to the vast mess that confronts social scientists. It’s not just psychology, really: most social sciences are desperately reliant on statistics. Not because we’re bad experimenters, but because we’ve picked a harder problem to solve. We teach you stats because you really, really need it.</p>
 <ul>
 <li><strong>Can’t someone else do the statistics?</strong></li>
 </ul>
@@ -538,7 +564,7 @@ Suppose, hypothetically, that males preferred to apply to “hard sciences” an
 </ul>
 <p>Okay, now you’re just messing with me. Still, I think it should matter to you too. Statistics should matter to you in the same way that statistics should matter to <em>everyone</em>: we live in the 21st century, and data are <em>everywhere</em>. Frankly, given the world in which we live these days, a basic knowledge of statistics is pretty damn close to a survival tool!</p>
 </div>
-<div id="statistics-in-everyday-life" class="section level2">
+<div id="statistics-in-everyday-life" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> Statistics in everyday life</h2>
 <blockquote>
 <p><em>“We are drowning in information,<br />
@@ -548,26 +574,26 @@ but we are starved for knowledge”</em><br />
 </blockquote>
 <p>When I started writing up my lecture notes I took the 20 most recent news articles posted to the ABC news website. Of those 20 articles, it turned out that 8 of them involved a discussion of something that I would call a statistical topic; 6 of those made a mistake. The most common error, if you’re curious, was failing to report baseline data (e.g., the article mentions that 5% of people in situation X have some characteristic Y, but doesn’t say how common the characteristic is for everyone else!) The point I’m trying to make here isn’t that journalists are bad at statistics (though they almost always are), it’s that a basic knowledge of statistics is very helpful for trying to figure out when someone else is either making a mistake or even lying to you. Perhaps, one of the biggest things that a knowledge of statistics does to you is cause you to get angry at the newspaper or the internet on a far more frequent basis :).</p>
 </div>
-<div id="theres-more-to-research-methods-than-statistics" class="section level2">
+<div id="theres-more-to-research-methods-than-statistics" class="section level2" number="1.5">
 <h2><span class="header-section-number">1.5</span> There’s more to research methods than statistics</h2>
 <p>So far, most of what I’ve talked about is statistics, and so you’d be forgiven for thinking that statistics is all I care about in life. To be fair, you wouldn’t be far wrong, but research methodology is a broader concept than statistics. So most research methods courses will cover a lot of topics that relate much more to the pragmatics of research design, and in particular the issues that you encounter when trying to do research with humans. However, about 99% of student <em>fears</em> relate to the statistics part of the course, so I’ve focused on the stats in this discussion, and hopefully I’ve convinced you that statistics matters, and more importantly, that it’s not to be feared. That being said, it’s pretty typical for introductory research methods classes to be very stats-heavy. This is not (usually) because the lecturers are evil people. Quite the contrary, in fact. Introductory classes focus a lot on the statistics because you almost always find yourself needing statistics before you need the other research methods training. Why? Because almost all of your assignments in other classes will rely on statistical training, to a much greater extent than they rely on other methodological tools. It’s not common for undergraduate assignments to require you to design your own study from the ground up (in which case you would need to know a lot about research design), but it <em>is</em> common for assignments to ask you to analyse and interpret data that were collected in a study that someone else designed (in which case you need statistics). In that sense, from the perspective of allowing you to do well in all your other classes, the statistics is more urgent.</p>
 <p>But note that “urgent” is different from “important” – they both matter. I really do want to stress that research design is just as important as data analysis, and this book does spend a fair amount of time on it. However, while statistics has a kind of universality, and provides a set of core tools that are useful for most types of research, the research methods side isn’t quite so universal. There are some general principles that everyone should think about, but a lot of research design is very idiosyncratic and specific to the area of research that you want to engage in. Throughout the course you will be introduced to some core principles of research methods, but research methodology is an incredibly extensive and diverse field. To the extent that it’s the details of research methods that matter, those details don’t usually show up in an introductory class, as is the case for this course.</p>
 </div>
-<div id="a-brief-introduction-to-research-methods" class="section level2">
+<div id="a-brief-introduction-to-research-methods" class="section level2" number="1.6">
 <h2><span class="header-section-number">1.6</span> A brief introduction to research methods</h2>
-<p>In this section, we’re going to start thinking about the basic ideas that go into designing a study, collecting data, checking whether your data collection works, and so on. It won’t give you enough information to allow you to design studies of your own, but it will give you a lot of the basic tools that you need to assess the studies done by other people. However, since the focus of this book is much more on data analysis than on data collection, I’m only giving a very brief overview. Note that this section is “special” in two ways. Firstly, it’s much more psychology-specific than the later parts of this book. Secondly, it focuses much more heavily on the scientific problem of research methodology, and much less on the statistical problem of data analysis. Nevertheless, the two problems are related to one another, so it’s traditional for stats textbooks to discuss the problem in at least some detail. This section relies heavily on <span class="citation">Campbell and Stanley (<a href="#ref-Campbell1963" role="doc-biblioref">1963</a>)</span> for the discussion of study design.</p>
+<p>In this section, we’re going to start thinking about the basic ideas that go into designing a study, collecting data, checking whether your data collection works, and so on. It won’t give you enough information to allow you to design studies of your own, but it will give you a lot of the basic tools that you need to assess the studies done by other people. However, since the focus of this book is much more on data analysis than on data collection, I’m only giving a very brief overview. Note that this section is “special” in two ways. Firstly, it’s much more psychology-specific than the later parts of this book. Secondly, it focuses much more heavily on the scientific problem of research methodology, and much less on the statistical problem of data analysis. Nevertheless, the two problems are related to one another, so it’s traditional for stats textbooks to discuss the problem in at least some detail. This section relies heavily on <span class="citation"><a href="references.html#ref-Campbell1963" role="doc-biblioref">Campbell and Stanley</a> (<a href="references.html#ref-Campbell1963" role="doc-biblioref">1963</a>)</span> for the discussion of study design.</p>
 </div>
-<div id="thoughts-measurement" class="section level2">
+<div id="thoughts-measurement" class="section level2" number="1.7">
 <h2><span class="header-section-number">1.7</span> Some thoughts about measurement</h2>
-<p>The first thing to understand is data collection can be thought of as a kind of <strong>measurement</strong>. That is, in psychological research, what we’re trying to do is measure something about human behaviour. What do I mean by “measurement”?</p>
-<p>Measurement itself is a subtle concept, but basically it comes down to finding some way of assigning numbers, or labels, or some other kind of well-defined descriptions to “stuff”. So, any of the following would count as a psychological measurement:</p>
+<p>The first thing to understand is data collection can be thought of as a kind of <strong>measurement</strong>. That is, in psychological research, what we’re trying to do is measure something about human behaviour. What do I mean by “measurement?”</p>
+<p>Measurement itself is a subtle concept, but basically it comes down to finding some way of assigning numbers, or labels, or some other kind of well-defined descriptions to “stuff.” So, any of the following would count as a psychological measurement:</p>
 <ul>
 <li><p>My <strong>age</strong> is <em>32 years</em>.</p></li>
 <li><p>I <em>do</em> <strong>like anchovies</strong>.</p></li>
 <li><p>My <strong>chromosomal gender</strong> is <em>male</em>.</p></li>
 <li><p>My <strong>self-identified gender</strong> is <em>male</em>.</p></li>
 </ul>
-<p>In the short list above, the <strong>bolded part</strong> is “the thing to be measured”, and the <em>italicized part</em> is “the measurement itself”. In fact, we can expand on this a little bit, by thinking about the set of possible measurements that could have arisen in each case:</p>
+<p>In the short list above, the <strong>bolded part</strong> is “the thing to be measured,” and the <em>italicized part</em> is “the measurement itself.” In fact, we can expand on this a little bit, by thinking about the set of possible measurements that could have arisen in each case:</p>
 <ul>
 <li><p>My <strong>age</strong> (in years) could have been <em>0, 1, 2, 3 …</em>, etc. The upper bound on what my age could possibly be is a bit fuzzy, but in practice you’d be safe in saying that the largest possible age is <em>150</em>, since no human has ever lived that long.</p></li>
 <li><p>When asked if I <strong>like anchovies</strong>, I might have said that <em>I do</em>, or <em>I do not</em>, or <em>I have no opinion</em>, or <em>I sometimes do</em>.</p></li>
@@ -575,31 +601,31 @@ but we are starved for knowledge”</em><br />
 <li><p>My <strong>self-identified gender</strong> is also very likely to be <em>male</em> or <em>female</em>, but it doesn’t have to agree with my chromosomal gender. I may also choose to identify with <em>neither</em>, or to explicitly call myself <em>transgender</em>.</p></li>
 </ul>
 <p>As you can see, for some things (like age) it seems fairly obvious what the set of possible measurements should be, whereas for other things it gets a bit tricky. But I want to point out that even in the case of someone’s age, it’s much more subtle than this. For instance, in the example above, I assumed that it was okay to measure age in years. But if you’re a developmental psychologist, that’s way too crude, and so you often measure age in <em>years and months</em> (if a child is 2 years and 11 months, this is usually written as “2;11”). If you’re interested in newborns, you might want to measure age in <em>days since birth</em>, maybe even <em>hours since birth</em>. In other words, the way in which you specify the allowable measurement values is important.</p>
-<p>Looking at this a bit more closely, you might also realise that the concept of “age” isn’t actually all that precise. In general, when we say “age” we implicitly mean “the length of time since birth”. But that’s not always the right way to do it. Suppose you’re interested in how newborn babies control their eye movements. If you’re interested in kids that young, you might also start to worry that “birth” is not the only meaningful point in time to care about. If Baby Alice is born 3 weeks premature and Baby Bianca is born 1 week late, would it really make sense to say that they are the “same age” if we encountered them “2 hours after birth”? In one sense, yes: by social convention, we use birth as our reference point for talking about age in everyday life, since it defines the amount of time the person has been operating as an independent entity in the world, but from a scientific perspective that’s not the only thing we care about. When we think about the biology of human beings, it’s often useful to think of ourselves as organisms that have been growing and maturing since conception, and from that perspective Alice and Bianca aren’t the same age at all. So you might want to define the concept of “age” in two different ways: the length of time since conception, and the length of time since birth. When dealing with adults, it won’t make much difference, but when dealing with newborns it might.</p>
+<p>Looking at this a bit more closely, you might also realise that the concept of “age” isn’t actually all that precise. In general, when we say “age” we implicitly mean “the length of time since birth.” But that’s not always the right way to do it. Suppose you’re interested in how newborn babies control their eye movements. If you’re interested in kids that young, you might also start to worry that “birth” is not the only meaningful point in time to care about. If Baby Alice is born 3 weeks premature and Baby Bianca is born 1 week late, would it really make sense to say that they are the “same age” if we encountered them “2 hours after birth?” In one sense, yes: by social convention, we use birth as our reference point for talking about age in everyday life, since it defines the amount of time the person has been operating as an independent entity in the world, but from a scientific perspective that’s not the only thing we care about. When we think about the biology of human beings, it’s often useful to think of ourselves as organisms that have been growing and maturing since conception, and from that perspective Alice and Bianca aren’t the same age at all. So you might want to define the concept of “age” in two different ways: the length of time since conception, and the length of time since birth. When dealing with adults, it won’t make much difference, but when dealing with newborns it might.</p>
 <p>Moving beyond these issues, there’s the question of methodology. What specific “measurement method” are you going to use to find out someone’s age? As before, there are lots of different possibilities:</p>
 <ul>
 <li><p>You could just ask people “how old are you?” The method of self-report is fast, cheap and easy, but it only works with people old enough to understand the question, and some people lie about their age.</p></li>
-<li><p>You could ask an authority (e.g., a parent) “how old is your child?” This method is fast, and when dealing with kids it’s not all that hard since the parent is almost always around. It doesn’t work as well if you want to know “age since conception”, since a lot of parents can’t say for sure when conception took place. For that, you might need a different authority (e.g., an obstetrician).</p></li>
+<li><p>You could ask an authority (e.g., a parent) “how old is your child?” This method is fast, and when dealing with kids it’s not all that hard since the parent is almost always around. It doesn’t work as well if you want to know “age since conception,” since a lot of parents can’t say for sure when conception took place. For that, you might need a different authority (e.g., an obstetrician).</p></li>
 <li><p>You could look up official records, like birth certificates. This is time consuming and annoying, but it has its uses (e.g., if the person is now dead).</p></li>
 </ul>
 </div>
-<div id="operationalize" class="section level2">
+<div id="operationalize" class="section level2" number="1.8">
 <h2><span class="header-section-number">1.8</span> Operationalization: defining your measurement</h2>
 <p>All of the ideas discussed in the previous section all relate to the concept of <strong>operationalization</strong>. To be a bit more precise about the idea, operationalization is the process by which we take a meaningful but somewhat vague concept, and turn it into a precise measurement. The process of operationalization can involve several different things:</p>
 <ul>
 <li><p>Being precise about what you are trying to measure: For instance, does “age” mean “time since birth” or “time since conception” in the context of your research?</p></li>
 <li><p>Determining what method you will use to measure it: Will you use self-report to measure age, ask a parent, or look up an official record? If you’re using self-report, how will you phrase the question?</p></li>
-<li><p>Defining the set of the allowable values that the measurement can take: Note that these values don’t always have to be numerical, though they often are. When measuring age, the values are numerical, but we still need to think carefully about what numbers are allowed. Do we want age in years, years and months, days, hours? Etc. For other types of measurements (e.g., gender), the values aren’t numerical. But, just as before, we need to think about what values are allowed. If we’re asking people to self-report their gender, what options to we allow them to choose between? Is it enough to allow only “male” or “female”? Do you need an “other” option? Or should we not give people any specific options, and let them answer in their own words? And if you open up the set of possible values to include all verbal response, how will you interpret their answers?</p></li>
+<li><p>Defining the set of the allowable values that the measurement can take: Note that these values don’t always have to be numerical, though they often are. When measuring age, the values are numerical, but we still need to think carefully about what numbers are allowed. Do we want age in years, years and months, days, hours? Etc. For other types of measurements (e.g., gender), the values aren’t numerical. But, just as before, we need to think about what values are allowed. If we’re asking people to self-report their gender, what options to we allow them to choose between? Is it enough to allow only “male” or “female?” Do you need an “other” option? Or should we not give people any specific options, and let them answer in their own words? And if you open up the set of possible values to include all verbal response, how will you interpret their answers?</p></li>
 </ul>
 <p>Operationalization is a tricky business, and there’s no “one, true way” to do it. The way in which you choose to operationalize the informal concept of “age” or “gender” into a formal measurement depends on what you need to use the measurement for. Often you’ll find that the community of scientists who work in your area have some fairly well-established ideas for how to go about it. In other words, operationalization needs to be thought through on a case by case basis. Nevertheless, while there a lot of issues that are specific to each individual research project, there are some aspects to it that are pretty general.</p>
 <p>Before moving on, I want to take a moment to clear up our terminology, and in the process introduce more terms. Here are four different things that are closely related to each other:</p>
 <ul>
-<li><p><strong>A theoretical construct</strong> or concept. This is the thing that you’re trying to take a measurement of, like “age”, “gender” or an “opinion”. A theoretical construct can’t be directly observed, and often they’re actually a bit vague.</p></li>
+<li><p><strong>A theoretical construct</strong> or concept. This is the thing that you’re trying to take a measurement of, like “age,” “gender” or an “opinion.” A theoretical construct can’t be directly observed, and often they’re actually a bit vague.</p></li>
 <li><p><strong>A measure</strong>. The measure refers to the method or the tool that you use to make your observations. A question in a survey, a behavioural observation or a brain scan could all count as a measure.</p></li>
 <li><p><strong>A variable</strong>. A variable is what we end up with when we apply our measure to something in the world. That is, variables are the actual “data” that we end up with in our data sets.</p></li>
 <li><p><strong>An operationalization</strong>. The term operationalization refers to the logical connection between the measure and the theoretical construct, or to the process by which we try to derive a measure from a theoretical construct.</p></li>
 </ul>
-<p>The process of operationalization consists of two steps, each of which entails some kind of definition of the theoretical construct we are interested in measuring. The first step of operationalization is specifying the <strong>nominal definition</strong> of a theoretical construct. This is when you specify the meaning of a theoretical construct but remain quite abstract. For instance, when defining “children”, we could be asking the following questions: is a child defined by a blood relationship, a legal relationship, a social relationship, chronological age, level of dependency or some other criterion?</p>
+<p>The process of operationalization consists of two steps, each of which entails some kind of definition of the theoretical construct we are interested in measuring. The first step of operationalization is specifying the <strong>nominal definition</strong> of a theoretical construct. This is when you specify the meaning of a theoretical construct but remain quite abstract. For instance, when defining “children,” we could be asking the following questions: is a child defined by a blood relationship, a legal relationship, a social relationship, chronological age, level of dependency or some other criterion?</p>
 <p>Different nominal definitions will produce different results; hence it is important that nominal definitions are derived carefully and transparently. Usually, it is good practice to develop and narrow down a nominal definition as follows:</p>
 <ol style="list-style-type: decimal">
 <li><p>Obtain a range of different definitions: search the (academic) literature for explicit and implicit definitions.</p></li>
@@ -610,14 +636,14 @@ but we are starved for knowledge”</em><br />
 <div class="figure"><span id="fig:1construct"></span>
 <img src="figures/1construct.png" alt="Operationalization of a child's well-being. Adapted from @de_vaus_research_2001" width="776" />
 <p class="caption">
-Figure 1.2: Operationalization of a child’s well-being. Adapted from <span class="citation">Vaus (<a href="#ref-de_vaus_research_2001" role="doc-biblioref">2001</a>)</span>
+Figure 1.2: Operationalization of a child’s well-being. Adapted from <span class="citation"><a href="references.html#ref-de_vaus_research_2001" role="doc-biblioref">Vaus</a> (<a href="references.html#ref-de_vaus_research_2001" role="doc-biblioref">2001</a>)</span>
 </p>
 </div>
 <p>The next step of operationalization is specifying the <strong>operational definition</strong> of a theoretical construct. This specifies the <strong>indicators</strong> that reflect the nominal definition. Working with our example of marriage breakdown on children’s well-being and our decision to focus on social well-being and a child’s relationship with his or her father, we can use the following indicators: amount of contact, level of conflict, feelings of closeness, amount of helping, type of activities engaged in.</p>
-<p>How well the indicators match the theoretical construct has a bit impact on the value of the conclusions that can be drawn from the study. Once the indicators have been chosen, the researcher can move to the next stage which is to <strong>measure</strong> the chosen indicators.</p>
+<p>How well the indicators match the theoretical construct has a big impact on the value of the conclusions that can be drawn from the study. Once the indicators have been chosen, the researcher can move to the next stage which is to <strong>measure</strong> the chosen indicators.</p>
 <p>In practice, even scientists tend to blur the distinction between these things, but it’s very helpful to try to understand the differences.</p>
 </div>
-<div id="reliab-valid-measurement" class="section level2">
+<div id="reliab-valid-measurement" class="section level2" number="1.9">
 <h2><span class="header-section-number">1.9</span> Assessing the reliability and validity of a measurement</h2>
 <p>At this point we’ve thought a little bit about how to operationalize a theoretical construct and thereby create a psychological measure. Now, we should start discussing the obvious question: is the measurement any good? We’ll do this in terms of two related ideas: <em>reliability</em> and <em>validity</em>. Put simply, the <strong>reliability</strong> of a measure tells you how <em>precisely</em> you are measuring something, whereas the <strong>validity</strong> of a measure tells you how <em>accurate</em> the measure is.</p>
 <p>Reliability is actually a very simple concept: it refers to the repeatability or consistency of your measurement. The measurement of my weight by means of a “bathroom scale” is very reliable: if I step on and off the scales over and over again, it’ll keep giving me the same answer. Measuring my intelligence by means of “asking my mom” is very unreliable: some days she tells me I’m a bit thick, and other days she tells me I’m a complete moron. Notice that this concept of reliability is different to the question of whether the measurements are correct (the correctness of a measurement relates to it’s validity). If I’m holding a sack of potatos when I step on and off of the bathroom scales, the measurement will still be reliable: it will always give me the same answer. However, this highly reliable answer doesn’t match up to my true weight at all, therefore it’s wrong. In technical terms, this is a <em>reliable but invalid</em> measurement. Similarly, while my mom’s estimate of my intelligence is a bit unreliable, she might be right. Maybe I’m just not too bright, and so while her estimate of my intelligence fluctuates pretty wildly from day to day, it’s basically right. So that would be an <em>unreliable but valid</em> measure. Of course, to some extent, notice that if my mum’s estimates are too unreliable, it’s going to be very hard to figure out which one of her many claims about my intelligence is actually the right one. To some extent, then, a very unreliable measure tends to end up being invalid for practical purposes; so much so that many people would say that reliability is necessary (but not sufficient) to ensure validity.</p>
@@ -630,15 +656,15 @@ Figure 1.2: Operationalization of a child’s well-being. Adapted from <span cla
 </ul>
 <p>Not all measurements need to possess all forms of reliability. For instance, educational assessment can be thought of as a form of measurement. Many courses at EUC have an assessment structure that has a research component and an exam component (plus other things). The exam component is <em>intended</em> to measure something different from the research component, so the assessment as a whole has low internal consistency. However, within the exam there are several questions that are intended to (approximately) measure the same things, and those tend to produce similar outcomes; so the exam on its own has a fairly high internal consistency. Which is as it should be. You should only demand reliability in those situations where you want to be measure the same thing!</p>
 </div>
-<div id="forms-of-measurement-error" class="section level2">
+<div id="forms-of-measurement-error" class="section level2" number="1.10">
 <h2><span class="header-section-number">1.10</span> Forms of measurement error</h2>
 <p>The aim of the process of operationalization is to identify measures with the highest possible validity and reliability. However, such endeavors turn out to be trickier in practice than they sound in theory and several errors might occur along the way. As we will see here, different forms of measurement error have different implications and consequences in the conclusions of the study.</p>
 <p>The first and least harmful form of error is <strong>random error</strong>. As the name suggests, it occurs randomly which means there is no systematic pattern underlying its occurrence. For instance, if we employ a self-reported measure of conflict with one’s own father, participants in our study might overestimate or underestimate the actual level of conflict with their father. If we believe that people are equally likely to under- or overestimate, there will be no systematic pattern of under- or overestimation in our data as the former will cancel out the latter.</p>
 <p><strong>Constant error</strong> occurs where there is some amount of error for every case. When this is the case, values of any measure are systemetically overestimated or underestimated. For instance, people tend to overestimate their driving skills: significantly more than 50% of drivers believe their driving skills are better than average, which of course cannot be true! When such patterns of bias occur in the data, our measures are affected because errors do not cancel each other out.</p>
-<p><strong>Correlated error</strong> occurs when the measurement error correlates with a characteristic that varies across the observations of our data. For instance, overweight people tend to underestimate their weight, whereas underweight people tend to overestimate it <span class="citation">(Rowland <a href="#ref-rowland1990self" role="doc-biblioref">1990</a>)</span>. This is subtly distinct from random error: even if at the aggregate the amount of overestimated weights is the same as the amount of underestimated weights, the underlying pattern of weight biased measurements can affect the conclusions of a study as it might generate alternative explanations related to weight differences.</p>
+<p><strong>Correlated error</strong> occurs when the measurement error correlates with a characteristic that varies across the observations of our data. For instance, overweight people tend to underestimate their weight, whereas underweight people tend to overestimate it <span class="citation">(<a href="references.html#ref-rowland1990self" role="doc-biblioref">Rowland 1990</a>)</span>. This is subtly distinct from random error: even if at the aggregate the amount of overestimated weights is the same as the amount of underestimated weights, the underlying pattern of weight biased measurements can affect the conclusions of a study as it might generate alternative explanations related to weight differences.</p>
 <p>It is one of the main goals of any measure to minimize such errors. To achieve this, the researcher should pay careful attention to indicator quality, socially desirable responses and other forms of deliberate (mis)representation by respondents. Despite the fact it is often difficult to identify when such errors actually occur, researchers should pay a fair amount of attention trying to minimize them.</p>
 </div>
-<div id="variables" class="section level2">
+<div id="variables" class="section level2" number="1.11">
 <h2><span class="header-section-number">1.11</span> The role of variables: predictors and outcomes</h2>
 <p>I’ve got one last piece of terminology that I need to explain to you. Remember, the outcome of a psychological measurement is called a variable. Normally, when we do some research we end up with lots of different variables. Then, when we analyse our data we usually try to explain some of the variables in terms of some of the other variables. It’s important to keep the two roles “thing doing the explaining” and “thing being explained” distinct. So let’s be clear about this now. Firstly, we might as well get used to the idea of using mathematical symbols to describe variables, since it’s going to happen over and over again. Let’s denote the “to be explained” variable <span class="math inline">\(Y\)</span>, and denote the variables “doing the explaining” as <span class="math inline">\(X_1\)</span>, <span class="math inline">\(X_2\)</span>, etc.</p>
 <p>Now, when we doing an analysis, we have different names for <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, since they play different roles in the analysis. The classical names for these roles are <strong>independent variable</strong> (IV) and <strong>dependent variable</strong> (DV). The IV is the variable that you use to do the explaining (i.e., <span class="math inline">\(X\)</span>) and the DV is the variable being explained (i.e., <span class="math inline">\(Y\)</span>). The logic behind these names goes like this: if there really is a relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> then we can say that <span class="math inline">\(Y\)</span> depends on <span class="math inline">\(X\)</span>, and if we have designed our study “properly” then <span class="math inline">\(X\)</span> isn’t dependent on anything else. However, some people have suggested these names are horrible: they’re hard to remember and they can be misleading, because (a) the IV is never actually “independent of everything else” and (b) if there’s no relationship, then the DV doesn’t actually depend on the IV. There are a number of alternatives that some people find more appealing.</p>
@@ -689,28 +715,10 @@ Figure 1.2: Operationalization of a child’s well-being. Adapted from <span cla
 </tbody>
 </table>
 </div>
-<div id="thats-it-for-this-week" class="section level2">
+<div id="thats-it-for-this-week" class="section level2" number="1.12">
 <h2><span class="header-section-number">1.12</span> That’s it for this week</h2>
-<p>That’s it for the readings of the first week. Next, make sure to complete the <a href="https://thomashulst.github.io/quantrma_lab/getting-started-adapted1.html">“Getting started”</a> section of the lab manual before your first tutorial. The “Getting started” section will ask you to install and learn about the very basics of the statistical software we will be using during this course: R.</p>
+<p>That’s it for the readings of the first week. Next, make sure to complete the <a href="https://thomashulst.github.io/quantrma_lab/getting-started-adapted1.html">“Getting started”</a> section of the lab manual before your first tutorial. The “Getting started” section will ask you to install and learn about the very basics of the statistical software we will be using during this course: R and RStudio.</p>
 
-</div>
-</div>
-<h3> References</h3>
-<div id="refs" class="references">
-<div id="ref-Bickel1975">
-<p>Bickel, P. J., E. A. Hammel, and J. W. O’Connell. 1975. “Sex Bias in Graduate Admissions: Data from Berkeley.” <em>Science</em> 187: 398–404.</p>
-</div>
-<div id="ref-Campbell1963">
-<p>Campbell, D. T., and J. C. Stanley. 1963. <em>Experimental and Quasi-Experimental Designs for Research</em>. Boston, MA: Houghton Mifflin.</p>
-</div>
-<div id="ref-Evans1983">
-<p>Evans, J. St. B. T., J. L. Barston, and P. Pollard. 1983. “On the Conflict Between Logic and Belief in Syllogistic Reasoning.” <em>Memory and Cognition</em> 11: 295–306.</p>
-</div>
-<div id="ref-rowland1990self">
-<p>Rowland, Michael L. 1990. “Self-Reported Weight and Height.” <em>The American Journal of Clinical Nutrition</em> 52 (6): 1125–33.</p>
-</div>
-<div id="ref-de_vaus_research_2001">
-<p>Vaus, D. de. 2001. <em>Research Design in Social Research</em>. Research Methods Series. SAGE Publications.</p>
 </div>
 </div>
 <div class="footnotes">

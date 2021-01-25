@@ -236,7 +236,7 @@ knitr::include_graphics("figures/1construct.png")
 
 The next step of operationalization is specifying the **operational definition** of a theoretical construct. This specifies the **indicators** that reflect the nominal definition. Working with our example of marriage breakdown on children’s well-being and our decision to focus on social well-being and a child’s relationship with his or her father, we can use the following indicators: amount of contact, level of conflict, feelings of closeness, amount of helping, type of activities engaged in. 
 
-How well the indicators match the theoretical construct has a bit impact on the value of the conclusions that can be drawn from the study. Once the indicators have been chosen, the researcher can move to the next stage which is to **measure** the chosen indicators.  
+How well the indicators match the theoretical construct has a big impact on the value of the conclusions that can be drawn from the study. Once the indicators have been chosen, the researcher can move to the next stage which is to **measure** the chosen indicators.  
 
 In practice, even scientists tend to blur the distinction between these things, but it’s very helpful to try to understand the differences.
 
@@ -299,4 +299,4 @@ caption = 'The terminology used to distinguish between different roles that a va
 ```
 
 ## That's it for this week
-That's it for the readings of the first week. Next, make sure to complete the ["Getting started"](https://thomashulst.github.io/quantrma_lab/getting-started-adapted1.html) section of the lab manual before your first tutorial. The "Getting started" section will ask you to install and learn about the very basics of the statistical software we will be using during this course: R. 
+That's it for the readings of the first week. Next, make sure to complete the ["Getting started"](https://thomashulst.github.io/quantrma_lab/getting-started-adapted1.html) section of the lab manual before your first tutorial. The "Getting started" section will ask you to install and learn about the very basics of the statistical software we will be using during this course: R and RStudio. 

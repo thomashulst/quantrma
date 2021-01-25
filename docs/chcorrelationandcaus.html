@@ -5,25 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 3 Week 3: Correlation and Causation7 | Quantitative Research Methods &amp; Analysis</title>
-  <meta name="description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 3 Week 3: Correlation and Causation7 | Quantitative Research Methods &amp; Analysis" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content=" 3 Week 3: Correlation and Causation7 | Quantitative Research Methods &amp; Analysis" />
   
-  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   
 
 <meta name="author" content="Original Author: Matthew J. C. Crump" />
-<meta name="author" content="Chapters 2 and 4 adapted from Danielle Navarro" />
-<meta name="author" content="Adapted for EUC by Thomas Hulst and Thanos Kostopoulos" />
+<meta name="author" content="Chapter 1 and Chapters 4-7 adapted from Danielle Navarro" />
+<meta name="author" content="Edited for EUC by Thomas Hulst and Thanos Kostopoulos" />
 
 
 
@@ -34,6 +34,7 @@
   
 <link rel="prev" href="week-2-describing-data-adapted2.html"/>
 <link rel="next" href="chance.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,22 +52,20 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -86,7 +85,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -135,13 +134,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">QuantRMA</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i>Important notes</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i>Important notes</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i>Attributions</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i>CC BY-SA 4.0 license</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html"><i class="fa fa-check"></i><b>1</b> Week 1: Introduction</a><ul>
+<li class="chapter" data-level="1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html"><i class="fa fa-check"></i><b>1</b> Week 1: Introduction</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#the-curse-of-belief-bias"><i class="fa fa-check"></i><b>1.1</b> The curse of belief bias</a></li>
 <li class="chapter" data-level="1.2" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#the-cautionary-tale-of-simpsons-paradox"><i class="fa fa-check"></i><b>1.2</b> The cautionary tale of Simpson’s paradox</a></li>
 <li class="chapter" data-level="1.3" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#statistics-in-psychology-psych"><i class="fa fa-check"></i><b>1.3</b> Statistics in psychology</a></li>
@@ -155,8 +157,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.11" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#variables"><i class="fa fa-check"></i><b>1.11</b> The role of variables: predictors and outcomes</a></li>
 <li class="chapter" data-level="1.12" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#thats-it-for-this-week"><i class="fa fa-check"></i><b>1.12</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html"><i class="fa fa-check"></i><b>2</b> Week 2: Describing Data</a><ul>
-<li class="chapter" data-level="2.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.1</b> Scales of measurement</a><ul>
+<li class="chapter" data-level="2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html"><i class="fa fa-check"></i><b>2</b> Week 2: Describing Data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.1</b> Scales of measurement</a>
+<ul>
 <li class="chapter" data-level="2.1.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#nominal-scale"><i class="fa fa-check"></i><b>2.1.1</b> Nominal scale</a></li>
 <li class="chapter" data-level="2.1.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#ordinal-scale"><i class="fa fa-check"></i><b>2.1.2</b> Ordinal scale</a></li>
 <li class="chapter" data-level="2.1.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#interval-scale"><i class="fa fa-check"></i><b>2.1.3</b> Interval scale</a></li>
@@ -165,68 +169,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#some-complexities"><i class="fa fa-check"></i><b>2.1.6</b> Some complexities</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#this-is-what-too-many-numbers-looks-like"><i class="fa fa-check"></i><b>2.2</b> This is what too many numbers looks like</a></li>
-<li class="chapter" data-level="2.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-graphs"><i class="fa fa-check"></i><b>2.3</b> Describing data using graphs</a><ul>
+<li class="chapter" data-level="2.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-graphs"><i class="fa fa-check"></i><b>2.3</b> Describing data using graphs</a>
+<ul>
 <li class="chapter" data-level="2.3.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scatterplot"><i class="fa fa-check"></i><b>2.3.1</b> Scatterplot</a></li>
 <li class="chapter" data-level="2.3.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#histogram"><i class="fa fa-check"></i><b>2.3.2</b> Histogram</a></li>
 <li class="chapter" data-level="2.3.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#other-graphs"><i class="fa fa-check"></i><b>2.3.3</b> Other graphs</a></li>
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-numbers"><i class="fa fa-check"></i><b>2.4</b> Describing data using numbers</a></li>
-<li class="chapter" data-level="2.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-central-tendency-sameness"><i class="fa fa-check"></i><b>2.5</b> Measures of central tendency (sameness)</a><ul>
+<li class="chapter" data-level="2.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-central-tendency-sameness"><i class="fa fa-check"></i><b>2.5</b> Measures of central tendency (sameness)</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#mode"><i class="fa fa-check"></i><b>2.5.1</b> Mode</a></li>
 <li class="chapter" data-level="2.5.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#median"><i class="fa fa-check"></i><b>2.5.2</b> Median</a></li>
 <li class="chapter" data-level="2.5.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#mean"><i class="fa fa-check"></i><b>2.5.3</b> Mean</a></li>
 <li class="chapter" data-level="2.5.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#what-does-the-mean-mean"><i class="fa fa-check"></i><b>2.5.4</b> What does the mean mean?</a></li>
 <li class="chapter" data-level="2.5.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#all-together-now"><i class="fa fa-check"></i><b>2.5.5</b> All together now</a></li>
 </ul></li>
-<li class="chapter" data-level="2.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-variation-differentness"><i class="fa fa-check"></i><b>2.6</b> Measures of variation (differentness)</a><ul>
+<li class="chapter" data-level="2.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-variation-differentness"><i class="fa fa-check"></i><b>2.6</b> Measures of variation (differentness)</a>
+<ul>
 <li class="chapter" data-level="2.6.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#the-range"><i class="fa fa-check"></i><b>2.6.1</b> The range</a></li>
 <li class="chapter" data-level="2.6.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#difference-scores"><i class="fa fa-check"></i><b>2.6.2</b> Difference scores</a></li>
 <li class="chapter" data-level="2.6.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#var-form"><i class="fa fa-check"></i><b>2.6.3</b> The variance</a></li>
 <li class="chapter" data-level="2.6.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#the-standard-deviation"><i class="fa fa-check"></i><b>2.6.4</b> The standard deviation</a></li>
 <li class="chapter" data-level="2.6.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#closing-thoughts-on-measures-of-variation"><i class="fa fa-check"></i><b>2.6.5</b> Closing thoughts on measures of variation</a></li>
 </ul></li>
-<li class="chapter" data-level="2.7" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#remember-to-look-at-your-data"><i class="fa fa-check"></i><b>2.7</b> Remember to look at your data</a><ul>
+<li class="chapter" data-level="2.7" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#remember-to-look-at-your-data"><i class="fa fa-check"></i><b>2.7</b> Remember to look at your data</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.7.1</b> Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="2.7.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.7.2</b> Datasaurus Dozen</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#thats-it-for-this-week-1"><i class="fa fa-check"></i><b>2.8</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html"><i class="fa fa-check"></i><b>3</b> Week 3: Correlation and Causation</a><ul>
-<li class="chapter" data-level="3.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#if-something-caused-something-else-to-change-what-would-that-look-like"><i class="fa fa-check"></i><b>3.1</b> If something caused something else to change, what would that look like?</a><ul>
+<li class="chapter" data-level="3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html"><i class="fa fa-check"></i><b>3</b> Week 3: Correlation and Causation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#if-something-caused-something-else-to-change-what-would-that-look-like"><i class="fa fa-check"></i><b>3.1</b> If something caused something else to change, what would that look like?</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#charlie-and-the-chocolate-factory"><i class="fa fa-check"></i><b>3.1.1</b> Charlie and the chocolate factory</a></li>
 <li class="chapter" data-level="3.1.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#positive-negative-or-no-correlation"><i class="fa fa-check"></i><b>3.1.2</b> Positive, negative or no correlation</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#pears-r"><i class="fa fa-check"></i><b>3.2</b> Pearson’s <span class="math inline">\(r\)</span></a><ul>
+<li class="chapter" data-level="3.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#pears-r"><i class="fa fa-check"></i><b>3.2</b> Pearson’s <span class="math inline">\(r\)</span></a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-idea-of-covariance"><i class="fa fa-check"></i><b>3.2.1</b> The idea of covariance</a></li>
 <li class="chapter" data-level="3.2.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-measure-of-covariance"><i class="fa fa-check"></i><b>3.2.2</b> A measure of covariance</a></li>
 <li class="chapter" data-level="3.2.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#covariance-formalized"><i class="fa fa-check"></i><b>3.2.3</b> Covariance formalized</a></li>
 <li class="chapter" data-level="3.2.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#corrform"><i class="fa fa-check"></i><b>3.2.4</b> <span class="math inline">\(r\)</span> we there yet?</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#examples-of-r-with-data"><i class="fa fa-check"></i><b>3.3</b> Examples of <span class="math inline">\(r\)</span> with data</a></li>
-<li class="chapter" data-level="3.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#interpreting-correlations"><i class="fa fa-check"></i><b>3.4</b> Interpreting correlations</a><ul>
+<li class="chapter" data-level="3.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#interpreting-correlations"><i class="fa fa-check"></i><b>3.4</b> Interpreting correlations</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#caus-without-corr"><i class="fa fa-check"></i><b>3.4.1</b> Causation without correlation</a></li>
 <li class="chapter" data-level="3.4.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#third-var"><i class="fa fa-check"></i><b>3.4.2</b> Third variables</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#relationships-between-variables"><i class="fa fa-check"></i><b>3.5</b> Relationships between variables</a></li>
-<li class="chapter" data-level="3.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#establishing-causal-relationships"><i class="fa fa-check"></i><b>3.6</b> Establishing causal relationships</a><ul>
+<li class="chapter" data-level="3.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#establishing-causal-relationships"><i class="fa fa-check"></i><b>3.6</b> Establishing causal relationships</a>
+<ul>
 <li class="chapter" data-level="3.6.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-frame-of-reference"><i class="fa fa-check"></i><b>3.6.1</b> A frame of reference</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#meaningful-comparisons"><i class="fa fa-check"></i><b>3.7</b> Meaningful comparisons</a><ul>
+<li class="chapter" data-level="3.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#meaningful-comparisons"><i class="fa fa-check"></i><b>3.7</b> Meaningful comparisons</a>
+<ul>
 <li class="chapter" data-level="3.7.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#random"><i class="fa fa-check"></i><b>3.7.1</b> Randomization</a></li>
 <li class="chapter" data-level="3.7.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#matching"><i class="fa fa-check"></i><b>3.7.2</b> Matching</a></li>
 </ul></li>
 <li class="chapter" data-level="3.8" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#taxonomy-of-research-design"><i class="fa fa-check"></i><b>3.8</b> Taxonomy of research design</a></li>
-<li class="chapter" data-level="3.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#range-of-research-design"><i class="fa fa-check"></i><b>3.9</b> Range of research design</a><ul>
+<li class="chapter" data-level="3.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#range-of-research-design"><i class="fa fa-check"></i><b>3.9</b> Range of research design</a>
+<ul>
 <li class="chapter" data-level="3.9.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#experimental-designs"><i class="fa fa-check"></i><b>3.9.1</b> Experimental designs</a></li>
 <li class="chapter" data-level="3.9.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#longitudinal-designs"><i class="fa fa-check"></i><b>3.9.2</b> Longitudinal designs</a></li>
 <li class="chapter" data-level="3.9.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#cross-sectional-designs"><i class="fa fa-check"></i><b>3.9.3</b> Cross-sectional designs</a></li>
 </ul></li>
-<li class="chapter" data-level="3.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-validity-of-your-study"><i class="fa fa-check"></i><b>3.10</b> The validity of your study</a><ul>
+<li class="chapter" data-level="3.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-validity-of-your-study"><i class="fa fa-check"></i><b>3.10</b> The validity of your study</a>
+<ul>
 <li class="chapter" data-level="3.10.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#internal-validity"><i class="fa fa-check"></i><b>3.10.1</b> Internal validity</a></li>
 <li class="chapter" data-level="3.10.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#external-validity"><i class="fa fa-check"></i><b>3.10.2</b> External validity</a></li>
 <li class="chapter" data-level="3.10.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#construct-validity"><i class="fa fa-check"></i><b>3.10.3</b> Construct validity</a></li>
 </ul></li>
-<li class="chapter" data-level="3.11" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#threats-to-experimental-validity"><i class="fa fa-check"></i><b>3.11</b> Threats to experimental validity</a><ul>
+<li class="chapter" data-level="3.11" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#threats-to-experimental-validity"><i class="fa fa-check"></i><b>3.11</b> Threats to experimental validity</a>
+<ul>
 <li class="chapter" data-level="3.11.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#history-effects"><i class="fa fa-check"></i><b>3.11.1</b> History effects</a></li>
 <li class="chapter" data-level="3.11.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#maturation-effects"><i class="fa fa-check"></i><b>3.11.2</b> Maturation effects</a></li>
 <li class="chapter" data-level="3.11.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#repeated-testing-effects"><i class="fa fa-check"></i><b>3.11.3</b> Repeated testing effects</a></li>
@@ -240,21 +257,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3.12" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#thats-it-for-this-week-2"><i class="fa fa-check"></i><b>3.12</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="chance.html"><a href="chance.html"><i class="fa fa-check"></i><b>4</b> Week 4: Chance and Probability Theory</a><ul>
-<li class="chapter" data-level="4.1" data-path="chance.html"><a href="chance.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>4.1</b> Correlation and random chance</a><ul>
+<li class="chapter" data-level="4" data-path="chance.html"><a href="chance.html"><i class="fa fa-check"></i><b>4</b> Week 4: Chance and Probability Theory</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="chance.html"><a href="chance.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>4.1</b> Correlation and random chance</a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="chance.html"><a href="chance.html#monte-carlo-simulation-of-random-correlations"><i class="fa fa-check"></i><b>4.1.1</b> Monte-carlo simulation of random correlations</a></li>
 <li class="chapter" data-level="4.1.2" data-path="chance.html"><a href="chance.html#increasing-sample-size-decreases-the-opportunity-for-spurious-correlations"><i class="fa fa-check"></i><b>4.1.2</b> Increasing sample-size decreases the opportunity for spurious correlations</a></li>
 <li class="chapter" data-level="4.1.3" data-path="chance.html"><a href="chance.html#animation-of-no-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.3</b> Animation of no relationship between variables</a></li>
 <li class="chapter" data-level="4.1.4" data-path="chance.html"><a href="chance.html#animation-with-a-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.4</b> Animation with a relationship between variables</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="chance.html"><a href="chance.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.2</b> How are probability and statistics different?</a></li>
-<li class="chapter" data-level="4.3" data-path="chance.html"><a href="chance.html#mean-prob"><i class="fa fa-check"></i><b>4.3</b> What does probability mean?</a><ul>
+<li class="chapter" data-level="4.3" data-path="chance.html"><a href="chance.html#mean-prob"><i class="fa fa-check"></i><b>4.3</b> What does probability mean?</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="chance.html"><a href="chance.html#the-frequentist-view"><i class="fa fa-check"></i><b>4.3.1</b> The frequentist view</a></li>
 <li class="chapter" data-level="4.3.2" data-path="chance.html"><a href="chance.html#the-bayesian-view"><i class="fa fa-check"></i><b>4.3.2</b> The Bayesian view</a></li>
 <li class="chapter" data-level="4.3.3" data-path="chance.html"><a href="chance.html#whats-the-difference-and-who-is-right"><i class="fa fa-check"></i><b>4.3.3</b> What’s the difference? And who is right?</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="chance.html"><a href="chance.html#basic-probability-theory"><i class="fa fa-check"></i><b>4.4</b> Basic probability theory</a></li>
-<li class="chapter" data-level="4.5" data-path="chance.html"><a href="chance.html#prob-dist"><i class="fa fa-check"></i><b>4.5</b> Probability distributions</a><ul>
+<li class="chapter" data-level="4.5" data-path="chance.html"><a href="chance.html#prob-dist"><i class="fa fa-check"></i><b>4.5</b> Probability distributions</a>
+<ul>
 <li class="chapter" data-level="4.5.1" data-path="chance.html"><a href="chance.html#the-binomial-distribution"><i class="fa fa-check"></i><b>4.5.1</b> The binomial distribution</a></li>
 <li class="chapter" data-level="4.5.2" data-path="chance.html"><a href="chance.html#working-with-the-binomial-distribution-in-r"><i class="fa fa-check"></i><b>4.5.2</b> Working with the binomial distribution in R</a></li>
 <li class="chapter" data-level="4.5.3" data-path="chance.html"><a href="chance.html#norm-dist"><i class="fa fa-check"></i><b>4.5.3</b> The normal distribution</a></li>
@@ -264,28 +285,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.6" data-path="chance.html"><a href="chance.html#z-scores"><i class="fa fa-check"></i><b>4.6</b> z-scores</a></li>
 <li class="chapter" data-level="4.7" data-path="chance.html"><a href="chance.html#thats-it-for-this-week-3"><i class="fa fa-check"></i><b>4.7</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html"><i class="fa fa-check"></i><b>5</b> Sampling Theory and Estimation</a><ul>
-<li class="chapter" data-level="5.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#def-pop"><i class="fa fa-check"></i><b>5.1</b> Defining a population</a><ul>
-<li class="chapter" data-level="5.1.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#simple-random-samples"><i class="fa fa-check"></i><b>5.1.1</b> Simple random samples</a></li>
-<li class="chapter" data-level="5.1.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#most-samples-are-not-simple-random-samples"><i class="fa fa-check"></i><b>5.1.2</b> Most samples are not simple random samples</a></li>
-<li class="chapter" data-level="5.1.3" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#how-much-does-it-matter-if-you-dont-have-a-simple-random-sample"><i class="fa fa-check"></i><b>5.1.3</b> How much does it matter if you don’t have a simple random sample?</a></li>
-<li class="chapter" data-level="5.1.4" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#population-parameters-and-sample-statistics"><i class="fa fa-check"></i><b>5.1.4</b> Population parameters and sample statistics</a></li>
+<li class="chapter" data-level="5" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html"><i class="fa fa-check"></i><b>5</b> Week 5: Sampling Theory and Estimation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#def-pop"><i class="fa fa-check"></i><b>5.1</b> Defining a population</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#simple-random-samples"><i class="fa fa-check"></i><b>5.1.1</b> Simple random samples</a></li>
+<li class="chapter" data-level="5.1.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#most-samples-are-not-simple-random-samples"><i class="fa fa-check"></i><b>5.1.2</b> Most samples are not simple random samples</a></li>
+<li class="chapter" data-level="5.1.3" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#how-much-does-it-matter-if-you-dont-have-a-simple-random-sample"><i class="fa fa-check"></i><b>5.1.3</b> How much does it matter if you don’t have a simple random sample?</a></li>
+<li class="chapter" data-level="5.1.4" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#population-parameters-and-sample-statistics"><i class="fa fa-check"></i><b>5.1.4</b> Population parameters and sample statistics</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#the-law-of-large-numbers"><i class="fa fa-check"></i><b>5.2</b> The law of large numbers</a></li>
-<li class="chapter" data-level="5.3" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#sampling-distributions"><i class="fa fa-check"></i><b>5.3</b> Sampling distributions</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#samplingdists"><i class="fa fa-check"></i><b>5.3.1</b> Sampling distribution of the sample mean</a></li>
-<li class="chapter" data-level="5.3.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#sampling-distributions-exist-for-any-sample-statistic"><i class="fa fa-check"></i><b>5.3.2</b> Sampling distributions exist for any sample statistic</a></li>
+<li class="chapter" data-level="5.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#the-law-of-large-numbers"><i class="fa fa-check"></i><b>5.2</b> The law of large numbers</a></li>
+<li class="chapter" data-level="5.3" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#sampling-distributions"><i class="fa fa-check"></i><b>5.3</b> Sampling distributions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#samplingdists"><i class="fa fa-check"></i><b>5.3.1</b> Sampling distribution of the sample mean</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#sampling-distributions-exist-for-any-sample-statistic"><i class="fa fa-check"></i><b>5.3.2</b> Sampling distributions exist for any sample statistic</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#clt"><i class="fa fa-check"></i><b>5.4</b> The central limit theorem</a></li>
-<li class="chapter" data-level="5.5" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#pointestimates"><i class="fa fa-check"></i><b>5.5</b> Estimating population parameters</a><ul>
-<li class="chapter" data-level="5.5.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#estimating-the-population-mean"><i class="fa fa-check"></i><b>5.5.1</b> Estimating the population mean</a></li>
-<li class="chapter" data-level="5.5.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#estimating-the-population-standard-deviation"><i class="fa fa-check"></i><b>5.5.2</b> Estimating the population standard deviation</a></li>
+<li class="chapter" data-level="5.4" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#clt"><i class="fa fa-check"></i><b>5.4</b> The central limit theorem</a></li>
+<li class="chapter" data-level="5.5" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#pointestimates"><i class="fa fa-check"></i><b>5.5</b> Estimating population parameters</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#estimating-the-population-mean"><i class="fa fa-check"></i><b>5.5.1</b> Estimating the population mean</a></li>
+<li class="chapter" data-level="5.5.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#estimating-the-population-standard-deviation"><i class="fa fa-check"></i><b>5.5.2</b> Estimating the population standard deviation</a></li>
 </ul></li>
-<li class="chapter" data-level="5.6" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#ci"><i class="fa fa-check"></i><b>5.6</b> Estimating a confidence interval</a><ul>
-<li class="chapter" data-level="5.6.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>5.6.1</b> A slight mistake in the formula</a></li>
-<li class="chapter" data-level="5.6.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#interpreting-a-confidence-interval"><i class="fa fa-check"></i><b>5.6.2</b> Interpreting a confidence interval</a></li>
+<li class="chapter" data-level="5.6" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#ci"><i class="fa fa-check"></i><b>5.6</b> Estimating a confidence interval</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>5.6.1</b> A slight mistake in the formula</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#interpreting-a-confidence-interval"><i class="fa fa-check"></i><b>5.6.2</b> Interpreting a confidence interval</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#thats-it-for-this-week-4"><i class="fa fa-check"></i><b>5.7</b> That’s it for this week!</a></li>
+<li class="chapter" data-level="5.7" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#thats-it-for-this-week-4"><i class="fa fa-check"></i><b>5.7</b> That’s it for this week!</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
@@ -308,7 +334,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="chcorrelationandcaus" class="section level1">
+<div id="chcorrelationandcaus" class="section level1" number="3">
 <h1><span class="header-section-number"> 3</span> Week 3: Correlation and Causation<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></h1>
 <blockquote>
 <p>Correlation does not equal causation
@@ -318,10 +344,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We started last week with some fake data on human happiness, remember? We imagined that we asked a bunch of people to tell us how happy they were, then we looked at the numbers they gave us. Let’s continue with this imaginary thought experiment.</p>
 <p>If you ask people to use a number to describe how happy they are, you get a bunch of numbers. What kind of questions can you ask about those numbers? Well, you can look at the numbers and estimate their general properties as we did last week. There are different people, and different people are different amounts of happy. You’ve probably met some of those of really happy people, and really unhappy people, and you yourself probably have some amount of happiness. Before moving on, you should be skeptical of what the numbers might mean. For example, if you force people to give a number between 0-100 to rate their happiness, does this number truly reflect how happy that person is? Can a person know how happy they are? Does the question format bias how they give their answer? Is happiness even a real thing? These are all good questions about the <strong>validity</strong> of the construct (happiness itself) and the <strong>measure</strong> (numbers) you are using to quantify it. For now, though, we will side-step those very important questions, and assume that, happiness is a thing, and our measure of happiness measures something about how happy people are.</p>
 <p>OK, after we have measured some happiness, I bet you can think of some interesting questions. For example: what causes happiness to go up or down? If you knew the causes of happiness you could increase your own happiness; or, help people who are unhappy; or, better appreciate why Eeyore from Winnie the Pooh is unhappy; or, present valid scientific arguments that argue against incorrect claims about what causes happiness. A causal theory and understanding of happiness could be used for all of those things, so how can we get there?</p>
-<div id="if-something-caused-something-else-to-change-what-would-that-look-like" class="section level2">
+<div id="if-something-caused-something-else-to-change-what-would-that-look-like" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> If something caused something else to change, what would that look like?</h2>
 <p>Before we go around determining the causes of happiness, we should prepare ourselves with some analytical tools so that we could identify what causation looks like. If we don’t prepare ourselves for what we might find, then we won’t know how to interpret our own data. Instead, we need to anticipate what the data could look like. Specifically, we need to know what data would look like when one thing does not cause another thing, and what data would look like when one thing does cause another thing. This chapter does some of this preparation. Fair warning: we will find out some tricky things. For example, we can find patterns that look like one thing is causing another, even when that one thing DOES NOT CAUSE the other thing. Hang in there.</p>
-<div id="charlie-and-the-chocolate-factory" class="section level3">
+<div id="charlie-and-the-chocolate-factory" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Charlie and the chocolate factory</h3>
 <p>Let’s imagine that a person’s supply of chocolate has a causal influence on their level of happiness. Let’s further imagine that, like Charlie, the more chocolate you have the more happy you will be, and the less chocolate you have, the less happy you will be. Finally, because we suspect happiness is caused by lots of other things in a person’s life, we anticipate that the relationship between chocolate supply and happiness won’t be perfect. What do these assumptions mean for how the data should look?</p>
 <p>Our first step is to collect some imaginary data from 100 people. We walk around and ask the first 100 people we meet to answer two questions:</p>
@@ -331,19 +357,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>For convenience, both the scales will go from 0 to 100. For the chocolate scale, 0 means no chocolate, 100 means lifetime supply of chocolate. Any other number is somewhere in between. For the happiness scale, 0 means no happiness, 100 means all of the happiness, and in between means some amount in between.</p>
 <p>Below is how the data was generated in R and in the table you can find the sample data from the first 10 imaginary subjects.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="chcorrelationandcaus.html#cb5-1"></a><span class="co"># create a vector with 100 subjects</span></span>
-<span id="cb5-2"><a href="chcorrelationandcaus.html#cb5-2"></a>subject &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">100</span></span>
-<span id="cb5-3"><a href="chcorrelationandcaus.html#cb5-3"></a></span>
-<span id="cb5-4"><a href="chcorrelationandcaus.html#cb5-4"></a><span class="co"># use a uniform distribution to generate pretend happiness and chocolate</span></span>
-<span id="cb5-5"><a href="chcorrelationandcaus.html#cb5-5"></a><span class="co"># variables</span></span>
-<span id="cb5-6"><a href="chcorrelationandcaus.html#cb5-6"></a>chocolate &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span> <span class="op">*</span><span class="st"> </span><span class="kw">runif</span>(<span class="dv">100</span>, <span class="fl">0.5</span>, <span class="dv">1</span>))</span>
-<span id="cb5-7"><a href="chcorrelationandcaus.html#cb5-7"></a>happiness &lt;-<span class="st"> </span><span class="kw">round</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">100</span> <span class="op">*</span><span class="st"> </span><span class="kw">runif</span>(<span class="dv">100</span>, <span class="fl">0.5</span>, <span class="dv">1</span>))</span>
-<span id="cb5-8"><a href="chcorrelationandcaus.html#cb5-8"></a></span>
-<span id="cb5-9"><a href="chcorrelationandcaus.html#cb5-9"></a><span class="co"># put all variables in a dataframe</span></span>
-<span id="cb5-10"><a href="chcorrelationandcaus.html#cb5-10"></a>df_charlie &lt;-<span class="st"> </span><span class="kw">data.frame</span>(subject, chocolate, happiness)</span>
-<span id="cb5-11"><a href="chcorrelationandcaus.html#cb5-11"></a></span>
-<span id="cb5-12"><a href="chcorrelationandcaus.html#cb5-12"></a><span class="co"># show only the first 10 rows of the main dataframe</span></span>
-<span id="cb5-13"><a href="chcorrelationandcaus.html#cb5-13"></a>df_charlie_short &lt;-<span class="st"> </span>df_charlie[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, ]</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="chcorrelationandcaus.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a vector with 100 subjects</span></span>
+<span id="cb5-2"><a href="chcorrelationandcaus.html#cb5-2" aria-hidden="true" tabindex="-1"></a>subject <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span></span>
+<span id="cb5-3"><a href="chcorrelationandcaus.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="chcorrelationandcaus.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># use a uniform distribution to generate pretend happiness and chocolate</span></span>
+<span id="cb5-5"><a href="chcorrelationandcaus.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># variables</span></span>
+<span id="cb5-6"><a href="chcorrelationandcaus.html#cb5-6" aria-hidden="true" tabindex="-1"></a>chocolate <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span> <span class="sc">*</span> <span class="fu">runif</span>(<span class="dv">100</span>, <span class="fl">0.5</span>, <span class="dv">1</span>))</span>
+<span id="cb5-7"><a href="chcorrelationandcaus.html#cb5-7" aria-hidden="true" tabindex="-1"></a>happiness <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span> <span class="sc">*</span> <span class="fu">runif</span>(<span class="dv">100</span>, <span class="fl">0.5</span>, <span class="dv">1</span>))</span>
+<span id="cb5-8"><a href="chcorrelationandcaus.html#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="chcorrelationandcaus.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># put all variables in a dataframe</span></span>
+<span id="cb5-10"><a href="chcorrelationandcaus.html#cb5-10" aria-hidden="true" tabindex="-1"></a>df_charlie <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(subject, chocolate, happiness)</span>
+<span id="cb5-11"><a href="chcorrelationandcaus.html#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="chcorrelationandcaus.html#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># show only the first 10 rows of the main dataframe</span></span>
+<span id="cb5-13"><a href="chcorrelationandcaus.html#cb5-13" aria-hidden="true" tabindex="-1"></a>df_charlie_short <span class="ot">&lt;-</span> df_charlie[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, ]</span></code></pre></div>
 <table>
 <thead>
 <tr class="header">
@@ -407,10 +433,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </table>
 <p>We asked each subject two questions so there are two scores for each subject, one for their chocolate supply, and one for their level of happiness. You might already notice some relationships between amount of chocolate and level of happiness in the table. To make those relationships even more clear, let’s plot all of the data in a graph.</p>
 <p>When you have two variables worth of data, you can turn the data into a scatterplot where you get to choose which variable goes on which axis. Let’s put chocolate supply on the x-axis, and happiness level on the y-axis.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="chcorrelationandcaus.html#cb6-1"></a><span class="kw">library</span>(ggplot2)</span>
-<span id="cb6-2"><a href="chcorrelationandcaus.html#cb6-2"></a><span class="kw">ggplot</span>(df_charlie,<span class="kw">aes</span>(<span class="dt">x=</span>chocolate,<span class="dt">y=</span>happiness))<span class="op">+</span></span>
-<span id="cb6-3"><a href="chcorrelationandcaus.html#cb6-3"></a><span class="st">  </span><span class="kw">geom_point</span>()<span class="op">+</span></span>
-<span id="cb6-4"><a href="chcorrelationandcaus.html#cb6-4"></a><span class="st">  </span><span class="kw">theme_classic</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="chcorrelationandcaus.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-2"><a href="chcorrelationandcaus.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df_charlie,<span class="fu">aes</span>(<span class="at">x=</span>chocolate,<span class="at">y=</span>happiness))<span class="sc">+</span></span>
+<span id="cb6-3"><a href="chcorrelationandcaus.html#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb6-4"><a href="chcorrelationandcaus.html#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
 <div class="figure"><span id="fig:3scatter1"></span>
 <img src="quantrma_files/figure-html/3scatter1-1.png" alt="Imaginary data showing a positive relationship between amount of chocolate and amount happiness" width="672" />
 <p class="caption">
@@ -420,7 +446,7 @@ Figure 3.1: Imaginary data showing a positive relationship between amount of cho
 <p>What do the dots mean? Each dot has two coordinates, an x-coordinate for chocolate, and a y-coordinate for happiness. The first dot, all the way on the bottom left is the first subject in the table, who had close to 0 chocolate and close to zero happiness. You can look at any dot and draw a straight line down to the x-axis: that will tell you how much chocolate that subject has. When you draw a straight line left to the y-axis for the same dot it will tell you how much happiness that particular subject has.</p>
 <p>Now that we are looking at the scatterplot, we can clearly see that the dots show a relationship between chocolate supply and happiness. Happiness is lower for people with smaller supplies of chocolate, and higher for people with larger supplies of chocolate. It looks like the more chocolate you have the happier you will be, and vice-versa. This kind of relationship is called a positive relationship or <strong>positive correlation</strong>.</p>
 </div>
-<div id="positive-negative-or-no-correlation" class="section level3">
+<div id="positive-negative-or-no-correlation" class="section level3" number="3.1.2">
 <h3><span class="header-section-number">3.1.2</span> Positive, negative or no correlation</h3>
 <p>Seeing as we are in the business of imagining data, let’s imagine some more. We’ve already seen what data looks like if larger chocolate supplies increase happiness. What do you imagine the scatterplot would look like if the relationship was reversed, and larger chocolate supplies decreased happiness? Or, what do you imagine the scatter plot would look like if there was no relationship, and the amount of chocolate that you have doesn’t do anything to your happiness? We invite your imagination to look at these graphs:</p>
 <div class="figure"><span id="fig:3posnegrand"></span>
@@ -432,9 +458,9 @@ Figure 3.2: Three scatterplots showing negative, positive, and zero correlation
 <p>The first panel shows a <strong>negative correlation</strong>. Happiness goes down as chocolate supply increases. Negative correlation occurs when one thing goes up and the other thing goes down; or, when more of X is less of Y, and vice-versa. The second panel shows a <strong>positive correlation</strong>. Happiness goes up as chocolate as chocolate supply increases. Positive correlation occurs when both things go up together, and go down together: more of X is more of Y, and vice-versa. The third panel shows <strong>no correlation</strong>. Here, there doesn’t appear to be any obvious relationship between chocolate supply and happiness. The dots are scattered all over the place, the truest of the scatterplots<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a>. Zero correlation occurs when one thing is not related in any way to another things: changes in X do not relate to any changes in Y, and vice-versa.</p>
 </div>
 </div>
-<div id="pears-r" class="section level2">
+<div id="pears-r" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Pearson’s <span class="math inline">\(r\)</span></h2>
-<p>If Beyoncé was a statistician, she might look at these scatterplots and want to “put a number on it”. We think this is a good idea too. We’ve already learned how to create descriptive statistics for a single measure, like chocolate, or happiness (i.e., means, variances, etc.). A descriptive statistic that summarizes the relationship between two measures, all in one number, was invented by Karl Pearson<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>. Everyone now calls it: “Pearson’s <span class="math inline">\(r\)</span>”.</p>
+<p>If Beyoncé was a statistician, she might look at these scatterplots and want to “put a number on it.” We think this is a good idea too. We’ve already learned how to create descriptive statistics for a single measure, like chocolate, or happiness (i.e., means, variances, etc.). A descriptive statistic that summarizes the relationship between two measures, all in one number, was invented by Karl Pearson<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>. Everyone now calls it: “Pearson’s <span class="math inline">\(r\)</span>.”</p>
 <blockquote>
 <p>Karl Pearson was a big-wig editor at Biometrika in the 1930s and all around horrible person. He took a hating to another big-wig statistician, Sir Ronald Fisher (who we learn about later, but was also generally a horrible person), and they had some fights about statistics… Seen as the founding fathers of modern statistics, both Pearson and Fisher held deeply racist views and actively contributed to the field of eugenics. You can read more about the troubled history of modern statistics in <a href="https://statmodeling.stat.columbia.edu/2020/08/01/ra-fisher-and-the-science-of-hatred/">many</a>, <a href="https://www.bayesianspectacles.org/karl-pearsons-worst-quotation/">many</a> different <a href="https://njoselson.github.io/Fisher-Pearson/">places</a>. For now, we will focus about how different statistics work and how to use statistics (for good, hopefully), but it’s important to keep this troubled history in mind.</p>
 </blockquote>
@@ -511,9 +537,9 @@ Figure 3.2: Three scatterplots showing negative, positive, and zero correlation
 </tbody>
 </table>
 <p>What could we do to these numbers to produce a single summary value that represents the relationship between the chocolate supply and happiness?</p>
-<div id="the-idea-of-covariance" class="section level3">
+<div id="the-idea-of-covariance" class="section level3" number="3.2.1">
 <h3><span class="header-section-number">3.2.1</span> The idea of covariance</h3>
-<p>“Oh please no, don’t use the word variance again”. Yes, we’re doing it, we’re going to use the word variance again, and again, and again, until it starts making sense. Remember: variance tells us something about the differentness of a measure. In this example, we can see that there is variance in chocolate supply across the 10 subjects and that there is variance in happiness across the 10 subjects. In the scatterplot we saw that as happiness increases, chocolate supply increases (a positive relationship).</p>
+<p>“Oh please no, don’t use the word variance again.” Yes, we’re doing it, we’re going to use the word variance again, and again, and again, until it starts making sense. Remember: variance tells us something about the differentness of a measure. In this example, we can see that there is variance in chocolate supply across the 10 subjects and that there is variance in happiness across the 10 subjects. In the scatterplot we saw that as happiness increases, chocolate supply increases (a positive relationship).</p>
 <p>What does this have to do with variance? Well, it means there is a relationship between the variance in chocolate supply, and the variance in happiness levels. In other words: the two measures vary together. When we have two measures that vary together, they are like a happy couple who share their variance. This is what covariance refers to: the idea that the pattern of varying numbers in one measure is shared by the pattern of varying numbers in another measure.</p>
 <p><strong>Covariance</strong> is <strong>very, very, very, very</strong> important. We suspect that the word covariance is initially confusing, especially if you are not yet fully comfortable with the meaning of variance for a single measure. Nevertheless, we must proceed and use the idea of covariance over and over again to firmly implant it into your statistical mind (we already said, but redundancy works, it’s a thing).</p>
 <blockquote>
@@ -523,7 +549,7 @@ Figure 3.2: Three scatterplots showing negative, positive, and zero correlation
 <p>Note #2: Succesfully playing <a href="https://en.wikipedia.org/wiki/Pat-a-cake,_pat-a-cake,_baker%27s_man#Game">pattycake</a> occurs when two people coordinate their actions so they have postively shared covariance.</p>
 </blockquote>
 </div>
-<div id="a-measure-of-covariance" class="section level3">
+<div id="a-measure-of-covariance" class="section level3" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> A measure of covariance</h3>
 <p>“OK, so you are saying that covariance is just another word for the association or relationship between two measures. I suppose we could use some way to measure that.”</p>
 <p>Back to our table…notice anything new?</p>
@@ -611,7 +637,7 @@ Figure 3.2: Three scatterplots showing negative, positive, and zero correlation
 </tr>
 </tbody>
 </table>
-<p>We’ve added a new column called “chocolate_X_happiness”, which stands for chocolate scores multiplied by happiness scores. Each row in the new column is the product, or multiplication, of the chocolate and happiness score for that row. Why would we want to do this?</p>
+<p>We’ve added a new column called “chocolate_X_happiness,” which stands for chocolate scores multiplied by happiness scores. Each row in the new column is the product, or multiplication, of the chocolate and happiness score for that row. Why would we want to do this?</p>
 <p>Last chapter we took you back to elementary school and had you think about division. Now it’s time to do the same thing with multiplication. One number times another, means taking the first number, and adding it as many times as the second says to do,</p>
 <p><span class="math inline">\(2*2= 2+2=4\)</span></p>
 <p><span class="math inline">\(2*6= 2+2+2+2+2+2 = 12\)</span>, or <span class="math inline">\(6+6=12\)</span>, same thing.</p>
@@ -752,7 +778,7 @@ Then, I multiplied <span class="math inline">\(X\)</span> and <span class="math 
 <p>Note: when the relationship between two measures increases in the positive direction, the sum of their products increases to its maximum possible value. This is because the bigger numbers in <span class="math inline">\(X\)</span> will tend to line up with the bigger numbers in <span class="math inline">\(Y\)</span>, creating the biggest possible sum of products. When the relationship between two measures increases in the negative direction, the sum of their products decreases to its minimum possible value. This is because the bigger numbers in <span class="math inline">\(X\)</span> will tend to line up with the smaller numbers in <span class="math inline">\(Y\)</span>, creating the smallest possible sum of products. When there is no correlation, the big numbers in X will be randomly lined up with the big and small numbers in <span class="math inline">\(Y\)</span>, making the sum of the products somewhere in the middle.</p>
 </blockquote>
 </div>
-<div id="covariance-formalized" class="section level3">
+<div id="covariance-formalized" class="section level3" number="3.2.3">
 <h3><span class="header-section-number">3.2.3</span> Covariance formalized</h3>
 <p>We took some time to see what happens when you multiply sets of numbers together. We found that <span class="math inline">\(\text{big*big = bigger}\)</span> and <span class="math inline">\(\text{small*small=still small}\)</span>, and <span class="math inline">\(\text{big*small=in the middle}\)</span>. The purpose of this was to give you some conceptual idea of how the covariance between two measures is reflected in the sum of their products. We did something very straightforward. We just multiplied <span class="math inline">\(X\)</span> with <span class="math inline">\(Y\)</span>, and looked at how the product sums get big and small, as <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> co-vary in different ways.</p>
 <p>Now, we can get a little bit more formal. In statistics, <strong>covariance</strong> is not just the straight multiplication of values in <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>. Instead, it’s the multiplication of the deviations in <span class="math inline">\(X\)</span> from the mean of <span class="math inline">\(X\)</span>, and the deviation in <span class="math inline">\(Y\)</span> from the mean of <span class="math inline">\(Y\)</span>. Remember those difference scores from the mean we talked about last chapter? They’re coming back to haunt you know, but in a good way, like Casper the friendly ghost.</p>
@@ -874,7 +900,7 @@ Then, I multiplied <span class="math inline">\(X\)</span> and <span class="math 
 <p>OK, so now we have a formal single number to calculate the relationship between two variables. This is great, it’s what we’ve been looking for. However, there is still a problem. Remember when we learned how to compute just the plain old <strong>variance</strong>. We looked at that number, and we didn’t know what to make of it. It was squared, it wasn’t in the same scale as the original data. So, we square rooted the <strong>variance</strong> to produce the <strong>standard deviation</strong>, which gave us a more interpretable number in the range of our data. The <strong>covariance</strong> has a similar problem. When you calculate the covariance as we just did, we don’t know immediately know its scale. Is a 3 big? is a 6 big? is a 100 big? How big or small is this thing?</p>
 <p>From our prelude discussion on the idea of covariance, we learned the sum of products between two measures ranges between a maximum and minimum value. The same is true of the covariance. For a given set of data, there is a maximum possible positive value for the covariance (which occurs when there is perfect positive relationship). And, there is a minimum possible negative value for the covariance (which occurs when there is a perfect negative relationship). When there is zero co-variation: zeroes. So, at the very least, when we look at a co-variation statistic, we can see what direction it points, positive or negative. But, we don’t know how big or small it is compared to the maximum or minimum possible value, so we don’t know the relative size, which means we can’t say how strong the relationship is. What to do?</p>
 </div>
-<div id="corrform" class="section level3">
+<div id="corrform" class="section level3" number="3.2.4">
 <h3><span class="header-section-number">3.2.4</span> <span class="math inline">\(r\)</span> we there yet?</h3>
 <p>Yes, we are here now. Wouldn’t it be nice if we could force our measure of co-variation to be between -1 and +1?</p>
 <p>-1 would be the minimum possible value for a perfect negative association. +1 would be the maximum possible value for a perfect positive association. 0 would mean no association. Everything in between 0 and -1 would be increasingly large negative associations. Everything between 0 and +1 would be increasingly large positive associations. It would be a fantastic, sensible, easy to interpret system. If only we could force the co-variation number to be between -1 and 1. Fortunately, Pearson’s <span class="math inline">\(r\)</span> does precisely this wonderful thing.</p>
@@ -894,52 +920,52 @@ Figure 3.3: A simulation of 1000 correlations. Each dot represents the <span cla
 </div>
 </div>
 </div>
-<div id="examples-of-r-with-data" class="section level2">
+<div id="examples-of-r-with-data" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Examples of <span class="math inline">\(r\)</span> with data</h2>
 <p>During the labs you will be shown how to compute correlations in real datasets using software. To give you a brief preview, let’s look at some data from the <a href="http://worldhappiness.report">world happiness report</a> (2018).</p>
 <p>This report measured various attitudes across people from different countries over the time period 2006-2017. For example, one question asked about how much freedom people thought they had to make life choices. Another question asked how confident people were in their national government. Here is a scatterplot showing the relationship between these two measures and how to generate that plot in R. Each dot represents a different country in 2017.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="chcorrelationandcaus.html#cb7-1"></a><span class="kw">library</span>(data.table)</span>
-<span id="cb7-2"><a href="chcorrelationandcaus.html#cb7-2"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb7-3"><a href="chcorrelationandcaus.html#cb7-3"></a></span>
-<span id="cb7-4"><a href="chcorrelationandcaus.html#cb7-4"></a><span class="co"># import the data</span></span>
-<span id="cb7-5"><a href="chcorrelationandcaus.html#cb7-5"></a>whr_data &lt;-<span class="st"> </span><span class="kw">fread</span>(<span class="st">&#39;https://raw.githubusercontent.com/thomashulst/quantrma/master/data/WHR2018.csv&#39;</span>)</span>
-<span id="cb7-6"><a href="chcorrelationandcaus.html#cb7-6"></a></span>
-<span id="cb7-7"><a href="chcorrelationandcaus.html#cb7-7"></a><span class="co"># select the relevant variables and filter missing data (NA)</span></span>
-<span id="cb7-8"><a href="chcorrelationandcaus.html#cb7-8"></a>smaller_df &lt;-<span class="st"> </span>whr_data <span class="op">%&gt;%</span></span>
-<span id="cb7-9"><a href="chcorrelationandcaus.html#cb7-9"></a><span class="st">              </span><span class="kw">select</span>(country,</span>
-<span id="cb7-10"><a href="chcorrelationandcaus.html#cb7-10"></a>                      <span class="st">`</span><span class="dt">Freedom to make life choices</span><span class="st">`</span>,</span>
-<span id="cb7-11"><a href="chcorrelationandcaus.html#cb7-11"></a>                      <span class="st">`</span><span class="dt">Confidence in national government</span><span class="st">`</span>,</span>
-<span id="cb7-12"><a href="chcorrelationandcaus.html#cb7-12"></a>                      <span class="st">`</span><span class="dt">year</span><span class="st">`</span>) <span class="op">%&gt;%</span></span>
-<span id="cb7-13"><a href="chcorrelationandcaus.html#cb7-13"></a><span class="st">              </span><span class="kw">filter</span>(<span class="st">`</span><span class="dt">year</span><span class="st">`</span> <span class="op">==</span><span class="st"> </span><span class="dv">2017</span>) <span class="op">%&gt;%</span></span>
-<span id="cb7-14"><a href="chcorrelationandcaus.html#cb7-14"></a><span class="st">              </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(<span class="st">`</span><span class="dt">Freedom to make life choices</span><span class="st">`</span>),</span>
-<span id="cb7-15"><a href="chcorrelationandcaus.html#cb7-15"></a>                      <span class="op">!</span><span class="kw">is.na</span>(<span class="st">`</span><span class="dt">Confidence in national government</span><span class="st">`</span>))</span>
-<span id="cb7-16"><a href="chcorrelationandcaus.html#cb7-16"></a></span>
-<span id="cb7-17"><a href="chcorrelationandcaus.html#cb7-17"></a><span class="co"># plot the data with best fit line</span></span>
-<span id="cb7-18"><a href="chcorrelationandcaus.html#cb7-18"></a><span class="kw">ggplot</span>(smaller_df, <span class="kw">aes</span>(<span class="dt">x=</span><span class="st">`</span><span class="dt">Freedom to make life choices</span><span class="st">`</span>,</span>
-<span id="cb7-19"><a href="chcorrelationandcaus.html#cb7-19"></a>                     <span class="dt">y=</span><span class="st">`</span><span class="dt">Confidence in national government</span><span class="st">`</span>))<span class="op">+</span></span>
-<span id="cb7-20"><a href="chcorrelationandcaus.html#cb7-20"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">alpha=</span>.<span class="dv">5</span>)<span class="op">+</span></span>
-<span id="cb7-21"><a href="chcorrelationandcaus.html#cb7-21"></a><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span>lm, <span class="dt">se=</span><span class="ot">FALSE</span>)<span class="op">+</span></span>
-<span id="cb7-22"><a href="chcorrelationandcaus.html#cb7-22"></a><span class="st">  </span><span class="kw">theme_classic</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="chcorrelationandcaus.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb7-2"><a href="chcorrelationandcaus.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb7-3"><a href="chcorrelationandcaus.html#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="chcorrelationandcaus.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># import the data</span></span>
+<span id="cb7-5"><a href="chcorrelationandcaus.html#cb7-5" aria-hidden="true" tabindex="-1"></a>whr_data <span class="ot">&lt;-</span> <span class="fu">fread</span>(<span class="st">&#39;https://raw.githubusercontent.com/thomashulst/quantrma/master/data/WHR2018.csv&#39;</span>)</span>
+<span id="cb7-6"><a href="chcorrelationandcaus.html#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="chcorrelationandcaus.html#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># select the relevant variables and filter missing data (NA)</span></span>
+<span id="cb7-8"><a href="chcorrelationandcaus.html#cb7-8" aria-hidden="true" tabindex="-1"></a>smaller_df <span class="ot">&lt;-</span> whr_data <span class="sc">%&gt;%</span></span>
+<span id="cb7-9"><a href="chcorrelationandcaus.html#cb7-9" aria-hidden="true" tabindex="-1"></a>              <span class="fu">select</span>(country,</span>
+<span id="cb7-10"><a href="chcorrelationandcaus.html#cb7-10" aria-hidden="true" tabindex="-1"></a>                      <span class="st">`</span><span class="at">Freedom to make life choices</span><span class="st">`</span>,</span>
+<span id="cb7-11"><a href="chcorrelationandcaus.html#cb7-11" aria-hidden="true" tabindex="-1"></a>                      <span class="st">`</span><span class="at">Confidence in national government</span><span class="st">`</span>,</span>
+<span id="cb7-12"><a href="chcorrelationandcaus.html#cb7-12" aria-hidden="true" tabindex="-1"></a>                      <span class="st">`</span><span class="at">year</span><span class="st">`</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-13"><a href="chcorrelationandcaus.html#cb7-13" aria-hidden="true" tabindex="-1"></a>              <span class="fu">filter</span>(<span class="st">`</span><span class="at">year</span><span class="st">`</span> <span class="sc">==</span> <span class="dv">2017</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-14"><a href="chcorrelationandcaus.html#cb7-14" aria-hidden="true" tabindex="-1"></a>              <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(<span class="st">`</span><span class="at">Freedom to make life choices</span><span class="st">`</span>),</span>
+<span id="cb7-15"><a href="chcorrelationandcaus.html#cb7-15" aria-hidden="true" tabindex="-1"></a>                      <span class="sc">!</span><span class="fu">is.na</span>(<span class="st">`</span><span class="at">Confidence in national government</span><span class="st">`</span>))</span>
+<span id="cb7-16"><a href="chcorrelationandcaus.html#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="chcorrelationandcaus.html#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the data with best fit line</span></span>
+<span id="cb7-18"><a href="chcorrelationandcaus.html#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(smaller_df, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Freedom to make life choices</span><span class="st">`</span>,</span>
+<span id="cb7-19"><a href="chcorrelationandcaus.html#cb7-19" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y=</span><span class="st">`</span><span class="at">Confidence in national government</span><span class="st">`</span>))<span class="sc">+</span></span>
+<span id="cb7-20"><a href="chcorrelationandcaus.html#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha=</span>.<span class="dv">5</span>)<span class="sc">+</span></span>
+<span id="cb7-21"><a href="chcorrelationandcaus.html#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm, <span class="at">se=</span><span class="cn">FALSE</span>)<span class="sc">+</span></span>
+<span id="cb7-22"><a href="chcorrelationandcaus.html#cb7-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code></pre></div>
 <div class="figure"><span id="fig:3hsrdata"></span>
 <img src="quantrma_files/figure-html/3hsrdata-1.png" alt="Relationship between freedom to make life choices and confidence in national government. Data for the year 2017 from the world happiness report for 2018." width="672" />
 <p class="caption">
 Figure 3.4: Relationship between freedom to make life choices and confidence in national government. Data for the year 2017 from the world happiness report for 2018.
 </p>
 </div>
-<p>We put a blue line on the scatterplot to visualize the positive relationship. It appears that as “freedom to make life choices goes up”, so to does confidence in national government. It’s a positive correlation.</p>
+<p>We put a blue line on the scatterplot to visualize the positive relationship. It appears that as “freedom to make life choices goes up,” so to does confidence in national government. It’s a positive correlation.</p>
 <p>The actual correlation, as measured by Pearson’s <span class="math inline">\(r\)</span> is:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="chcorrelationandcaus.html#cb8-1"></a><span class="co"># calculate correlation</span></span>
-<span id="cb8-2"><a href="chcorrelationandcaus.html#cb8-2"></a><span class="kw">cor</span>(smaller_df<span class="op">$</span><span class="st">`</span><span class="dt">Freedom to make life choices</span><span class="st">`</span>,</span>
-<span id="cb8-3"><a href="chcorrelationandcaus.html#cb8-3"></a>    smaller_df<span class="op">$</span><span class="st">`</span><span class="dt">Confidence in national government</span><span class="st">`</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="chcorrelationandcaus.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate correlation</span></span>
+<span id="cb8-2"><a href="chcorrelationandcaus.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(smaller_df<span class="sc">$</span><span class="st">`</span><span class="at">Freedom to make life choices</span><span class="st">`</span>,</span>
+<span id="cb8-3"><a href="chcorrelationandcaus.html#cb8-3" aria-hidden="true" tabindex="-1"></a>    smaller_df<span class="sc">$</span><span class="st">`</span><span class="at">Confidence in national government</span><span class="st">`</span>)</span></code></pre></div>
 <pre><code>## [1] 0.4419082</code></pre>
 <p>You will do a lot more of this kind of thing during the lab. Looking at the graph you might start to wonder: Does freedom to make life choices cause changes how confident people are in their national government? Our does it work the other way? Does being confident in your national government give you a greater sense of freedom to make life choices? Or, is this just a random relationship that doesn’t mean anything? All good questions. These data do not provide the answers, they just suggest a possible relationship.</p>
 </div>
-<div id="interpreting-correlations" class="section level2">
+<div id="interpreting-correlations" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Interpreting correlations</h2>
 <p>What does the presence or the absence of a correlation between two measures mean? How should correlations be interpreted? What kind of inferences can be drawn from correlations? These are all very good questions. A first piece of advice is to use caution when interpreting correlations.</p>
 <p>Perhaps you have heard that correlation does not equal causation. There are lots of reasons why not. However, before listing some of the reasons, let’s start with a case where we would expect a causal connection between two measurements. Consider buying a <a href="https://en.wikipedia.org/wiki/Dracaena_trifasciata">snake plant</a> for your home. Snake plants are supposed to be easy to take care of because you can mostly ignore them.</p>
 <p>Like most plants, snake plants need some water to stay alive. However, they also need just the right amount of water. Imagine an experiment where 1000 snake plants were grown in a house. Each snake plant is given a different amount of water per day, from zero teaspoons of water per day to 1000 teaspoons of water per day. We will assume that water is part of the causal process that allows snake plants to grow. The amount of water given to each snake plant per day is our first measure. Imagine further that every week the experimenter measures snake plant growth, which will be the second measurement. Now, can you imagine for yourself what a scatter plot of weekly snake plant growth by tablespoons of water would look like?</p>
-<div id="caus-without-corr" class="section level3">
+<div id="caus-without-corr" class="section level3" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Causation without correlation</h3>
 <p>The first plant given no water at all would have a very hard time and eventually die. It should have the least amount of weekly growth. How about the plants given only a few teaspoons of water per day. This could be just enough water to keep the plants alive, so they will grow a little bit but not a lot. If you are imagining a scatter plot, with each dot being a snake plant, then you should imagine some dots starting in the bottom left hand corner (no water &amp; no plant growth), moving up and to the right (a bit of water, and a bit of growth). As we look at snake plants getting more and more water, we should see more and more plant growth, right? But only up to a point… There’s a likely positive correlation with increasing plant growth as amount of water per day increases. But, what happens when you give snake plants too much water? From personal experience, they tend to die. So, at some point, the dots in the scatter plot will start moving back down again. Snake plants that get way too much water will not grow very well.</p>
 <p>The imaginary scatter plot you should be envisioning could have an upside U shape. Going from left to right, the dot’s go up, they reach a maximum, then they go down again reaching a minimum. Computing Pearson’s <span class="math inline">\(r\)</span> for data like this gives you <span class="math inline">\(r\)</span> values close to zero, while the scatter plot could look something like this:</p>
@@ -950,7 +976,7 @@ Figure 3.5: Illustration of a possible relationship between amount of water and 
 </p>
 </div>
 <p>Granted this looks more like an inverted V, than an inverted U, but you get the picture right? There is clearly a relationship between watering and snake plant growth. But, the relationship isn’t in one direction. As a result, when we compute the correlation in terms of Pearson’s r, we get a value very close to 0, suggesting no relationship.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="chcorrelationandcaus.html#cb10-1"></a><span class="kw">cor</span>(growth,water)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="chcorrelationandcaus.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(growth,water)</span></code></pre></div>
 <pre><code>## [1] -0.003107585</code></pre>
 <p>What this really means is there is no linear relationship that can be described by a single straight line. When we need lines or curves going in more than one direction, we have a nonlinear relationship.</p>
 <p>This example illustrates some conundrums in interpreting correlations. We already know that water is needed for plants to grow, so we are rightly expecting there to be a relationship between our measure of amount of water and plant growth. If we look at the first half of the data we see a positive correlation, if we look at the last half of the data we see a negative correlation, and if we look at all of the data we see no correlation. Yikes. So, even when there is a causal connection between two measures, we won’t necessarily obtain clear evidence of the connection just by computing a correlation coefficient.</p>
@@ -958,7 +984,7 @@ Figure 3.5: Illustration of a possible relationship between amount of water and 
 <p>Note: This is one reason why plotting your data is so important. If you see an upside U shape pattern, then a correlation is probably not the best way of analyzing your data.</p>
 </blockquote>
 </div>
-<div id="third-var" class="section level3">
+<div id="third-var" class="section level3" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Third variables</h3>
 <p>Anybody can correlate any two things that can be quantified and measured. For example, we could find a hundred people, ask them all sorts of questions like:</p>
 <ol style="list-style-type: decimal">
@@ -986,7 +1012,7 @@ Figure 3.6: A relationship between ice cream sales and shark attacks? Data obtai
 <p>The lesson here is that a correlation can occur between two measures because of a third variable that is not directly measured. So, just because we find a correlation, does not mean we can conclude anything about a causal connection between two measurements.</p>
 </div>
 </div>
-<div id="relationships-between-variables" class="section level2">
+<div id="relationships-between-variables" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> Relationships between variables</h2>
 <p>These ideas lie at the core of empirical research. To enhance our understanding, we will develop an analytical framework which will help us see the various ways three variables might be related to each other.</p>
 <p>Causal relationships can occur either directly or indirectly. As the names suggest, a direct causal relationship refers to the un-intervening impact of one variable on another, whereas an indirect causal relationship refers to the intervening impact of one variable on another. For example, the direct causal relationship between salary and happiness can be understood as the intrinsic value of money in one’s level of happiness. In contrast, if it turns out that a salary increase makes people happier because they can consume more, the causal relationship is indirect, since consumption lies in-between <a href="week-1-introductionadapted1.html#variables">the independent and dependent variable</a>. In other words, consumption is an intervening variable. The figures below visualize this idea:</p>
@@ -1026,12 +1052,12 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 </ol>
 <p>Any relationship between two variables will consist of two components: a causal component (the one we try to uncover) and a spurious component (the one we try to eliminate). The value of this exercise rests on our ability to articulate our research question and the most plausible line of explanation: the more accurate our understanding of empirical reality, the more likely it will be to get closer to the true causal relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
 </div>
-<div id="establishing-causal-relationships" class="section level2">
+<div id="establishing-causal-relationships" class="section level2" number="3.6">
 <h2><span class="header-section-number">3.6</span> Establishing causal relationships</h2>
-<p>We will further explore how to establish causal relationships using research design techniques with a motivating example from economics. Economists have long theorized about the importance of human capital on productivity. The widely held belief is that investments in human capital result in productivity growth <span class="citation">(Becker <a href="#ref-becker2009human" role="doc-biblioref">2009</a>)</span>. Suppose we would like to establish this relationship with an empirical study using quantitative methods. Where do we start?</p>
-<p>Let’s first unpack the theory posed by economists: “investments in human capital result in productivity growth”. What is meant by human capital? Human capital are basically all personality traits and individual characteristics embodied in the ability to perform labor that produces economic value. For example: your habits, knowledge, social skills, analytical skills, creativity and many more individual characteristics. Then, what is meant by productivity? Productivity reflects the amount of output one unit of input can produce. Since we are talking about humans, productivity can be thought of as labor productivity, or the output of one hour of work.</p>
+<p>We will further explore how to establish causal relationships using research design techniques with a motivating example from economics. Economists have long theorized about the importance of human capital on productivity. The widely held belief is that investments in human capital result in productivity growth <span class="citation">(<a href="references.html#ref-becker2009human" role="doc-biblioref">Becker 2009</a>)</span>. Suppose we would like to establish this relationship with an empirical study using quantitative methods. Where do we start?</p>
+<p>Let’s first unpack the theory posed by economists: “investments in human capital result in productivity growth.” What is meant by human capital? Human capital are basically all personality traits and individual characteristics embodied in the ability to perform labor that produces economic value. For example: your habits, knowledge, social skills, analytical skills, creativity and many more individual characteristics. Then, what is meant by productivity? Productivity reflects the amount of output one unit of input can produce. Since we are talking about humans, productivity can be thought of as labor productivity, or the output of one hour of work.</p>
 <p>So far, so good. Since we want to conduct an empirical study on the relationship between human capital and productivity, we need to <a href="week-1-introductionadapted1.html#operationalize">operationalize</a> these concepts to enable measurement of them. Suppose we operationalize human capital with education and productivity with hourly wage. Now, we could investigate an observation like: college graduates enjoy high hourly wages. Can we use this observation to claim a causal relationship between having a college degree (human capital) and hourly wages (productivity)? Clearly not, the observation itself provides no evidence in support of the claim. As long as we do not have a comparative framework in place, we are not able to eliminate alternative explanations of the apparent relationship between having a college degree and earning a high hourly wage.</p>
-<div id="a-frame-of-reference" class="section level3">
+<div id="a-frame-of-reference" class="section level3" number="3.6.1">
 <h3><span class="header-section-number">3.6.1</span> A frame of reference</h3>
 <p>It becomes clear that unless we look at hourly wages of both college and non-college graduates we are not able to say anything about the association between the two: it is the difference in the hourly wages between the two groups that provides evidence regarding the alleged effect of college education on hourly wages.</p>
 <p>But we can probably do better than comparing just the two groups. Perhaps, the <em>type</em> of education might portray our effect of interest more accurately. For instance, we could compare hourly wages across college graduates of economics, political science, law, life science and non-college graduates. Our research design will look as follows:</p>
@@ -1174,21 +1200,21 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <p>It is of course possible to expand on this and make even larger and more complicated research designs that will allow you to uncover a more detailed effect. Nevertheless, it will always be the case that you have to compare some groups with some other groups. This raises our next important question: under what conditions are comparisons meaningful?</p>
 </div>
 </div>
-<div id="meaningful-comparisons" class="section level2">
+<div id="meaningful-comparisons" class="section level2" number="3.7">
 <h2><span class="header-section-number">3.7</span> Meaningful comparisons</h2>
 <p>Making meaningful comparisons is central to any research design. We must ensure that any comparison allows us to estimate the true causal effect of the relationship that we are interested in. We already know the general condition that would allow for this: alternative explanations must be eliminated.</p>
 <p>Alternative explanations are grounded on confounders which are variables affecting both <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> (Figure <a href="chcorrelationandcaus.html#fig:3confounder">3.9</a>). In our example: a confounder could have both an impact on an individual’s choice to attend college education (or the type of college education) <strong>and</strong> on the hourly wage. Perhaps, intrinsic motivation for success in life is a driving force behind the decision to enroll in college <strong>and</strong> one’s performance in the labor market (thereby one’s hourly wage). What about family background? It is plausible that well educated parents can support their children financially and through networking opportunities, thereby affecting both enrollment in college education <strong>and</strong> compensation in the labor market. We will discuss two strategies for maximizing the comparability of groups below and they both rely on the same key principle: making sure confounders are not systematically different across groups.</p>
-<div id="random" class="section level3">
+<div id="random" class="section level3" number="3.7.1">
 <h3><span class="header-section-number">3.7.1</span> Randomization</h3>
-<p>The simplest and most effective way to ensure the comparability of the groups is to randomly allocate people to different groups. Random assignment of individuals to different groups means that differences with respect to individual background characteristics are random and not systematic. Therefore, if groups are large enough, they should be comparable on both known and unknown factors. For instance, in the binary classification of college and non-college education, random assignment would produce two groups with very similar intrinsic motivation, family background, innate ability and any other factor that might be related to our study. But… can we do such a thing in this particular example? Is random assignment to different educational groups possible? No, it is not! Education is a <strong>choice variable</strong>, thereby it almost by definition correlates with individual characteristics which are by themselves important in the labor market. In fact, it is precisely for this reason that it has proven to be notoriously difficult to estimate the true causal effect of education on hourly wages <span class="citation">(Fuente <a href="#ref-de2011human" role="doc-biblioref">2011</a>; Kampelmann et al. <a href="#ref-kampelmann2018does" role="doc-biblioref">2018</a>)</span>. Economists have spent years developing advanced econometric techniques allowing them to overcome the fact that people are not randomly allocated in different educational groups.</p>
+<p>The simplest and most effective way to ensure the comparability of the groups is to randomly allocate people to different groups. Random assignment of individuals to different groups means that differences with respect to individual background characteristics are random and not systematic. Therefore, if groups are large enough, they should be comparable on both known and unknown factors. For instance, in the binary classification of college and non-college education, random assignment would produce two groups with very similar intrinsic motivation, family background, innate ability and any other factor that might be related to our study. But… can we do such a thing in this particular example? Is random assignment to different educational groups possible? No, it is not! Education is a <strong>choice variable</strong>, thereby it almost by definition correlates with individual characteristics which are by themselves important in the labor market. In fact, it is precisely for this reason that it has proven to be notoriously difficult to estimate the true causal effect of education on hourly wages <span class="citation">(<a href="references.html#ref-de2011human" role="doc-biblioref">Fuente 2011</a>; <a href="references.html#ref-kampelmann2018does" role="doc-biblioref">Kampelmann et al. 2018</a>)</span>. Economists have spent years developing advanced econometric techniques allowing them to overcome the fact that people are not randomly allocated in different educational groups.</p>
 <p>Before we discuss research design techniques for making meaningful comparisons when randomization is not possible, let us first look at an example where randomization is possible. Pharmaceutical companies need to test their products before administering them to the population. They also want to measure the effectiveness and side effects of various types of treatments. In this particular case it is easy, at least from a practical point of view, to randomly allocate people in various groups. The researcher is in full control and can actively manipulate the levels of the independent variable. For example, we could administer treatment A to group A, treatment B to group B and nothing to group C and random allocation will ensure that groups A, B and C are similar in terms of background characteristics that might have an impact on the effectiveness of the treatment. Therefore, through random allocation, we make sure that group differences in the dependent variable <span class="math inline">\(Y\)</span> can be attributed to the treatment and not confounders.</p>
 </div>
-<div id="matching" class="section level3">
+<div id="matching" class="section level3" number="3.7.2">
 <h3><span class="header-section-number">3.7.2</span> Matching</h3>
 <p>How can we meaningfully compare groups when allocation is a matter of individual choice? Through a procedure that by convention is called matching, researchers can deliberately match the characteristics of individuals in one group with those of individuals in another group. For example, we would like to compare hourly wages of college and non-college graduates with similar intrinsic motivation and family backgrounds, if we believe that these two factors are important determinants of hourly wages. Perhaps you can already see why this procedure is inferior to randomization. Even though we might be able to accurately operationalize family background through parents’ income and educational level, it is hard to measure intrinsic motivation. In addition, matching can only eliminate alternative explanations rooted in the confounders that are known to us, but it leaves the door open to confounders not known to us.</p>
 </div>
 </div>
-<div id="taxonomy-of-research-design" class="section level2">
+<div id="taxonomy-of-research-design" class="section level2" number="3.8">
 <h2><span class="header-section-number">3.8</span> Taxonomy of research design</h2>
 <p>The discussion so far has identified six core elements of research design. In fact, any research design, no matter how simple or complex, will always be some mix of these elements. So, let us summarize what we have seen so far by listing the six dimensions of research design:</p>
 <ol style="list-style-type: decimal">
@@ -1200,10 +1226,10 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <li><em>The number of interventions</em>: designs with an intervention can have either one or more interventions. Multiple interventions can be used to elicit the cumulative effect of various treatments.</li>
 </ol>
 </div>
-<div id="range-of-research-design" class="section level2">
+<div id="range-of-research-design" class="section level2" number="3.9">
 <h2><span class="header-section-number">3.9</span> Range of research design</h2>
 <p>Now that we have summarized the six building blocks of research design, it is time to explore the combinations of the possibilities created by combining these building blocks. We will focus on three of the most fundamental types of research design: experimental, longitudinal and cross-sectional designs. They are the foundation of more elaborate and complex research designs. They also help us understand the importance and relevance of the six core principles identified before<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a>.</p>
-<div id="experimental-designs" class="section level3">
+<div id="experimental-designs" class="section level3" number="3.9.1">
 <h3><span class="header-section-number">3.9.1</span> Experimental designs</h3>
 <p>The classic version of the experimental design satisfies the following:</p>
 <ol style="list-style-type: decimal">
@@ -1262,9 +1288,9 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 </tr>
 </tbody>
 </table>
-<p>Data obtained from this experimental design can be analyzed by taking the difference between post-test and pre-test measure in both the experimental and control group. Then, we subtract the rate of change in the control group (C) from the rate of change in the experimental group (E) to calculate the total effect of the intervention (T). If the change in the experimental group is greater than the change in the control group the researcher can attribute this to the impact of the “treatment”, to the extent that randomization was successful and alternative explanations were successfully eliminated.</p>
+<p>Data obtained from this experimental design can be analyzed by taking the difference between post-test and pre-test measure in both the experimental and control group. Then, we subtract the rate of change in the control group (C) from the rate of change in the experimental group (E) to calculate the total effect of the intervention (T). If the change in the experimental group is greater than the change in the control group the researcher can attribute this to the impact of the “treatment,” to the extent that randomization was successful and alternative explanations were successfully eliminated.</p>
 </div>
-<div id="longitudinal-designs" class="section level3">
+<div id="longitudinal-designs" class="section level3" number="3.9.2">
 <h3><span class="header-section-number">3.9.2</span> Longitudinal designs</h3>
 <p>The most basic form of the longitudinal design looks as follows:</p>
 <ol style="list-style-type: decimal">
@@ -1295,7 +1321,7 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 </table>
 <p>This design is similar to the classic experimental design without a control group. Data obtained from such a design is analyzed by looking at the difference between post-test and pre-test measurements. The implicit assumption here is that any difference between <span class="math inline">\(Y\text{post}\)</span> and <span class="math inline">\(Y\text{pre}\)</span> is attributed to the treatment. However, the absence of a randomized control group makes it difficult to rule out the possibility that a similar difference would have been observed in the absence of a treatment.</p>
 </div>
-<div id="cross-sectional-designs" class="section level3">
+<div id="cross-sectional-designs" class="section level3" number="3.9.3">
 <h3><span class="header-section-number">3.9.3</span> Cross-sectional designs</h3>
 <p>The most basic form of the cross-sectional design satisfies the following:</p>
 <ol style="list-style-type: decimal">
@@ -1346,9 +1372,9 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <p>The most common example of a cross-sectional design is data obtained through surveys where, for example, individual preferences on certain topics are measured at one point in time. There are many such databases publicly available on the internet and you can easily download the data they provide. The European Social Survey or the General Social Survey in the US are examples of cross-sectional designs. These surveys measure individual preferences on a wide range of sociopolitical values. So, one might be able to estimate the association between gender and political preferences. Since these surveys include questions on education, income and occupation the researcher is also able to statistically control for such factors in their efforts to get closer to the true causal effect of interest.</p>
 </div>
 </div>
-<div id="the-validity-of-your-study" class="section level2">
+<div id="the-validity-of-your-study" class="section level2" number="3.10">
 <h2><span class="header-section-number">3.10</span> The validity of your study</h2>
-<p>More than any other thing, a scientist wants their research to be “valid”. We explored validity before, when it referred to the <a href="week-1-introductionadapted1.html#reliab-valid-measurement"><strong>validity of our measurement</strong></a>. Here, we discuss <strong>the validity of a study</strong> or <strong>experimental validity</strong>. The conceptual idea behind experimental validity is very simple: can you trust the results of your study? If not, the study is invalid. However, while it’s easy to state, in practice it’s much harder to check. And in all honesty, there’s no precise, clearly agreed upon notion of what experimental validity actually is. In fact, there’s lots of different kinds of validity, each of which raises it’s own issues, and not all forms of validity are relevant to all studies.</p>
+<p>More than any other thing, a scientist wants their research to be “valid.” We explored validity before, when it referred to the <a href="week-1-introductionadapted1.html#reliab-valid-measurement"><strong>validity of our measurement</strong></a>. Here, we discuss <strong>the validity of a study</strong> or <strong>experimental validity</strong>. The conceptual idea behind experimental validity is very simple: can you trust the results of your study? If not, the study is invalid. However, while it’s easy to state, in practice it’s much harder to check. And in all honesty, there’s no precise, clearly agreed upon notion of what experimental validity actually is. In fact, there’s lots of different kinds of validity, each of which raises it’s own issues, and not all forms of validity are relevant to all studies.</p>
 <p>I’m going to talk about three different types:</p>
 <ul>
 <li>Internal validity</li>
@@ -1356,17 +1382,17 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <li>Construct validity</li>
 </ul>
 <p>Internal and external validity are really important, since they tie directly to the fundamental question of whether your study really works. Construct validity asks whether you’re measuring what you think you are.</p>
-<div id="internal-validity" class="section level3">
+<div id="internal-validity" class="section level3" number="3.10.1">
 <h3><span class="header-section-number">3.10.1</span> Internal validity</h3>
 <p><strong>Internal validity</strong> refers to the extent to which you are able draw the correct conclusions about the causal relationships between variables. It’s called “internal” because it refers to the relationships between things “inside” the study. Let’s illustrate the concept with a simple example. Suppose you’re interested in finding out whether a university education makes you write better. To do so, you get a group of first year students, ask them to write a 1000 word essay, and count the number of spelling and grammatical errors they make. Then you find some third-year students, who obviously have had more of a university education than the first-years, and repeat the exercise. And let’s suppose it turns out that the third-year students produce fewer errors. And so you conclude that a university education improves writing skills. Right? Except… the big problem that you have with this experiment is that the third-year students are older, and they’ve had more experience with writing things. So it’s hard to know for sure what the causal relationship is: do older people write better? Or people who have had more writing experience? Or people who have had more education? Which of the above is the true cause of the superior performance of the third-years? Age? Experience? Education? You can’t tell. This is an example of a failure of internal validity, because your study doesn’t properly tease apart the causal relationships between the different variables.</p>
 </div>
-<div id="external-validity" class="section level3">
+<div id="external-validity" class="section level3" number="3.10.2">
 <h3><span class="header-section-number">3.10.2</span> External validity</h3>
 <p><strong>External validity</strong> relates to the <strong>generalizability</strong> of your findings. That is, to what extent do you expect to see the same pattern of results in “real life” as you saw in your study. To put it a bit more precisely, any study that you do in psychology will involve a fairly specific set of questions or tasks, will occur in a specific environment, and will involve participants that are drawn from a particular subgroup. So, if it turns out that the results don’t actually generalize to people and situations beyond the ones that you studied, then what you’ve got is a lack of external validity.</p>
 <p>The classic example of this issue is the fact that a very large proportion of studies in psychology will use undergraduate psychology students as the participants. Obviously, however, the researchers don’t care only about psychology students; they care about people in general. Given that, a study that uses only psych students as participants always carries a risk of lacking external validity. That is, if there’s something “special” about psychology students that makes them different to the general populace in some <em>relevant</em> respect, then we may start worrying about a lack of external validity.</p>
 <p>That said, it is absolutely critical to realize that a study that uses only psychology students does not necessarily have a problem with external validity. I’ll talk about this again later, but it’s such a common mistake that I’m going to mention it here. The external validity is threatened by the choice of population if (a) the population from which you sample your participants is very narrow (e.g., psych students), and (b) the narrow population that you sampled from is systematically different from the general population, <em>in some respect that is relevant to the psychological phenomenon that you intend to study</em>. The italicized part is the bit that lots of people forget: it is true that psychology undergraduates differ from the general population in lots of ways, and so a study that uses only psych students <em>may</em> have problems with external validity. However, if those differences aren’t very relevant to the phenomenon that you’re studying, then there’s nothing to worry about. To make this a bit more concrete, here’s two extreme examples:</p>
 <ul>
-<li>You want to measure “attitudes of the general public towards psychotherapy”, but all of your participants are psychology students. This study would almost certainly have a problem with external validity.</li>
+<li>You want to measure “attitudes of the general public towards psychotherapy,” but all of your participants are psychology students. This study would almost certainly have a problem with external validity.</li>
 <li>You want to measure the effectiveness of a visual illusion, and your participants are all psychology students. This study is very unlikely to have a problem with external validity.</li>
 </ul>
 <p>Having just spent the last couple of paragraphs focusing on the choice of participants (since that’s the big issue that everyone tends to worry most about), it’s worth remembering that external validity is a broader concept. The following are also examples of things that might pose a threat to external validity, depending on what kind of study you’re doing:</p>
@@ -1375,12 +1401,12 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <li>Your lab experiment on (say) “human learning” has a different structure to the learning problems people face in real life.</li>
 </ul>
 </div>
-<div id="construct-validity" class="section level3">
+<div id="construct-validity" class="section level3" number="3.10.3">
 <h3><span class="header-section-number">3.10.3</span> Construct validity</h3>
-<p><strong>Construct validity</strong> is basically a question of whether you’re measuring what you want to be measuring. A measurement has good construct validity if it is actually measuring the correct theoretical construct, and bad construct validity if it doesn’t. To give very simple (if ridiculous) example, suppose I’m trying to investigate the rates with which university students cheat on their exams. And the way I attempt to measure it is by asking the cheating students to stand up in the lecture theatre so that I can count them. When I do this with a class of 300 students, 0 people claim to be cheaters. So I therefore conclude that the proportion of cheaters in my class is 0%. Clearly this is a bit ridiculous. But the point here is not that this is a very deep methodological example, but rather to explain what construct validity is. The problem with my measure is that while I’m trying to measure “the proportion of people who cheat” what I’m actually measuring is “the proportion of people stupid enough to own up to cheating, or bloody minded enough to pretend that they do”. Obviously, these aren’t the same thing! So my study has gone wrong, because my measurement has very poor construct validity.</p>
+<p><strong>Construct validity</strong> is basically a question of whether you’re measuring what you want to be measuring. A measurement has good construct validity if it is actually measuring the correct theoretical construct, and bad construct validity if it doesn’t. To give very simple (if ridiculous) example, suppose I’m trying to investigate the rates with which university students cheat on their exams. And the way I attempt to measure it is by asking the cheating students to stand up in the lecture theatre so that I can count them. When I do this with a class of 300 students, 0 people claim to be cheaters. So I therefore conclude that the proportion of cheaters in my class is 0%. Clearly this is a bit ridiculous. But the point here is not that this is a very deep methodological example, but rather to explain what construct validity is. The problem with my measure is that while I’m trying to measure “the proportion of people who cheat” what I’m actually measuring is “the proportion of people stupid enough to own up to cheating, or bloody minded enough to pretend that they do.” Obviously, these aren’t the same thing! So my study has gone wrong, because my measurement has very poor construct validity.</p>
 </div>
 </div>
-<div id="threats-to-experimental-validity" class="section level2">
+<div id="threats-to-experimental-validity" class="section level2" number="3.11">
 <h2><span class="header-section-number">3.11</span> Threats to experimental validity</h2>
 <p>If we look at the issue of validity in the most general fashion, the two biggest worries that we have are <em>confounds</em> and <em>artifacts</em>. We have already discussed confounds but let us summarize what we have seen by examining their relationship with artifacts. These two terms are defined in the following way:</p>
 <ul>
@@ -1391,7 +1417,7 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <p>However, there’s always swings and roundabouts, and when we start thinking about artifacts rather than confounds, the shoe is very firmly on the other foot. For the most part, artifactual results tend to be a concern for experimental studies than for non-experimental studies. To see this, it helps to realize that the reason that a lot of studies are non-experimental is precisely because what the researcher is trying to do is examine human behaviour in a more naturalistic context. By working in a more real-world context, you lose experimental control (making yourself vulnerable to confounds) but because you tend to be studying human psychology “in the wild” you reduce the chances of getting an artifactual result. Or, to put it another way, when you take psychology out of the wild and bring it into the lab (which we usually have to do to gain our experimental control), you always run the risk of accidentally studying something different than you wanted to study: which is more or less the definition of an artifact. So, normally there is a tradeoff between internal and external validity: maximizing one comes at the expense of the other.</p>
 <p>Be warned though: the above is a rough guide only. It’s absolutely possible to have confounds in an experiment, and to get artifactual results with non-experimental studies. This can happen for all sorts of reasons, not least of which is researcher error. In practice, it’s really hard to think everything through ahead of time, and even very good researchers make mistakes. But other times it’s unavoidable, simply because the researcher has ethics (e.g., see <a href="chcorrelationandcaus.html#diffatt">differential attrition</a> below).</p>
 <p>Okay. There’s a sense in which almost any threat to validity can be characterized as a confound or an artifact: they’re pretty vague concepts. So let’s have a look at some of the most common examples…</p>
-<div id="history-effects" class="section level3">
+<div id="history-effects" class="section level3" number="3.11.1">
 <h3><span class="header-section-number">3.11.1</span> History effects</h3>
 <p><em>History effects</em> refer to the possibility that specific events may occur during the study itself that might influence the outcomes. For instance, something might happen in between a pre-test and a post-test. Or, in between testing participant 23 and participant 24. Alternatively, it might be that you’re looking at an older study, which was perfectly valid for its time, but the world has changed enough since then that the conclusions are no longer trustworthy. Examples of things that would count as history effects:</p>
 <ul>
@@ -1399,7 +1425,7 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <li>You’re testing the psychological effects of a new anti-anxiety drug. So what you do is measure anxiety before administering the drug (e.g., by self-report, and taking physiological measures, let’s say), then you administer the drug, and then you take the same measures afterwards. In the middle, however, because your labs are in Los Angeles, there’s an earthquake, which increases the anxiety of the participants.</li>
 </ul>
 </div>
-<div id="maturation-effects" class="section level3">
+<div id="maturation-effects" class="section level3" number="3.11.2">
 <h3><span class="header-section-number">3.11.2</span> Maturation effects</h3>
 <p>As with history effects, <strong>maturational effects</strong> are fundamentally about change over time. However, maturation effects aren’t in response to specific events. Rather, they relate to how people change on their own over time: we get older, we get tired, we get bored, etc. Some examples of maturation effects:</p>
 <ul>
@@ -1407,44 +1433,44 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <li>When running a very long experiment in the lab (say, something that goes for 3 hours), it’s very likely that people will begin to get bored and tired, and that this maturational effect will cause performance to decline, regardless of anything else going on in the experiment.</li>
 </ul>
 </div>
-<div id="repeated-testing-effects" class="section level3">
+<div id="repeated-testing-effects" class="section level3" number="3.11.3">
 <h3><span class="header-section-number">3.11.3</span> Repeated testing effects</h3>
 <p>An important type of history effect is the effect of <strong>repeated testing</strong>. Suppose I want to take two measurements of some psychological construct (e.g., anxiety). One thing I might be worried about is if the first measurement has an effect on the second measurement. In other words, this is a history effect in which the “event” that influences the second measurement is the first measurement itself! This is not at all uncommon. Examples of this include:</p>
 <ul>
 <li><em>Learning and practice</em>: e.g., “intelligence” at time 2 might appear to go up relative to time 1 because participants learned the general rules of how to solve “intelligence-test-style” questions during the first testing session.</li>
 <li><em>Familiarity with the testing situation</em>: e.g., if people are nervous at time 1, this might make performance go down; after sitting through the first testing situation, they might calm down a lot precisely because they’ve seen what the testing looks like.</li>
-<li><em>Auxiliary changes caused by testing</em>: e.g., if a questionnaire assessing mood is boring, then mood at measurement at time 2 is more likely to become “bored”, precisely because of the boring measurement made at time 1.</li>
+<li><em>Auxiliary changes caused by testing</em>: e.g., if a questionnaire assessing mood is boring, then mood at measurement at time 2 is more likely to become “bored,” precisely because of the boring measurement made at time 1.</li>
 </ul>
 </div>
-<div id="selection-bias" class="section level3">
+<div id="selection-bias" class="section level3" number="3.11.4">
 <h3><span class="header-section-number">3.11.4</span> Selection bias</h3>
-<p><strong>Selection bias</strong> is a pretty broad term. Suppose that you’re running an experiment with two groups of participants, where each group gets a different “treatment”, and you want to see if the different treatments lead to different outcomes. However, suppose that, despite your best efforts, you’ve ended up with a gender imbalance across groups (say, group A has 80% females and group B has 50% females). It might sound like this could never happen, but trust me, it can. This is an example of a selection bias, in which the people “selected into” the two groups have different characteristics. If any of those characteristics turns out to be relevant (say, your treatment works better on females than males) then you’re in a lot of trouble.</p>
+<p><strong>Selection bias</strong> is a pretty broad term. Suppose that you’re running an experiment with two groups of participants, where each group gets a different “treatment,” and you want to see if the different treatments lead to different outcomes. However, suppose that, despite your best efforts, you’ve ended up with a gender imbalance across groups (say, group A has 80% females and group B has 50% females). It might sound like this could never happen, but trust me, it can. This is an example of a selection bias, in which the people “selected into” the two groups have different characteristics. If any of those characteristics turns out to be relevant (say, your treatment works better on females than males) then you’re in a lot of trouble.</p>
 <p>Another good example of selection bias is the one we discussed earlier on education and hourly wages. Education is a choice variable since people allocate themselves in different educational groups: the alternative explanation originates to the extent to which factors driving people’s educational choices correlate with their competitiveness in the labor market.</p>
 </div>
-<div id="diffatt" class="section level3">
+<div id="diffatt" class="section level3" number="3.11.5">
 <h3><span class="header-section-number">3.11.5</span> Differential attrition</h3>
 <p>One quite subtle danger to be aware of is called <strong>differential attrition</strong>, which is a kind of selection bias that is caused by the study itself. Suppose that, for the first time ever in the history of psychology, I manage to find the perfectly balanced and representative sample of people. I start running “Thomas’s incredibly long and tedious experiment” on my perfect sample, but then, because my study is incredibly long and tedious, lots of people start dropping out. I can’t stop this: participants absolutely have the right to stop doing any experiment, any time, for whatever reason they feel like, and as researchers we are morally (and professionally) obliged to remind people that they do have this right. So, suppose that “Thomas’s incredibly long and tedious experiment” has a very high drop out rate. What do you suppose the odds are that this drop out is random? Answer: zero. Almost certainly, the people who remain are more conscientious, more tolerant of boredom etc than those that leave. To the extent that (say) conscientiousness is relevant to the psychological phenomenon that I care about, this attrition can decrease the validity of my results.</p>
 <p>When thinking about the effects of differential attrition, it is sometimes helpful to distinguish between two different types. The first is <strong>homogeneous attrition</strong>, in which the attrition effect is the same for all groups, treatments or conditions. In the example I gave above, the differential attrition would be homogeneous if (and only if) the easily bored participants are dropping out of all of the conditions in my experiment at about the same rate. In general, the main effect of homogeneous attrition is likely to be that it makes your sample unrepresentative. As such, the biggest worry that you’ll have is that the generalisability of the results decreases: in other words, you lose external validity.</p>
 <p>The second type of differential attrition is <strong>heterogeneous attrition</strong>, in which the attrition effect is different for different groups. This is a much bigger problem: not only do you have to worry about your external validity, you also have to worry about your internal validity too. To see why this is the case, let’s consider a very dumb study in which I want to see if insulting people makes them act in a more obedient way. Why anyone would actually want to study that I don’t know, but let’s suppose I really, deeply cared about this. So, I design my experiment with two conditions. In the “treatment” condition, the experimenter insults the participant and then gives them a questionnaire designed to measure obedience. In the “control” condition, the experimenter engages in a bit of pointless chitchat and then gives them the questionnaire. Leaving aside the questionable scientific merits and dubious ethics of such a study, let’s have a think about what might go wrong here. As a general rule, when someone insults me to my face, I tend to get much less co-operative. So, there’s a pretty good chance that a lot more people are going to drop out of the treatment condition than the control condition. And this drop out isn’t going to be random. The people most likely to drop out would probably be the people who don’t care all that much about the importance of obediently sitting through the experiment. Since the most bloody minded and disobedient people all left the treatment group but not the control group, we’ve introduced a confound: the people who actually took the questionnaire in the treatment group were <em>already</em> more likely to be dutiful and obedient than the people in the control group. In short, in this study insulting people doesn’t make them more obedient: it makes the more disobedient people leave the experiment! The internal validity of this experiment is completely shot.</p>
 </div>
-<div id="non-response-bias" class="section level3">
+<div id="non-response-bias" class="section level3" number="3.11.6">
 <h3><span class="header-section-number">3.11.6</span> Non-response bias</h3>
 <p><strong>Non-response bias</strong> is closely related to selection bias and to differential attrition. The simplest version of the problem goes like this. You mail out a survey to 1000 people, and only 300 of them reply. The 300 people who replied are almost certainly not a random subsample. People who respond to surveys are systematically different to people who don’t. This introduces a problem when trying to generalize from those 300 people who replied, to the population at large; since you now have a very non-random sample. The issue of non-response bias is more general than this, though. Among the (say) 300 people that did respond to the survey, you might find that not everyone answers every question. If (say) 80 people chose not to answer one of your questions, does this introduce problems? As always, the answer is maybe. If the question that wasn’t answered was on the last page of the questionnaire, and those 80 surveys were returned with the last page missing, there’s a good chance that the missing data isn’t a big deal: probably the pages just fell off. However, if the question that 80 people didn’t answer was the most confrontational or invasive personal question in the questionnaire, then almost certainly you’ve got a problem. In essence, what you’re dealing with here is what’s called the problem of <strong>missing data</strong>. If the data that is missing was “lost” randomly, then it’s not a big problem. If it’s missing systematically, then it can be a big problem.</p>
 </div>
-<div id="regression-to-the-mean" class="section level3">
+<div id="regression-to-the-mean" class="section level3" number="3.11.7">
 <h3><span class="header-section-number">3.11.7</span> Regression to the mean</h3>
 <p><strong>Regression to the mean</strong> is a curious variation on selection bias. It refers to any situation where you select data based on an extreme value on some measure. Because the measure has natural variation, it almost certainly means that when you take a subsequent measurement, that later measurement will be less extreme than the first one, purely by chance.</p>
-<p>Here’s an example. Suppose I’m interested in whether a psychology education has an adverse effect on very smart kids. To do this, I find the 20 psych I students with the best high school grades and look at how well they’re doing at university. It turns out that they’re doing a lot better than average, but they’re not topping the class at university, even though they did top their classes at high school. What’s going on? The natural first thought is that this must mean that the psychology classes must be having an adverse effect on those students. However, while that might very well be the explanation, it’s more likely that what you’re seeing is an example of “regression to the mean”. To see how it works, let’s take a moment to think about what is required to get the best mark in a class, regardless of whether that class be at high school or at university. When you’ve got a big class, there are going to be lots of very smart people enrolled. To get the best mark you have to be very smart, work very hard, and be a bit lucky. The exam has to ask just the right questions for your idiosyncratic skills, and you have to not make any dumb mistakes (we all do that sometimes) when answering them. And that’s the thing: intelligence and hard work are transferrable from one class to the next. Luck isn’t. The people who got lucky in high school won’t be the same as the people who get lucky at university. That’s the very definition of “luck”. The consequence of this is that, when you select people at the very extreme values of one measurement (the top 20 students), you’re selecting for hard work, skill and luck. But because the luck doesn’t transfer to the second measurement (only the skill and work), these people will all be expected to drop a little bit when you measure them a second time (at university). So their scores fall back a little bit, back towards everyone else. This is regression to the mean.</p>
-<p>Regression to the mean is surprisingly common. For instance, if two very tall people have kids, their children will tend to be taller than average, but not as tall as the parents. The reverse happens with very short parents: two very short parents will tend to have short children, but nevertheless those kids will tend to be taller than the parents. It can also be extremely subtle. For instance, there have been studies done that suggested that people learn better from negative feedback than from positive feedback. However, the way that people tried to show this was to give people positive reinforcement whenever they did good, and negative reinforcement when they did bad. And what you see is that after the positive reinforcement, people tended to do worse; but after the negative reinforcement they tended to do better. But! Notice that there’s a selection bias here: when people do very well, you’re selecting for “high” values, and so you should expect (because of regression to the mean) that performance on the next trial should be worse, regardless of whether reinforcement is given. Similarly, after a bad trial, people will tend to improve all on their own. The apparent superiority of negative feedback is an artifact caused by regression to the mean <span class="citation">(Kahneman and Tversky <a href="#ref-Kahneman1973" role="doc-biblioref">1973</a>)</span>.</p>
+<p>Here’s an example. Suppose I’m interested in whether a psychology education has an adverse effect on very smart kids. To do this, I find the 20 psych I students with the best high school grades and look at how well they’re doing at university. It turns out that they’re doing a lot better than average, but they’re not topping the class at university, even though they did top their classes at high school. What’s going on? The natural first thought is that this must mean that the psychology classes must be having an adverse effect on those students. However, while that might very well be the explanation, it’s more likely that what you’re seeing is an example of “regression to the mean.” To see how it works, let’s take a moment to think about what is required to get the best mark in a class, regardless of whether that class be at high school or at university. When you’ve got a big class, there are going to be lots of very smart people enrolled. To get the best mark you have to be very smart, work very hard, and be a bit lucky. The exam has to ask just the right questions for your idiosyncratic skills, and you have to not make any dumb mistakes (we all do that sometimes) when answering them. And that’s the thing: intelligence and hard work are transferrable from one class to the next. Luck isn’t. The people who got lucky in high school won’t be the same as the people who get lucky at university. That’s the very definition of “luck.” The consequence of this is that, when you select people at the very extreme values of one measurement (the top 20 students), you’re selecting for hard work, skill and luck. But because the luck doesn’t transfer to the second measurement (only the skill and work), these people will all be expected to drop a little bit when you measure them a second time (at university). So their scores fall back a little bit, back towards everyone else. This is regression to the mean.</p>
+<p>Regression to the mean is surprisingly common. For instance, if two very tall people have kids, their children will tend to be taller than average, but not as tall as the parents. The reverse happens with very short parents: two very short parents will tend to have short children, but nevertheless those kids will tend to be taller than the parents. It can also be extremely subtle. For instance, there have been studies done that suggested that people learn better from negative feedback than from positive feedback. However, the way that people tried to show this was to give people positive reinforcement whenever they did good, and negative reinforcement when they did bad. And what you see is that after the positive reinforcement, people tended to do worse; but after the negative reinforcement they tended to do better. But! Notice that there’s a selection bias here: when people do very well, you’re selecting for “high” values, and so you should expect (because of regression to the mean) that performance on the next trial should be worse, regardless of whether reinforcement is given. Similarly, after a bad trial, people will tend to improve all on their own. The apparent superiority of negative feedback is an artifact caused by regression to the mean <span class="citation">(<a href="references.html#ref-Kahneman1973" role="doc-biblioref">Kahneman and Tversky 1973</a>)</span>.</p>
 </div>
-<div id="experimenter-bias" class="section level3">
+<div id="experimenter-bias" class="section level3" number="3.11.8">
 <h3><span class="header-section-number">3.11.8</span> Experimenter bias</h3>
-<p>Experimenter bias can come in multiple forms. The basic idea is that the experimenter, despite the best of intentions, can accidentally end up influencing the results of the experiment by subtly communicating the “right answer” or the “desired behaviour” to the participants. Typically, this occurs because the experimenter has special knowledge that the participant does not – either the right answer to the questions being asked, or knowledge of the expected pattern of performance for the condition that the participant is in, and so on. The classic example of this happening is the case study of “Clever Hans”, which dates back to 1907 <span class="citation">(Pfungst <a href="#ref-Pfungst1911" role="doc-biblioref">1911</a>; Hothersall <a href="#ref-Hothersall2004" role="doc-biblioref">2004</a>)</span>. Clever Hans was a horse that apparently was able to read and count, and perform other human like feats of intelligence. After Clever Hans became famous, psychologists started examining his behaviour more closely. It turned out that – not surprisingly – Hans didn’t know how to do maths. Rather, Hans was responding to the human observers around him. Because they did know how to count, and the horse had learned to change its behaviour when people changed theirs.</p>
+<p>Experimenter bias can come in multiple forms. The basic idea is that the experimenter, despite the best of intentions, can accidentally end up influencing the results of the experiment by subtly communicating the “right answer” or the “desired behaviour” to the participants. Typically, this occurs because the experimenter has special knowledge that the participant does not – either the right answer to the questions being asked, or knowledge of the expected pattern of performance for the condition that the participant is in, and so on. The classic example of this happening is the case study of “Clever Hans,” which dates back to 1907 <span class="citation">(<a href="references.html#ref-Pfungst1911" role="doc-biblioref">Pfungst 1911</a>; <a href="references.html#ref-Hothersall2004" role="doc-biblioref">Hothersall 2004</a>)</span>. Clever Hans was a horse that apparently was able to read and count, and perform other human like feats of intelligence. After Clever Hans became famous, psychologists started examining his behaviour more closely. It turned out that – not surprisingly – Hans didn’t know how to do maths. Rather, Hans was responding to the human observers around him. Because they did know how to count, and the horse had learned to change its behaviour when people changed theirs.</p>
 <p>The general solution to the problem of experimenter bias is to engage in double blind studies, where neither the experimenter nor the participant knows which condition the participant is in, or knows what the desired behaviour is. This provides a very good solution to the problem, but it’s important to recognize that it’s not quite ideal, and hard to pull off perfectly. For instance, the obvious way that I could try to construct a double blind study is to have one of my Ph.D. students (one who doesn’t know anything about the experiment) run the study. That feels like it should be enough. The only person (me) who knows all the details (e.g., correct answers to the questions, assignments of participants to conditions) has no interaction with the participants, and the person who does all the talking to people (the Ph.D. student) doesn’t know anything. Except, that last part is very unlikely to be true. In order for the Ph.D. student to run the study effectively, they need to have been briefed by me, the researcher. And, as it happens, the Ph.D. student also knows me, and knows a bit about my general beliefs about people and psychology (e.g., I tend to think humans are much smarter than psychologists give them credit for). As a result of all this, it’s almost impossible for the experimenter to avoid knowing a little bit about what expectations I have. And even a little bit of knowledge can have an effect: suppose the experimenter accidentally conveys the fact that the participants are expected to do well in this task. Well, there’s a thing called the “Pygmalion effect”: if you expect great things of people, they’ll rise to the occasion; but if you expect them to fail, they’ll do that too. In other words, the expectations become a self-fulfilling prophecy.</p>
 </div>
-<div id="demand-effects-and-reactivity" class="section level3">
+<div id="demand-effects-and-reactivity" class="section level3" number="3.11.9">
 <h3><span class="header-section-number">3.11.9</span> Demand effects and reactivity</h3>
-<p>When talking about experimenter bias, the worry is that the experimenter’s knowledge or desires for the experiment are communicated to the participants, and that these affect people’s behaviour <span class="citation">(Rosenthal <a href="#ref-Rosenthal1966" role="doc-biblioref">1966</a>)</span>. However, even if you manage to stop this from happening, it’s almost impossible to stop people from knowing that they’re part of a psychological study. And the mere fact of knowing that someone is watching/studying you can have a pretty big effect on behaviour. This is generally referred to as <strong>reactivity</strong> or <strong>demand effects</strong>. The basic idea is captured by the Hawthorne effect: people alter their performance because of the attention that the study focuses on them. The effect takes its name from a the “Hawthorne Works” factory outside of Chicago <span class="citation">(Adair <a href="#ref-Adair1984" role="doc-biblioref">1984</a>)</span>. A study done in the 1920s looking at the effects of lighting on worker productivity at the factory turned out to be an effect of the fact that the workers knew they were being studied, rather than the lighting.</p>
+<p>When talking about experimenter bias, the worry is that the experimenter’s knowledge or desires for the experiment are communicated to the participants, and that these affect people’s behaviour <span class="citation">(<a href="references.html#ref-Rosenthal1966" role="doc-biblioref">Rosenthal 1966</a>)</span>. However, even if you manage to stop this from happening, it’s almost impossible to stop people from knowing that they’re part of a psychological study. And the mere fact of knowing that someone is watching/studying you can have a pretty big effect on behaviour. This is generally referred to as <strong>reactivity</strong> or <strong>demand effects</strong>. The basic idea is captured by the Hawthorne effect: people alter their performance because of the attention that the study focuses on them. The effect takes its name from a the “Hawthorne Works” factory outside of Chicago <span class="citation">(<a href="references.html#ref-Adair1984" role="doc-biblioref">Adair 1984</a>)</span>. A study done in the 1920s looking at the effects of lighting on worker productivity at the factory turned out to be an effect of the fact that the workers knew they were being studied, rather than the lighting.</p>
 <p>To get a bit more specific about some of the ways in which the mere fact of being in a study can change how people behave, it helps to think like a social psychologist and look at some of the roles that people might adopt during an experiment, but might not adopt if the corresponding events were occurring in the real world:</p>
 <ul>
 <li>The <em>good participant</em> tries to be too helpful to the researcher: he or she seeks to figure out the experimenter’s hypotheses and confirm them.</li>
@@ -1453,42 +1479,15 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <li>The <em>apprehensive participant</em> gets nervous about being tested or studied, so much so that his or her behaviour becomes highly unnatural, or overly socially desirable.</li>
 </ul>
 </div>
-<div id="placebo-effects" class="section level3">
+<div id="placebo-effects" class="section level3" number="3.11.10">
 <h3><span class="header-section-number">3.11.10</span> Placebo effects</h3>
 <p>The <strong>placebo effect</strong> is a specific type of demand effect that we worry a lot about. It refers to the situation where the mere fact of being treated causes an improvement in outcomes. The classic example comes from clinical trials: if you give people a completely chemically inert drug and tell them that it’s a cure for a disease, they will tend to get better faster than people who aren’t treated at all. In other words, it is people’s belief that they are being treated that causes the improved outcomes, not the drug.</p>
 </div>
 </div>
-<div id="thats-it-for-this-week-2" class="section level2">
+<div id="thats-it-for-this-week-2" class="section level2" number="3.12">
 <h2><span class="header-section-number">3.12</span> That’s it for this week</h2>
 <p>Whew. That’s it for the readings of the third week. It is perfectly normal if you feel that all this information is overwhelming and perhaps to some extent redundant. However, discussing all these threats allows us to explore different flavors of the same key principles, hoping that the examples of different manifestations will make it easier for you to identify various threats in yours’ or others’ studies. Practice materials for this week can be found on <a href="https://cloud.sowiso.nl">SOWISO</a>. The practice materials are not mandatory, but give you the opportunity to refine your critical skills by reading some mini case-studies and trying to identify, if any, relevant threats to internal validity.</p>
 
-</div>
-</div>
-<h3> References</h3>
-<div id="refs" class="references">
-<div id="ref-Adair1984">
-<p>Adair, G. 1984. “The Hawthorne Effect: A Reconsideration of the Methodological Artifact.” <em>Journal of Applied Psychology</em> 69: 334–45.</p>
-</div>
-<div id="ref-becker2009human">
-<p>Becker, Gary S. 2009. <em>Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education</em>. University of Chicago press.</p>
-</div>
-<div id="ref-de2011human">
-<p>Fuente, Angel de la. 2011. “Human Capital and Productivity.”</p>
-</div>
-<div id="ref-Hothersall2004">
-<p>Hothersall, D. 2004. <em>History of Psychology</em>. McGraw-Hill.</p>
-</div>
-<div id="ref-Kahneman1973">
-<p>Kahneman, D., and A. Tversky. 1973. “On the Psychology of Prediction.” <em>Psychological Review</em> 80: 237–51.</p>
-</div>
-<div id="ref-kampelmann2018does">
-<p>Kampelmann, Stephan, François Rycx, Yves Saks, and Ilan Tojerow. 2018. “Does Education Raise Productivity and Wages Equally? The Moderating Role of Age and Gender.” <em>IZA Journal of Labor Economics</em> 7 (1): 1.</p>
-</div>
-<div id="ref-Pfungst1911">
-<p>Pfungst, O. 1911. <em>Clever Hans (the Horse of Mr. Von Osten): A Contribution to Experimental Animal and Human Psychology</em>. Translated by C. L. Rahn. New York: Henry Holt.</p>
-</div>
-<div id="ref-Rosenthal1966">
-<p>Rosenthal, R. 1966. <em>Experimenter Effects in Behavioral Research</em>. New York: Appleton.</p>
 </div>
 </div>
 <div class="footnotes">
@@ -1496,7 +1495,7 @@ Figure 3.10: Simultaneous direct and multiple indirect effects between salary an
 <ol start="7">
 <li id="fn7"><p>Chapter by Matthew Crump<a href="chcorrelationandcaus.html#fnref7" class="footnote-back">↩︎</a></p></li>
 <li id="fn8"><p>We are wading into the idea that measures of two things can be related, or correlated with one another. It is possible for the relationships to be more complicated than just going up, or going down. For example, we could have a relationship that where the dots go up for the first half of X, and then go down for the second half.<a href="chcorrelationandcaus.html#fnref8" class="footnote-back">↩︎</a></p></li>
-<li id="fn9"><p>The stories about the invention of various statistics are very interesting, you can read more about them in the book, “The Lady Tasting Tea” <span class="citation">(Salsburg <a href="#ref-salsburg2001lady" role="doc-biblioref">2001</a>)</span><a href="chcorrelationandcaus.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>The stories about the invention of various statistics are very interesting, you can read more about them in the book, “The Lady Tasting Tea” <span class="citation">(<a href="references.html#ref-salsburg2001lady" role="doc-biblioref">Salsburg 2001</a>)</span><a href="chcorrelationandcaus.html#fnref9" class="footnote-back">↩︎</a></p></li>
 <li id="fn10"><p>But, we will fill this part in as soon as we can… Brief explanation here is that dividing each measure by its standard deviation ensures that the values in each measure are in the same range as one another.<a href="chcorrelationandcaus.html#fnref10" class="footnote-back">↩︎</a></p></li>
 <li id="fn11"><p>The term intervention is often used to refer to <strong>categorical</strong> independent variables.<a href="chcorrelationandcaus.html#fnref11" class="footnote-back">↩︎</a></p></li>
 <li id="fn12"><p>During the next ACC skills course (the basestone project) we will explore these designs in more detail.<a href="chcorrelationandcaus.html#fnref12" class="footnote-back">↩︎</a></p></li>

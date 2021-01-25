@@ -155,7 +155,7 @@ probability-density
 other-dist
 z-scores
 thats-it-for-this-week-3
-sampling-theory-and-estimation
+week-5-sampling-theory-and-estimation
 def-pop
 simple-random-samples
 most-samples-are-not-simple-random-samples

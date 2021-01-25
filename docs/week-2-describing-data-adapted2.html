@@ -5,25 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title> 2 Week 2: Describing Data4 | Quantitative Research Methods &amp; Analysis</title>
-  <meta name="description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content=" 2 Week 2: Describing Data4 | Quantitative Research Methods &amp; Analysis" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content=" 2 Week 2: Describing Data4 | Quantitative Research Methods &amp; Analysis" />
   
-  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and data analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/)" />
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com)." />
   
 
 <meta name="author" content="Original Author: Matthew J. C. Crump" />
-<meta name="author" content="Chapters 2 and 4 adapted from Danielle Navarro" />
-<meta name="author" content="Adapted for EUC by Thomas Hulst and Thanos Kostopoulos" />
+<meta name="author" content="Chapter 1 and Chapters 4-7 adapted from Danielle Navarro" />
+<meta name="author" content="Edited for EUC by Thomas Hulst and Thanos Kostopoulos" />
 
 
 
@@ -34,6 +34,7 @@
   
 <link rel="prev" href="week-1-introductionadapted1.html"/>
 <link rel="next" href="chcorrelationandcaus.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,22 +52,20 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -86,7 +85,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -135,13 +134,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">QuantRMA</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i>Important notes</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i>Important notes</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i>Attributions</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i>CC BY-SA 4.0 license</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html"><i class="fa fa-check"></i><b>1</b> Week 1: Introduction</a><ul>
+<li class="chapter" data-level="1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html"><i class="fa fa-check"></i><b>1</b> Week 1: Introduction</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#the-curse-of-belief-bias"><i class="fa fa-check"></i><b>1.1</b> The curse of belief bias</a></li>
 <li class="chapter" data-level="1.2" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#the-cautionary-tale-of-simpsons-paradox"><i class="fa fa-check"></i><b>1.2</b> The cautionary tale of Simpson’s paradox</a></li>
 <li class="chapter" data-level="1.3" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#statistics-in-psychology-psych"><i class="fa fa-check"></i><b>1.3</b> Statistics in psychology</a></li>
@@ -155,8 +157,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.11" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#variables"><i class="fa fa-check"></i><b>1.11</b> The role of variables: predictors and outcomes</a></li>
 <li class="chapter" data-level="1.12" data-path="week-1-introductionadapted1.html"><a href="week-1-introductionadapted1.html#thats-it-for-this-week"><i class="fa fa-check"></i><b>1.12</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html"><i class="fa fa-check"></i><b>2</b> Week 2: Describing Data</a><ul>
-<li class="chapter" data-level="2.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.1</b> Scales of measurement</a><ul>
+<li class="chapter" data-level="2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html"><i class="fa fa-check"></i><b>2</b> Week 2: Describing Data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.1</b> Scales of measurement</a>
+<ul>
 <li class="chapter" data-level="2.1.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#nominal-scale"><i class="fa fa-check"></i><b>2.1.1</b> Nominal scale</a></li>
 <li class="chapter" data-level="2.1.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#ordinal-scale"><i class="fa fa-check"></i><b>2.1.2</b> Ordinal scale</a></li>
 <li class="chapter" data-level="2.1.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#interval-scale"><i class="fa fa-check"></i><b>2.1.3</b> Interval scale</a></li>
@@ -165,68 +169,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#some-complexities"><i class="fa fa-check"></i><b>2.1.6</b> Some complexities</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#this-is-what-too-many-numbers-looks-like"><i class="fa fa-check"></i><b>2.2</b> This is what too many numbers looks like</a></li>
-<li class="chapter" data-level="2.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-graphs"><i class="fa fa-check"></i><b>2.3</b> Describing data using graphs</a><ul>
+<li class="chapter" data-level="2.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-graphs"><i class="fa fa-check"></i><b>2.3</b> Describing data using graphs</a>
+<ul>
 <li class="chapter" data-level="2.3.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#scatterplot"><i class="fa fa-check"></i><b>2.3.1</b> Scatterplot</a></li>
 <li class="chapter" data-level="2.3.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#histogram"><i class="fa fa-check"></i><b>2.3.2</b> Histogram</a></li>
 <li class="chapter" data-level="2.3.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#other-graphs"><i class="fa fa-check"></i><b>2.3.3</b> Other graphs</a></li>
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#describing-data-using-numbers"><i class="fa fa-check"></i><b>2.4</b> Describing data using numbers</a></li>
-<li class="chapter" data-level="2.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-central-tendency-sameness"><i class="fa fa-check"></i><b>2.5</b> Measures of central tendency (sameness)</a><ul>
+<li class="chapter" data-level="2.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-central-tendency-sameness"><i class="fa fa-check"></i><b>2.5</b> Measures of central tendency (sameness)</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#mode"><i class="fa fa-check"></i><b>2.5.1</b> Mode</a></li>
 <li class="chapter" data-level="2.5.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#median"><i class="fa fa-check"></i><b>2.5.2</b> Median</a></li>
 <li class="chapter" data-level="2.5.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#mean"><i class="fa fa-check"></i><b>2.5.3</b> Mean</a></li>
 <li class="chapter" data-level="2.5.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#what-does-the-mean-mean"><i class="fa fa-check"></i><b>2.5.4</b> What does the mean mean?</a></li>
 <li class="chapter" data-level="2.5.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#all-together-now"><i class="fa fa-check"></i><b>2.5.5</b> All together now</a></li>
 </ul></li>
-<li class="chapter" data-level="2.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-variation-differentness"><i class="fa fa-check"></i><b>2.6</b> Measures of variation (differentness)</a><ul>
+<li class="chapter" data-level="2.6" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#measures-of-variation-differentness"><i class="fa fa-check"></i><b>2.6</b> Measures of variation (differentness)</a>
+<ul>
 <li class="chapter" data-level="2.6.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#the-range"><i class="fa fa-check"></i><b>2.6.1</b> The range</a></li>
 <li class="chapter" data-level="2.6.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#difference-scores"><i class="fa fa-check"></i><b>2.6.2</b> Difference scores</a></li>
 <li class="chapter" data-level="2.6.3" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#var-form"><i class="fa fa-check"></i><b>2.6.3</b> The variance</a></li>
 <li class="chapter" data-level="2.6.4" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#the-standard-deviation"><i class="fa fa-check"></i><b>2.6.4</b> The standard deviation</a></li>
 <li class="chapter" data-level="2.6.5" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#closing-thoughts-on-measures-of-variation"><i class="fa fa-check"></i><b>2.6.5</b> Closing thoughts on measures of variation</a></li>
 </ul></li>
-<li class="chapter" data-level="2.7" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#remember-to-look-at-your-data"><i class="fa fa-check"></i><b>2.7</b> Remember to look at your data</a><ul>
+<li class="chapter" data-level="2.7" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#remember-to-look-at-your-data"><i class="fa fa-check"></i><b>2.7</b> Remember to look at your data</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.7.1</b> Anscombe’s Quartet</a></li>
 <li class="chapter" data-level="2.7.2" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.7.2</b> Datasaurus Dozen</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="week-2-describing-data-adapted2.html"><a href="week-2-describing-data-adapted2.html#thats-it-for-this-week-1"><i class="fa fa-check"></i><b>2.8</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html"><i class="fa fa-check"></i><b>3</b> Week 3: Correlation and Causation</a><ul>
-<li class="chapter" data-level="3.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#if-something-caused-something-else-to-change-what-would-that-look-like"><i class="fa fa-check"></i><b>3.1</b> If something caused something else to change, what would that look like?</a><ul>
+<li class="chapter" data-level="3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html"><i class="fa fa-check"></i><b>3</b> Week 3: Correlation and Causation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#if-something-caused-something-else-to-change-what-would-that-look-like"><i class="fa fa-check"></i><b>3.1</b> If something caused something else to change, what would that look like?</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#charlie-and-the-chocolate-factory"><i class="fa fa-check"></i><b>3.1.1</b> Charlie and the chocolate factory</a></li>
 <li class="chapter" data-level="3.1.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#positive-negative-or-no-correlation"><i class="fa fa-check"></i><b>3.1.2</b> Positive, negative or no correlation</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#pears-r"><i class="fa fa-check"></i><b>3.2</b> Pearson’s <span class="math inline">\(r\)</span></a><ul>
+<li class="chapter" data-level="3.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#pears-r"><i class="fa fa-check"></i><b>3.2</b> Pearson’s <span class="math inline">\(r\)</span></a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-idea-of-covariance"><i class="fa fa-check"></i><b>3.2.1</b> The idea of covariance</a></li>
 <li class="chapter" data-level="3.2.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-measure-of-covariance"><i class="fa fa-check"></i><b>3.2.2</b> A measure of covariance</a></li>
 <li class="chapter" data-level="3.2.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#covariance-formalized"><i class="fa fa-check"></i><b>3.2.3</b> Covariance formalized</a></li>
 <li class="chapter" data-level="3.2.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#corrform"><i class="fa fa-check"></i><b>3.2.4</b> <span class="math inline">\(r\)</span> we there yet?</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#examples-of-r-with-data"><i class="fa fa-check"></i><b>3.3</b> Examples of <span class="math inline">\(r\)</span> with data</a></li>
-<li class="chapter" data-level="3.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#interpreting-correlations"><i class="fa fa-check"></i><b>3.4</b> Interpreting correlations</a><ul>
+<li class="chapter" data-level="3.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#interpreting-correlations"><i class="fa fa-check"></i><b>3.4</b> Interpreting correlations</a>
+<ul>
 <li class="chapter" data-level="3.4.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#caus-without-corr"><i class="fa fa-check"></i><b>3.4.1</b> Causation without correlation</a></li>
 <li class="chapter" data-level="3.4.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#third-var"><i class="fa fa-check"></i><b>3.4.2</b> Third variables</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#relationships-between-variables"><i class="fa fa-check"></i><b>3.5</b> Relationships between variables</a></li>
-<li class="chapter" data-level="3.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#establishing-causal-relationships"><i class="fa fa-check"></i><b>3.6</b> Establishing causal relationships</a><ul>
+<li class="chapter" data-level="3.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#establishing-causal-relationships"><i class="fa fa-check"></i><b>3.6</b> Establishing causal relationships</a>
+<ul>
 <li class="chapter" data-level="3.6.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-frame-of-reference"><i class="fa fa-check"></i><b>3.6.1</b> A frame of reference</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#meaningful-comparisons"><i class="fa fa-check"></i><b>3.7</b> Meaningful comparisons</a><ul>
+<li class="chapter" data-level="3.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#meaningful-comparisons"><i class="fa fa-check"></i><b>3.7</b> Meaningful comparisons</a>
+<ul>
 <li class="chapter" data-level="3.7.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#random"><i class="fa fa-check"></i><b>3.7.1</b> Randomization</a></li>
 <li class="chapter" data-level="3.7.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#matching"><i class="fa fa-check"></i><b>3.7.2</b> Matching</a></li>
 </ul></li>
 <li class="chapter" data-level="3.8" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#taxonomy-of-research-design"><i class="fa fa-check"></i><b>3.8</b> Taxonomy of research design</a></li>
-<li class="chapter" data-level="3.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#range-of-research-design"><i class="fa fa-check"></i><b>3.9</b> Range of research design</a><ul>
+<li class="chapter" data-level="3.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#range-of-research-design"><i class="fa fa-check"></i><b>3.9</b> Range of research design</a>
+<ul>
 <li class="chapter" data-level="3.9.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#experimental-designs"><i class="fa fa-check"></i><b>3.9.1</b> Experimental designs</a></li>
 <li class="chapter" data-level="3.9.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#longitudinal-designs"><i class="fa fa-check"></i><b>3.9.2</b> Longitudinal designs</a></li>
 <li class="chapter" data-level="3.9.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#cross-sectional-designs"><i class="fa fa-check"></i><b>3.9.3</b> Cross-sectional designs</a></li>
 </ul></li>
-<li class="chapter" data-level="3.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-validity-of-your-study"><i class="fa fa-check"></i><b>3.10</b> The validity of your study</a><ul>
+<li class="chapter" data-level="3.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-validity-of-your-study"><i class="fa fa-check"></i><b>3.10</b> The validity of your study</a>
+<ul>
 <li class="chapter" data-level="3.10.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#internal-validity"><i class="fa fa-check"></i><b>3.10.1</b> Internal validity</a></li>
 <li class="chapter" data-level="3.10.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#external-validity"><i class="fa fa-check"></i><b>3.10.2</b> External validity</a></li>
 <li class="chapter" data-level="3.10.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#construct-validity"><i class="fa fa-check"></i><b>3.10.3</b> Construct validity</a></li>
 </ul></li>
-<li class="chapter" data-level="3.11" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#threats-to-experimental-validity"><i class="fa fa-check"></i><b>3.11</b> Threats to experimental validity</a><ul>
+<li class="chapter" data-level="3.11" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#threats-to-experimental-validity"><i class="fa fa-check"></i><b>3.11</b> Threats to experimental validity</a>
+<ul>
 <li class="chapter" data-level="3.11.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#history-effects"><i class="fa fa-check"></i><b>3.11.1</b> History effects</a></li>
 <li class="chapter" data-level="3.11.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#maturation-effects"><i class="fa fa-check"></i><b>3.11.2</b> Maturation effects</a></li>
 <li class="chapter" data-level="3.11.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#repeated-testing-effects"><i class="fa fa-check"></i><b>3.11.3</b> Repeated testing effects</a></li>
@@ -240,21 +257,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3.12" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#thats-it-for-this-week-2"><i class="fa fa-check"></i><b>3.12</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="chance.html"><a href="chance.html"><i class="fa fa-check"></i><b>4</b> Week 4: Chance and Probability Theory</a><ul>
-<li class="chapter" data-level="4.1" data-path="chance.html"><a href="chance.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>4.1</b> Correlation and random chance</a><ul>
+<li class="chapter" data-level="4" data-path="chance.html"><a href="chance.html"><i class="fa fa-check"></i><b>4</b> Week 4: Chance and Probability Theory</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="chance.html"><a href="chance.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>4.1</b> Correlation and random chance</a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="chance.html"><a href="chance.html#monte-carlo-simulation-of-random-correlations"><i class="fa fa-check"></i><b>4.1.1</b> Monte-carlo simulation of random correlations</a></li>
 <li class="chapter" data-level="4.1.2" data-path="chance.html"><a href="chance.html#increasing-sample-size-decreases-the-opportunity-for-spurious-correlations"><i class="fa fa-check"></i><b>4.1.2</b> Increasing sample-size decreases the opportunity for spurious correlations</a></li>
 <li class="chapter" data-level="4.1.3" data-path="chance.html"><a href="chance.html#animation-of-no-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.3</b> Animation of no relationship between variables</a></li>
 <li class="chapter" data-level="4.1.4" data-path="chance.html"><a href="chance.html#animation-with-a-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.4</b> Animation with a relationship between variables</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="chance.html"><a href="chance.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.2</b> How are probability and statistics different?</a></li>
-<li class="chapter" data-level="4.3" data-path="chance.html"><a href="chance.html#mean-prob"><i class="fa fa-check"></i><b>4.3</b> What does probability mean?</a><ul>
+<li class="chapter" data-level="4.3" data-path="chance.html"><a href="chance.html#mean-prob"><i class="fa fa-check"></i><b>4.3</b> What does probability mean?</a>
+<ul>
 <li class="chapter" data-level="4.3.1" data-path="chance.html"><a href="chance.html#the-frequentist-view"><i class="fa fa-check"></i><b>4.3.1</b> The frequentist view</a></li>
 <li class="chapter" data-level="4.3.2" data-path="chance.html"><a href="chance.html#the-bayesian-view"><i class="fa fa-check"></i><b>4.3.2</b> The Bayesian view</a></li>
 <li class="chapter" data-level="4.3.3" data-path="chance.html"><a href="chance.html#whats-the-difference-and-who-is-right"><i class="fa fa-check"></i><b>4.3.3</b> What’s the difference? And who is right?</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="chance.html"><a href="chance.html#basic-probability-theory"><i class="fa fa-check"></i><b>4.4</b> Basic probability theory</a></li>
-<li class="chapter" data-level="4.5" data-path="chance.html"><a href="chance.html#prob-dist"><i class="fa fa-check"></i><b>4.5</b> Probability distributions</a><ul>
+<li class="chapter" data-level="4.5" data-path="chance.html"><a href="chance.html#prob-dist"><i class="fa fa-check"></i><b>4.5</b> Probability distributions</a>
+<ul>
 <li class="chapter" data-level="4.5.1" data-path="chance.html"><a href="chance.html#the-binomial-distribution"><i class="fa fa-check"></i><b>4.5.1</b> The binomial distribution</a></li>
 <li class="chapter" data-level="4.5.2" data-path="chance.html"><a href="chance.html#working-with-the-binomial-distribution-in-r"><i class="fa fa-check"></i><b>4.5.2</b> Working with the binomial distribution in R</a></li>
 <li class="chapter" data-level="4.5.3" data-path="chance.html"><a href="chance.html#norm-dist"><i class="fa fa-check"></i><b>4.5.3</b> The normal distribution</a></li>
@@ -264,28 +285,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.6" data-path="chance.html"><a href="chance.html#z-scores"><i class="fa fa-check"></i><b>4.6</b> z-scores</a></li>
 <li class="chapter" data-level="4.7" data-path="chance.html"><a href="chance.html#thats-it-for-this-week-3"><i class="fa fa-check"></i><b>4.7</b> That’s it for this week</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html"><i class="fa fa-check"></i><b>5</b> Sampling Theory and Estimation</a><ul>
-<li class="chapter" data-level="5.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#def-pop"><i class="fa fa-check"></i><b>5.1</b> Defining a population</a><ul>
-<li class="chapter" data-level="5.1.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#simple-random-samples"><i class="fa fa-check"></i><b>5.1.1</b> Simple random samples</a></li>
-<li class="chapter" data-level="5.1.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#most-samples-are-not-simple-random-samples"><i class="fa fa-check"></i><b>5.1.2</b> Most samples are not simple random samples</a></li>
-<li class="chapter" data-level="5.1.3" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#how-much-does-it-matter-if-you-dont-have-a-simple-random-sample"><i class="fa fa-check"></i><b>5.1.3</b> How much does it matter if you don’t have a simple random sample?</a></li>
-<li class="chapter" data-level="5.1.4" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#population-parameters-and-sample-statistics"><i class="fa fa-check"></i><b>5.1.4</b> Population parameters and sample statistics</a></li>
+<li class="chapter" data-level="5" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html"><i class="fa fa-check"></i><b>5</b> Week 5: Sampling Theory and Estimation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#def-pop"><i class="fa fa-check"></i><b>5.1</b> Defining a population</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#simple-random-samples"><i class="fa fa-check"></i><b>5.1.1</b> Simple random samples</a></li>
+<li class="chapter" data-level="5.1.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#most-samples-are-not-simple-random-samples"><i class="fa fa-check"></i><b>5.1.2</b> Most samples are not simple random samples</a></li>
+<li class="chapter" data-level="5.1.3" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#how-much-does-it-matter-if-you-dont-have-a-simple-random-sample"><i class="fa fa-check"></i><b>5.1.3</b> How much does it matter if you don’t have a simple random sample?</a></li>
+<li class="chapter" data-level="5.1.4" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#population-parameters-and-sample-statistics"><i class="fa fa-check"></i><b>5.1.4</b> Population parameters and sample statistics</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#the-law-of-large-numbers"><i class="fa fa-check"></i><b>5.2</b> The law of large numbers</a></li>
-<li class="chapter" data-level="5.3" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#sampling-distributions"><i class="fa fa-check"></i><b>5.3</b> Sampling distributions</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#samplingdists"><i class="fa fa-check"></i><b>5.3.1</b> Sampling distribution of the sample mean</a></li>
-<li class="chapter" data-level="5.3.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#sampling-distributions-exist-for-any-sample-statistic"><i class="fa fa-check"></i><b>5.3.2</b> Sampling distributions exist for any sample statistic</a></li>
+<li class="chapter" data-level="5.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#the-law-of-large-numbers"><i class="fa fa-check"></i><b>5.2</b> The law of large numbers</a></li>
+<li class="chapter" data-level="5.3" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#sampling-distributions"><i class="fa fa-check"></i><b>5.3</b> Sampling distributions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#samplingdists"><i class="fa fa-check"></i><b>5.3.1</b> Sampling distribution of the sample mean</a></li>
+<li class="chapter" data-level="5.3.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#sampling-distributions-exist-for-any-sample-statistic"><i class="fa fa-check"></i><b>5.3.2</b> Sampling distributions exist for any sample statistic</a></li>
 </ul></li>
-<li class="chapter" data-level="5.4" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#clt"><i class="fa fa-check"></i><b>5.4</b> The central limit theorem</a></li>
-<li class="chapter" data-level="5.5" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#pointestimates"><i class="fa fa-check"></i><b>5.5</b> Estimating population parameters</a><ul>
-<li class="chapter" data-level="5.5.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#estimating-the-population-mean"><i class="fa fa-check"></i><b>5.5.1</b> Estimating the population mean</a></li>
-<li class="chapter" data-level="5.5.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#estimating-the-population-standard-deviation"><i class="fa fa-check"></i><b>5.5.2</b> Estimating the population standard deviation</a></li>
+<li class="chapter" data-level="5.4" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#clt"><i class="fa fa-check"></i><b>5.4</b> The central limit theorem</a></li>
+<li class="chapter" data-level="5.5" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#pointestimates"><i class="fa fa-check"></i><b>5.5</b> Estimating population parameters</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#estimating-the-population-mean"><i class="fa fa-check"></i><b>5.5.1</b> Estimating the population mean</a></li>
+<li class="chapter" data-level="5.5.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#estimating-the-population-standard-deviation"><i class="fa fa-check"></i><b>5.5.2</b> Estimating the population standard deviation</a></li>
 </ul></li>
-<li class="chapter" data-level="5.6" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#ci"><i class="fa fa-check"></i><b>5.6</b> Estimating a confidence interval</a><ul>
-<li class="chapter" data-level="5.6.1" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>5.6.1</b> A slight mistake in the formula</a></li>
-<li class="chapter" data-level="5.6.2" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#interpreting-a-confidence-interval"><i class="fa fa-check"></i><b>5.6.2</b> Interpreting a confidence interval</a></li>
+<li class="chapter" data-level="5.6" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#ci"><i class="fa fa-check"></i><b>5.6</b> Estimating a confidence interval</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#a-slight-mistake-in-the-formula"><i class="fa fa-check"></i><b>5.6.1</b> A slight mistake in the formula</a></li>
+<li class="chapter" data-level="5.6.2" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#interpreting-a-confidence-interval"><i class="fa fa-check"></i><b>5.6.2</b> Interpreting a confidence interval</a></li>
 </ul></li>
-<li class="chapter" data-level="5.7" data-path="sampling-theory-and-estimation.html"><a href="sampling-theory-and-estimation.html#thats-it-for-this-week-4"><i class="fa fa-check"></i><b>5.7</b> That’s it for this week!</a></li>
+<li class="chapter" data-level="5.7" data-path="week-5-sampling-theory-and-estimation.html"><a href="week-5-sampling-theory-and-estimation.html#thats-it-for-this-week-4"><i class="fa fa-check"></i><b>5.7</b> That’s it for this week!</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>6</b> References</a></li>
 <li class="divider"></li>
@@ -308,7 +334,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="week-2-describing-data-adapted2" class="section level1">
+<div id="week-2-describing-data-adapted2" class="section level1" number="2">
 <h1><span class="header-section-number"> 2</span> Week 2: Describing Data<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></h1>
 <blockquote>
 <p>Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
@@ -322,13 +348,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Describing data is necessary because there is usually too much of it, so it doesn’t make any sense by itself.</li>
 </ol>
 <p>Before we start with describing data, we need to introduce you to the concept of measurement scales.</p>
-<div id="scales-of-measurement" class="section level2">
+<div id="scales-of-measurement" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Scales of measurement</h2>
 <p>Remember last week when we talked about <a href="week-1-introductionadapted1.html#thoughts-measurement">measurement</a>? To reiterate: the outcome of a measurement is called a variable. But not all variables are of the same qualitative type, and it’s very useful to understand what types there are. A very useful concept for distinguishing between different types of variables is what’s known as <strong>scales of measurement</strong>.</p>
-<div id="nominal-scale" class="section level3">
+<div id="nominal-scale" class="section level3" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Nominal scale</h3>
-<p>A <strong>nominal scale</strong> variable (also referred to as a <strong>categorical</strong> variable) is one in which there is no particular relationship between the different possibilities: for these kinds of variables it doesn’t make any sense to say that one of them is ``bigger’ or “better” than any other one, and it absolutely doesn’t make any sense to average them. The classic example for this is “eye colour”. Eyes can be blue, green and brown, among other possibilities, but none of them is any “better” than any other one. As a result, it would feel really weird to talk about an “average eye colour”. Similarly, gender is nominal too: male isn’t better or worse than female, neither does it make sense to try to talk about an “average gender”. In short, nominal scale variables are those for which the only thing you can say about the different possibilities is that they are different. That’s it.</p>
-<p>Let’s take a slightly closer look at this. Suppose I was doing research on how people commute to and from work. One variable I would have to measure would be what kind of transportation people use to get to work. This “transport type” variable could have quite a few possible values, including: “train”, “bus”, “car”, “bicycle”, etc. For now, let’s suppose that these four are the only possibilities, and suppose that when I ask 100 people how they got to work today, and I get this:</p>
+<p>A <strong>nominal scale</strong> variable (also referred to as a <strong>categorical</strong> variable) is one in which there is no particular relationship between the different possibilities: for these kinds of variables it doesn’t make any sense to say that one of them is ``bigger’ or “better” than any other one, and it absolutely doesn’t make any sense to average them. The classic example for this is “eye colour.” Eyes can be blue, green and brown, among other possibilities, but none of them is any “better” than any other one. As a result, it would feel really weird to talk about an “average eye colour.” Similarly, gender is nominal too: male isn’t better or worse than female, neither does it make sense to try to talk about an “average gender.” In short, nominal scale variables are those for which the only thing you can say about the different possibilities is that they are different. That’s it.</p>
+<p>Let’s take a slightly closer look at this. Suppose I was doing research on how people commute to and from work. One variable I would have to measure would be what kind of transportation people use to get to work. This “transport type” variable could have quite a few possible values, including: “train,” “bus,” “car,” “bicycle,” etc. For now, let’s suppose that these four are the only possibilities, and suppose that when I ask 100 people how they got to work today, and I get this:</p>
 <!-- This table and tables that follow in this section updated from https://github.com/ekothe/rbook/blob/master/bookdown/01.02-studydesign.Rmd -->
 <table>
 <thead>
@@ -384,9 +410,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 </div>
-<div id="ordinal-scale" class="section level3">
+<div id="ordinal-scale" class="section level3" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Ordinal scale</h3>
-<p><strong>Ordinal scale</strong> variables have a bit more structure than nominal scale variables, but not by a lot. An ordinal scale variable is one in which there is a natural, meaningful way to order the different possibilities, but you can’t do anything else. The usual example given of an ordinal variable is “finishing position in a race”. You <em>can</em> say that the person who finished first was faster than the person who finished second, but you <em>don’t</em> know how much faster. As a consequence we know that 1st <span class="math inline">\(&gt;\)</span> 2nd, and we know that 2nd <span class="math inline">\(&gt;\)</span> 3rd, but the difference between 1st and 2nd might be much larger than the difference between 2nd and 3rd.</p>
+<p><strong>Ordinal scale</strong> variables have a bit more structure than nominal scale variables, but not by a lot. An ordinal scale variable is one in which there is a natural, meaningful way to order the different possibilities, but you can’t do anything else. The usual example given of an ordinal variable is “finishing position in a race.” You <em>can</em> say that the person who finished first was faster than the person who finished second, but you <em>don’t</em> know how much faster. As a consequence we know that 1st <span class="math inline">\(&gt;\)</span> 2nd, and we know that 2nd <span class="math inline">\(&gt;\)</span> 3rd, but the difference between 1st and 2nd might be much larger than the difference between 2nd and 3rd.</p>
 <p>A more interesting example could be as follows. Suppose I’m interested in people’s attitudes to climate change, and I ask them to pick one of these four statements that most closely matches their beliefs:
 <!-- Markdown doesn't support "reordered" lists, see: https://stackoverflow.com/questions/50642050/markdown-how-to-create-ordered-lists --></p>
 <blockquote>
@@ -405,7 +431,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol></li>
 </ul>
 </blockquote>
-<p>Notice that these four statements actually do have a natural ordering, in terms of “the extent to which they agree with the current science”. Statement 1 is a close match, statement 2 is a reasonable match, statement 3 isn’t a very good match, and statement 4 is in strong opposition to the science. So, in terms of the thing I’m interested in (the extent to which people endorse the science), I can order the items as <span class="math inline">\(1 &gt; 2 &gt; 3 &gt; 4\)</span>. Since this ordering exists, it would be very weird to list the options like this…</p>
+<p>Notice that these four statements actually do have a natural ordering, in terms of “the extent to which they agree with the current science.” Statement 1 is a close match, statement 2 is a reasonable match, statement 3 isn’t a very good match, and statement 4 is in strong opposition to the science. So, in terms of the thing I’m interested in (the extent to which people endorse the science), I can order the items as <span class="math inline">\(1 &gt; 2 &gt; 3 &gt; 4\)</span>. Since this ordering exists, it would be very weird to list the options like this…</p>
 <blockquote>
 <ul>
 <li><ol start="3" style="list-style-type: decimal">
@@ -453,17 +479,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>When analysing these data, it seems quite reasonable to try to group (1), (2) and (3) together, and say that 81 of 100 people were willing to <em>at least partially</em> endorse the science. And it’s <em>also</em> quite reasonable to group (2), (3) and (4) together and say that 49 of 100 people registered <em>at least some disagreement</em> with the dominant scientific view. However, it would be entirely bizarre to try to group (1), (2) and (4) together and say that 90 of 100 people said…what? There’s nothing sensible that allows you to group those responses together at all.</p>
 <p>That said, notice that while we <em>can</em> use the natural ordering of these items to construct sensible groupings, what we <em>can’t</em> do is average them. For instance, in my simple example here, the “average” response to the question is 1.97. If you can tell me what that means, I’d love to know. Because that sounds like gibberish to me!</p>
 </div>
-<div id="interval-scale" class="section level3">
+<div id="interval-scale" class="section level3" number="2.1.3">
 <h3><span class="header-section-number">2.1.3</span> Interval scale</h3>
 <p>In contrast to nominal and ordinal scale variables, <strong>interval scale</strong> and ratio scale variables are variables for which the numerical value is genuinely meaningful. In the case of interval scale variables, the <em>differences</em> between the numbers are interpretable, but the variable doesn’t have a “natural” zero value. A good example of an interval scale variable is measuring temperature in degrees celsius. For instance, if it was 15<span class="math inline">\(^\circ\)</span> yesterday and 18<span class="math inline">\(^\circ\)</span> today, then the 3<span class="math inline">\(^\circ\)</span> difference between the two is genuinely meaningful. Moreover, that 3<span class="math inline">\(^\circ\)</span> difference is <em>exactly the same</em> as the 3<span class="math inline">\(^\circ\)</span> difference between <span class="math inline">\(7^\circ\)</span> and <span class="math inline">\(10^\circ\)</span>. In short, addition and subtraction are meaningful for interval scale variables.</p>
-<p>However, notice that the <span class="math inline">\(0^\circ\)</span> does not mean “no temperature at all”: it actually means “the temperature at which water freezes”, which is pretty arbitrary. As a consequence, it becomes pointless to try to multiply and divide temperatures. It is wrong to say that <span class="math inline">\(20^\circ\)</span> is <em>twice as hot</em> as <span class="math inline">\(10^\circ\)</span>, just as it is weird and meaningless to try to claim that <span class="math inline">\(20^\circ\)</span> is negative two times as hot as <span class="math inline">\(-10^\circ\)</span>.</p>
+<p>However, notice that the <span class="math inline">\(0^\circ\)</span> does not mean “no temperature at all”: it actually means “the temperature at which water freezes,” which is pretty arbitrary. As a consequence, it becomes pointless to try to multiply and divide temperatures. It is wrong to say that <span class="math inline">\(20^\circ\)</span> is <em>twice as hot</em> as <span class="math inline">\(10^\circ\)</span>, just as it is weird and meaningless to try to claim that <span class="math inline">\(20^\circ\)</span> is negative two times as hot as <span class="math inline">\(-10^\circ\)</span>.</p>
 <p>Let’s look at a different example. Suppose I’m interested in looking at how the attitudes of first-year university students have changed over time. Obviously, I’m going to want to record the year in which each student started. This is an interval scale variable. A student who started in 2003 did arrive 5 years before a student who started in 2008. However, it would be completely insane for me to divide 2008 by 2003 and say that the second student started “1.0024 times later” than the first one. That doesn’t make any sense at all.</p>
 </div>
-<div id="ratio-scale" class="section level3">
+<div id="ratio-scale" class="section level3" number="2.1.4">
 <h3><span class="header-section-number">2.1.4</span> Ratio scale</h3>
-<p>The fourth and final type of variable to consider is a <strong>ratio scale</strong> variable, in which zero really means zero, and it’s okay to multiply and divide. A good example of a ratio scale variable is response time (RT). In a lot of tasks it’s very common to record the amount of time somebody takes to solve a problem or answer a question, because it’s an indicator of how difficult the task is. Suppose that Alan takes 2.3 seconds to respond to a question, whereas Ben takes 3.1 seconds. As with an interval scale variable, addition and subtraction are both meaningful here. Ben really did take <span class="math inline">\(3.1 - 2.3 = 0.8\)</span> seconds longer than Alan did. However, notice that multiplication and division also make sense here too: Ben took <span class="math inline">\(3.1 / 2.3 = 1.35\)</span> times as long as Alan did to answer the question. And the reason why you can do this is that, for a ratio scale variable such as RT, “zero seconds” really does mean “no time at all”.</p>
+<p>The fourth and final type of variable to consider is a <strong>ratio scale</strong> variable, in which zero really means zero, and it’s okay to multiply and divide. A good example of a ratio scale variable is response time (RT). In a lot of tasks it’s very common to record the amount of time somebody takes to solve a problem or answer a question, because it’s an indicator of how difficult the task is. Suppose that Alan takes 2.3 seconds to respond to a question, whereas Ben takes 3.1 seconds. As with an interval scale variable, addition and subtraction are both meaningful here. Ben really did take <span class="math inline">\(3.1 - 2.3 = 0.8\)</span> seconds longer than Alan did. However, notice that multiplication and division also make sense here too: Ben took <span class="math inline">\(3.1 / 2.3 = 1.35\)</span> times as long as Alan did to answer the question. And the reason why you can do this is that, for a ratio scale variable such as RT, “zero seconds” really does mean “no time at all.”</p>
 </div>
-<div id="continuous-versus-discrete-variables" class="section level3">
+<div id="continuous-versus-discrete-variables" class="section level3" number="2.1.5">
 <h3><span class="header-section-number">2.1.5</span> Continuous versus discrete variables</h3>
 <p>There’s a second kind of distinction that you need to be aware of, regarding what types of variables you can run into. This is the distinction between continuous variables and discrete variables. The difference between these is as follows:</p>
 <ul>
@@ -471,7 +497,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>A <strong>discrete variable</strong> is, in effect, a variable that isn’t continuous. For a discrete variable, it’s sometimes the case that there’s nothing in the middle.</p></li>
 </ul>
 <p>These definitions probably seem a bit abstract, but they’re pretty simple once you see some examples. For instance, response time is continuous. If Alan takes 3.1 seconds and Ben takes 2.3 seconds to respond to a question, then it’s possible for Cameron’s response time to lie in between, by taking 3.0 seconds. And of course it would also be possible for David to take 3.031 seconds to respond, meaning that his RT would lie in between Cameron’s and Alan’s. And while in practice it might be impossible to measure RT that precisely, it’s certainly possible in principle. Because we can always find a new value for RT in between any two other ones, we say that RT is continuous.</p>
-<p>Discrete variables occur when this rule is violated. For example, nominal scale variables are always discrete: there isn’t a type of transportation that falls “in between” trains and bicycles, not in the strict mathematical way that 2.3 falls in between 2 and 3. So transportation type is discrete. Similarly, ordinal scale variables are always discrete: although “2nd place” does fall between “1st place” and “3rd place”, there’s nothing that can logically fall in between “1st place” and “2nd place”. Interval scale and ratio scale variables can go either way. As we saw above, response time (a ratio scale variable) is continuous. Temperature in degrees celsius (an interval scale variable) is also continuous. However, the year you went to school (an interval scale variable) is discrete. There’s no year in between 2002 and 2003. The number of questions you get right on a true-or-false test (a ratio scale variable) is also discrete: since a true-or-false question doesn’t allow you to be “partially correct”, there’s nothing in between 5/10 and 6/10. The following table summarizes the relationship between the scales of measurement and the discrete/continuity distinction. Cells with a tick mark correspond to things that are possible. I’m trying to hammer this point home, because (a) some textbooks get this wrong, and (b) people very often say things like “discrete variable” when they mean “nominal scale variable”. It’s very unfortunate.</p>
+<p>Discrete variables occur when this rule is violated. For example, nominal scale variables are always discrete: there isn’t a type of transportation that falls “in between” trains and bicycles, not in the strict mathematical way that 2.3 falls in between 2 and 3. So transportation type is discrete. Similarly, ordinal scale variables are always discrete: although “2nd place” does fall between “1st place” and “3rd place,” there’s nothing that can logically fall in between “1st place” and “2nd place.” Interval scale and ratio scale variables can go either way. As we saw above, response time (a ratio scale variable) is continuous. Temperature in degrees celsius (an interval scale variable) is also continuous. However, the year you went to school (an interval scale variable) is discrete. There’s no year in between 2002 and 2003. The number of questions you get right on a true-or-false test (a ratio scale variable) is also discrete: since a true-or-false question doesn’t allow you to be “partially correct,” there’s nothing in between 5/10 and 6/10. The following table summarizes the relationship between the scales of measurement and the discrete/continuity distinction. Cells with a tick mark correspond to things that are possible. I’m trying to hammer this point home, because (a) some textbooks get this wrong, and (b) people very often say things like “discrete variable” when they mean “nominal scale variable.” It’s very unfortunate.</p>
 <table>
 <caption><span id="tab:scalescont">Table 2.1: </span>The relationship between the scales of measurement and the discrete/continuity distinction. Cells with a tick mark correspond to things that are possible.</caption>
 <tbody>
@@ -503,7 +529,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 </div>
-<div id="some-complexities" class="section level3">
+<div id="some-complexities" class="section level3" number="2.1.6">
 <h3><span class="header-section-number">2.1.6</span> Some complexities</h3>
 <p>Okay, I know you’re going to be shocked to hear this, but …the real world is much messier than this little classification scheme suggests. Very few variables in real life actually fall into these nice neat categories, so you need to be kind of careful not to treat the scales of measurement as if they were hard and fast rules. It doesn’t work like that: they’re guidelines, intended to help you think about the situations in which you should treat different variables differently. Nothing more.</p>
 <p>So let’s take a classic example, maybe <em>the</em> classic example, of a psychological measurement tool: the <strong>Likert scale</strong>. The humble Likert scale is the bread and butter tool of all survey design. You yourself have filled out hundreds, maybe thousands of them, and odds are you’ve even used one yourself. Suppose we have a survey question that looks like this:</p>
@@ -527,22 +553,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 (5) Strongly agree</p>
 </blockquote>
 <p>Likert scales are very handy, if somewhat limited, tools. The question is, what kind of variable are they? They’re obviously discrete, since you can’t give a response of 2.5. They’re obviously not nominal scale, since the items are ordered; and they’re not ratio scale either, since there’s no natural zero.</p>
-<p>But are they ordinal scale or interval scale? One argument says that we can’t really prove that the difference between “strongly agree” and “agree” is of the same size as the difference between “agree” and “neither agree nor disagree”. In fact, in everyday life it’s pretty obvious that they’re not the same at all. So this suggests that we ought to treat Likert scales as ordinal variables. On the other hand, in practice most participants do seem to take the whole “on a scale from 1 to 5” part fairly seriously, and they tend to act as if the differences between the five response options were fairly similar to one another. As a consequence, a lot of researchers treat Likert scale data as if it were interval scale. It’s not interval scale, but in practice it’s close enough that we usually think of it as being <strong>quasi-interval scale</strong>.</p>
+<p>But are they ordinal scale or interval scale? One argument says that we can’t really prove that the difference between “strongly agree” and “agree” is of the same size as the difference between “agree” and “neither agree nor disagree.” In fact, in everyday life it’s pretty obvious that they’re not the same at all. So this suggests that we ought to treat Likert scales as ordinal variables. On the other hand, in practice most participants do seem to take the whole “on a scale from 1 to 5” part fairly seriously, and they tend to act as if the differences between the five response options were fairly similar to one another. As a consequence, a lot of researchers treat Likert scale data as if it were interval scale. It’s not interval scale, but in practice it’s close enough that we usually think of it as being <strong>quasi-interval scale</strong>.</p>
 </div>
 </div>
-<div id="this-is-what-too-many-numbers-looks-like" class="section level2">
+<div id="this-is-what-too-many-numbers-looks-like" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> This is what too many numbers looks like</h2>
 <p>What that out of the way, we can start looking at some actual measurements. Let’s say you want to know how happy people are. So, you ask 500 people on the street how happy they are. You let them pick any number they want from negative infinity to positive infinity and record all the numbers in a continuous interval variable.</p>
 <p>We could look at the numbers and see if that helps determine anything about how happy people are. Perhaps it would look something like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="week-2-describing-data-adapted2.html#cb1-1"></a><span class="co"># From now on, whenever it makes sense, I will show the R code used to generate</span></span>
-<span id="cb1-2"><a href="week-2-describing-data-adapted2.html#cb1-2"></a><span class="co"># the examples. That way you can follow along in your own R session and learn</span></span>
-<span id="cb1-3"><a href="week-2-describing-data-adapted2.html#cb1-3"></a><span class="co"># from the examples given.</span></span>
-<span id="cb1-4"><a href="week-2-describing-data-adapted2.html#cb1-4"></a></span>
-<span id="cb1-5"><a href="week-2-describing-data-adapted2.html#cb1-5"></a><span class="co"># The following line of code generates a variable called &#39;happiness&#39; with 500</span></span>
-<span id="cb1-6"><a href="week-2-describing-data-adapted2.html#cb1-6"></a><span class="co"># pretend happiness ratings. This is of course not the same as actually</span></span>
-<span id="cb1-7"><a href="week-2-describing-data-adapted2.html#cb1-7"></a><span class="co"># conducting a study, as we ask R to generate 500 random values, but is very</span></span>
-<span id="cb1-8"><a href="week-2-describing-data-adapted2.html#cb1-8"></a><span class="co"># helpful for illustrative purposes.</span></span>
-<span id="cb1-9"><a href="week-2-describing-data-adapted2.html#cb1-9"></a>happiness &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">500</span>, <span class="dv">100</span>, <span class="dv">500</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="week-2-describing-data-adapted2.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># From now on, whenever it makes sense, I will show the R code used to generate</span></span>
+<span id="cb1-2"><a href="week-2-describing-data-adapted2.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the examples. That way you can follow along in your own R session and learn</span></span>
+<span id="cb1-3"><a href="week-2-describing-data-adapted2.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># from the examples given.</span></span>
+<span id="cb1-4"><a href="week-2-describing-data-adapted2.html#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="week-2-describing-data-adapted2.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># The following line of code generates a variable called &#39;happiness&#39; with 500</span></span>
+<span id="cb1-6"><a href="week-2-describing-data-adapted2.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># pretend happiness ratings. This is of course not the same as actually</span></span>
+<span id="cb1-7"><a href="week-2-describing-data-adapted2.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># conducting a study, as we ask R to generate 500 random values, but is very</span></span>
+<span id="cb1-8"><a href="week-2-describing-data-adapted2.html#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># helpful for illustrative purposes.</span></span>
+<span id="cb1-9"><a href="week-2-describing-data-adapted2.html#cb1-9" aria-hidden="true" tabindex="-1"></a>happiness <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">500</span>, <span class="dv">100</span>, <span class="dv">500</span>)</span></code></pre></div>
 <table>
 <tbody>
 <tr class="odd">
@@ -1150,29 +1176,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>When you deal with data, you will often encounter so many numbers to you that you will be overwhelmed by them. That is why we need ways to describe the data in a more manageable fashion.</p>
 <p>The complete description of the data is the data itself. <strong>Descriptive statistics</strong> and other tools for describing data go one step further to summarize aspects of the data. Summaries are a way to compress the important bits of a thing down to a useful and manageable tidbit. It’s like telling your friends why they should watch a movie: you don’t replay the entire movie for them, instead you tell them the general highlights. Summarizing the data is just like a movie preview, only for data.</p>
 </div>
-<div id="describing-data-using-graphs" class="section level2">
+<div id="describing-data-using-graphs" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Describing data using graphs</h2>
 <p>So, we tried one way of looking at the numbers (just printing all of them in a large table) which wasn’t particularly useful. Let’s look at the numbers using graphs.</p>
-<div id="scatterplot" class="section level3">
+<div id="scatterplot" class="section level3" number="2.3.1">
 <h3><span class="header-section-number">2.3.1</span> Scatterplot</h3>
 <p>Let’s turn all of the numbers into dots, then show them in a graph. This type of graph is called a scatterplot. Note, when we do this, we have not yet summarized anything about the data. Instead, we just look at all of the data in a visual format, rather than looking at the numbers themselves.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="week-2-describing-data-adapted2.html#cb2-1"></a><span class="kw">plot</span>(happiness,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">1500</span>,<span class="dv">1500</span>),<span class="dt">las=</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="week-2-describing-data-adapted2.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(happiness,<span class="at">ylim=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1500</span>,<span class="dv">1500</span>),<span class="at">las=</span><span class="dv">1</span>)</span></code></pre></div>
 <div class="figure"><span id="fig:2happyPlot"></span>
 <img src="quantrma_files/figure-html/2happyPlot-1.png" alt="Pretend happiness ratings from 500 people" width="672" />
 <p class="caption">
 Figure 2.1: Pretend happiness ratings from 500 people
 </p>
 </div>
-<p>Figure <a href="week-2-describing-data-adapted2.html#fig:2happyPlot">2.1</a> shows 500 measurements of happiness. The graph has two axes. The horizontal <strong>x-axis</strong>, going from left to right is labeled “Index”. The vertical <strong>y-axis</strong>, going up and down, is labeled “happiness”. Each dot represents one measurement of every person’s happiness from our pretend study. Before we talk about what we can see about the data, it is worth mentioning that the way you plot the data will make some things easier to see and some things harder to see.</p>
+<p>Figure <a href="week-2-describing-data-adapted2.html#fig:2happyPlot">2.1</a> shows 500 measurements of happiness. The graph has two axes. The horizontal <strong>x-axis</strong>, going from left to right is labeled “Index.” The vertical <strong>y-axis</strong>, going up and down, is labeled “happiness.” Each dot represents one measurement of every person’s happiness from our pretend study. Before we talk about what we can see about the data, it is worth mentioning that the way you plot the data will make some things easier to see and some things harder to see.</p>
 <p>So, what can we now see about the data? Firstly, there are lots of dots everywhere. It looks like there are 500 of them because the index on the x-axis goes to 500. It looks like some dots go as high as -1500 and as low as -1500. It looks like there are more dots in the middle-ish area of the plot, sort of spread around 0. The dots are kind of all over the place, so different people have different levels of happiness, which is not so surprising. But we could now also start to answer questions about the data. Are there any trends? Are more people happy than unhappy, or vice-versa?</p>
 <blockquote>
 <p>Take home message: we can visualize our variables by putting them in a plot, which is easier and more helpful than looking at the raw numbers.</p>
 </blockquote>
 </div>
-<div id="histogram" class="section level3">
+<div id="histogram" class="section level3" number="2.3.2">
 <h3><span class="header-section-number">2.3.2</span> Histogram</h3>
 <p>Making a histogram will be our first act of officially summarizing the data. We will no longer look at the individual bits of data, instead we will see how the numbers group together. Let’s look at a histogram of the happiness data, and then explain it.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="week-2-describing-data-adapted2.html#cb3-1"></a><span class="kw">hist</span>(happiness,<span class="dt">breaks=</span><span class="dv">6</span>,<span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">200</span>), <span class="dt">xlim=</span>(<span class="kw">c</span>(<span class="op">-</span><span class="dv">1500</span>,<span class="dv">1500</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="week-2-describing-data-adapted2.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(happiness,<span class="at">breaks=</span><span class="dv">6</span>,<span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">200</span>), <span class="at">xlim=</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1500</span>,<span class="dv">1500</span>)))</span></code></pre></div>
 <div class="figure"><span id="fig:2happyHist"></span>
 <img src="quantrma_files/figure-html/2happyHist-1.png" alt="A histogram of the happiness ratings" width="672" />
 <p class="caption">
@@ -1183,11 +1209,11 @@ Figure 2.2: A histogram of the happiness ratings
 <p>More generally, we see there are 6 bins on the x-axis. We have divided the data into bins of 500. Bin #1 goes from -1500 to -1000, bin #2 goes from -1000 to -500, and so on until the last bin. To make the histogram, we just count up the number of data points falling inside each bin, then plot those frequency counts as a function of the bins. Voila, a histogram.</p>
 <p>What does the histogram help us see about the data? First, we can see the <strong>shape</strong> of data. The shape of the histogram refers to how it goes up and down. The shape tells us where the data is. For example, when the bars are low we know there isn’t much data there. When the bars are high, we know there is more data there. So, where is most of the data? It looks like it’s mostly in the middle two bins, between -500 and 500. We can also see the <strong>range</strong> of the data. This tells us the minimums and the maximums of the data. Most of the data is between -1500 and +1500, so no infinite sadness or infinite happiness in our data-set.</p>
 <p>When you make a histogram you get to choose how wide each bar will be. For example, below are four different histograms of the very same happiness data. What changes is the width of the bins.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="week-2-describing-data-adapted2.html#cb4-1"></a><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>))</span>
-<span id="cb4-2"><a href="week-2-describing-data-adapted2.html#cb4-2"></a>g1 &lt;-<span class="st"> </span><span class="kw">hist</span>(happiness, <span class="dt">breaks =</span> <span class="dv">6</span>, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">200</span>), <span class="dt">xlim =</span> (<span class="kw">c</span>(<span class="op">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span>
-<span id="cb4-3"><a href="week-2-describing-data-adapted2.html#cb4-3"></a>g2 &lt;-<span class="st"> </span><span class="kw">hist</span>(happiness, <span class="dt">breaks =</span> <span class="dv">12</span>, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">100</span>), <span class="dt">xlim =</span> (<span class="kw">c</span>(<span class="op">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span>
-<span id="cb4-4"><a href="week-2-describing-data-adapted2.html#cb4-4"></a>g3 &lt;-<span class="st"> </span><span class="kw">hist</span>(happiness, <span class="dt">breaks =</span> <span class="dv">24</span>, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">50</span>), <span class="dt">xlim =</span> (<span class="kw">c</span>(<span class="op">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span>
-<span id="cb4-5"><a href="week-2-describing-data-adapted2.html#cb4-5"></a>g4 &lt;-<span class="st"> </span><span class="kw">hist</span>(happiness, <span class="dt">breaks =</span> <span class="dv">48</span>, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">25</span>), <span class="dt">xlim =</span> (<span class="kw">c</span>(<span class="op">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="week-2-describing-data-adapted2.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb4-2"><a href="week-2-describing-data-adapted2.html#cb4-2" aria-hidden="true" tabindex="-1"></a>g1 <span class="ot">&lt;-</span> <span class="fu">hist</span>(happiness, <span class="at">breaks =</span> <span class="dv">6</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">200</span>), <span class="at">xlim =</span> (<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span>
+<span id="cb4-3"><a href="week-2-describing-data-adapted2.html#cb4-3" aria-hidden="true" tabindex="-1"></a>g2 <span class="ot">&lt;-</span> <span class="fu">hist</span>(happiness, <span class="at">breaks =</span> <span class="dv">12</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>), <span class="at">xlim =</span> (<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span>
+<span id="cb4-4"><a href="week-2-describing-data-adapted2.html#cb4-4" aria-hidden="true" tabindex="-1"></a>g3 <span class="ot">&lt;-</span> <span class="fu">hist</span>(happiness, <span class="at">breaks =</span> <span class="dv">24</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">50</span>), <span class="at">xlim =</span> (<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span>
+<span id="cb4-5"><a href="week-2-describing-data-adapted2.html#cb4-5" aria-hidden="true" tabindex="-1"></a>g4 <span class="ot">&lt;-</span> <span class="fu">hist</span>(happiness, <span class="at">breaks =</span> <span class="dv">48</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25</span>), <span class="at">xlim =</span> (<span class="fu">c</span>(<span class="sc">-</span><span class="dv">1500</span>, <span class="dv">1500</span>)))</span></code></pre></div>
 <div class="figure"><span id="fig:2manyhistbin"></span>
 <img src="quantrma_files/figure-html/2manyhistbin-1.png" alt="Four histograms of the same data using different bin widths" width="672" />
 <p class="caption">
@@ -1196,23 +1222,23 @@ Figure 2.3: Four histograms of the same data using different bin widths
 </div>
 <p>All of the histograms have roughly the same overall shape: From left to right, the bars start off small, then go up, then get small again. In other words, as the numbers get closer to zero, they start to occur more frequently. We see this general trend across all the histograms. But, some aspects of the trend fall apart when the bars get really narrow. For example, although the bars generally get taller when moving from -1000 to 0, there are some exceptions and the bars seem to fluctuate a little bit. When the bars are wider, there are less exceptions to the general trend. How wide or narrow should your histogram be? It’s a Goldilocks question. Make it just right for your data.</p>
 </div>
-<div id="other-graphs" class="section level3">
+<div id="other-graphs" class="section level3" number="2.3.3">
 <h3><span class="header-section-number">2.3.3</span> Other graphs</h3>
 <p>There are many other graphs to describe your data in addition to scatterplots and histograms, but they will be introduced to you as we continue this course. For now it’s important to know that your data can be visualized using a graph and different types of graphs can show you different things about your data.</p>
 </div>
 </div>
-<div id="describing-data-using-numbers" class="section level2">
+<div id="describing-data-using-numbers" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Describing data using numbers</h2>
 <p>Let’s introduce three important terms that we will use a lot in descriptive statistics: <strong>distribution</strong>, <strong>central tendency</strong>, and <strong>variance</strong>. These terms are similar to their everyday meanings (although I suspect most people don’t say central tendency very often).</p>
 <p><strong>Distribution.</strong> “To distribute” is to spread something. Notice, the data in the histogram is distributed, or spread across the bins. We can also talk about a distribution as a noun. The histogram is a distribution of the frequency counts across the bins. Distributions are <strong>very, very, very, very, very</strong> important. They can have many different shapes. They can describe data, like in the histogram above. And as we will learn in later chapters, distributions can also <strong>produce</strong> data. Many times we will be asking questions about where our data came from, and this usually means asking what kind of distribution could have created our data (more on that later).</p>
 <p><strong>Central tendency</strong> is all about sameness: What is common about some numbers? For example, is there anything similar about all of the numbers in the histogram? Yes, we can say that most of them are near 0. There is a tendency for most of the numbers to be centered near 0. Notice we are being cautious about our generalization about the numbers. We are not saying they are all 0. We are saying there is a tendency for many of them to be near zero. There are lots of ways to talk about the central tendency of some numbers. There can even be more than one kind of tendency. For example, if lots of the numbers were around -1000, and a similar large amount of numbers were grouped around 1000, we could say there was two tendencies.</p>
-<p><strong>Variance</strong> is all about “differentness”. The variance in the numbers refers to how the numbers are different. There are many ways to summarize the amount of variance in the numbers, and we will discuss these very soon.</p>
+<p><strong>Variance</strong> is all about “differentness.” The variance in the numbers refers to how the numbers are different. There are many ways to summarize the amount of variance in the numbers, and we will discuss these very soon.</p>
 </div>
-<div id="measures-of-central-tendency-sameness" class="section level2">
+<div id="measures-of-central-tendency-sameness" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Measures of central tendency (sameness)</h2>
 <p>We’ve seen that we can get a sense of data by plotting dots in a graph and by making a histogram. These tools show us what the numbers look like, approximately how big and small they are, and how similar and different they are from another. It is good to get a feeling about the numbers in this way. But, these visual sensitudes are not very precise. In addition to summarizing numbers with graphs, we can summarize numbers using numbers.</p>
 <p>Measures of central tendency have one important summary goal: to reduce a pile of numbers to a single number that we can look at. We already know that looking at thousands of numbers is hopeless. Wouldn’t it be nice if we could just look at one number instead? It turns out there are lots of ways to do this.</p>
-<div id="mode" class="section level3">
+<div id="mode" class="section level3" number="2.5.1">
 <h3><span class="header-section-number">2.5.1</span> Mode</h3>
 <p>The <strong>mode</strong> is the most frequently occurring number in your measurement. That is it. How do you find it? You have to count the number of times each number appears in your measure, then whichever one occurs the most, is the mode.</p>
 <blockquote>
@@ -1224,15 +1250,15 @@ Figure 2.3: Four histograms of the same data using different bin widths
 <p>Example: 1 1 1 2 2 2 3 4 5 6</p>
 </blockquote>
 <p>Hmm, now 1 and 2 both occur three times each. What do we do? We say there are two modes, 1 and 2, and call the distribution of numbers <strong>bimodal</strong>.</p>
-<p>Why is the mode a measure of central tendency? Well, when we ask, “what are my numbers like”, we can say, “most of the number are, like a 1 (or whatever the mode is)”.</p>
+<p>Why is the mode a measure of central tendency? Well, when we ask, “what are my numbers like,” we can say, “most of the number are, like a 1 (or whatever the mode is).”</p>
 <p>Is the mode a good measure of central tendency? That depends on your numbers. For example, consider these numbers</p>
 <blockquote>
 <p>1 1 2 3 4 5 6 7 8 9</p>
 </blockquote>
 <p>Here, the mode is 1 again, because there are two 1s and all of the other numbers occur once. But, most numbers are not 1s, so you can argue whether the mode is a good summary of the set of numbers in this case.</p>
-<p>“Argh, so should I or should I not use the mode? I thought this class was supposed to tell me what to do?”. There is no telling you what to do. Every time you use a tool in statistics you have to think about what you are doing and justify if and why what you are doing makes sense. Sorry.</p>
+<p>“Argh, so should I or should I not use the mode? I thought this class was supposed to tell me what to do?” There is no telling you what to do. Every time you use a tool in statistics you have to think about what you are doing and justify if and why what you are doing makes sense. Sorry.</p>
 </div>
-<div id="median" class="section level3">
+<div id="median" class="section level3" number="2.5.2">
 <h3><span class="header-section-number">2.5.2</span> Median</h3>
 <p>The <strong>median</strong> is the exact middle of the data. After all, we are asking about central tendency, so why not go to the center of the data and see where it lies. Let’s have a look at the following numbers:</p>
 <blockquote>
@@ -1255,12 +1281,12 @@ Figure 2.3: Four histograms of the same data using different bin widths
 <p>Most of these numbers are smallish, but the 1000 is a big weird number, very different from the rest. The median is still 5, because it is in the middle of these ordered numbers. We can also see that five is pretty similar to most of the numbers (except for 1000). So, the median does a pretty good job of representing most of the numbers in the set, and it does so even if one or two of the numbers are very different from the others.</p>
 <p>Finally, <strong>outlier</strong> is a term will we use to describe numbers that appear in data that are very different from the rest. 1000 is an outlier, because it lies way out there on the number line compared to the other numbers. What to do with outliers is another topic we discuss sometimes throughout this course.</p>
 </div>
-<div id="mean" class="section level3">
+<div id="mean" class="section level3" number="2.5.3">
 <h3><span class="header-section-number">2.5.3</span> Mean</h3>
 <p>Have you noticed this is a textbook about statistics that hasn’t used a formula yet? That is about to change, but for those of you with formula anxiety, don’t worry, we will do our best to explain them.</p>
 <p>The <strong>mean</strong> is also called the average. And, we’re guessing you might already now what the average of a bunch of numbers is. It’s the sum of the numbers, divided by the number of numbers right? We express that idea in a formula just like this:</p>
 <p><span class="math inline">\(\text{Mean} = \bar{X} = \frac{\sum_{i=1}^{n} x_{i}}{N}\)</span></p>
-<p>The <span class="math inline">\(\sum\)</span> symbol is called <strong>sigma</strong>, and it stands for the operation of summing. The little “i” on the bottom, and the little “n” on the top refers to all of the numbers in the set, from the first number “i” to the last number “n”. The <span class="math inline">\(x_{i}\)</span> refers to individual numbers in the set. We sum up all of the numbers, then divide the sum by <span class="math inline">\(N\)</span>, which is the total number of numbers. Sometimes you will see <span class="math inline">\(\bar{X}\)</span> (say: ex-bar) to refer to the mean of a set of numbers.</p>
+<p>The <span class="math inline">\(\sum\)</span> symbol is called <strong>sigma</strong>, and it stands for the operation of summing. The little “i” on the bottom, and the little “n” on the top refers to all of the numbers in the set, from the first number “i” to the last number “n.” The <span class="math inline">\(x_{i}\)</span> refers to individual numbers in the set. We sum up all of the numbers, then divide the sum by <span class="math inline">\(N\)</span>, which is the total number of numbers. Sometimes you will see <span class="math inline">\(\bar{X}\)</span> (say: ex-bar) to refer to the mean of a set of numbers.</p>
 <p>In plain English, the formula looks like:</p>
 <p><span class="math inline">\(\text{Mean} = \frac{\text{Sum of my numbers}}{\text{Count of my numbers}}\)</span></p>
 <p>Let’s compute the mean for these five numbers:</p>
@@ -1283,19 +1309,19 @@ Figure 2.3: Four histograms of the same data using different bin widths
 <p><span class="math inline">\(\text{Mean} = \bar{X} = \frac{\sum_{i=1}^{N} X_{i}}{N} = \frac{3+7+9+2+6}{5} = \frac{27}{5} = 5.4\)</span></p>
 <p>Is the mean a good measure of central tendency? By now, you can guess: it depends.</p>
 </div>
-<div id="what-does-the-mean-mean" class="section level3">
+<div id="what-does-the-mean-mean" class="section level3" number="2.5.4">
 <h3><span class="header-section-number">2.5.4</span> What does the mean mean?</h3>
-<p>It is not enough to know the formula for the mean, or to be able to use the formula to compute a mean for a set of numbers. We believe in your ability to add and divide numbers. What you really need to know is what the mean really “means”. This requires that you know what the mean does, and not just how to do it. Puzzled? Let’s explain.</p>
+<p>It is not enough to know the formula for the mean, or to be able to use the formula to compute a mean for a set of numbers. We believe in your ability to add and divide numbers. What you really need to know is what the mean really “means.” This requires that you know what the mean does, and not just how to do it. Puzzled? Let’s explain.</p>
 <p>Let’s think about the following questions: What happens when you divide a sum of numbers by the number of numbers? What are the consequences of doing this? What is the formula doing? What kind of properties does the result give us?</p>
 <p>Of course, the key word here is divide. We literally carve the number up top in the numerator into pieces. How many times do we split the top number? That depends on the bottom number in the denominator. Watch:</p>
 <p><span class="math inline">\(\frac{12}{3} = 4\)</span></p>
 <p>So, we know the answer is 4. But, what is really going on here is that we are slicing and dicing up 12 into three parts. It turns out the size of those three parts is 4. So, now we are thinking of 12 as three different pieces <span class="math inline">\(12 = 4 + 4 + 4\)</span>. I know this will be obvious, but what kind of properties do our pieces have? Well, obviously they are all fours. The pieces are all the same size. They are all equal. So, division equalizes the numerator by the denominator…</p>
-<p>“Umm, I think I learned this in elementary school, what does this have to do with the mean?”. The number on top of the formula for the mean is just another numerator being divided by a denominator. In this case, the numerator is a sum of all the values in your data. What if it was the sum of all of the 500 happiness ratings? The sum of all of them would just be a single number adding up all the different ratings. If we split the sum up into equal parts representing one part for each person’s happiness we would get 500 identical and equal numbers for each person. It would be like taking all of the happiness in the world, then dividing it up equally, then to be fair, giving back the same equal amount of happiness to everyone in the world. This would make some people more happy than they were before, and some people less happy right. Of course, that’s because it would be equalizing the distribution of happiness for everybody. This process of equalization by dividing something into equal parts is what the <strong>mean</strong> does. See, it’s more than just a formula. It’s an idea. This is just the beginning of thinking about these kinds of ideas. We will come back to this idea about the mean, and other ideas, in later chapters.</p>
+<p>“Umm, I think I learned this in elementary school, what does this have to do with the mean?” The number on top of the formula for the mean is just another numerator being divided by a denominator. In this case, the numerator is a sum of all the values in your data. What if it was the sum of all of the 500 happiness ratings? The sum of all of them would just be a single number adding up all the different ratings. If we split the sum up into equal parts representing one part for each person’s happiness we would get 500 identical and equal numbers for each person. It would be like taking all of the happiness in the world, then dividing it up equally, then to be fair, giving back the same equal amount of happiness to everyone in the world. This would make some people more happy than they were before, and some people less happy right. Of course, that’s because it would be equalizing the distribution of happiness for everybody. This process of equalization by dividing something into equal parts is what the <strong>mean</strong> does. See, it’s more than just a formula. It’s an idea. This is just the beginning of thinking about these kinds of ideas. We will come back to this idea about the mean, and other ideas, in later chapters.</p>
 <blockquote>
 <p>Take home: the mean is the one and only number that can take the place of every number in the data, such that when you add up all the equal parts, you get back the original sum of the data.</p>
 </blockquote>
 </div>
-<div id="all-together-now" class="section level3">
+<div id="all-together-now" class="section level3" number="2.5.5">
 <h3><span class="header-section-number">2.5.5</span> All together now</h3>
 <p>Just to remind ourselves of the mode, median, and mean, take a look at the next histogram of our happiness data set. We have overlaid the location of the mode (blue), median (green), and mean (red). The location of the mode, median and mean are pretty similar.</p>
 <div class="figure"><span id="fig:2meanmodemedhap"></span>
@@ -1313,11 +1339,11 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 </div>
 </div>
 </div>
-<div id="measures-of-variation-differentness" class="section level2">
+<div id="measures-of-variation-differentness" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Measures of variation (differentness)</h2>
 <p>Writing a book report in high school probably meant you were comparing and contrasting things. When you summarize data, you do the same thing. Measures of central tendency give us something like comparing does, they tell us about what is the same. Measures of variation give us something like contrasting does, they tell us about what is different.</p>
 <p>First, we note that whenever you see a bunch of numbers that aren’t the same, you already know there are some differences. This means the numbers vary, and there is variation in the size of the numbers.</p>
-<div id="the-range" class="section level3">
+<div id="the-range" class="section level3" number="2.6.1">
 <h3><span class="header-section-number">2.6.1</span> The range</h3>
 <p>Consider these 10 numbers, that I already ordered from smallest to largest for you:</p>
 <blockquote>
@@ -1326,7 +1352,7 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 <p>The numbers have variation, because they are not all the same. We can use the range to describe the width of the variation. The range refers to the <strong>minimum</strong> (smallest value) and <strong>maximum</strong> (largest value) in the set. So, the range would be 1 and 24.</p>
 <p>The range is a good way to quickly summarize the boundaries of your data in just two numbers. By computing the range we know that none of the data is larger or smaller than the range. And, it can alert you to outliers. For example, if you are expecting your numbers to be between 1 and 7, but you find the range is 1 - 3405, then you know you have at least one big number that shouldn’t be there, and you can try to figure out why that occurred (and potentially remove it and other outliers).</p>
 </div>
-<div id="difference-scores" class="section level3">
+<div id="difference-scores" class="section level3" number="2.6.2">
 <h3><span class="header-section-number">2.6.2</span> Difference scores</h3>
 <p>It would be nice to summarize the amount of differentness in the data. Here’s why: if you thought that raw data (lots of numbers) is too big to look at, then you will be frightened to contemplate how many differences there are to look at. For example, these 10 numbers are easy to look at:</p>
 <blockquote>
@@ -1524,12 +1550,12 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 <p>Uh oh, we get zero for the mean of the difference scores. This will always happen whenever you take the mean of the difference scores. We can see that there are some differences between the numbers, so using 0 as the summary value for the variation in the numbers doesn’t make much sense.</p>
 <p>Furthermore, you might also notice that the matrices of difference scores are redundant. The diagonal is always zero, and numbers on one side of the diagonal are the same as the numbers on the other side, except their signs are reversed. These are problems that can be solved by computing the <strong>variance</strong> and the <strong>standard deviation</strong>. For now, the standard deviation is a just a trick that we use to avoid getting a zero. But, later we will see it has properties that are important for other reasons.</p>
 </div>
-<div id="var-form" class="section level3">
+<div id="var-form" class="section level3" number="2.6.3">
 <h3><span class="header-section-number">2.6.3</span> The variance</h3>
 <p>Variability, variation, variance, vary, variable, varying, variety. Confused yet? Before we describe <strong>the variance</strong>, we want to you be OK with how this word is used. First, don’t forget the big picture. We know that variability and variation refers to the big idea of differences between numbers. We can even use the word variance in the same way. When numbers are different, they have variance.</p>
 <p>The word <strong>variance</strong> also refers to a specific summary statistic: the sum of the squared deviations from the mean. Hold on what? In plain English: the variance is the sum of the squared difference scores, where the difference scores are computed between each number in the data set and the mean. Let’s see the formula first<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>:</p>
 <p><span class="math inline">\(\frac{{\sum_{i=1}^N} (X_i - \bar{X})^2}{N}\)</span>, or in English: <span class="math inline">\(\text{Variance} = \frac{\text{Sum of squared difference scores}}{\text{Number of Scores}}\)</span></p>
-<div id="deviations-from-the-mean" class="section level4">
+<div id="deviations-from-the-mean" class="section level4" number="2.6.3.1">
 <h4><span class="header-section-number">2.6.3.1</span> Deviations from the mean</h4>
 <p>We got a little bit complicated before when we computed the difference scores between <strong>all</strong> of the numbers in the data. Let’s do it again, but in a more manageable way. This time, we calculate the difference between each score and the <strong>mean</strong>. The idea here is:</p>
 <ol style="list-style-type: decimal">
@@ -1605,7 +1631,7 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 <p>Now, we can look at our original scores and we can look at their differences from the mean. Notice, we don’t have a matrix of raw difference scores, so it is much easier to look at. But, we still have a problem:</p>
 <p>We can see that there are non-zero values in the difference scores, so we know there are a differences in the data. But, when we add them all up, we still get zero, which makes it seem like there are a total of zero differences in the data…</p>
 </div>
-<div id="the-squared-deviations" class="section level4">
+<div id="the-squared-deviations" class="section level4" number="2.6.3.2">
 <h4><span class="header-section-number">2.6.3.2</span> The squared deviations</h4>
 <p>Some devious someone divined a solution to the fact that differences scores from the mean always add to zero. The devious solution is to square the numbers. Squaring numbers converts all the negative numbers to positive numbers. For example, <span class="math inline">\(2^2 = 4\)</span>, and <span class="math inline">\(-2^2 = 4\)</span>. We use the term <strong>squared deviations</strong> to refer to differences scores that have been squared. Deviations are things that move away from something. The difference scores move away from the mean, so we also call them <strong>deviations</strong>.</p>
 <p>Let’s look at our table again, but add the squared deviations.</p>
@@ -1681,7 +1707,7 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 <p>OK, now we have a new column called <code>squared_deviations</code>. These are just the difference scores squared. So, <span class="math inline">\(-3.5^2 = 12.25\)</span>, etc. You can confirm this for yourself with your calculator.</p>
 <p>Now that all of the squared deviations are positive, we can add them up. When we do this we create something very special called the sum of squares (SS), also known as the sum of the squared deviations from the mean.</p>
 </div>
-<div id="finally-the-variance" class="section level4">
+<div id="finally-the-variance" class="section level4" number="2.6.3.3">
 <h4><span class="header-section-number">2.6.3.3</span> Finally, the variance</h4>
 <p>Guess what, we already computed the variance. It already happened, and maybe you didn’t notice. First, see if you can remember what we are trying to do here. Take a pause, and see if you can tell yourself what problem we are trying solve.</p>
 <blockquote>
@@ -1693,7 +1719,7 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 <p>OK, now what. What do I do with the variance? What does this number mean? Good question. The variance is often an unhelpful number to look at, because it is not in the same scale as the original data. This is because we squared the difference scores before taking the mean. Squaring produces large numbers. For example, we see a 12.25 in there. That’s a big difference, bigger than any difference between any two original values. How can we bring the numbers back down to their original unsquared size? That’s easy: we can always unsquare anything by taking the square root. So, let’s do that to 5.916: <span class="math inline">\(\sqrt{5.916} =\)</span> 2.4322829.</p>
 </div>
 </div>
-<div id="the-standard-deviation" class="section level3">
+<div id="the-standard-deviation" class="section level3" number="2.6.4">
 <h3><span class="header-section-number">2.6.4</span> The standard deviation</h3>
 <p>Oops, we did it again. We already computed the standard deviation, and we didn’t tell you. The standard deviation is the square root of the variance…At least, it is right now, until we complicate matters for you in later chapters.</p>
 <p>Here is the formula for the standard deviation:</p>
@@ -1774,20 +1800,20 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 <p>What does all this mean? Well, if someone told they had some number with a mean of 4.5 (like the values in our table), and a standard deviation of 2.4322829, you would get a pretty good summary of the numbers. You would know that many of the numbers are around 4.5, and you would know that not all of the numbers are 4.5. You would know that the numbers spread around 4.5. You also know that the spread isn’t super huge, it’s only + or - 2.4322829 on average. That’s a good starting point for describing numbers.</p>
 <p>If you had loads of numbers, you could reduce them down to the mean and the standard deviation, and still be pretty well off in terms of getting a sense of those numbers.</p>
 </div>
-<div id="closing-thoughts-on-measures-of-variation" class="section level3">
+<div id="closing-thoughts-on-measures-of-variation" class="section level3" number="2.6.5">
 <h3><span class="header-section-number">2.6.5</span> Closing thoughts on measures of variation</h3>
 <p>We spent many paragraphs talking about variation in numbers, and how to use the <strong>variance</strong> and <strong>standard deviation</strong> to summarize the average differences between numbers in a data set. The basic process was to 1) calculate some measure of the differences, then 2) average the differences to create a summary. We found that we couldn’t average the raw difference scores, because we would always get a zero. So, we squared the differences from the mean, then averaged the squared differences differences. Finally, we square rooted our measure to bring the summary back down to the scale of the original numbers.</p>
 <p>Perhaps you were thinking that the problem of summing difference scores (so that they don’t equal zero), can be solved in more than one way. How about just taking the absolute value of the difference scores?<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
 <p>Many things are possible. The important aspect to any of this is to have a reason for what you are doing, and to choose a method that works for the data-analysis problem you are trying to solve. Note also, we bring up this general discussion because we want you to understand that statistics is a creative exercise. We invent things when we need them, and we use things that have already been invented when they work for the problem at hand.</p>
 </div>
 </div>
-<div id="remember-to-look-at-your-data" class="section level2">
+<div id="remember-to-look-at-your-data" class="section level2" number="2.7">
 <h2><span class="header-section-number">2.7</span> Remember to look at your data</h2>
 <p>Using numbers to describe data is great and we will use it a lot during this course, but you may suspect these descriptive statistics also have some short-comings. They are compressed summaries of large piles of numbers and will almost always be unable to represent all of the numbers fairly. There are also different kinds of descriptive statistics that you could use and it sometimes not clear which one’s you should use.</p>
 <p>Perhaps the most important thing you can do when describing data is to use both graphs and numbers. This can help you see whether or not your descriptive statistics are doing a good job of representing the data.</p>
-<div id="anscombes-quartet" class="section level3">
+<div id="anscombes-quartet" class="section level3" number="2.7.1">
 <h3><span class="header-section-number">2.7.1</span> Anscombe’s Quartet</h3>
-<p>To hit this point home, and to get you thinking about the issues we discuss in the next chapter, check out the following. It’s called Anscombe’s Quartet, because these interesting graphs and numbers were produced by <span class="citation">Anscombe (<a href="#ref-Anscombe1973" role="doc-biblioref">1973</a>)</span>. You are looking at several scatterplots of different measurements and each of the plots look very different, right?</p>
+<p>To hit this point home, and to get you thinking about the issues we discuss in the next chapter, check out the following. It’s called Anscombe’s Quartet, because these interesting graphs and numbers were produced by <span class="citation"><a href="references.html#ref-Anscombe1973" role="doc-biblioref">Anscombe</a> (<a href="references.html#ref-Anscombe1973" role="doc-biblioref">1973</a>)</span>. You are looking at several scatterplots of different measurements and each of the plots look very different, right?</p>
 <p><img src="quantrma_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>It is maybe surprising to learn that the descriptive statistics for the numbers in these graphs are (almost) exactly the same. In the table below I present the mean and variance for the x-values in each graph, and the mean and the variance for the y-values in each graph.</p>
 <table>
@@ -1833,9 +1859,9 @@ Figure 2.5: A histogram of phone call length with the mode (blue), median (green
 </table>
 <p>Anscombe put these special numbers together to illustrate the point of visualizing your numbers. If you only look at your descriptive statistics, you don’t know what patterns in the data they are hiding. If you look at your descriptive statistics in combination with a graph, then you can get a better understanding.</p>
 </div>
-<div id="datasaurus-dozen" class="section level3">
+<div id="datasaurus-dozen" class="section level3" number="2.7.2">
 <h3><span class="header-section-number">2.7.2</span> Datasaurus Dozen</h3>
-<p>If you thought that Anscombe’s quartet was neat, you should take a look at the <a href="https://www.autodeskresearch.com/publications/samestats">Datasaurus Dozen</a> <span class="citation">(Matejka and Fitzmaurice <a href="#ref-matejka2017same" role="doc-biblioref">2017</a>)</span>. The scatterplots show many different patterns, including dinosaurs! What’s amazing is that all of the scatterplots have very nearly the same descriptive statistics. Just another reminder to look at your data, it might look like a dinosaur!</p>
+<p>If you thought that Anscombe’s quartet was neat, you should take a look at the <a href="https://www.autodeskresearch.com/publications/samestats">Datasaurus Dozen</a> <span class="citation">(<a href="references.html#ref-matejka2017same" role="doc-biblioref">Matejka and Fitzmaurice 2017</a>)</span>. The scatterplots show many different patterns, including dinosaurs! What’s amazing is that all of the scatterplots have very nearly the same descriptive statistics. Just another reminder to look at your data, it might look like a dinosaur!</p>
 <div class="figure"><span id="fig:2Datasaurus"></span>
 <img src="figures/gifs/Datasaurus.gif" alt="Datasaurus: different scatterplots with nearly identical descriptive statistics"  />
 <p class="caption">
@@ -1844,19 +1870,10 @@ Figure 2.6: Datasaurus: different scatterplots with nearly identical descriptive
 </div>
 </div>
 </div>
-<div id="thats-it-for-this-week-1" class="section level2">
+<div id="thats-it-for-this-week-1" class="section level2" number="2.8">
 <h2><span class="header-section-number">2.8</span> That’s it for this week</h2>
 <p>That’s it for the readings of the second week. During the lab you will learn about graphing and generating descriptive statistics in R. Additional practice materials for this week can be found on <a href="https://cloud.sowiso.nl">SOWISO</a>. The practice materials are by no means mandatory, are ideally made after the lab, and are a bit more advanced, but they can help you further understand descriptive statistics in R. Finally, if you haven’t done so already, make sure you’ve <a href="https://canvas.eur.nl/courses/31825/assignments/118509">signed up for an assignment group</a>.</p>
 
-</div>
-</div>
-<h3> References</h3>
-<div id="refs" class="references">
-<div id="ref-Anscombe1973">
-<p>Anscombe, F. J. 1973. “Graphs in Statistical Analysis.” <em>American Statistician</em> 27: 17–21.</p>
-</div>
-<div id="ref-matejka2017same">
-<p>Matejka, Justin, and George Fitzmaurice. 2017. “Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics Through Simulated Annealing.” In <em>Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems</em>, 1290–4. ACM.</p>
 </div>
 </div>
 <div class="footnotes">
