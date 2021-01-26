@@ -1,4 +1,4 @@
-# Week 5: Sampling Theory and Estimation^[Mix of Matthew Crump & Danielle Navarro. Code for figures from Emily Kothe's Bookdown adaptation of [Learning statistics with R](https://github.com/ekothe/rbook)]
+# Week 5: Estimation and Sampling Theory^[Mix of Matthew Crump & Danielle Navarro. Code for figures from Emily Kothe's Bookdown adaptation of [Learning statistics with R](https://github.com/ekothe/rbook)]
 Remember, the role of descriptive statistics is to concisely summarize what we **do** know. In contrast, the purpose of inferential statistics is to "learn what we do not know from what we do". What kinds of things would we like to learn about? And how do we learn them? These are the questions that lie at the heart of inferential statistics.
 
 **Sampling theory** plays a huge role in specifying the assumptions upon which your statistical inferences rely. And in order to talk about "making inferences" the way statisticians think about it, we need to be a bit more explicit about what it is that we're drawing inferences **from** (the sample) and what it is that we're drawing inferences **about** (the population).
@@ -114,7 +114,7 @@ Okay, so the passage comes across as a bit condescending (not to mention sexist)
 
 I don't intend to subject you to a proof that the law of large numbers is true, but it's one of the most important tools for statistical theory. The law of large numbers is the thing we can use to justify our belief that collecting more and more data will eventually lead us to the truth. For any particular data set, the sample statistics that we calculate from it will be wrong, but the law of large numbers tells us that if we keep collecting more data those sample statistics will tend to get closer and closer to the true population parameters.
 
-## Sampling distributions
+## Sampling distributions {#sampdistmain}
 The law of large numbers is a very powerful tool, but it's not going to be good enough to answer all our questions. Among other things, all it gives us is a "long run guarantee". In the long run, if we were somehow able to collect an infinite amount of data, then the law of large numbers guarantees that our sample statistics will be correct. But as John Maynard Keynes famously argued in economics, a long run guarantee is of little use in real life:
 
 > **[The] long run is a misleading guide to current affairs. In the long run we are all dead. Economists set themselves too easy, too useless a task, if in tempestuous seasons they can only tell us, that when the storm is long past, the ocean is flat again.** @keynes_tract_1923 [p.80]

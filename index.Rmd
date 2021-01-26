@@ -2,7 +2,7 @@
 title: "Quantitative Research Methods & Analysis"
 author:
 - "Original Author: Matthew J. C. Crump"
-- "Chapter 1 and Chapters 4-7 adapted from Danielle Navarro"
+- "Adapted materials for chapter 1 and chapters 4-7 from Danielle Navarro"
 - "Edited for EUC by Thomas Hulst and Thanos Kostopoulos"
 date: "Last Compiled `r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -10,7 +10,7 @@ documentclass: book
 bibliography: [QuantRMA.bib]
 biblio-style: apalike
 link-citations: yes
-description: "An introductory textbook for quantitative research methods and  analysis at EUC. This text was adapted from \"Answering questions with data\" by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and \"Learning statistics with R\" by Danielle Navarro (https://learningstatisticswithr.com)."
+description: "An introductory textbook for quantitative research methods and  analysis at EUC. This text was adapted from \"Answering questions with data\" by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and \"Learning statistics with R\" by Danielle Navarro (https://learningstatisticswithr.com) and extended with our own materials."
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,message=FALSE,warning=FALSE, cache=TRUE)
@@ -19,7 +19,7 @@ library(tidyverse)
 # Preface {-}
 
 ## Important notes {-}
-This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump and "Learning statistics with R" by Danielle Navarro. 
+This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump and "Learning statistics with R" by Danielle Navarro and extended with our own materials. 
 
 The original text is part of a [larger OER (Open Educational Resource) course](https://osf.io/3s68c/) for teaching undergraduate statistics in psychology. As such, the text assumes you are a psychology student and many of the examples are drawn from the field of psychology. This does not mean that this course is only useful for you if you have an interest in psychology. The field of psychology will serve as a vehicle to teach you important concepts and skills in quantitative research methods and data analysis, but the concepts and skills taught are universal. 
 

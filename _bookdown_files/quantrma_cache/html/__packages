@@ -3,3 +3,10 @@ dplyr
 ggplot2
 data.table
 ggpubr
+tidyverse
+tibble
+tidyr
+readr
+purrr
+stringr
+forcats

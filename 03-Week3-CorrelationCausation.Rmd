@@ -3,7 +3,7 @@
 >Correlation does not equal causation
 >---Every Statistics and Research Methods Instructor Ever
 
-[^Adapted3]:Chapter by Matthew Crump
+[^Adapted3]:Chapter by Matthew Crump. Extended with our own materials about causation. 
 
 In the last chapter we had some data. It was too much too look at and it didn't make sense. So, we talked about how to look at the data using graphs and we talked about how to summarize lots of numbers using their central tendencies (sameness) and variability (differentness). If you are looking for a big theme to think about while you take this course, the theme is: how do we ask and answer questions using data? For every section in this book, you should be connecting your inner monologue to this question, and asking yourself: how does what I am learning help me answer questions about data? We know it is easy to forget this stuff when we dive into the details, but we will try to throw you a rope to help you out along the way...
 

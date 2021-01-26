@@ -1,5 +1,5 @@
 ## Important notes
-This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump and "Learning statistics with R" by Danielle Navarro. 
+This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump and "Learning statistics with R" by Danielle Navarro and extended with our own materials. 
 
 The original text is part of a [larger OER (Open Educational Resource) course](https://osf.io/3s68c/) for teaching undergraduate statistics in psychology. As such, the text assumes you are a psychology student and many of the examples are drawn from the field of psychology. This does not mean that this course is only useful for you if you have an interest in psychology. The field of psychology will serve as a vehicle to teach you important concepts and skills in quantitative research methods and data analysis, but the concepts and skills taught are universal. 
 

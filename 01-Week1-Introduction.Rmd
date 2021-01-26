@@ -1,6 +1,6 @@
 # Week 1: Introduction[^Adapted1]
 
-[^Adapted1]:Adapted nearly verbatim from Chapter 1 and 2 in Navarro, D. ["Learning Statistics with R."](https://learningstatisticswithr.com)
+[^Adapted1]:Adapted nearly verbatim from Chapter 1 and 2 in Navarro, D. ["Learning Statistics with R."](https://learningstatisticswithr.com). Extended the materials about research methods with our own.
 
 To the surprise of many students, statistics is a fairly significant part of any bachelor program at university. To the surprise of no-one, statistics is very rarely the *favorite* part of one’s bachelor studies. After all, if you really loved the idea of doing statistics, you’d probably be enrolled in a statistics program right now, not a university college. So, not surprisingly, there’s a pretty large proportion of the student base that isn’t happy about the fact university studies have so much statistics in it. In view of this, I thought that the right place to start might be to answer some of the more common questions that people have about statistics…
 
