@@ -553,7 +553,7 @@ xval <- seq(-5,5,.01)
 	)
 	lines( xval, dnorm(xval,0,1), lty=2, col="grey")
 ```
-## z-scores
+## z-scores {#zscore}
 We are now in a position to combine some of things we've been talking about in this chapter, and introduce you to a new tool: **z-scores**. 
 
 It turns out we won't use z-scores very much in this course. However, you can't take a class on statistics and not learn about z-scores. The idea behind a z-score is to express your raw data in terms of its standard deviation under the assumption that your data is normally distributed. In a [previous section](#norm-dist) I told you that, regardless of the actual mean and standard deviation of normally distributed data, approximately 68% of the area under a normal distribution falls within 1 standard deviation of the mean and approximately 95% within 2 standard deviations of the mean. 
