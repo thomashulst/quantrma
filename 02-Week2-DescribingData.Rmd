@@ -134,7 +134,7 @@ Likert scales are very handy, if somewhat limited, tools. The question is, what 
 
 But are they ordinal scale or interval scale? One argument says that we can’t really prove that the difference between “strongly agree” and “agree” is of the same size as the difference between “agree” and “neither agree nor disagree”. In fact, in everyday life it’s pretty obvious that they’re not the same at all. So this suggests that we ought to treat Likert scales as ordinal variables. On the other hand, in practice most participants do seem to take the whole “on a scale from 1 to 5” part fairly seriously, and they tend to act as if the differences between the five response options were fairly similar to one another. As a consequence, a lot of researchers treat Likert scale data as if it were interval scale. It’s not interval scale, but in practice it’s close enough that we usually think of it as being **quasi-interval scale**.
 
-## This is what too many numbers looks like
+## This is what too many numbers looks like {#toomanynumbers}
 With that out of the way, we can start looking at some actual measurements. Let's say you want to know how happy people are. So, you ask 500 people on the street how happy they are. You let them pick any number they want from negative infinity to positive infinity and record all the numbers in a continuous interval variable.
 
 We could look at the numbers and see if that helps determine anything about how happy people are. Perhaps it would look something like this:
@@ -300,7 +300,7 @@ $\text{Mean} = \bar{x} = \frac{\sum_{i=1}^{n} x_{i}}{n} = \frac{3+7+9+2+6}{5} = 
 
 Is the mean a good measure of central tendency? By now, you can guess: it depends. 
 
-### What does the mean mean?
+### What does the mean mean? {#whatmeanmean}
 It is not enough to know the formula for the mean, or to be able to use the formula to compute a mean for a set of numbers. We believe in your ability to add and divide numbers. What you really need to know is what the mean really "means". This requires that you know what the mean does, and not just how to do it. Puzzled? Let's explain.
 
 Let's think about the following questions: What happens when you divide a sum of numbers by the number of numbers? What are the consequences of doing this? What is the formula doing? What kind of properties does the result give us? 
@@ -424,7 +424,7 @@ $\frac{{\sum_{i=1}^n} (x_i - \bar{x})^2}{n}$, or in English: $\text{Variance} = 
 
 [^Formulas]:The formulas for variance and standard deviation depend on whether you think your data represents an entire population of numbers, or is sample from the population. We discuss this issue later on. For now, we divide by N (the number of observations), later we discuss why you will often divide by N-1 instead.
 
-#### Deviations from the mean
+#### Deviations from the mean {#devmean}
 We got a little bit complicated before when we computed the difference scores between **all** of the numbers in the data. Let's do it again, but in a more manageable way. This time, we calculate the difference between each score and the **mean**. The idea here is:
 
 1. We figure out how similar our scores are by computing the mean

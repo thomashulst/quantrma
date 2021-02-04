@@ -84,7 +84,7 @@ interval-scale
 ratio-scale
 continuous-versus-discrete-variables
 some-complexities
-this-is-what-too-many-numbers-looks-like
+toomanynumbers
 describing-data-using-graphs
 scatterplot
 histogram
@@ -94,13 +94,13 @@ measures-of-central-tendency-sameness
 mode
 median
 mean
-what-does-the-mean-mean
+whatmeanmean
 all-together-now
 measures-of-variation-differentness
 the-range
 difference-scores
 var-form
-deviations-from-the-mean
+devmean
 the-squared-deviations
 finally-the-variance
 the-standard-deviation
