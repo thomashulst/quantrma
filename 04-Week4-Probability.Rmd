@@ -45,6 +45,7 @@ Below is a script written for R^[We did something [similar last week](#corrform)
 ```{r 3anotherthousand, fig.cap="Figure showing a range of r-values that can be obtained by chance",echo=TRUE}
 library(ggplot2)
 simulated_correlations <- c() # create empty vector 
+set.seed(123)
 for(sim in 1:1000){
   # pick 10 random numbers between 1 and 10 and round the result to the nearest integer
   north_pole <- round(runif(10,1,10)) 
@@ -119,7 +120,11 @@ You might be thinking this is kind of disturbing. If we know that there should b
 Fortunately, all is not lost. We can look at our simulated data in another way, using a histogram. Remember, just before the animation, we simulated 1000 different correlations using random numbers. By, putting all of those $r$ values into a histogram, we can get a better sense of how chance behaves. We can see  what kind of correlations chance is likely or unlikely to produce. Here is a histogram of the simulated $r$ values.
 
 ```{r 3histrandcor, fig.cap="A histogram showing the frequency distribution of r-values for completely random values between an X and Y variable (sample-size=10). A full range of r-values can be obtained by chance alone. Larger r-values are less common than smaller r-values"}
-hist(simulated_correlations,breaks=seq(-1,1,.1))
+
+ggplot(sim_df,aes(x=simulated_correlations))+
+  geom_histogram(bins=40, color="white") +
+  xlim(-1,1) +
+  theme_classic()
 ```
 
 
@@ -145,6 +150,7 @@ The graph below shows four different histograms of the Pearson $r$ values in eac
 
 ```{r 3corrandN, fig.cap="Four histograms showing the frequency distributions of r-values between completely random X and Y variables as a function of sample-size. The width of the distributions shrink as sample-size increases. Smaller sample-sizes are more likely to produce a wider range of r-values by chance. Larger sample-sizes always produce a narrower range of small r-values"}
 all_df<-data.frame()
+set.seed(123)
 for(s_size in  c(10,50,100,1000)){
   simulated_correlations <- length(0)
   for(sim in 1:1000){
@@ -158,8 +164,8 @@ all_df<-rbind(all_df,sim_df)
 
 
 ggplot(all_df,aes(x=simulated_correlations))+
-  geom_histogram()+
-  facet_wrap(~sample_size)+
+  geom_histogram(bins=40, color="white")+
+  facet_wrap(~sample_size,scales = "free_y")+
   theme_classic()
 
 ```
@@ -176,7 +182,7 @@ Let's ingrain these ideas with some more animations. When our sample-size is sma
 ### Animation of no relationship between variables
 Below we randomly sample numbers for two variables, plot them, and show the correlation using a line. There are four panels, each showing the number of observations in the samples, from 10, 50, 100, to 1000 in each sample.
 
-Remember, because we are randomly sampling numbers, there should be no relationship between the X and Y variables. But, as we have been discussing, because of chance, we can sometimes observe a correlation (due to chance). The important thing to watch is how the line behaves across the four panels. The line twirls around in all directions when the sample size is 10. It is also moves around quite a bit when the sample size is 50 or 100. It still moves a bit when the sample size is 1000, but much less. In all cases we expect the line to be flat, but sometimes the line shows us a pseudo relationship.
+Remember, because we are randomly sampling numbers, there should be no relationship between the X and Y variables. But, as we have been discussing, we can sometimes observe a correlation due to chance. The important thing to watch is how the line behaves across the four panels. The line twirls around in all directions when the sample size is 10. It is also moves around quite a bit when the sample size is 50 or 100. It still moves a bit when the sample size is 1000, but much less. In all cases we expect the line to be flat, but sometimes the line shows us a pseudo relationship.
 
 ```{r 3corRandfour, fig.cap="Animation of how correlation behaves for completely random X and Y variables as a function of sample size. The best fit line is not very stable for small sample-sizes, but becomes more reliably flat as sample-size increases", echo=F,eval=T}
 
@@ -225,7 +231,7 @@ Which line should you trust? Well, hopefully you can see that the line for 1000 
 Let's look at an animation when there actually is a correlation between variables.
 
 ### Animation with a relationship between variables
-Sometimes there are correlations between two variables that are not caused by chance. Below, we get to watch an animation of four scatter plots. Each shows the correlation between two variables. Again, we change the sample-size in steps of 10, 50 100, and 1000. The data have been programmed to contain a real positive correlation. So, we should expect that the line will be going up from the bottom left to the top right. However, there is still variability in the data. So this time, sampling error due to chance will fuzz the correlation. We know it is there, but sometimes chance will cause the correlation to be eliminated.
+Sometimes there are correlations between two variables that are not caused by chance. Below, we get to watch an animation of four scatter plots. Each shows the correlation between two variables. Again, we change the sample-size in steps of 10, 50 100, and 1000. The data have been **programmed to contain a real positive correlation**. So, we should expect that the line will be going up from the bottom left to the top right. However, there is still variability in the data. So this time, sampling error due to chance will fuzz the correlation. We know it is there, but sometimes chance will cause the correlation to be eliminated.
 
 Notice that in the top left panel (sample-size 10), the line is twirling around much more than the other panels. Every new set of samples produces different correlations. Sometimes, the line even goes flat or downward. However, as we increase sample-size, we can see that the line doesn't change very much, it is always going up showing a positive correlation.
 
@@ -274,7 +280,7 @@ and what I'm trying to do is work out which "model of the world" I should put my
 ## What does probability mean? {#mean-prob}
 Let's start with the first of these questions. What is "probability"? It might seem surprising to you, but while statisticians and mathematicians (mostly) agree on what the **rules** of probability are, there's much less of a consensus on what the word really **means**. It seems weird because we're all very comfortable using words like "chance", "likely", "possible" and "probable", and it doesn't seem like it should be a very difficult question to answer. If you had to explain "probability" to a five year old, you could do a pretty good job. But if you've ever had that experience in real life, you might walk away from the conversation feeling like you didn't quite get it right, and that (like many everyday concepts) it turns out that you don't **really** know what it's all about.
 
-So I'll have a go at it. Let's suppose I want to bet on a soccer game between two teams of robots, **Arduino Arsenal** and **CPU Milan**. After thinking about it, I decide that there is an 80% probability that **Arduino Arsenal** wins What do I mean by that? Here are three possibilities...
+So I'll have a go at it. Let's suppose I want to bet on a soccer game between two teams of robots, **Arduino Arsenal** and **CPU Milan**. After thinking about it, I decide that there is an 80% probability that **Arduino Arsenal** wins. What do I mean by that? Here are three possibilities...
 
 -   They're robot teams, so I can make them play over and over again, and if I did that, **Arduino Arsenal** would win 8 out of every 10 games on average.
 -   For any given game, I would only agree that betting on this game is "fair" if a \$1 bet on **CPU Milan** gives a \$5 payoff (i.e. I get my \$1 back plus a \$4 reward for being correct), as would a \$4 bet on **Arduino Arsenal** (i.e., my \$4 bet plus a \$1 reward).
@@ -303,7 +309,9 @@ In this case 11 of these 20 coin flips (55%) came up heads. Now suppose that I'd
   proportion         .73   .67   .69   .71   .67   .63   .59   .56   .53   .55
   ----------------- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 
-Notice that at the start of the sequence, the **proportion** of heads fluctuates wildly, starting at .00 and rising as high as .80. Later on, one gets the impression that it dampens out a bit, with more and more of the values actually being pretty close to the "right" answer of .50. This is the frequentist definition of probability in a nutshell: flip a fair coin over and over again, and as $N$ grows large (approaches infinity, denoted $N\rightarrow \infty$), the proportion of heads will converge to 50%. There are some subtle technicalities that the mathematicians care about, but qualitatively speaking, that's how the frequentists define probability. Unfortunately, I don't have an infinite number of coins, or the infinite patience required to flip a coin an infinite number of times. However, I do have a computer, and computers excel at mindless repetitive tasks. So I asked my computer to simulate flipping a coin 1000 times, and then drew a picture of what happens to the proportion $N_H / N$ as $N$ increases. Actually, I did it four times, just to make sure it wasn't a fluke. The results are shown in Figure \@ref(fig:4FreqProb). As you can see, the **proportion of observed heads** eventually stops fluctuating, and settles down; when it does, the number at which it finally settles is (close to) the "true" probability of heads.
+Notice that at the start of the sequence, the **proportion** of heads fluctuates wildly, starting at .00 and rising as high as .80. Later on, one gets the impression that it dampens out a bit, with more and more of the values actually being pretty close to the "right" answer of .50. This is the frequentist definition of probability in a nutshell: flip a fair coin over and over again, and as $N$ grows large (approaches infinity, denoted $N\rightarrow \infty$), the proportion of heads will converge to 50%. There are some subtle technicalities that the mathematicians care about, but qualitatively speaking, that's how the frequentists define probability. 
+
+Unfortunately, I don't have an infinite number of coins, or the infinite patience required to flip a coin an infinite number of times. However, I do have a computer, and computers excel at mindless repetitive tasks. So I asked my computer to simulate flipping a coin 1000 times, and then drew a picture of what happens to the proportion $N_H / N$ as $N$ increases. Actually, I did it four times, just to make sure it wasn't a fluke. The results are shown in Figure \@ref(fig:4FreqProb). As you can see, the **proportion of observed heads** eventually stops fluctuating, and settles down; when it does, the number at which it finally settles is (close to) the "true" probability of heads.
 
 ```{r 4FreqProb, fig.cap="An illustration of how frequentist probability works. If you flip a fair coin over and over again, the proportion of heads that you've seen eventually settles down, and converges to the true probability of 0.5. Each panel shows four different simulated experiments: in each case, we pretend we flipped a coin 1000 times, and kept track of the proportion of flips that were heads as we went along. Although none of these sequences actually ended up with an exact value of .5, if we'd extended the experiment for an infinite number of coin flips they would have."}
 knitr::include_graphics("figures/probability/frequentistProb-eps-converted-to.png")
@@ -545,7 +553,7 @@ Okay, so that explains part of the story. I've explained a little bit about how 
 ### Other useful distributions {#other-dist}
 The normal distribution is the distribution that statistics makes most use of (for reasons to be discussed shortly), and the binomial distribution is a very useful one for lots of purposes. But the world of statistics is filled with probability distributions (like the the $\chi^2$ distribution or the $F$ distribution), some of which we'll run into in passing. In particular, the $t$ distribution will appear later in this book. I won't give formulas for the $t$ distribution, or talk about it in too much detail, but I will show you a picture:
 
-```{r tdist, fig.cap="A $t$ distribution with 3 degrees of freedom (solid line). It looks similar to a normal distribution, but it's not quite the same. For comparison purposes, I've plotted a standard normal distribution as the dashed line. Notice that the \"tails\" of the $t$ distribution are \"heavier\" (i.e., extend further outwards) than the tails of the normal distribution? That's the important difference between the two. ", echo=FALSE}
+```{r tdist, fig.cap="A $t$ distribution with 3 degrees of freedom (solid line).", echo=FALSE}
 xval <- seq(-5,5,.01)
 	yval <- dt( xval, df=3)
 	plot( 	xval, yval, lwd=3, ylab="Probability Density", xlab="Observed Value",
@@ -553,6 +561,9 @@ xval <- seq(-5,5,.01)
 	)
 	lines( xval, dnorm(xval,0,1), lty=2, col="grey")
 ```
+
+A $t$ distribution looks similar to a normal distribution, but it's not quite the same. For comparison purposes, I've plotted a standard normal distribution as the dashed line. Notice that the \"tails\" of the $t$ distribution are \"heavier\" (i.e., extend further outwards) than the tails of the normal distribution? That's the important difference between the two.
+
 ## z-scores {#zscore}
 We are now in a position to combine some of things we've been talking about in this chapter, and introduce you to a new tool: **z-scores**. 
 
@@ -596,3 +607,5 @@ We started this chapter by looking at "the window of chance" and developing an i
 As you'd expect, this coverage is by no means exhaustive. Probability theory is a large branch of mathematics in its own right, entirely separate from its application to statistics and data analysis. As such, there are thousands of books written on the subject and universities generally offer multiple classes devoted entirely to probability theory. Even the "simpler" task of documenting standard probability distributions is a big topic. Fortunately for you, very little of this is necessary. You're unlikely to need to know dozens of statistical distributions when you go out and do real world data analysis, and you definitely won't need them for this book, but it never hurts to know that there's other possibilities out there.
 
 Picking up on that last point, there's a sense in which this whole chapter is something of a digression. Many undergraduate psychology classes on statistics skim over this content very quickly, and even the more advanced classes will often "forget" to revisit the basic foundations of the field. Most academic psychologists would not know the difference between probability and density, and until recently very few would have been aware of the difference between Bayesian and frequentist probability. However, I think it's important to understand these things before moving onto the applications. For example, there are a lot of rules about what you're "allowed" to say when doing statistical inference, and many of these can seem arbitrary and weird. However, they start to make sense if you understand that there is this Bayesian/frequentist distinction. Similarly, in a later chapter, we’re going to talk about something called the $t$-test, and if you really want to have a grasp of the mechanics of the $t$-test it really helps to have a sense of what a $t$-distribution actually looks like.
+
+As a reminder, there are additional practice materials for this week on [SOWISO](https://cloud.sowiso.nl). The materials on SOWISO have a slightly different take on probability theory and show you how to do many of the calculations we did in R by hand. 

@@ -184,7 +184,7 @@ pointestimates
 estimating-the-population-mean
 estimating-the-population-standard-deviation
 ci
-a-slight-mistake-in-the-formula
+degrees-of-freedom
 interpreting-a-confidence-interval
 thats-it-for-this-week-4
 week-6-hypothesis-testingweek6-hypothesistesting-1

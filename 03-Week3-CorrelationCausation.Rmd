@@ -243,7 +243,7 @@ We have computed the deviations from the mean for the chocolate scores (column `
 
 The formula for the covariance is:
 
-$cov(X,Y) = \frac{\sum_{i}^{n}(x_{i}-\bar{X})(y_{i}-\bar{Y})}{n}$
+$cov(X,Y) = \frac{\sum_{i}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})}{n}$
 
 These are simply the steps we just took, but in the form of a formula. 
 
@@ -259,7 +259,7 @@ Yes, we are here now. Wouldn't it be nice if we could force our measure of co-va
 
 Let's take a look at a formula:
 
-$r = \frac{cov(X,Y)}{\sigma_{X}\sigma_{Y}} = \frac{cov(X,Y)}{SD_{X}SD_{Y}}$
+$r = \frac{cov(X,Y)}{\sigma_{x}\sigma_{y}} = \frac{cov(X,Y)}{SD_{x}SD_{y}}$
 
 We see the symbol $\sigma$ here, that's more Greek for you. $\sigma$ is often used as a symbol for the standard deviation (SD). If we read out the formula in English, we see that $r$ is the covariance of $X$ and $Y$, divided by the product of the standard deviation of $X$ and the standard deviation of $Y$. Dividing the covariance by the product of the standard deviations has the effect of **normalizing** the covariance into the range -1 to 1. 
 
@@ -291,7 +291,6 @@ ggplot(sim_df, aes(x = sims, y = simulated_sums))+
 ```
 
 ## Examples of $r$ with data
-
 During the labs you will be shown how to compute correlations in real datasets using software. To give you a brief preview, let's look at some data from the [world happiness report](http://worldhappiness.report) (2018).
 
 This report measured various attitudes across people from different countries over the time period 2006-2017. For example, one question asked about how much freedom people thought they had to make life choices. Another question asked how confident people were in their national government. Here is a scatterplot showing the relationship between these two measures and how to generate that plot in R. Each dot represents a different country in 2017.

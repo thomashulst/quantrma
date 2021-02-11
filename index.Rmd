@@ -28,7 +28,7 @@ This textbook is accompanied by the lab manual found [here](https://thomashulst.
 ### Attributions {-}
 This textbook was adapted from Crump, M. J. C., Navarro, D., & Suzuki, J. (2019, June 5). Answering Questions with Data (Textbook): Introductory Statistics for Psychology Students. [https://doi.org/10.17605/OSF.IO/JZE52](https://doi.org/10.17605/OSF.IO/JZE52)
 
-Several chapters were adapted from Danielle Navarro's wonderful free textbook, also licensed under the same creative commons license. The citation for that textbook is: Navarro, D. (2018). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). The website is [https://learningstatisticswithr.com](https://learningstatisticswithr.com)
+Several chapters were adapted from Danielle Navarro's wonderful free textbook. The citation for that textbook is: Navarro, D. (2018). Learning statistics with R: A tutorial for psychology students and other beginners (version 0.6). The website is [https://learningstatisticswithr.com](https://learningstatisticswithr.com)
 
 ### CC BY-SA 4.0 license {-}
 All resources are released under a creative commons licence [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Click the link to read more about the license, or read more below:
