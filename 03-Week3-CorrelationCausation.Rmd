@@ -243,7 +243,7 @@ We have computed the deviations from the mean for the chocolate scores (column `
 
 The formula for the covariance is:
 
-$cov(X,Y) = \frac{\sum_{i}^{n}(x_{i}-\bar{x})(y_{i}-\bar{y})}{n}$
+$cov(X,Y) = \frac{\sum_{i=1}^{N}(X_{i}-\bar{X})(Y_{i}-\bar{Y})}{N}$
 
 These are simply the steps we just took, but in the form of a formula. 
 
@@ -259,7 +259,7 @@ Yes, we are here now. Wouldn't it be nice if we could force our measure of co-va
 
 Let's take a look at a formula:
 
-$r = \frac{cov(X,Y)}{\sigma_{x}\sigma_{y}} = \frac{cov(X,Y)}{SD_{x}SD_{y}}$
+$r = \frac{cov(X,Y)}{\sigma_{X}\sigma_{Y}} = \frac{cov(X,Y)}{SD_{X}SD_{Y}}$
 
 We see the symbol $\sigma$ here, that's more Greek for you. $\sigma$ is often used as a symbol for the standard deviation (SD). If we read out the formula in English, we see that $r$ is the covariance of $X$ and $Y$, divided by the product of the standard deviation of $X$ and the standard deviation of $Y$. Dividing the covariance by the product of the standard deviations has the effect of **normalizing** the covariance into the range -1 to 1. 
 

@@ -221,6 +221,5 @@ pairedsamplesttest
 the-data-1
 what-is-the-paired-samples-t-test
 doing-the-test-in-r-2
-one-sided-tests
 thats-it-for-this-week-5
 references

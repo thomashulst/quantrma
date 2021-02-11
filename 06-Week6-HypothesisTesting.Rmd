@@ -19,7 +19,7 @@ Eventually we all succumb to madness. For me, that day will arrive once I'm fina
 
 Let's suppose that this glorious day has come. My first study is a simple one, in which I seek to test whether clairvoyance (the claimed ability to gain information about an object, person, location, or physical event through extrasensory perception) exists. The participants in my study sit down at a table and are shown a card by an experimenter. The card is black on one side and white on the other. The experimenter takes the card away, and places it on a table in an adjacent room. The card is placed black side up or white side up completely at random, with the randomization occurring after the experimenter has left the room with the participant. A second experimenter comes in and asks the participant which side of the card is now facing upwards. The card is in the adjacent room, so the participant should have no way of knowing which side is facing upwards! Or do they...?
 
-This is purely a one-shot experiment. Each person sees only one card, and gives only one answer; and at no stage is the participant actually in contact with someone who knows the right answer. My data set, therefore, is very simple. I have asked the question of $N$ people, and some number $X$ of these people have given the correct response. To make things concrete, let's suppose that I have tested $N = 100$ people, and $X = 62$ of these got the answer right... a surprisingly large number, we'd expect approximately 50 correct answers, but is it large enough for me to feel safe in claiming I've found evidence for extrasensory perception? This is the situation where hypothesis testing comes in useful. However, before we talk about how to *test* hypotheses, we need to be clear about what we mean by hypotheses.
+This is purely a one-shot experiment. Each person sees only one card, and gives only one answer; and at no stage is the participant actually in contact with someone who knows the right answer. My data set, therefore, is very simple. I have asked the question of $n$ people, and some number $X$ of these people have given the correct response. To make things concrete, let's suppose that I have tested $n = 100$ people, and $X = 62$ of these got the answer right... a surprisingly large number, we'd expect approximately 50 correct answers, but is it large enough for me to feel safe in claiming I've found evidence for extrasensory perception? This is the situation where hypothesis testing comes in useful. However, before we talk about how to *test* hypotheses, we need to be clear about what we mean by hypotheses.
 
 ### Research hypotheses versus statistical hypotheses
 The first distinction that you need to keep clear in your mind is between **research hypotheses** and **statistical hypotheses**. In my ESP study, my overall scientific goal is to demonstrate that clairvoyance exists. In this situation, I have a clear research goal: I am hoping to discover evidence for ESP. In other situations I might actually be a lot more neutral than that, so I might say that my research goal is to determine whether or not clairvoyance exists. Regardless of how I want to portray myself, the basic point that I'm trying to convey here is that a research hypothesis involves making a substantive, testable scientific claim... if you are a psychologist, then your research hypotheses are fundamentally *about* psychological constructs. Any of the following would count as **research hypotheses**:
@@ -30,11 +30,7 @@ The first distinction that you need to keep clear in your mind is between **rese
 
 It's worth expanding on the last research hypothesis actually. It's usually easier to think about how to construct experiments to test research hypotheses of the form "does X affect Y?" than it is to address claims like "what is X?" And in practice, what usually happens is that you find ways of testing relational claims that follow from your ontological ones. For instance, if I believe that intelligence *is* speed of information processing in the brain, my experiments will often involve looking for relationships between measures of intelligence and measures of speed. As a consequence, most everyday research questions do tend to be relational in nature, but they're almost always motivated by deeper ontological questions about the state of nature.
 
-Notice that in practice, my research hypotheses could overlap a lot. My ultimate goal in the ESP experiment might be to test an ontological claim like "ESP exists", but I might operationally restrict myself to a narrower hypothesis like "Some people can \`see' objects in a clairvoyant fashion". That said, there are some things that really don't count as proper research hypotheses in any meaningful sense:
-
--   **Love is a battlefield**. This is too vague to be testable. While it's okay for a research hypothesis to have a degree of vagueness to it, it has to be possible to operationalise your theoretical ideas. Maybe I'm just not creative enough to see it, but I can't see how this can be converted into any concrete research design. If that's true, then this isn't a scientific research hypothesis, it's a pop song. That doesn't mean it's not interesting -- a lot of deep questions that humans have fall into this category. Maybe one day science will be able to construct testable theories of love, or to test to see if God exists, and so on; but right now we can't, and I wouldn't bet on ever seeing a satisfying scientific approach to either.
--   **The first rule of tautology club is the first rule of tautology club**. This is not a substantive claim of any kind. It's true by definition. No conceivable state of nature could possibly be inconsistent with this claim. As such, we say that this is an unfalsifiable hypothesis, and as such it is outside the domain of science. Whatever else you do in science, your claims must have the possibility of being wrong.
--   **More people in my experiment will say "yes" than "no"**. This one fails as a research hypothesis because it's a claim about the data set, not about the psychology (unless of course your actual research question is whether people have some kind of "yes" bias!). As we'll see shortly, this hypothesis is starting to sound more like a statistical hypothesis than a research hypothesis.
+Notice that in practice, my research hypotheses could overlap a lot. My ultimate goal in the ESP experiment might be to test an ontological claim like "ESP exists", but I might operationally restrict myself to a narrower hypothesis like "Some people can 'see' objects in a clairvoyant fashion". 
 
 As you can see, research hypotheses can be somewhat messy at times; and ultimately they are *scientific* claims. **Statistical hypotheses** are neither of these two things. Statistical hypotheses must be mathematically precise, and they must correspond to specific claims about the characteristics of the data generating mechanism (i.e., the "population"). Even so, the intent is that statistical hypotheses bear a clear relationship to the substantive research hypotheses that you care about! For instance, in my ESP study my research hypothesis is that some people are able to see through walls or whatever. What I want to do is to "map" this onto a statement about how the data were generated. So let's think about what that statement would be. The quantity that I'm interested in within the experiment is $P(\mbox{correct})$, the true-but-unknown **probability** with which the participants in my experiment answer the question correctly. Let's use the Greek letter $\theta$ (theta) to refer to this probability. Here are four different statistical hypotheses:
 
@@ -57,7 +53,7 @@ knitr::kable(data.frame(stringsAsFactors=FALSE,
 The key thing to recognise is this: *a statistical hypothesis test is a test of the statistical hypothesis, not the research hypothesis*. If your study is badly designed, then the link between your research hypothesis and your statistical hypothesis is broken. To give a silly example, suppose that my ESP study was conducted in a situation where the participant can actually see the card reflected in a window; if that happens, I would be able to find very strong evidence that $\theta \neq 0.5$, but this would tell us nothing about whether "ESP exists".
 
 ### Null hypotheses and alternative hypotheses
-So far, so good. I have a research hypothesis that corresponds to what I want to **believe about the world**, and I can map it onto a statistical hypothesis that corresponds to what I want to **believe about how the data were generated**. It's at this point that things get somewhat counterintuitive for a lot of people. Because what I'm about to do is invent a new statistical hypothesis (the "null" hypothesis, $H_0$) that corresponds to the exact opposite of what I want to believe, and then focus exclusively on that, almost to the neglect of the thing I'm actually interested in (the "alternative" hypothesis: $H_1$). In our ESP example, the null hypothesis is that $\theta = 0.5$, since that's what we'd expect if ESP *didn't* exist. My hope, of course, is that ESP is totally real, and so the *alternative* to this null hypothesis is $\theta \neq 0.5$. In essence, what we're doing here is dividing up the possible values of $\theta$ into two groups: those values that I really hope aren't true (the null), and those values that I'd be happy with if they turn out to be right (the alternative). Having done so, the important thing to recognise is that the goal of a hypothesis test is *not* to show that the alternative hypothesis is (probably) true; the goal is to show that the null hypothesis is (probably) false. Most people find this pretty weird.
+So far, so good. I have a research hypothesis that corresponds to what I want to **believe about the world**, and I can map it onto a statistical hypothesis that corresponds to what I want to **believe about how the data were generated**. It's at this point that things get somewhat counterintuitive for a lot of people. Because what I'm about to do is invent a new statistical hypothesis (the "null" hypothesis, $H_0$) that corresponds to the exact opposite of what I want to believe, and then focus exclusively on that, almost to the neglect of the thing I'm actually interested in (the "alternative" hypothesis: $H_1$). In our ESP example, the null hypothesis is that $\theta = 0.5$, since that's what we'd expect if ESP *didn't* exist. My hope, of course, is that ESP is totally real, and so the *alternative* to this null hypothesis is $\theta \neq 0.5$. In essence, what we're doing here is dividing up the possible values of $\theta$ into two groups: those values that I really hope aren't true (the null), and those values that I'd be happy with if they turn out to be right (the alternative). Having done so, the important thing to recognise is that the goal of a hypothesis test is *not* to show that the alternative hypothesis is true; the goal is to show that the null hypothesis is false. Most people find this pretty weird.
 
 The best way to think about it, in my experience, is to imagine that a hypothesis test is a criminal trial: *the trial of the null hypothesis*. The null hypothesis is the defendant, the researcher is the prosecutor, and the statistical test itself is the judge. Just like a criminal trial, there is a presumption of innocence: the null hypothesis is *deemed* to be true unless you, the researcher, can prove beyond a reasonable doubt that it is false. You are free to design your experiment however you like (within reason, obviously!), and your goal when doing so is to maximise the chance that the data will yield a conviction... for the crime of being false. The catch is that the statistical test sets the rules of the trial, and those rules are designed to protect the null hypothesis -- specifically to ensure that if the null hypothesis is actually true, the chances of a false conviction are guaranteed to be low. This is pretty important: after all, the null hypothesis doesn't get a lawyer. And given that the researcher is trying desperately to prove it to be false, *someone* has to protect it.
 
@@ -81,7 +77,7 @@ NANA = c("$H_0$ is true", "$H_0$ is false"),
 
 As a consequence there are actually *two* different types of error here. If we reject a null hypothesis that is actually true, then we have made a **type I error**. On the other hand, if we retain the null hypothesis when it is in fact false, then we have made a **type II error**.
 
-Remember how I said that statistical testing was kind of like a criminal trial? Well, I meant it. A criminal trial requires that you establish "beyond a reasonable doubt" that the defendant did it. All of the evidentiary rules are (in theory, at least) designed to ensure that there's (almost) no chance of wrongfully convicting an innocent defendant. The trial is designed to protect the rights of a defendant: as the English jurist William Blackstone famously said, it is "better that ten guilty persons escape than that one innocent suffer." In other words, a criminal trial doesn't treat the two types of error in the same way\~... punishing the innocent is deemed to be much worse than letting the guilty go free. A statistical test is pretty much the same: the single most important design principle of the test is to *control* the probability of a type I error, to keep it below some fixed probability. This probability, which is denoted $\alpha$, is called the **significance level** of the test. And I'll say it again, because it is so central to the whole set-up... a hypothesis test is said to have significance level $\alpha$ if the type I error rate is no larger than $\alpha$.
+Remember how I said that statistical testing was kind of like a criminal trial? Well, I meant it. A criminal trial requires that you establish "beyond a reasonable doubt" that the defendant did it. All of the evidentiary rules are (in theory, at least) designed to ensure that there's (almost) no chance of wrongfully convicting an innocent defendant. The trial is designed to protect the rights of a defendant: as the English jurist William Blackstone famously said, it is "better that ten guilty persons escape than that one innocent suffer." In other words, a criminal trial doesn't treat the two types of error in the same way... punishing the innocent is deemed to be much worse than letting the guilty go free. A statistical test is pretty much the same: the single most important design principle of the test is to *control* the probability of a type I error, to keep it below some fixed probability. This probability, which is denoted $\alpha$, is called the **significance level** of the test. And I'll say it again, because it is so central to the whole set-up... a hypothesis test is said to have significance level $\alpha$ if the type I error rate is no larger than $\alpha$.
 
 So, what about the type II error rate? Well, we'd also like to keep those under control too, and we denote this probability by $\beta$. However, it's much more common to refer to the **power** of the test, which is the probability with which we reject a null hypothesis when it really is false, which is $1-\beta$. To help keep this straight, here's the same table again, but with the relevant numbers added:
 
@@ -238,12 +234,12 @@ setUpPlot()
 ```
 
 ## The $p$ value of a test {#pvalue}
-In one sense, our hypothesis test is complete; we've constructed a test statistic, figured out its sampling distribution if the null hypothesis is true, and then constructed the critical region for the test. Nevertheless, I've actually omitted the most important number of all: **the** $p$ value. It is to this topic that we now turn.
+In one sense, our hypothesis test is complete; we've constructed a test statistic, figured out its sampling distribution if the null hypothesis is true, and then constructed the critical region for the test. Nevertheless, I've actually omitted the most important number of all: **the $p$ value**. It is to this topic that we now turn.
 
 There are actually different ways of interpreting a $p$ value, that reflect very different ways of thinking about hypothesis tests. We will stick to interpreting a $p$ value as is done in most introductory textbooks, but please be aware this is not the only way of thinking about $p$ values. In fact, how the $p$ value is used in practice is a mix of several school of thoughts, which makes the whole thing kind of a mess, but it's a mess we have to deal with.
 
 ### The probability of extreme data
-This definition $p$-value comes from Sir Ronald Fisher (yes, [him again](#pears-r)) and is the one that you tend to see in most introductory statistics textbooks. Notice how, when I constructed the critical region, it corresponded to the *tails* (i.e., extreme values) of the sampling distribution? That's not a coincidence: almost all "good" tests have this characteristic (good in the sense of minimising our type II error rate, $\beta$). The reason for that is that a good critical region almost always corresponds to those values of the test statistic that are least likely to be observed if the null hypothesis is true. If this rule is true, then we can define the $p$-value as the probability that we would have observed a test statistic that is at least as extreme as the one we actually did get. In other words, if the data are extremely implausible according to the null hypothesis, then the null hypothesis is probably wrong.
+This definition of the $p$-value comes from Sir Ronald Fisher (yes, [him again](#pears-r)) and is the one that you tend to see in most introductory statistics textbooks. Notice how, when I constructed the critical region, it corresponded to the *tails* (i.e., extreme values) of the sampling distribution? That's not a coincidence: almost all "good" tests have this characteristic (good in the sense of minimising our type II error rate, $\beta$). The reason for that is that a good critical region almost always corresponds to those values of the test statistic that are least likely to be observed if the null hypothesis is true. If this rule is true, then we can define the $p$-value as the probability that we would have observed a test statistic that is at least as extreme as the one we actually did get. In other words, if the data are extremely implausible according to the null hypothesis, then the null hypothesis is probably wrong.
 
 ### A common mistake
 Unfortunately, there is an explanation of $p$-values that people sometimes give, especially when they're first learning statistics, and it is **absolutely and completely wrong**. This mistaken approach is to refer to the $p$ value as "the probability that the null hypothesis is true". It's an intuitively appealing way to think, but it's wrong in two key respects: (1) null hypothesis testing is a frequentist tool, and the frequentist approach to probability does *not* allow you to assign probabilities to the null hypothesis... according to this view of probability, the null hypothesis is either true or it is not; it cannot have a "5% chance" of being true. (2) even within the Bayesian approach, which does let you assign probabilities to hypotheses, the $p$ value would not correspond to the probability that the null is true; this interpretation is entirely inconsistent with the mathematics of how the $p$ value is calculated. Put bluntly, despite the intuitive appeal of thinking this way, there is *no* justification for interpreting a $p$ value this way. Never do it.
@@ -257,7 +253,7 @@ At this point some of you might be wondering if the running example we've been u
 binom.test( x=62, n=100, p=.5 )
 ```
 
-Right now, this output looks pretty unfamiliar to you, but you can see that it's telling you more or less the right things. Specifically, the $p$-value of 0.02 is less than the usual choice of $\alpha = .05$, so you can reject the null. We'll talk a lot more about how to read this sort of output as we go along; and after a while you'll hopefully find it quite easy to read and understand. For now, however, I just wanted to make the point that R contains a whole lot of functions corresponding to different kinds of hypothesis test.
+Right now, this output looks pretty unfamiliar to you, but you can see that it's telling you more or less the right things. Specifically, the $p$-value of 0.02 is less than the usual choice of $\alpha = .05$, so you can reject the null. 
 
 ## Using hypothesis tests to compare means
 The running example we've used until now was exactly that: an example to explain the foundations of hypothesis testing, but limited in scope. The outcome variable was binomial: we counted the number of times participants successfully "sensed" the color of the card. However, when conducting research, you're more likely to find yourself in a situation where your outcome variable is continuous, and what you're interested in is whether the average value of the outcome variable is higher in one group or another.
@@ -270,11 +266,11 @@ The standard answer to the problem of comparing means is to use something called
 In this section I'll describe one of the most useless tests in all of statistics: the $z$-test. Seriously -- this test is almost never used in real life. Its only real purpose is that, when teaching statistics, it's a very convenient stepping stone along the way towards the $t$-test, which is probably the most (over)used tool in all statistics.
 
 ### The inference problem that the test addresses
-To introduce the idea behind the $z$-test, let's use a simple example. A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let's suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of his many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering: do the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower? He emails me the `zeppo.Rdata` file, which I use to pull up the `grades` of those students:
+To introduce the idea behind the $z$-test, let's use a simple example. A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let's suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of his many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering: do the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower? He emails me their grades and I load them into R:
 
 ```{r,echo=T}
-load("data/zeppo.Rdata") 
-print(grades)
+grades <- c(50, 60, 60, 64, 66, 66, 67, 69, 70, 74, 
+            76, 76, 77, 79, 79, 79, 81, 82, 82, 89)
 ```
 
 and calculate the mean:
@@ -283,7 +279,7 @@ and calculate the mean:
 mean(grades)
 ```
 
-Hm. It *might* be that the psychology students are scoring a bit higher than normal: that sample mean of $\bar{X} = 72.3$ is a fair bit higher than the hypothesised population mean of $\mu = 67.5$, but on the other hand, a sample size of $N = 20$ isn't all that big. Maybe it's pure chance.
+Hm. It *might* be that the psychology students are scoring a bit higher than normal: that sample mean of $\bar{x} = 72.3$ is a fair bit higher than the hypothesised population mean of $\mu = 67.5$, but on the other hand, a sample size of $N = 20$ isn't all that big. Maybe it's pure chance.
 
 To answer the question, it helps to be able to write down what it is that I think I know. Firstly, I know that the sample mean is $\bar{X} = 72.3$. If I'm willing to assume that the psychology students have the same standard deviation as the rest of the class then I can say that the population standard deviation is $\sigma = 9.5$. I'll also assume that the psychology student grades are normally distributed.
 
@@ -317,7 +313,7 @@ plotHist <- function(x,...) {
 ```
 
 ### Constructing the hypothesis test
-The first step in constructing a hypothesis test is to be clear about what the null and alternative hypotheses are. This isn't too hard to do. Our null hypothesis, $H_0$, is that the true population mean $\mu$ for psychology student grades is 67.5%; and our alternative hypothesis is that the population mean *isn't* 67.5%. If we write this in mathematical notation, these hypotheses become: $$
+The first step in constructing a hypothesis test is to be clear about what the null and alternative hypotheses are. This isn't too hard to do. Our null hypothesis, $H_0$, is that the true population mean $\mu$ for psychology student grades is 67.5; and our alternative hypothesis is that the population mean *isn't* 67.5. If we write this in mathematical notation, these hypotheses become: $$
 \begin{array}{ll}
 H_0: & \mu = 67.5 \\
 H_1: & \mu \neq 67.5
@@ -327,7 +323,7 @@ $$ though to be honest this notation doesn't add much to our understanding of th
 1.  The psychology grades are normally distributed.
 2.  The true standard deviation of these scores $\sigma$ is known to be 9.5.
 
-For the moment, we'll act as if these are absolutely trustworthy facts. In real life, this kind of absolutely trustworthy background knowledge doesn't exist, and so if we want to rely on these facts we'll just have make the *assumption* that these things are true. However, since these assumptions may or may not be warranted, we might need to check them. For now though, we'll keep things simple.
+For the moment, we'll act as if these are absolutely trustworthy facts. In real life, this kind of absolutely trustworthy background knowledge doesn't exist, and so if we want to rely on these facts we'll just have make the *assumption* that these things are true. 
 
 ```{r ztesthyp,  fig.cap="Graphical illustration of the null and alternative hypotheses assumed by the one sample $z$-test (the two sided version, that is). The null and alternative hypotheses both assume that the population distribution is normal, and additionally assumes that the population standard deviation is known (fixed at some value $\\sigma_0$). The null hypothesis (left) is that the population mean $\\mu$ is equal to some specified value $\\mu_0$. The alternative hypothesis is that the population mean differs from this value, $\\mu \\neq \\mu_0$.", echo=FALSE}
 
@@ -604,14 +600,14 @@ Overall, these two assumptions aren't terribly unreasonable, and as a consequenc
 Although the one sample $t$-test has its uses, it's not the most typical example of a $t$-test. A much more common situation arises when you've got two different groups of observations. In psychology, this tends to correspond to two different groups of participants, where each group corresponds to a different condition in your study. For each person in the study, you measure some outcome variable of interest, and the research question that you're asking is whether or not the two groups have the same population mean. This is the situation that the independent samples $t$-test is designed for.
 
 ### The data
-Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades, in the `harpo.Rdata` file. As usual, I'll load the file and have a look at what variables it contains:
+Suppose we have 33 students taking Dr Harpo's statistics lectures, and Dr Harpo doesn't grade to a curve. Actually, Dr Harpo's grading is a bit of a mystery, so we don't really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are $N_1 = 15$ students in Anastasia's tutorials, and $N_2 = 18$ in Bernadette's tutorials. The research question I'm interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn't make much of a difference. Dr Harpo emails me the course grades as a data.frame:
 
 ```{r,echo=F,warning=F,error=F}
 library(dplyr)
+load ("data/harpo.Rdata" )
 ```
 
-```{r,echo=T}
-load ("data/harpo.Rdata" )
+```{r,echo=F}
 glimpse(harpo)
 ```
 
@@ -753,7 +749,7 @@ $$
 ... which is all pretty straightforward and obvious, right? Well, perhaps not. It doesn't really matter for our purposes. Just as we saw with our one-sample test, the sampling distribution of this $t$-statistic is a $t$-distribution with the degrees of freedom above as long as the null hypothesis is true, and all of the assumptions of the test are met. 
 
 ### Doing the test in R
-Not surprisingly, you can run an independent samples $t$-test using the `t.test()` function:
+Not surprisingly, you can run an independent samples $t$-test using the `t.test()` function. The exact usage of `t.test()` for independent samples will be explained during the lab, but it looks as follows:
 
 ```{r,echo=T}
 t.test( formula = grade ~ tutor, data = harpo )
@@ -785,12 +781,15 @@ As always, our hypothesis test relies on some assumptions. So what are they? For
 An independent samples $t$-test is intended to be used in a situation where you have two samples that are, well, independent of one another. This situation arises naturally when participants are assigned randomly to one of two experimental conditions, but it provides a very poor approximation to other sorts of research designs. In particular, a repeated measures design -- in which each participant is measured (with respect to the same outcome variable) in both experimental conditions -- is not suited for analysis using independent samples $t$-tests. For example, we might be interested in whether listening to music reduces people's working memory capacity. To that end, we could measure each person's working memory capacity in two conditions: with music, and without music. In an experimental design such as this one each participant appears in *both* groups. This requires us to approach the problem in a different way; by using the ***paired samples*** $t$-test.
 
 ### The data
-The data set that we'll use this time comes from Dr Chico's class.[^week6-hypothesistesting-14] In her class, students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging; but she argues that by setting hard assessments, students are encouraged to work harder. Her theory is that the first test is a bit of a "wake up call" for students: when they realise how hard her class really is, they'll work harder for the second test and get a better mark. Is she right? To test this, let's have a look at the `chico.Rdata` file:
+The data set that we'll use this time comes from Dr Chico's class.[^week6-hypothesistesting-14] In her class, students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging; but she argues that by setting hard assessments, students are encouraged to work harder. Her theory is that the first test is a bit of a "wake up call" for students: when they realise how hard her class really is, they'll work harder for the second test and get a better mark. Is she right? To test this, let's have a look at the data.frame she sent me:
 
 [^week6-hypothesistesting-14]: At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who Dr Groucho is.
 
-```{r,echo=T}
+```{r,echo=F}
 load("data/chico.Rdata")
+```
+
+```{r, echo=T}
 glimpse(chico)     
 ```
 
@@ -803,8 +802,7 @@ head(chico)
 At a glance, it does seem like the class is a hard one (most grades are between 50% and 60%), but it does look like there's an improvement from the first test to the second one. If we take a quick look at the descriptive statistics:
 
 ```{r,echo=T}
-chico_df <- data.frame(chico)
-chico_df %>% summarise(n = length(grade_test1),
+chico %>% summarise(n = length(grade_test1),
                        mean_grade_test1 = mean(grade_test1),
                        sd_grade_test1 = sd(grade_test1),
                        mean_grade_test2 = mean(grade_test2),
@@ -847,7 +845,7 @@ Now that we've created and stored this `improvement` variable, we can draw a his
 knitr::include_graphics("figures/pairedtc.png")
 
 ```
-When we look at histogram, it's very clear that there *is* a real improvement here. The vast majority of the students scored higher on the test 2 than on test 1, reflected in the fact that almost the entire histogram is above zero. So you can see, qualitatively, what's going on: there is a real "within student" improvement (everyone improves by about 1%), but it is very small when set against the quite large "between student" differences (student grades vary by about 20% or so).
+When we look at histogram, it's very clear that there *is* a real improvement here. The vast majority of the students scored higher on test 2 than on test 1, reflected in the fact that almost the entire histogram is above zero. So you can see, qualitatively, what's going on: there is a real "within student" improvement (everyone improves by about 1%), but it is very small when set against the quite large "between student" differences (student grades vary by about 20% or so).
 
 ### What is the paired samples $t$-test?
 In light of the previous exploration, let's think about how to construct an appropriate $t$ test. One possibility would be to try to run an independent samples $t$-test using `grade_test1` and `grade_test2` as the variables of interest. However, this is clearly the wrong thing to do: the independent samples $t$-test assumes that there is no particular relationship between the two samples. Yet clearly that's not true in this case, because of the repeated measures structure to the data. To use the language that I introduced in the last section, if we were to try to do an independent samples $t$-test, we would be conflating the ***within subject*** differences (which is what we're interested in testing) with the ***between subject*** variability (which we are not).
@@ -876,27 +874,20 @@ where $\hat\sigma_D$ is the standard deviation of the difference scores. Since t
 ### Doing the test in R
 How do you do a paired samples $t$-test in R. One possibility is to follow the process I outlined above: create a "difference" variable and then run a one sample $t$-test on that. Since we've already created a variable called `chico$improvement`, let's do that:
 
-```{r}
+```{r,echo=T}
 t.test(chico$improvement, mu=0)
 ```
 
 Alternatively you could do the following, giving you the exact same output:
 
-```{r}
+```{r,echo=T}
 t.test( x = chico$grade_test2,   # variable 1 is the "test2" scores
          y = chico$grade_test1,   # variable 2 is the "test1" scores
          paired = TRUE           # paired test
  )
 ```
  
-## One sided tests
-When introducing the theory of null hypothesis tests, I mentioned that there are some situations when it's appropriate to specify a *one-sided* test (see Section \@ref(onesidedtests)). So far, all of the $t$-tests have been two-sided tests. For instance, when we specified a one sample $t$-test for the grades in Dr Zeppo's class, the null hypothesis was that the true mean was 67.5%. The alternative hypothesis was that the true mean was greater than *or* less than 67.5%. Suppose we were only interested in finding out if the true mean is greater than 67.5%, and have no interest whatsoever in testing to find out if the true mean is lower than 67.5%. If so, our null hypothesis would be that the true mean is 67.5% or less, and the alternative hypothesis would be that the true mean is greater than 67.5%. The `t.test()` function lets you do this, by specifying the `alternative` argument. If you set `alternative="greater"`, it means that you're testing to see if the true mean is larger than `mu`. If you set `alternative="less"`, then you're testing to see if the true mean is smaller than `mu`. Here's how it would work for Dr Zeppo's class:
+## That's it for this week...
+... and for new materials during this course. Null hypothesis significance testing (NHST) is one of the most ubiquitous elements to statistical theory. The vast majority of scientific papers report the results of some hypothesis test or another. As a consequence it is almost impossible to get by in science without having at least a cursory understanding of NHST and what a $p$-value means.
 
-```{r}
-t.test(x=grades, mu=67.5, alternative="greater" )
-```
-
-## That's it for this week!
-That was a lot, but this is the final week with new content. Null hypothesis significance testing (NHST) is one of the most ubiquitous elements to statistical theory. The vast majority of scientific papers report the results of some hypothesis test or another. As a consequence it is almost impossible to get by in science without having at least a cursory understanding of NHST and what a $p$-value means.
-
-During the labs we will walk through the formal steps of conducting NHSTs ($t$-tests in particular), use R to run tests on our own data and discuss some of things to be mindful of when conducting statistical tests.
+During the labs we will walk through the formal steps of conducting NHSTs ($t$-tests in particular), use R to run tests on our own data and discuss some of things to be mindful of when conducting statistical tests. As a reminder, there are additional practice materials for this week on [SOWISO](https://cloud.sowiso.nl). The materials on SOWISO have a slightly different take on NHST and show you how to do many of the calculations we do in R by hand. 
