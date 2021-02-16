@@ -165,7 +165,7 @@ all_df<-rbind(all_df,sim_df)
 
 ggplot(all_df,aes(x=simulated_correlations))+
   geom_histogram(bins=40, color="white")+
-  facet_wrap(~sample_size,scales = "free_y")
+  facet_wrap(~sample_size,scales = "free_y") +
   theme_classic()
 
 ```

@@ -1,14 +1,11 @@
 base
-dplyr
-ggplot2
-data.table
-ggpubr
 tidyverse
+ggplot2
 tibble
 tidyr
 readr
 purrr
+dplyr
 stringr
 forcats
-lsr
-psych
+data.table
