@@ -586,7 +586,9 @@ t.test(grades, mu = 67.5)
 
 So that seems straightforward enough. Now what do we *do* with this output? Well, since we're pretending that we actually care about my toy example, we're overjoyed to discover that the result is statistically significant (i.e. $p$ value below .05). We could report the result by saying something like this:
 
-> With a mean grade of 72.3, the psychology students scored slightly higher than the average grade of 67.5 ($t(19) = 2.25$, $p<.05$).
+> With a mean grade of 72.3, the psychology students scored slightly higher than the average grade of 67.5 ($t(19) = 2.25$, $p = 0.036$).
+
+You can find more about reporting the results of a statistical test in the [Basestone course](https://canvas.eur.nl/courses/32624/pages/introduction-module-numbers-and-statistical-results?module_item_id=563823).
 
 ### Assumptions of the one sample $t$-test {#ttestoneassumptions}
 Okay, so what assumptions does the one-sample $t$-test make? Well, since the $t$-test is basically a $z$-test with the assumption of known standard deviation removed, you shouldn't be surprised to see that it makes the same assumptions as the $z$-test, minus the one about the known standard deviation. That is
@@ -757,12 +759,13 @@ t.test( formula = grade ~ tutor, data = harpo )
 
 The output has a very familiar form. First, it tells you what test was run, and it tells you the names of the variables that you used. The second part of the output reports the sample means and standard deviations for both groups (i.e., both tutorial groups). The third section of the output states the null hypothesis and the alternative hypothesis in a fairly explicit form. It then reports the test results: just like last time, the test results consist of a $t$-statistic, the degrees of freedom, the $p$-value and a confidence interval. 
 
-It's pretty important to be clear on what this confidence interval actually refers to: it is a confidence interval for the *difference* between the group means. In our example, Anastasia's students had an average grade of 74.5, and Bernadette's students had an average grade of 69.1, so the difference between the two sample means is 5.4. But of course the difference between population means might be bigger or smaller than this. The confidence interval tells you that there's a 95% chance that the true difference between means lies between -0.1 and 11.0.
+It's pretty important to be clear on what this confidence interval actually refers to: it is a confidence interval for the *difference* between the group means. In our example, Anastasia's students had an average grade of 74.5, and Bernadette's students had an average grade of 69.1, so the difference between the two sample means is 5.4. But of course the difference between population means might be bigger or smaller than this. The confidence interval tells you that there's a 95% chance that the true difference between means lies between -0.09 and 11.05.
 
 In any case, the difference between the two groups is not significant (just barely), so we might write up the result using text like this:
 
-> The mean grade in Anastasia's class was 74.5%, whereas the mean in Bernadette's class was 69.1%. A Welch's independent samples $t$-test showed that this difference was not significant ($t(23.03) = 2.03$, $p<.05$, $CI_{95} = [-0.1, 11.0]$).
+> The mean grade in Anastasia's class was 74.5%, whereas the mean in Bernadette's class was 69.1%. A Welch's independent samples $t$-test showed that this difference was not significant, $t(23.03) = 2.03$, $p = 0.054$, $\text{CI}_{95} = [-0.09, 11.05]$.
 
+You can find more about reporting the results of a statistical test in the [Basestone course](https://canvas.eur.nl/courses/32624/pages/introduction-module-numbers-and-statistical-results?module_item_id=563823).
 
 ### Positive and negative $t$ values
 Before moving on to talk about the assumptions of the $t$-test, there's one additional point I want to make about the use of $t$-tests in practice. The first one relates to the sign of the $t$-statistic (that is, whether it is a positive number or a negative one). One very common worry that students have when they start running their first $t$-test is that they often end up with negative values for the $t$-statistic, and don't know how to interpret it. In fact, it's not at all uncommon for two people working independently to end up with R outputs that are almost identical, except that one person has a negative $t$ values and the other one has a positive $t$ value. Assuming that you're running a two-sided test, then the $p$-values will be identical. On closer inspection, the students will notice that the confidence intervals also have the opposite signs. This is perfectly okay: whenever this happens, what you'll find is that the two versions of the R output arise from slightly different ways of running the $t$-test. What's happening here is very simple. The $t$-statistic that R is calculating here is always of the form $$

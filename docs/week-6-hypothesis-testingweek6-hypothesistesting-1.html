@@ -782,8 +782,9 @@ Figure 6.8: The <span class="math inline">\(t\)</span> distribution with 2 degre
 ##      72.3</code></pre>
 <p>So that seems straightforward enough. Now what do we <em>do</em> with this output? Well, since we’re pretending that we actually care about my toy example, we’re overjoyed to discover that the result is statistically significant (i.e. <span class="math inline">\(p\)</span> value below .05). We could report the result by saying something like this:</p>
 <blockquote>
-<p>With a mean grade of 72.3, the psychology students scored slightly higher than the average grade of 67.5 (<span class="math inline">\(t(19) = 2.25\)</span>, <span class="math inline">\(p&lt;.05\)</span>).</p>
+<p>With a mean grade of 72.3, the psychology students scored slightly higher than the average grade of 67.5 (<span class="math inline">\(t(19) = 2.25\)</span>, <span class="math inline">\(p = 0.036\)</span>).</p>
 </blockquote>
+<p>You can find more about reporting the results of a statistical test in the <a href="https://canvas.eur.nl/courses/32624/pages/introduction-module-numbers-and-statistical-results?module_item_id=563823">Basestone course</a>.</p>
 </div>
 <div id="ttestoneassumptions" class="section level3" number="6.9.3">
 <h3><span class="header-section-number">6.9.3</span> Assumptions of the one sample <span class="math inline">\(t\)</span>-test</h3>
@@ -904,7 +905,7 @@ Why it’s calculated this way is beyond the scope of this book. In the Welch te
 <p>It’s pretty important to be clear on what this confidence interval actually refers to: it is a confidence interval for the <em>difference</em> between the group means. In our example, Anastasia’s students had an average grade of 74.5, and Bernadette’s students had an average grade of 69.1, so the difference between the two sample means is 5.4. But of course the difference between population means might be bigger or smaller than this. The confidence interval tells you that there’s a 95% chance that the true difference between means lies between -0.1 and 11.0.</p>
 <p>In any case, the difference between the two groups is not significant (just barely), so we might write up the result using text like this:</p>
 <blockquote>
-<p>The mean grade in Anastasia’s class was 74.5%, whereas the mean in Bernadette’s class was 69.1%. A Welch’s independent samples <span class="math inline">\(t\)</span>-test showed that this difference was not significant (<span class="math inline">\(t(23.03) = 2.03\)</span>, <span class="math inline">\(p&lt;.05\)</span>, <span class="math inline">\(CI_{95} = [-0.1, 11.0]\)</span>).</p>
+<p>The mean grade in Anastasia’s class was 74.5%, whereas the mean in Bernadette’s class was 69.1%. A Welch’s independent samples <span class="math inline">\(t\)</span>-test showed that this difference was not significant, <span class="math inline">\(t(23.03) = 2.03\)</span>, <span class="math inline">\(p = 0.054\)</span>, <span class="math inline">\(\text{CI}_{95} = [-0.09, 11.05]\)</span>.</p>
 </blockquote>
 </div>
 <div id="positive-and-negative-t-values" class="section level3" number="6.10.4">
