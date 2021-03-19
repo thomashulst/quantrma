@@ -1,3 +1,5 @@
+These course materials were used during academic year 2020/2021. The materials will stay online for the foreseeable future, but will no longer be updated. A new course website will be created for academic year 2021/2022. 
+
 ## Important notes
 This is a free textbook for the course "Quantitative Research Methods and Analysis" at EUC. This textbook was adapted from "Answering questions with data" by Mattew J.C. Crump and "Learning statistics with R" by Danielle Navarro and extended with our own materials. 
 

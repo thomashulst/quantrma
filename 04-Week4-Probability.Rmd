@@ -1,4 +1,4 @@
-# Week 4: Chance and Probability Theory^[Mix of Matthew Crump & Danielle Navarro] {#chance}
+# Week 4: Chance and Probability Theory^[Mix of Matthew Crump & Danielle Navarro] {#chchance}
 
 >I have studied many languages-French, Spanish and a little Italian, but no one told me that statistics was a foreign language.
 >---Charmaine J. Forde

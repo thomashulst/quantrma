@@ -1,8 +1,7 @@
-# Week 2: Describing Data [^Adapted2]
+# Week 2: Describing Data ^[Chapter by Matthew Crump] {#chdescribingdata}
+
 >Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
 >---John W. Tukey
-
-[^Adapted2]: Chapter by Matthew Crump
 
 This chapter is about **descriptive statistics**. These are tools for describing data. Some things to keep in mind as we go along are:
 

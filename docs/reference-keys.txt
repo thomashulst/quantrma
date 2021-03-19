@@ -63,7 +63,7 @@ fig:ttesthyp2
 fig:pairedta
 fig:pairedtb
 fig:pairedtc
-week-1-introductionadapted1
+chintroduction
 the-curse-of-belief-bias
 the-cautionary-tale-of-simpsons-paradox
 statistics-in-psychology-psych
@@ -76,7 +76,7 @@ reliab-valid-measurement
 forms-of-measurement-error
 variables
 thats-it-for-this-week
-week-2-describing-data-adapted2
+chdescribingdata
 scales-of-measurement
 nominal-scale
 ordinal-scale
@@ -149,7 +149,7 @@ experimenter-bias
 demand-effects-and-reactivity
 placebo-effects
 thats-it-for-this-week-2
-chance
+chchance
 correlation-and-random-chance
 monte-carlo-simulation-of-random-correlations
 increasing-sample-size-decreases-the-opportunity-for-spurious-correlations
@@ -169,7 +169,7 @@ probability-density
 other-dist
 zscore
 thats-it-for-this-week-3
-week-5-estimation-and-sampling-theory
+chestimationsampling
 def-pop
 simple-random-samples
 most-samples-are-not-simple-random-samples
@@ -187,7 +187,7 @@ ci
 degrees-of-freedom
 interpreting-a-confidence-interval
 thats-it-for-this-week-4
-week-6-hypothesis-testingweek6-hypothesistesting-1
+chhypothesistesting
 hypotheses
 research-hypotheses-versus-statistical-hypotheses
 null-hypotheses-and-alternative-hypotheses

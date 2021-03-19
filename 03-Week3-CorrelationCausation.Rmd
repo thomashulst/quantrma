@@ -1,9 +1,7 @@
-# Week 3: Correlation and Causation [^Adapted3] {#chcorrelationandcaus}
+# Week 3: Correlation and Causation ^[Original chapter by Matthew Crump. Extended with our own materials about causation. Materials about validity from Chapter 2 of Learning Statistics with R by Danielle Navarro.] {#chcorrelationandcaus}
 
 >Correlation does not equal causation
 >---Every Statistics and Research Methods Instructor Ever
-
-[^Adapted3]: Original chapter by Matthew Crump. Extended with our own materials about causation. Materials about validity from Chapter 2 of Learning Statistics with R by Danielle Navarro. 
 
 Last week we explored [fake human happiness data](#toomanynumbers). We imagined that we asked a bunch of people to tell us how happy they were, then we looked at the numbers they gave us. There were too many numbers to look at directly, but we could summarize happiness using graphs and their central tendencies (sameness) and variability (differentness). 
 

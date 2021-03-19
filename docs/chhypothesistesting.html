@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 6 Week 6: Hypothesis Testing23 | Quantitative Research Methods &amp; Analysis</title>
+  <meta name="description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com) and extended with our own materials." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 6 Week 6: Hypothesis Testing23 | Quantitative Research Methods &amp; Analysis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com) and extended with our own materials." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 6 Week 6: Hypothesis Testing23 | Quantitative Research Methods &amp; Analysis" />
+  
+  <meta name="twitter:description" content="An introductory textbook for quantitative research methods and analysis at EUC. This text was adapted from “Answering questions with data” by Matthew J.C. Crump (https://crumplab.github.io/statistics/) and “Learning statistics with R” by Danielle Navarro (https://learningstatisticswithr.com) and extended with our own materials." />
+  
+
+<meta name="author" content="Original Author: Matthew J. C. Crump" />
+<meta name="author" content="Adapted materials for chapter 1 and chapters 4-6 from Danielle Navarro" />
+<meta name="author" content="Edited for EUC by Thomas Hulst and Thanos Kostopoulos" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="chestimationsampling.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">QuantRMA</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-notes"><i class="fa fa-check"></i>Important notes</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#attributions"><i class="fa fa-check"></i>Attributions</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#cc-by-sa-4.0-license"><i class="fa fa-check"></i>CC BY-SA 4.0 license</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="chintroduction.html"><a href="chintroduction.html"><i class="fa fa-check"></i><b>1</b> Week 1: Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="chintroduction.html"><a href="chintroduction.html#the-curse-of-belief-bias"><i class="fa fa-check"></i><b>1.1</b> The curse of belief bias</a></li>
+<li class="chapter" data-level="1.2" data-path="chintroduction.html"><a href="chintroduction.html#the-cautionary-tale-of-simpsons-paradox"><i class="fa fa-check"></i><b>1.2</b> The cautionary tale of Simpson’s paradox</a></li>
+<li class="chapter" data-level="1.3" data-path="chintroduction.html"><a href="chintroduction.html#statistics-in-psychology-psych"><i class="fa fa-check"></i><b>1.3</b> Statistics in psychology</a></li>
+<li class="chapter" data-level="1.4" data-path="chintroduction.html"><a href="chintroduction.html#statistics-in-everyday-life"><i class="fa fa-check"></i><b>1.4</b> Statistics in everyday life</a></li>
+<li class="chapter" data-level="1.5" data-path="chintroduction.html"><a href="chintroduction.html#theres-more-to-research-methods-than-statistics"><i class="fa fa-check"></i><b>1.5</b> There’s more to research methods than statistics</a></li>
+<li class="chapter" data-level="1.6" data-path="chintroduction.html"><a href="chintroduction.html#a-brief-introduction-to-research-methods"><i class="fa fa-check"></i><b>1.6</b> A brief introduction to research methods</a></li>
+<li class="chapter" data-level="1.7" data-path="chintroduction.html"><a href="chintroduction.html#thoughts-measurement"><i class="fa fa-check"></i><b>1.7</b> Some thoughts about measurement</a></li>
+<li class="chapter" data-level="1.8" data-path="chintroduction.html"><a href="chintroduction.html#operationalize"><i class="fa fa-check"></i><b>1.8</b> Operationalization: defining your measurement</a></li>
+<li class="chapter" data-level="1.9" data-path="chintroduction.html"><a href="chintroduction.html#reliab-valid-measurement"><i class="fa fa-check"></i><b>1.9</b> Assessing the reliability and validity of a measurement</a></li>
+<li class="chapter" data-level="1.10" data-path="chintroduction.html"><a href="chintroduction.html#forms-of-measurement-error"><i class="fa fa-check"></i><b>1.10</b> Forms of measurement error</a></li>
+<li class="chapter" data-level="1.11" data-path="chintroduction.html"><a href="chintroduction.html#variables"><i class="fa fa-check"></i><b>1.11</b> The role of variables: predictors and outcomes</a></li>
+<li class="chapter" data-level="1.12" data-path="chintroduction.html"><a href="chintroduction.html#thats-it-for-this-week"><i class="fa fa-check"></i><b>1.12</b> That’s it for this week</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chdescribingdata.html"><a href="chdescribingdata.html"><i class="fa fa-check"></i><b>2</b> Week 2: Describing Data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="chdescribingdata.html"><a href="chdescribingdata.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.1</b> Scales of measurement</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="chdescribingdata.html"><a href="chdescribingdata.html#nominal-scale"><i class="fa fa-check"></i><b>2.1.1</b> Nominal scale</a></li>
+<li class="chapter" data-level="2.1.2" data-path="chdescribingdata.html"><a href="chdescribingdata.html#ordinal-scale"><i class="fa fa-check"></i><b>2.1.2</b> Ordinal scale</a></li>
+<li class="chapter" data-level="2.1.3" data-path="chdescribingdata.html"><a href="chdescribingdata.html#interval-scale"><i class="fa fa-check"></i><b>2.1.3</b> Interval scale</a></li>
+<li class="chapter" data-level="2.1.4" data-path="chdescribingdata.html"><a href="chdescribingdata.html#ratio-scale"><i class="fa fa-check"></i><b>2.1.4</b> Ratio scale</a></li>
+<li class="chapter" data-level="2.1.5" data-path="chdescribingdata.html"><a href="chdescribingdata.html#continuous-versus-discrete-variables"><i class="fa fa-check"></i><b>2.1.5</b> Continuous versus discrete variables</a></li>
+<li class="chapter" data-level="2.1.6" data-path="chdescribingdata.html"><a href="chdescribingdata.html#some-complexities"><i class="fa fa-check"></i><b>2.1.6</b> Some complexities</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="chdescribingdata.html"><a href="chdescribingdata.html#toomanynumbers"><i class="fa fa-check"></i><b>2.2</b> This is what too many numbers looks like</a></li>
+<li class="chapter" data-level="2.3" data-path="chdescribingdata.html"><a href="chdescribingdata.html#describing-data-using-graphs"><i class="fa fa-check"></i><b>2.3</b> Describing data using graphs</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="chdescribingdata.html"><a href="chdescribingdata.html#scatterplot"><i class="fa fa-check"></i><b>2.3.1</b> Scatterplot</a></li>
+<li class="chapter" data-level="2.3.2" data-path="chdescribingdata.html"><a href="chdescribingdata.html#histogram"><i class="fa fa-check"></i><b>2.3.2</b> Histogram</a></li>
+<li class="chapter" data-level="2.3.3" data-path="chdescribingdata.html"><a href="chdescribingdata.html#other-graphs"><i class="fa fa-check"></i><b>2.3.3</b> Other graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="chdescribingdata.html"><a href="chdescribingdata.html#describing-data-using-numbers"><i class="fa fa-check"></i><b>2.4</b> Describing data using numbers</a></li>
+<li class="chapter" data-level="2.5" data-path="chdescribingdata.html"><a href="chdescribingdata.html#measures-of-central-tendency-sameness"><i class="fa fa-check"></i><b>2.5</b> Measures of central tendency (sameness)</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="chdescribingdata.html"><a href="chdescribingdata.html#mode"><i class="fa fa-check"></i><b>2.5.1</b> Mode</a></li>
+<li class="chapter" data-level="2.5.2" data-path="chdescribingdata.html"><a href="chdescribingdata.html#median"><i class="fa fa-check"></i><b>2.5.2</b> Median</a></li>
+<li class="chapter" data-level="2.5.3" data-path="chdescribingdata.html"><a href="chdescribingdata.html#mean"><i class="fa fa-check"></i><b>2.5.3</b> Mean</a></li>
+<li class="chapter" data-level="2.5.4" data-path="chdescribingdata.html"><a href="chdescribingdata.html#whatmeanmean"><i class="fa fa-check"></i><b>2.5.4</b> What does the mean mean?</a></li>
+<li class="chapter" data-level="2.5.5" data-path="chdescribingdata.html"><a href="chdescribingdata.html#all-together-now"><i class="fa fa-check"></i><b>2.5.5</b> All together now</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="chdescribingdata.html"><a href="chdescribingdata.html#measures-of-variation-differentness"><i class="fa fa-check"></i><b>2.6</b> Measures of variation (differentness)</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="chdescribingdata.html"><a href="chdescribingdata.html#the-range"><i class="fa fa-check"></i><b>2.6.1</b> The range</a></li>
+<li class="chapter" data-level="2.6.2" data-path="chdescribingdata.html"><a href="chdescribingdata.html#difference-scores"><i class="fa fa-check"></i><b>2.6.2</b> Difference scores</a></li>
+<li class="chapter" data-level="2.6.3" data-path="chdescribingdata.html"><a href="chdescribingdata.html#var-form"><i class="fa fa-check"></i><b>2.6.3</b> The variance</a></li>
+<li class="chapter" data-level="2.6.4" data-path="chdescribingdata.html"><a href="chdescribingdata.html#the-standard-deviation"><i class="fa fa-check"></i><b>2.6.4</b> The standard deviation</a></li>
+<li class="chapter" data-level="2.6.5" data-path="chdescribingdata.html"><a href="chdescribingdata.html#closing-thoughts-on-measures-of-variation"><i class="fa fa-check"></i><b>2.6.5</b> Closing thoughts on measures of variation</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="chdescribingdata.html"><a href="chdescribingdata.html#remember-to-look-at-your-data"><i class="fa fa-check"></i><b>2.7</b> Remember to look at your data</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="chdescribingdata.html"><a href="chdescribingdata.html#anscombes-quartet"><i class="fa fa-check"></i><b>2.7.1</b> Anscombe’s Quartet</a></li>
+<li class="chapter" data-level="2.7.2" data-path="chdescribingdata.html"><a href="chdescribingdata.html#datasaurus-dozen"><i class="fa fa-check"></i><b>2.7.2</b> Datasaurus Dozen</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="chdescribingdata.html"><a href="chdescribingdata.html#thats-it-for-this-week-1"><i class="fa fa-check"></i><b>2.8</b> That’s it for this week</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html"><i class="fa fa-check"></i><b>3</b> Week 3: Correlation and Causation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#if-something-caused-something-else-to-change-what-would-that-look-like"><i class="fa fa-check"></i><b>3.1</b> If something caused something else to change, what would that look like?</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#charlie-and-the-chocolate-factory"><i class="fa fa-check"></i><b>3.1.1</b> Charlie and the chocolate factory</a></li>
+<li class="chapter" data-level="3.1.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#positive-negative-or-no-correlation"><i class="fa fa-check"></i><b>3.1.2</b> Positive, negative or no correlation</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#pears-r"><i class="fa fa-check"></i><b>3.2</b> Pearson’s <span class="math inline">\(r\)</span></a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-idea-of-covariance"><i class="fa fa-check"></i><b>3.2.1</b> The idea of covariance</a></li>
+<li class="chapter" data-level="3.2.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-measure-of-covariance"><i class="fa fa-check"></i><b>3.2.2</b> A measure of covariance</a></li>
+<li class="chapter" data-level="3.2.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#covariance-formalized"><i class="fa fa-check"></i><b>3.2.3</b> Covariance formalized</a></li>
+<li class="chapter" data-level="3.2.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#corrform"><i class="fa fa-check"></i><b>3.2.4</b> <span class="math inline">\(r\)</span> we there yet?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#examples-of-r-with-data"><i class="fa fa-check"></i><b>3.3</b> Examples of <span class="math inline">\(r\)</span> with data</a></li>
+<li class="chapter" data-level="3.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#interpreting-correlations"><i class="fa fa-check"></i><b>3.4</b> Interpreting correlations</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#caus-without-corr"><i class="fa fa-check"></i><b>3.4.1</b> Causation without correlation</a></li>
+<li class="chapter" data-level="3.4.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#third-var"><i class="fa fa-check"></i><b>3.4.2</b> Third variables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#relationships-between-variables"><i class="fa fa-check"></i><b>3.5</b> Relationships between variables</a></li>
+<li class="chapter" data-level="3.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#establishing-causal-relationships"><i class="fa fa-check"></i><b>3.6</b> Establishing causal relationships</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#a-frame-of-reference"><i class="fa fa-check"></i><b>3.6.1</b> A frame of reference</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#meaningful-comparisons"><i class="fa fa-check"></i><b>3.7</b> Meaningful comparisons</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#random"><i class="fa fa-check"></i><b>3.7.1</b> Randomization</a></li>
+<li class="chapter" data-level="3.7.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#matching"><i class="fa fa-check"></i><b>3.7.2</b> Matching</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#taxonomy-of-research-design"><i class="fa fa-check"></i><b>3.8</b> Taxonomy of research design</a></li>
+<li class="chapter" data-level="3.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#range-of-research-design"><i class="fa fa-check"></i><b>3.9</b> Range of research design</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#experimental-designs"><i class="fa fa-check"></i><b>3.9.1</b> Experimental designs</a></li>
+<li class="chapter" data-level="3.9.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#longitudinal-designs"><i class="fa fa-check"></i><b>3.9.2</b> Longitudinal designs</a></li>
+<li class="chapter" data-level="3.9.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#cross-sectional-designs"><i class="fa fa-check"></i><b>3.9.3</b> Cross-sectional designs</a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#the-validity-of-your-study"><i class="fa fa-check"></i><b>3.10</b> The validity of your study</a>
+<ul>
+<li class="chapter" data-level="3.10.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#internal-validity"><i class="fa fa-check"></i><b>3.10.1</b> Internal validity</a></li>
+<li class="chapter" data-level="3.10.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#external-validity"><i class="fa fa-check"></i><b>3.10.2</b> External validity</a></li>
+<li class="chapter" data-level="3.10.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#construct-validity"><i class="fa fa-check"></i><b>3.10.3</b> Construct validity</a></li>
+</ul></li>
+<li class="chapter" data-level="3.11" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#threats-to-experimental-validity"><i class="fa fa-check"></i><b>3.11</b> Threats to experimental validity</a>
+<ul>
+<li class="chapter" data-level="3.11.1" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#history-effects"><i class="fa fa-check"></i><b>3.11.1</b> History effects</a></li>
+<li class="chapter" data-level="3.11.2" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#maturation-effects"><i class="fa fa-check"></i><b>3.11.2</b> Maturation effects</a></li>
+<li class="chapter" data-level="3.11.3" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#repeated-testing-effects"><i class="fa fa-check"></i><b>3.11.3</b> Repeated testing effects</a></li>
+<li class="chapter" data-level="3.11.4" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#selection-bias"><i class="fa fa-check"></i><b>3.11.4</b> Selection bias</a></li>
+<li class="chapter" data-level="3.11.5" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#diffatt"><i class="fa fa-check"></i><b>3.11.5</b> Differential attrition</a></li>
+<li class="chapter" data-level="3.11.6" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#non-response-bias"><i class="fa fa-check"></i><b>3.11.6</b> Non-response bias</a></li>
+<li class="chapter" data-level="3.11.7" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#regression-to-the-mean"><i class="fa fa-check"></i><b>3.11.7</b> Regression to the mean</a></li>
+<li class="chapter" data-level="3.11.8" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#experimenter-bias"><i class="fa fa-check"></i><b>3.11.8</b> Experimenter bias</a></li>
+<li class="chapter" data-level="3.11.9" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#demand-effects-and-reactivity"><i class="fa fa-check"></i><b>3.11.9</b> Demand effects and reactivity</a></li>
+<li class="chapter" data-level="3.11.10" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#placebo-effects"><i class="fa fa-check"></i><b>3.11.10</b> Placebo effects</a></li>
+</ul></li>
+<li class="chapter" data-level="3.12" data-path="chcorrelationandcaus.html"><a href="chcorrelationandcaus.html#thats-it-for-this-week-2"><i class="fa fa-check"></i><b>3.12</b> That’s it for this week</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="chchance.html"><a href="chchance.html"><i class="fa fa-check"></i><b>4</b> Week 4: Chance and Probability Theory</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="chchance.html"><a href="chchance.html#correlation-and-random-chance"><i class="fa fa-check"></i><b>4.1</b> Correlation and random chance</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="chchance.html"><a href="chchance.html#monte-carlo-simulation-of-random-correlations"><i class="fa fa-check"></i><b>4.1.1</b> Monte-carlo simulation of random correlations</a></li>
+<li class="chapter" data-level="4.1.2" data-path="chchance.html"><a href="chchance.html#increasing-sample-size-decreases-the-opportunity-for-spurious-correlations"><i class="fa fa-check"></i><b>4.1.2</b> Increasing sample-size decreases the opportunity for spurious correlations</a></li>
+<li class="chapter" data-level="4.1.3" data-path="chchance.html"><a href="chchance.html#animation-of-no-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.3</b> Animation of no relationship between variables</a></li>
+<li class="chapter" data-level="4.1.4" data-path="chchance.html"><a href="chchance.html#animation-with-a-relationship-between-variables"><i class="fa fa-check"></i><b>4.1.4</b> Animation with a relationship between variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="chchance.html"><a href="chchance.html#how-are-probability-and-statistics-different"><i class="fa fa-check"></i><b>4.2</b> How are probability and statistics different?</a></li>
+<li class="chapter" data-level="4.3" data-path="chchance.html"><a href="chchance.html#mean-prob"><i class="fa fa-check"></i><b>4.3</b> What does probability mean?</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="chchance.html"><a href="chchance.html#the-frequentist-view"><i class="fa fa-check"></i><b>4.3.1</b> The frequentist view</a></li>
+<li class="chapter" data-level="4.3.2" data-path="chchance.html"><a href="chchance.html#the-bayesian-view"><i class="fa fa-check"></i><b>4.3.2</b> The Bayesian view</a></li>
+<li class="chapter" data-level="4.3.3" data-path="chchance.html"><a href="chchance.html#whats-the-difference-and-who-is-right"><i class="fa fa-check"></i><b>4.3.3</b> What’s the difference? And who is right?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="chchance.html"><a href="chchance.html#basic-probability-theory"><i class="fa fa-check"></i><b>4.4</b> Basic probability theory</a></li>
+<li class="chapter" data-level="4.5" data-path="chchance.html"><a href="chchance.html#prob-dist"><i class="fa fa-check"></i><b>4.5</b> Probability distributions</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="chchance.html"><a href="chchance.html#binomdist"><i class="fa fa-check"></i><b>4.5.1</b> The binomial distribution</a></li>
+<li class="chapter" data-level="4.5.2" data-path="chchance.html"><a href="chchance.html#working-with-the-binomial-distribution-in-r"><i class="fa fa-check"></i><b>4.5.2</b> Working with the binomial distribution in R</a></li>
+<li class="chapter" data-level="4.5.3" data-path="chchance.html"><a href="chchance.html#norm-dist"><i class="fa fa-check"></i><b>4.5.3</b> The normal distribution</a></li>
+<li class="chapter" data-level="4.5.4" data-path="chchance.html"><a href="chchance.html#probability-density"><i class="fa fa-check"></i><b>4.5.4</b> Probability density</a></li>
+<li class="chapter" data-level="4.5.5" data-path="chchance.html"><a href="chchance.html#other-dist"><i class="fa fa-check"></i><b>4.5.5</b> Other useful distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="chchance.html"><a href="chchance.html#zscore"><i class="fa fa-check"></i><b>4.6</b> z-scores</a></li>
+<li class="chapter" data-level="4.7" data-path="chchance.html"><a href="chchance.html#thats-it-for-this-week-3"><i class="fa fa-check"></i><b>4.7</b> That’s it for this week</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="chestimationsampling.html"><a href="chestimationsampling.html"><i class="fa fa-check"></i><b>5</b> Week 5: Estimation and Sampling Theory</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="chestimationsampling.html"><a href="chestimationsampling.html#def-pop"><i class="fa fa-check"></i><b>5.1</b> Defining a population</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="chestimationsampling.html"><a href="chestimationsampling.html#simple-random-samples"><i class="fa fa-check"></i><b>5.1.1</b> Simple random samples</a></li>
+<li class="chapter" data-level="5.1.2" data-path="chestimationsampling.html"><a href="chestimationsampling.html#most-samples-are-not-simple-random-samples"><i class="fa fa-check"></i><b>5.1.2</b> Most samples are not simple random samples</a></li>
+<li class="chapter" data-level="5.1.3" data-path="chestimationsampling.html"><a href="chestimationsampling.html#how-much-does-it-matter-if-you-dont-have-a-simple-random-sample"><i class="fa fa-check"></i><b>5.1.3</b> How much does it matter if you don’t have a simple random sample?</a></li>
+<li class="chapter" data-level="5.1.4" data-path="chestimationsampling.html"><a href="chestimationsampling.html#population-parameters-and-sample-statistics"><i class="fa fa-check"></i><b>5.1.4</b> Population parameters and sample statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="chestimationsampling.html"><a href="chestimationsampling.html#the-law-of-large-numbers"><i class="fa fa-check"></i><b>5.2</b> The law of large numbers</a></li>
+<li class="chapter" data-level="5.3" data-path="chestimationsampling.html"><a href="chestimationsampling.html#sampdistmain"><i class="fa fa-check"></i><b>5.3</b> Sampling distributions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="chestimationsampling.html"><a href="chestimationsampling.html#samplingdists"><i class="fa fa-check"></i><b>5.3.1</b> Sampling distribution of the sample mean</a></li>
+<li class="chapter" data-level="5.3.2" data-path="chestimationsampling.html"><a href="chestimationsampling.html#sampling-distributions-exist-for-any-sample-statistic"><i class="fa fa-check"></i><b>5.3.2</b> Sampling distributions exist for any sample statistic</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="chestimationsampling.html"><a href="chestimationsampling.html#clt"><i class="fa fa-check"></i><b>5.4</b> The central limit theorem</a></li>
+<li class="chapter" data-level="5.5" data-path="chestimationsampling.html"><a href="chestimationsampling.html#pointestimates"><i class="fa fa-check"></i><b>5.5</b> Estimating population parameters</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="chestimationsampling.html"><a href="chestimationsampling.html#estimating-the-population-mean"><i class="fa fa-check"></i><b>5.5.1</b> Estimating the population mean</a></li>
+<li class="chapter" data-level="5.5.2" data-path="chestimationsampling.html"><a href="chestimationsampling.html#estimating-the-population-standard-deviation"><i class="fa fa-check"></i><b>5.5.2</b> Estimating the population standard deviation</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="chestimationsampling.html"><a href="chestimationsampling.html#ci"><i class="fa fa-check"></i><b>5.6</b> Estimating a confidence interval</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="chestimationsampling.html"><a href="chestimationsampling.html#degrees-of-freedom"><i class="fa fa-check"></i><b>5.6.1</b> Degrees of freedom</a></li>
+<li class="chapter" data-level="5.6.2" data-path="chestimationsampling.html"><a href="chestimationsampling.html#interpreting-a-confidence-interval"><i class="fa fa-check"></i><b>5.6.2</b> Interpreting a confidence interval</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="chestimationsampling.html"><a href="chestimationsampling.html#thats-it-for-this-week-4"><i class="fa fa-check"></i><b>5.7</b> That’s it for this week</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html"><i class="fa fa-check"></i><b>6</b> Week 6: Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#hypotheses"><i class="fa fa-check"></i><b>6.1</b> A menagerie of hypotheses</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#research-hypotheses-versus-statistical-hypotheses"><i class="fa fa-check"></i><b>6.1.1</b> Research hypotheses versus statistical hypotheses</a></li>
+<li class="chapter" data-level="6.1.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#null-hypotheses-and-alternative-hypotheses"><i class="fa fa-check"></i><b>6.1.2</b> Null hypotheses and alternative hypotheses</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#errortypes"><i class="fa fa-check"></i><b>6.2</b> Two types of errors</a></li>
+<li class="chapter" data-level="6.3" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#teststatistics"><i class="fa fa-check"></i><b>6.3</b> Test statistics and sampling distributions</a></li>
+<li class="chapter" data-level="6.4" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#decisionmaking"><i class="fa fa-check"></i><b>6.4</b> Making decisions</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#critical-regions-and-critical-values"><i class="fa fa-check"></i><b>6.4.1</b> Critical regions and critical values</a></li>
+<li class="chapter" data-level="6.4.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#a-note-on-statistical-significance"><i class="fa fa-check"></i><b>6.4.2</b> A note on statistical “significance”</a></li>
+<li class="chapter" data-level="6.4.3" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#onesidedtests"><i class="fa fa-check"></i><b>6.4.3</b> The difference between one sided and two sided tests</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#pvalue"><i class="fa fa-check"></i><b>6.5</b> The <span class="math inline">\(p\)</span> value of a test</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#the-probability-of-extreme-data"><i class="fa fa-check"></i><b>6.5.1</b> The probability of extreme data</a></li>
+<li class="chapter" data-level="6.5.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#a-common-mistake"><i class="fa fa-check"></i><b>6.5.2</b> A common mistake</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#running-the-hypothesis-test-in-practice"><i class="fa fa-check"></i><b>6.6</b> Running the hypothesis test in practice</a></li>
+<li class="chapter" data-level="6.7" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#using-hypothesis-tests-to-compare-means"><i class="fa fa-check"></i><b>6.7</b> Using hypothesis tests to compare means</a></li>
+<li class="chapter" data-level="6.8" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#the-one-sample-z-test"><i class="fa fa-check"></i><b>6.8</b> The one-sample <span class="math inline">\(z\)</span>-test</a>
+<ul>
+<li class="chapter" data-level="6.8.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#the-inference-problem-that-the-test-addresses"><i class="fa fa-check"></i><b>6.8.1</b> The inference problem that the test addresses</a></li>
+<li class="chapter" data-level="6.8.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#constructing-the-hypothesis-test"><i class="fa fa-check"></i><b>6.8.2</b> Constructing the hypothesis test</a></li>
+<li class="chapter" data-level="6.8.3" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#a-worked-example-using-r"><i class="fa fa-check"></i><b>6.8.3</b> A worked example using R</a></li>
+<li class="chapter" data-level="6.8.4" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#zassumptions"><i class="fa fa-check"></i><b>6.8.4</b> Assumptions of the <span class="math inline">\(z\)</span>-test</a></li>
+</ul></li>
+<li class="chapter" data-level="6.9" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#onesamplettest"><i class="fa fa-check"></i><b>6.9</b> The one-sample <span class="math inline">\(t\)</span>-test</a>
+<ul>
+<li class="chapter" data-level="6.9.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#introducing-the-t-test"><i class="fa fa-check"></i><b>6.9.1</b> Introducing the <span class="math inline">\(t\)</span>-test</a></li>
+<li class="chapter" data-level="6.9.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#doing-the-test-in-r"><i class="fa fa-check"></i><b>6.9.2</b> Doing the test in R</a></li>
+<li class="chapter" data-level="6.9.3" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#ttestoneassumptions"><i class="fa fa-check"></i><b>6.9.3</b> Assumptions of the one sample <span class="math inline">\(t\)</span>-test</a></li>
+</ul></li>
+<li class="chapter" data-level="6.10" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#the-independent-samples-t-test"><i class="fa fa-check"></i><b>6.10</b> The independent samples <span class="math inline">\(t\)</span>-test</a>
+<ul>
+<li class="chapter" data-level="6.10.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#the-data"><i class="fa fa-check"></i><b>6.10.1</b> The data</a></li>
+<li class="chapter" data-level="6.10.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#welchttest"><i class="fa fa-check"></i><b>6.10.2</b> Introducing the test</a></li>
+<li class="chapter" data-level="6.10.3" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#doing-the-test-in-r-1"><i class="fa fa-check"></i><b>6.10.3</b> Doing the test in R</a></li>
+<li class="chapter" data-level="6.10.4" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#positive-and-negative-t-values"><i class="fa fa-check"></i><b>6.10.4</b> Positive and negative <span class="math inline">\(t\)</span> values</a></li>
+<li class="chapter" data-level="6.10.5" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#assumptions"><i class="fa fa-check"></i><b>6.10.5</b> Assumptions of the test</a></li>
+</ul></li>
+<li class="chapter" data-level="6.11" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#pairedsamplesttest"><i class="fa fa-check"></i><b>6.11</b> The paired-samples <span class="math inline">\(t\)</span>-test</a>
+<ul>
+<li class="chapter" data-level="6.11.1" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#the-data-1"><i class="fa fa-check"></i><b>6.11.1</b> The data</a></li>
+<li class="chapter" data-level="6.11.2" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#what-is-the-paired-samples-t-test"><i class="fa fa-check"></i><b>6.11.2</b> What is the paired samples <span class="math inline">\(t\)</span>-test?</a></li>
+<li class="chapter" data-level="6.11.3" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#doing-the-test-in-r-2"><i class="fa fa-check"></i><b>6.11.3</b> Doing the test in R</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="chhypothesistesting.html"><a href="chhypothesistesting.html#thats-it-for-this-week-5"><i class="fa fa-check"></i><b>6.12</b> That’s it for this week…</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Quantitative Research Methods &amp; Analysis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="chhypothesistesting" class="section level1" number="6">
+<h1><span class="header-section-number"> 6</span> Week 6: Hypothesis Testing<a href="#fn23" class="footnote-ref" id="fnref23"><sup>23</sup></a></h1>
+<blockquote>
+<p><em>The process of induction is the process of assuming the simplest law that can be made to harmonize with our experience. This process, however, has no logical foundation but only a psychological one. It is clear that there are no grounds for believing that the simplest course of events will really happen. It is an hypothesis that the sun will rise tomorrow: and this means that we do not know whether it will rise.</em></p>
+<p>– Ludwig Wittgenstein<a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a></p>
+</blockquote>
+<p>In the last chapter, we discussed estimation and sampling theory: “big ideas” in inferential statistics. It’s now time to put these ideas to practical use with <strong>hypothesis testing</strong>. In its most abstract form, hypothesis testing is really very simple: the researcher has some theory about the world and wants to determine whether or not the data actually support that theory. However, the details are messy, and most people find the theory of hypothesis testing to be a very frustrating part of statistics.</p>
+<p>The structure of this chapter is as follows. Firstly, I’ll describe how hypothesis testing works, in a fair amount of detail, using a simple running example to show you how a hypothesis test is “built.” I’ll try to avoid being too dogmatic while doing so, and focus instead on the underlying logic of the testing procedure. Then, we will apply this logic to something which is done very often in research: comparing means.</p>
+<div id="hypotheses" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> A menagerie of hypotheses</h2>
+<p>Eventually we all succumb to madness. For me, that day will arrive once I’m finally promoted to full professor. Safely ensconced in my ivory tower, happily protected by tenure, I will finally be able to take leave of my senses (so to speak), and indulge in that most thoroughly unproductive line of psychological research: the search for extrasensory perception (ESP).<a href="#fn25" class="footnote-ref" id="fnref25"><sup>25</sup></a></p>
+<p>Let’s suppose that this glorious day has come. My first study is a simple one, in which I seek to test whether clairvoyance (the claimed ability to gain information about an object, person, location, or physical event through extrasensory perception) exists. The participants in my study sit down at a table and are shown a card by an experimenter. The card is black on one side and white on the other. The experimenter takes the card away, and places it on a table in an adjacent room. The card is placed black side up or white side up completely at random, with the randomization occurring after the experimenter has left the room with the participant. A second experimenter comes in and asks the participant which side of the card is now facing upwards. The card is in the adjacent room, so the participant should have no way of knowing which side is facing upwards! Or do they…?</p>
+<p>This is purely a one-shot experiment. Each person sees only one card, and gives only one answer; and at no stage is the participant actually in contact with someone who knows the right answer. My data set, therefore, is very simple. I have asked the question of <span class="math inline">\(n\)</span> people, and some number <span class="math inline">\(X\)</span> of these people have given the correct response. To make things concrete, let’s suppose that I have tested <span class="math inline">\(n = 100\)</span> people, and <span class="math inline">\(X = 62\)</span> of these got the answer right… a surprisingly large number, we’d expect approximately 50 correct answers, but is it large enough for me to feel safe in claiming I’ve found evidence for extrasensory perception? This is the situation where hypothesis testing comes in useful. However, before we talk about how to <em>test</em> hypotheses, we need to be clear about what we mean by hypotheses.</p>
+<div id="research-hypotheses-versus-statistical-hypotheses" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Research hypotheses versus statistical hypotheses</h3>
+<p>The first distinction that you need to keep clear in your mind is between <strong>research hypotheses</strong> and <strong>statistical hypotheses</strong>. In my ESP study, my overall scientific goal is to demonstrate that clairvoyance exists. In this situation, I have a clear research goal: I am hoping to discover evidence for ESP. In other situations I might actually be a lot more neutral than that, so I might say that my research goal is to determine whether or not clairvoyance exists. Regardless of how I want to portray myself, the basic point that I’m trying to convey here is that a research hypothesis involves making a substantive, testable scientific claim… if you are a psychologist, then your research hypotheses are fundamentally <em>about</em> psychological constructs. Any of the following would count as <strong>research hypotheses</strong>:</p>
+<ul>
+<li><strong>Listening to music reduces your ability to pay attention to other things</strong>. This is a claim about the causal relationship between two psychologically meaningful concepts (listening to music and paying attention to things), so it’s a perfectly reasonable research hypothesis.</li>
+<li><strong>Intelligence is related to personality</strong>. Like the last one, this is a relational claim about two psychological constructs (intelligence and personality), but the claim is weaker: correlation is not causation.</li>
+<li><strong>Intelligence is speed of information processing</strong>. This hypothesis has a quite different character: it’s not actually a relational claim at all. It’s an ontological claim about the fundamental character of intelligence (and I’m pretty sure it’s wrong).</li>
+</ul>
+<p>It’s worth expanding on the last research hypothesis actually. It’s usually easier to think about how to construct experiments to test research hypotheses of the form “does X affect Y?” than it is to address claims like “what is X?” And in practice, what usually happens is that you find ways of testing relational claims that follow from your ontological ones. For instance, if I believe that intelligence <em>is</em> speed of information processing in the brain, my experiments will often involve looking for relationships between measures of intelligence and measures of speed. As a consequence, most everyday research questions do tend to be relational in nature, but they’re almost always motivated by deeper ontological questions about the state of nature.</p>
+<p>Notice that in practice, my research hypotheses could overlap a lot. My ultimate goal in the ESP experiment might be to test an ontological claim like “ESP exists,” but I might operationally restrict myself to a narrower hypothesis like “Some people can ‘see’ objects in a clairvoyant fashion.”</p>
+<p>As you can see, research hypotheses can be somewhat messy at times; and ultimately they are <em>scientific</em> claims. <strong>Statistical hypotheses</strong> are neither of these two things. Statistical hypotheses must be mathematically precise, and they must correspond to specific claims about the characteristics of the data generating mechanism (i.e., the “population”). Even so, the intent is that statistical hypotheses bear a clear relationship to the substantive research hypotheses that you care about! For instance, in my ESP study my research hypothesis is that some people are able to see through walls or whatever. What I want to do is to “map” this onto a statement about how the data were generated. So let’s think about what that statement would be. The quantity that I’m interested in within the experiment is <span class="math inline">\(P(\mbox{correct})\)</span>, the true-but-unknown <strong>probability</strong> with which the participants in my experiment answer the question correctly. Let’s use the Greek letter <span class="math inline">\(\theta\)</span> (theta) to refer to this probability. Here are four different statistical hypotheses:</p>
+<ul>
+<li>If ESP doesn’t exist and if my experiment is well designed, then my participants are just guessing. So I should expect them to get it right half of the time and so my statistical hypothesis is that the true probability of choosing correctly is <span class="math inline">\(\theta = 0.5\)</span>.</li>
+<li>Alternatively, suppose ESP does exist and participants can see the card. If that’s true, people will perform better than chance. The statistical hypothesis would be that <span class="math inline">\(\theta &gt; 0.5\)</span>.</li>
+<li>A third possibility is that ESP does exist, but the colors are all reversed and people don’t realise it (okay, that’s wacky, but you never know…). If that’s how it works then you’d expect people’s performance to be <em>below</em> chance. This would correspond to a statistical hypothesis that <span class="math inline">\(\theta &lt; 0.5\)</span>.</li>
+<li>Finally, suppose ESP exists, but I have no idea whether people are seeing the right color or the wrong one. In that case, the only claim I could make about the data would be that the probability of making the correct answer is <em>not</em> equal to 50. This corresponds to the statistical hypothesis that <span class="math inline">\(\theta \neq 0.5\)</span>.</li>
+</ul>
+<p>All of these are legitimate examples of a statistical hypothesis because they are statements about a <strong>population parameter</strong> and are meaningfully related to my experiment.</p>
+<p>What this discussion makes clear, I hope, is that when attempting to construct a statistical hypothesis test the researcher actually has two quite distinct hypotheses to consider. First, he or she has a research hypothesis (a claim about something), and this corresponds to a statistical hypothesis (a claim about the data generating population). In my ESP example, these might be:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">My research hypothesis</th>
+<th align="left">My statistical hypothesis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ESP exists</td>
+<td align="left"><span class="math inline">\(\theta \neq 0.5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The key thing to recognise is this: <em>a statistical hypothesis test is a test of the statistical hypothesis, not the research hypothesis</em>. If your study is badly designed, then the link between your research hypothesis and your statistical hypothesis is broken. To give a silly example, suppose that my ESP study was conducted in a situation where the participant can actually see the card reflected in a window; if that happens, I would be able to find very strong evidence that <span class="math inline">\(\theta \neq 0.5\)</span>, but this would tell us nothing about whether “ESP exists.”</p>
+</div>
+<div id="null-hypotheses-and-alternative-hypotheses" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Null hypotheses and alternative hypotheses</h3>
+<p>So far, so good. I have a research hypothesis that corresponds to what I want to <strong>believe about the world</strong>, and I can map it onto a statistical hypothesis that corresponds to what I want to <strong>believe about how the data were generated</strong>. It’s at this point that things get somewhat counterintuitive for a lot of people. Because what I’m about to do is invent a new statistical hypothesis (the “null” hypothesis, <span class="math inline">\(H_0\)</span>) that corresponds to the exact opposite of what I want to believe, and then focus exclusively on that, almost to the neglect of the thing I’m actually interested in (the “alternative” hypothesis: <span class="math inline">\(H_1\)</span>). In our ESP example, the null hypothesis is that <span class="math inline">\(\theta = 0.5\)</span>, since that’s what we’d expect if ESP <em>didn’t</em> exist. My hope, of course, is that ESP is totally real, and so the <em>alternative</em> to this null hypothesis is <span class="math inline">\(\theta \neq 0.5\)</span>. In essence, what we’re doing here is dividing up the possible values of <span class="math inline">\(\theta\)</span> into two groups: those values that I really hope aren’t true (the null), and those values that I’d be happy with if they turn out to be right (the alternative). Having done so, the important thing to recognise is that the goal of a hypothesis test is <em>not</em> to show that the alternative hypothesis is true; the goal is to show that the null hypothesis is false. Most people find this pretty weird.</p>
+<p>The best way to think about it, in my experience, is to imagine that a hypothesis test is a criminal trial: <em>the trial of the null hypothesis</em>. The null hypothesis is the defendant, the researcher is the prosecutor, and the statistical test itself is the judge. Just like a criminal trial, there is a presumption of innocence: the null hypothesis is <em>deemed</em> to be true unless you, the researcher, can prove beyond a reasonable doubt that it is false. You are free to design your experiment however you like (within reason, obviously!), and your goal when doing so is to maximise the chance that the data will yield a conviction… for the crime of being false. The catch is that the statistical test sets the rules of the trial, and those rules are designed to protect the null hypothesis – specifically to ensure that if the null hypothesis is actually true, the chances of a false conviction are guaranteed to be low. This is pretty important: after all, the null hypothesis doesn’t get a lawyer. And given that the researcher is trying desperately to prove it to be false, <em>someone</em> has to protect it.</p>
+</div>
+</div>
+<div id="errortypes" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Two types of errors</h2>
+<p>Before going into details about how a statistical test is constructed, it’s useful to understand the philosophy behind it. I hinted at it when pointing out the similarity between a null hypothesis test and a criminal trial, but I should now be explicit. Ideally, we would like to construct our test so that we never make any errors. Unfortunately, since the world is messy, this is never possible. Sometimes you’re just really unlucky: for instance, suppose you flip a coin 10 times in a row and it comes up heads all 10 times. That feels like very strong evidence that the coin is biased, but of course there’s a 1 in 1024 chance that this would happen even if the coin was totally fair<a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a>. In other words, in real life we <em>always</em> have to accept that there’s a chance that we did the wrong thing. As a consequence, the goal behind statistical hypothesis testing is not to <em>eliminate</em> errors, but to <em>minimise</em> them.</p>
+<p>At this point, we need to be a bit more precise about what we mean by “errors.” Firstly, let’s state the obvious: it is either the case that the null hypothesis is true, or it is false; and our test will either reject the null hypothesis or retain it.<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a> So, as the table below illustrates, after we run the test and make our choice, one of four things might have happened:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">retain <span class="math inline">\(H_0\)</span></th>
+<th align="left">reject <span class="math inline">\(H_0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(H_0\)</span> is true</td>
+<td align="left">correct decision</td>
+<td align="left">error (type I)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(H_0\)</span> is false</td>
+<td align="left">error (type II)</td>
+<td align="left">correct decision</td>
+</tr>
+</tbody>
+</table>
+<p>As a consequence there are actually <em>two</em> different types of error here. If we reject a null hypothesis that is actually true, then we have made a <strong>type I error</strong>. On the other hand, if we retain the null hypothesis when it is in fact false, then we have made a <strong>type II error</strong>.</p>
+<p>Remember how I said that statistical testing was kind of like a criminal trial? Well, I meant it. A criminal trial requires that you establish “beyond a reasonable doubt” that the defendant did it. All of the evidentiary rules are (in theory, at least) designed to ensure that there’s (almost) no chance of wrongfully convicting an innocent defendant. The trial is designed to protect the rights of a defendant: as the English jurist William Blackstone famously said, it is “better that ten guilty persons escape than that one innocent suffer.” In other words, a criminal trial doesn’t treat the two types of error in the same way… punishing the innocent is deemed to be much worse than letting the guilty go free. A statistical test is pretty much the same: the single most important design principle of the test is to <em>control</em> the probability of a type I error, to keep it below some fixed probability. This probability, which is denoted <span class="math inline">\(\alpha\)</span>, is called the <strong>significance level</strong> of the test. And I’ll say it again, because it is so central to the whole set-up… a hypothesis test is said to have significance level <span class="math inline">\(\alpha\)</span> if the type I error rate is no larger than <span class="math inline">\(\alpha\)</span>.</p>
+<p>So, what about the type II error rate? Well, we’d also like to keep those under control too, and we denote this probability by <span class="math inline">\(\beta\)</span>. However, it’s much more common to refer to the <strong>power</strong> of the test, which is the probability with which we reject a null hypothesis when it really is false, which is <span class="math inline">\(1-\beta\)</span>. To help keep this straight, here’s the same table again, but with the relevant numbers added:</p>
+<table>
+<colgroup>
+<col width="16%" />
+<col width="50%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">retain <span class="math inline">\(H_0\)</span></th>
+<th align="left">reject <span class="math inline">\(H_0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(H_0\)</span> is true</td>
+<td align="left"><span class="math inline">\(1-\alpha\)</span> (probability of correct retention)</td>
+<td align="left"><span class="math inline">\(\alpha\)</span> (type I error rate)</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\(H_0\)</span> is false</td>
+<td align="left"><span class="math inline">\(\beta\)</span> (type II error rate)</td>
+<td align="left"><span class="math inline">\(1-\beta\)</span> (power of the test)</td>
+</tr>
+</tbody>
+</table>
+<p>A “powerful” hypothesis test is one that has a small value of <span class="math inline">\(\beta\)</span>, while still keeping <span class="math inline">\(\alpha\)</span> fixed at some (small) desired level. By convention, scientists mostly make use of three different <span class="math inline">\(\alpha\)</span> levels: <span class="math inline">\(.05\)</span>, <span class="math inline">\(.01\)</span> and <span class="math inline">\(.001\)</span>. Notice the asymmetry here… the tests are designed to <em>ensure</em> that the <span class="math inline">\(\alpha\)</span> level is kept small, but there’s no corresponding guarantee regarding <span class="math inline">\(\beta\)</span>. We’d certainly <em>like</em> the type II error rate to be small, and we try to design tests that keep it small, but this is very much secondary to the overwhelming need to control the type I error rate. As Blackstone might have said if he were a statistician, it is “better to retain 10 false null hypotheses than to reject a single true one.” To be honest, I don’t know that I agree with this philosophy – there are situations where I think it makes sense, and situations where I think it doesn’t – but that’s neither here nor there. It’s how the tests are built.</p>
+</div>
+<div id="teststatistics" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Test statistics and sampling distributions</h2>
+<p>At this point we need to start talking specifics about how a hypothesis test is constructed. To that end, let’s return to the ESP example. Let’s ignore the actual data that we obtained, for the moment, and think about the structure of the experiment. Regardless of what the actual numbers are, the <em>form</em> of the data is that <span class="math inline">\(X\)</span> out of <span class="math inline">\(N\)</span> people correctly identified the colour of the hidden card. Moreover, let’s suppose for the moment that the null hypothesis really is true: ESP doesn’t exist, and the true probability that anyone picks the correct colour is exactly <span class="math inline">\(\theta = 0.5\)</span>. What would we <em>expect</em> the data to look like? Well, obviously, we’d expect the proportion of people who make the correct response to be pretty close to 50%. Or, to phrase this in more mathematical terms, we’d say that <span class="math inline">\(X/N\)</span> is approximately <span class="math inline">\(0.5\)</span>. Of course, we wouldn’t expect this fraction to be <em>exactly</em> 0.5: if, for example we tested <span class="math inline">\(N=100\)</span> people, and <span class="math inline">\(X = 53\)</span> of them got the question right, we’d probably be forced to concede that the data are quite consistent with the null hypothesis. On the other hand, if <span class="math inline">\(X = 99\)</span> of our participants got the question right, then we’d feel pretty confident that the null hypothesis is wrong. Similarly, if only <span class="math inline">\(X=3\)</span> people got the answer right, we’d be similarly confident that the null was wrong. Let’s be a little more technical about this: we have a quantity <span class="math inline">\(X\)</span> that we can calculate by looking at our data; after looking at the value of <span class="math inline">\(X\)</span>, we make a decision about whether to believe that the null hypothesis is correct, or to reject the null hypothesis in favour of the alternative. The name for this thing that we calculate to guide our choices is a <strong>test statistic</strong>.</p>
+<p>Having chosen a test statistic, the next step is to state precisely which values of the test statistic would cause to reject the null hypothesis, and which values would cause us to keep it. In order to do so, we need to determine what the <strong>sampling distribution of the test statistic</strong> would be if the null hypothesis were actually true (we talked about sampling distributions earlier in Section <a href="chestimationsampling.html#sampdistmain">5.3</a>). Why do we need this? Because this distribution tells us exactly what values of <span class="math inline">\(X\)</span> our null hypothesis would lead us to expect. And therefore, we can use this distribution as a tool for assessing how closely the null hypothesis agrees with our data.</p>
+<div class="figure"><span id="fig:samplingdist"></span>
+<img src="quantrma_files/figure-html/samplingdist-1.png" alt="The sampling distribution for our test statistic $X$ when the null hypothesis is true. For our ESP scenario, this is a binomial distribution. Not surprisingly, since the null hypothesis says that the probability of a correct response is $\theta = .5$, the sampling distribution says that the most likely value is 50 (our of 100) correct responses. Most of the probability mass lies between 40 and 60." width="672" />
+<p class="caption">
+Figure 6.1: The sampling distribution for our test statistic <span class="math inline">\(X\)</span> when the null hypothesis is true. For our ESP scenario, this is a binomial distribution. Not surprisingly, since the null hypothesis says that the probability of a correct response is <span class="math inline">\(\theta = .5\)</span>, the sampling distribution says that the most likely value is 50 (our of 100) correct responses. Most of the probability mass lies between 40 and 60.
+</p>
+</div>
+<p>How do we actually determine the sampling distribution of the test statistic? For a lot of hypothesis tests this step is actually quite complicated, but fortunately for us, our ESP example provides us with one of the easiest cases. Our population parameter <span class="math inline">\(\theta\)</span> is just the overall probability that people respond correctly when asked the question, and our test statistic <span class="math inline">\(X\)</span> is the <strong>count</strong> of the number of people who did so, out of a sample size of <span class="math inline">\(N\)</span>. We’ve seen a distribution like this before, in Section <a href="chchance.html#binomdist">4.5.1</a>: that’s exactly what the binomial distribution describes! So, to use the notation and terminology that I introduced in that section, we would say that the null hypothesis predicts that <span class="math inline">\(X\)</span> is binomially distributed, which is written <span class="math display">\[
+X \sim \mbox{Binomial}(\theta,N)
+\]</span> Since the null hypothesis states that <span class="math inline">\(\theta = 0.5\)</span> and our experiment has <span class="math inline">\(N=100\)</span> people, we have the sampling distribution we need. This sampling distribution is plotted in Figure <a href="chhypothesistesting.html#fig:samplingdist">6.1</a>. No surprises really: the null hypothesis says that <span class="math inline">\(X=50\)</span> is the most likely outcome, and it says that we’re almost certain to see somewhere between 40 and 60 correct responses.</p>
+</div>
+<div id="decisionmaking" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Making decisions</h2>
+<p>Okay, we’re very close to being finished. We’ve constructed a test statistic (<span class="math inline">\(X\)</span>), and we chose this test statistic in such a way that we’re pretty confident that if <span class="math inline">\(X\)</span> is close to <span class="math inline">\(N/2\)</span> then we should retain the null, and if not we should reject it. The question that remains is this: exactly which values of the test statistic should we associate with the null hypothesis, and which exactly values go with the alternative hypothesis? In my ESP study, for example, I’ve observed a value of <span class="math inline">\(X=62\)</span>. What decision should I make? Should I choose to believe the null hypothesis, or the alternative hypothesis?</p>
+<div id="critical-regions-and-critical-values" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Critical regions and critical values</h3>
+<p>To answer this question, we need to introduce the concept of a <strong>critical region</strong> for the test statistic <span class="math inline">\(X\)</span>. The critical region of the test corresponds to those values of <span class="math inline">\(X\)</span> that would lead us to reject null hypothesis (which is why the critical region is also sometimes called the rejection region). How do we find this critical region? Well, let’s consider what we know:</p>
+<ul>
+<li><span class="math inline">\(X\)</span> should be very big or very small in order to reject the null hypothesis.</li>
+<li>If the null hypothesis is true, the sampling distribution of <span class="math inline">\(X\)</span> is Binomial<span class="math inline">\((0.5, N)\)</span>.</li>
+<li>If <span class="math inline">\(\alpha =.05\)</span>, the critical region must cover 5% of this sampling distribution.</li>
+</ul>
+<p>It’s important to make sure you understand this last point: the critical region corresponds to those values of <span class="math inline">\(X\)</span> for which we would reject the null hypothesis, and the sampling distribution in question describes the probability that we would obtain a particular value of <span class="math inline">\(X\)</span> if the null hypothesis were actually true. Now, let’s suppose that we chose a critical region that covers 20% of the sampling distribution, and suppose that the null hypothesis is actually true. What would be the probability of incorrectly rejecting the null? The answer is of course 20%. And therefore, we would have built a test that had an <span class="math inline">\(\alpha\)</span> level of <span class="math inline">\(0.2\)</span>. If we want <span class="math inline">\(\alpha = .05\)</span>, the critical region is only <em>allowed</em> to cover 5% of the sampling distribution of our test statistic.</p>
+<div class="figure"><span id="fig:crit2"></span>
+<img src="quantrma_files/figure-html/crit2-1.png" alt="The critical region associated with the hypothesis test for the ESP study, for a hypothesis test with a significance level of $\alpha = .05$. The plot itself shows the sampling distribution of $X$ under the null hypothesis: the grey bars correspond to those values of $X$ for which we would retain the null hypothesis. The blue bars show the critical region: those values of $X$ for which we would reject the null. Because the alternative hypothesis is two sided (i.e., allows both $\theta &lt;.5$ and $\theta &gt;.5$), the critical region covers both tails of the distribution. To ensure an $\alpha$ level of $.05$, we need to ensure that each of the two regions encompasses 2.5% of the sampling distribution." width="672" />
+<p class="caption">
+Figure 6.2: The critical region associated with the hypothesis test for the ESP study, for a hypothesis test with a significance level of <span class="math inline">\(\alpha = .05\)</span>. The plot itself shows the sampling distribution of <span class="math inline">\(X\)</span> under the null hypothesis: the grey bars correspond to those values of <span class="math inline">\(X\)</span> for which we would retain the null hypothesis. The blue bars show the critical region: those values of <span class="math inline">\(X\)</span> for which we would reject the null. Because the alternative hypothesis is two sided (i.e., allows both <span class="math inline">\(\theta &lt;.5\)</span> and <span class="math inline">\(\theta &gt;.5\)</span>), the critical region covers both tails of the distribution. To ensure an <span class="math inline">\(\alpha\)</span> level of <span class="math inline">\(.05\)</span>, we need to ensure that each of the two regions encompasses 2.5% of the sampling distribution.
+</p>
+</div>
+<p>As it turns out, those three things uniquely solve the problem: our critical region consists of the most <em>extreme values</em>, known as the <strong>tails</strong> of the distribution. This is illustrated in Figure <a href="chhypothesistesting.html#fig:crit2">6.2</a>. As it turns out, if we want <span class="math inline">\(\alpha = .05\)</span>, then our critical regions correspond to <span class="math inline">\(X \leq 40\)</span> and <span class="math inline">\(X \geq 60\)</span>.<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a> That is, if the number of people saying “true” is between 41 and 59, then we should retain the null hypothesis. If the number is between 0 to 40 or between 60 to 100, then we should reject the null hypothesis. The numbers 40 and 60 are often referred to as the <strong>critical values</strong>, since they define the edges of the critical region.</p>
+<p>At this point, our hypothesis test is essentially complete: (1) we choose an <span class="math inline">\(\alpha\)</span> level (e.g., <span class="math inline">\(\alpha = .05\)</span>, (2) come up with some test statistic (e.g., <span class="math inline">\(X\)</span>) that does a good job (in some meaningful sense) of comparing <span class="math inline">\(H_0\)</span> to <span class="math inline">\(H_1\)</span>, (3) figure out the sampling distribution of the test statistic on the assumption that the null hypothesis is true (in this case, binomial) and then (4) calculate the critical region that produces an appropriate <span class="math inline">\(\alpha\)</span> level (0-40 and 60-100). All that we have to do now is calculate the value of the test statistic for the real data (e.g., <span class="math inline">\(X = 62\)</span>) and then compare it to the critical values to make our decision. Since 62 is greater than the critical value of 60, we would reject the null hypothesis. Or, to phrase it slightly differently, we say that the test has produced a <strong>significant</strong> result.</p>
+</div>
+<div id="a-note-on-statistical-significance" class="section level3" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> A note on statistical “significance”</h3>
+<blockquote>
+<p><em>Like other occult techniques of divination, the statistical method has a private jargon deliberately contrived to obscure its methods from non-practitioners.</em></p>
+<p>– Attributed to G. O. Ashley<a href="#fn29" class="footnote-ref" id="fnref29"><sup>29</sup></a></p>
+</blockquote>
+<p>A very brief digression is in order at this point, regarding the word “significant.” The concept of statistical significance is actually a very simple one, but has a very unfortunate name. If the data allow us to reject the null hypothesis, we say that “the result is <em>statistically significant</em>,” which is often shortened to “the result is significant.” This terminology is rather old, and dates back to a time when “significant” just meant something like “indicated,” rather than its modern meaning, which is much closer to “important.” As a result, a lot of modern readers get very confused when they start learning statistics, because they think that a “significant result” must be an important one. It doesn’t mean that at all. All that “statistically significant” means is that the data allowed us to reject a null hypothesis. Whether or not the result is actually important in the real world is a very different question, and depends on all sorts of other things.</p>
+</div>
+<div id="onesidedtests" class="section level3" number="6.4.3">
+<h3><span class="header-section-number">6.4.3</span> The difference between one sided and two sided tests</h3>
+<p>There’s one more thing I want to point out about the hypothesis test that I’ve just constructed. If we take a moment to think about the statistical hypotheses I’ve been using, <span class="math display">\[
+\begin{array}{cc}
+H_0 : &amp; \theta = .5 \\
+H_1 : &amp; \theta \neq .5 
+\end{array}
+\]</span> we notice that the alternative hypothesis covers <em>both</em> the possibility that <span class="math inline">\(\theta &lt; .5\)</span> and the possibility that <span class="math inline">\(\theta &gt; .5\)</span>. This makes sense if I really think that ESP could produce better-than-chance performance <em>or</em> worse-than-chance performance (and there are some people who think that). In statistical language, this is an example of a <strong>two-sided test</strong>. It’s called this because the alternative hypothesis covers the area on both “sides” of the null hypothesis, and as a consequence the critical region of the test covers both tails of the sampling distribution (2.5% on either side if <span class="math inline">\(\alpha =.05\)</span>), as illustrated earlier in Figure <a href="chhypothesistesting.html#fig:crit2">6.2</a>.</p>
+<p>However, that’s not the only possibility. It might be the case, for example, that I’m only willing to believe in ESP if it produces better than chance performance. If so, then my alternative hypothesis would only covers the possibility that <span class="math inline">\(\theta &gt; .5\)</span>, and as a consequence the null hypothesis now becomes <span class="math inline">\(\theta \leq .5\)</span>: <span class="math display">\[
+\begin{array}{cc}
+H_0 : &amp; \theta \leq .5 \\
+H_1 : &amp; \theta &gt; .5 
+\end{array}
+\]</span> When this happens, we have what’s called a <strong>one-sided test</strong>, and when this happens the critical region only covers one tail of the sampling distribution. This is illustrated in Figure <a href="chhypothesistesting.html#fig:crit1">6.3</a>.</p>
+<div class="figure"><span id="fig:crit1"></span>
+<img src="quantrma_files/figure-html/crit1-1.png" alt="The critical region for a one sided test. In this case, the alternative hypothesis is that $\theta &gt; .05$, so we would only reject the null hypothesis for large values of $X$. As a consequence, the critical region only covers the upper tail of the sampling distribution; specifically the upper 5% of the distribution. Contrast this to the two-sided version earlier)" width="672" />
+<p class="caption">
+Figure 6.3: The critical region for a one sided test. In this case, the alternative hypothesis is that <span class="math inline">\(\theta &gt; .05\)</span>, so we would only reject the null hypothesis for large values of <span class="math inline">\(X\)</span>. As a consequence, the critical region only covers the upper tail of the sampling distribution; specifically the upper 5% of the distribution. Contrast this to the two-sided version earlier)
+</p>
+</div>
+</div>
+</div>
+<div id="pvalue" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> The <span class="math inline">\(p\)</span> value of a test</h2>
+<p>In one sense, our hypothesis test is complete; we’ve constructed a test statistic, figured out its sampling distribution if the null hypothesis is true, and then constructed the critical region for the test. Nevertheless, I’ve actually omitted the most important number of all: <strong>the <span class="math inline">\(p\)</span> value</strong>. It is to this topic that we now turn.</p>
+<p>There are actually different ways of interpreting a <span class="math inline">\(p\)</span> value, that reflect very different ways of thinking about hypothesis tests. We will stick to interpreting a <span class="math inline">\(p\)</span> value as is done in most introductory textbooks, but please be aware this is not the only way of thinking about <span class="math inline">\(p\)</span> values. In fact, how the <span class="math inline">\(p\)</span> value is used in practice is a mix of several school of thoughts, which makes the whole thing kind of a mess, but it’s a mess we have to deal with.</p>
+<div id="the-probability-of-extreme-data" class="section level3" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> The probability of extreme data</h3>
+<p>This definition of the <span class="math inline">\(p\)</span>-value comes from Sir Ronald Fisher (yes, <a href="chcorrelationandcaus.html#pears-r">him again</a>) and is the one that you tend to see in most introductory statistics textbooks. Notice how, when I constructed the critical region, it corresponded to the <em>tails</em> (i.e., extreme values) of the sampling distribution? That’s not a coincidence: almost all “good” tests have this characteristic (good in the sense of minimising our type II error rate, <span class="math inline">\(\beta\)</span>). The reason for that is that a good critical region almost always corresponds to those values of the test statistic that are least likely to be observed if the null hypothesis is true. If this rule is true, then we can define the <span class="math inline">\(p\)</span>-value as the probability that we would have observed a test statistic that is at least as extreme as the one we actually did get. In other words, if the data are extremely implausible according to the null hypothesis, then the null hypothesis is probably wrong.</p>
+</div>
+<div id="a-common-mistake" class="section level3" number="6.5.2">
+<h3><span class="header-section-number">6.5.2</span> A common mistake</h3>
+<p>Unfortunately, there is an explanation of <span class="math inline">\(p\)</span>-values that people sometimes give, especially when they’re first learning statistics, and it is <strong>absolutely and completely wrong</strong>. This mistaken approach is to refer to the <span class="math inline">\(p\)</span> value as “the probability that the null hypothesis is true.” It’s an intuitively appealing way to think, but it’s wrong in two key respects: (1) null hypothesis testing is a frequentist tool, and the frequentist approach to probability does <em>not</em> allow you to assign probabilities to the null hypothesis… according to this view of probability, the null hypothesis is either true or it is not; it cannot have a “5% chance” of being true. (2) even within the Bayesian approach, which does let you assign probabilities to hypotheses, the <span class="math inline">\(p\)</span> value would not correspond to the probability that the null is true; this interpretation is entirely inconsistent with the mathematics of how the <span class="math inline">\(p\)</span> value is calculated. Put bluntly, despite the intuitive appeal of thinking this way, there is <em>no</em> justification for interpreting a <span class="math inline">\(p\)</span> value this way. Never do it.</p>
+</div>
+</div>
+<div id="running-the-hypothesis-test-in-practice" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Running the hypothesis test in practice</h2>
+<p>At this point some of you might be wondering if the running example we’ve been using is a “real” hypothesis test, or just a toy example that I made up. It’s real. I built the test from first principles, thinking that it was the simplest possible problem that you might ever encounter in real life. The test actually exists and is called the <strong>binomial test</strong>. It’s implemented by an R function called <code>binom.test()</code>. To test the null hypothesis that the response probability is 0.5 (<code>p = .5</code>),<a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a> using data in which <code>x = 62</code> of <code>n = 100</code> people made the correct response, here’s how to do it in R:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="chhypothesistesting.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">binom.test</span>( <span class="at">x=</span><span class="dv">62</span>, <span class="at">n=</span><span class="dv">100</span>, <span class="at">p=</span>.<span class="dv">5</span> )</span></code></pre></div>
+<pre><code>## 
+##  Exact binomial test
+## 
+## data:  62 and 100
+## number of successes = 62, number of trials = 100, p-value = 0.02098
+## alternative hypothesis: true probability of success is not equal to 0.5
+## 95 percent confidence interval:
+##  0.5174607 0.7152325
+## sample estimates:
+## probability of success 
+##                   0.62</code></pre>
+<p>Right now, this output looks pretty unfamiliar to you, but you can see that it’s telling you more or less the right things. Specifically, the <span class="math inline">\(p\)</span>-value of 0.02 is less than the usual choice of <span class="math inline">\(\alpha = .05\)</span>, so you can reject the null.</p>
+</div>
+<div id="using-hypothesis-tests-to-compare-means" class="section level2" number="6.7">
+<h2><span class="header-section-number">6.7</span> Using hypothesis tests to compare means</h2>
+<p>The running example we’ve used until now was exactly that: an example to explain the foundations of hypothesis testing, but limited in scope. The outcome variable was binomial: we counted the number of times participants successfully “sensed” the color of the card. However, when conducting research, you’re more likely to find yourself in a situation where your outcome variable is continuous, and what you’re interested in is whether the average value of the outcome variable is higher in one group or another.</p>
+<p>For instance, a psychologist might want to know if anxiety levels are higher among parents than non-parents, or if working memory capacity is reduced by listening to music (relative to not listening to music). In a medical context, we might want to know if a new drug increases or decreases blood pressure. An agricultural scientist might want to know whether adding phosphorus to Australian native plants will kill them. In all these situations, our outcome variable is a fairly continuous, interval or ratio scale variable; and our predictor is a binary “grouping” variable. In other words, we want to compare the means of the two groups.</p>
+<p>The standard answer to the problem of comparing means is to use something called a <span class="math inline">\(t\)</span>-test, of which there are several varieties depending on exactly what question you want to solve. As a consequence, the majority of the rest of this chapter focuses on different types of the <span class="math inline">\(t\)</span>-test: one sample <span class="math inline">\(t\)</span>-tests are discussed in Section <a href="chhypothesistesting.html#onesamplettest">6.9</a>, independent samples <span class="math inline">\(t\)</span>-tests are discussed in Section <a href="chhypothesistesting.html#welchttest">6.10.2</a>, and paired samples <span class="math inline">\(t\)</span>-tests are discussed in Section <a href="chhypothesistesting.html#pairedsamplesttest">6.11</a>. The later sections of the chapter focus on the assumptions of the <span class="math inline">\(t\)</span>-tests, and possible remedies if they are violated. However, before discussing any of these useful things, we’ll start with a discussion of the <span class="math inline">\(z\)</span>-test.</p>
+</div>
+<div id="the-one-sample-z-test" class="section level2" number="6.8">
+<h2><span class="header-section-number">6.8</span> The one-sample <span class="math inline">\(z\)</span>-test</h2>
+<p>In this section I’ll describe one of the most useless tests in all of statistics: the <span class="math inline">\(z\)</span>-test. Seriously – this test is almost never used in real life. Its only real purpose is that, when teaching statistics, it’s a very convenient stepping stone along the way towards the <span class="math inline">\(t\)</span>-test, which is probably the most (over)used tool in all statistics.</p>
+<div id="the-inference-problem-that-the-test-addresses" class="section level3" number="6.8.1">
+<h3><span class="header-section-number">6.8.1</span> The inference problem that the test addresses</h3>
+<p>To introduce the idea behind the <span class="math inline">\(z\)</span>-test, let’s use a simple example. A friend of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let’s suppose that the average grade in his class is 67.5, and the standard deviation is 9.5. Of his many hundreds of students, it turns out that 20 of them also take psychology classes. Out of curiosity, I find myself wondering: do the psychology students tend to get the same grades as everyone else (i.e., mean 67.5) or do they tend to score higher or lower? He emails me their grades and I load them into R:</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="chhypothesistesting.html#cb48-1" aria-hidden="true" tabindex="-1"></a>grades <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">50</span>, <span class="dv">60</span>, <span class="dv">60</span>, <span class="dv">64</span>, <span class="dv">66</span>, <span class="dv">66</span>, <span class="dv">67</span>, <span class="dv">69</span>, <span class="dv">70</span>, <span class="dv">74</span>, </span>
+<span id="cb48-2"><a href="chhypothesistesting.html#cb48-2" aria-hidden="true" tabindex="-1"></a>            <span class="dv">76</span>, <span class="dv">76</span>, <span class="dv">77</span>, <span class="dv">79</span>, <span class="dv">79</span>, <span class="dv">79</span>, <span class="dv">81</span>, <span class="dv">82</span>, <span class="dv">82</span>, <span class="dv">89</span>)</span></code></pre></div>
+<p>and calculate the mean:</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="chhypothesistesting.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(grades)</span></code></pre></div>
+<pre><code>## [1] 72.3</code></pre>
+<p>Hm. It <em>might</em> be that the psychology students are scoring a bit higher than normal: that sample mean of <span class="math inline">\(\bar{x} = 72.3\)</span> is a fair bit higher than the hypothesised population mean of <span class="math inline">\(\mu = 67.5\)</span>, but on the other hand, a sample size of <span class="math inline">\(N = 20\)</span> isn’t all that big. Maybe it’s pure chance.</p>
+<p>To answer the question, it helps to be able to write down what it is that I think I know. Firstly, I know that the sample mean is <span class="math inline">\(\bar{X} = 72.3\)</span>. If I’m willing to assume that the psychology students have the same standard deviation as the rest of the class then I can say that the population standard deviation is <span class="math inline">\(\sigma = 9.5\)</span>. I’ll also assume that the psychology student grades are normally distributed.</p>
+<p>Next, it helps to be clear about what I want to learn from the data. In this case, my research hypothesis relates to the <em>population</em> mean <span class="math inline">\(\mu\)</span> for the psychology student grades, which is unknown. Specifically, I want to know if <span class="math inline">\(\mu = 67.5\)</span> or not. Given that this is what I know, can we devise a hypothesis test to solve our problem? The data, along with the hypothesised distribution from which they are thought to arise, are shown in Figure <a href="chhypothesistesting.html#fig:zeppo">6.4</a>. Not entirely obvious what the right answer is, is it? For this, we are going to need some statistics.</p>
+<div class="figure"><span id="fig:zeppo"></span>
+<img src="quantrma_files/figure-html/zeppo-1.png" alt="The theoretical distribution (solid line) from which the psychology student grades (blue bars) are supposed to have been generated." width="672" />
+<p class="caption">
+Figure 6.4: The theoretical distribution (solid line) from which the psychology student grades (blue bars) are supposed to have been generated.
+</p>
+</div>
+</div>
+<div id="constructing-the-hypothesis-test" class="section level3" number="6.8.2">
+<h3><span class="header-section-number">6.8.2</span> Constructing the hypothesis test</h3>
+<p>The first step in constructing a hypothesis test is to be clear about what the null and alternative hypotheses are. This isn’t too hard to do. Our null hypothesis, <span class="math inline">\(H_0\)</span>, is that the true population mean <span class="math inline">\(\mu\)</span> for psychology student grades is 67.5; and our alternative hypothesis is that the population mean <em>isn’t</em> 67.5. If we write this in mathematical notation, these hypotheses become: <span class="math display">\[
+\begin{array}{ll}
+H_0: &amp; \mu = 67.5 \\
+H_1: &amp; \mu \neq 67.5
+\end{array}
+\]</span> though to be honest this notation doesn’t add much to our understanding of the problem, it’s just a compact way of writing down what we’re trying to learn from the data. The null hypotheses <span class="math inline">\(H_0\)</span> and the alternative hypothesis <span class="math inline">\(H_1\)</span> for our test are both illustrated in Figure <a href="chhypothesistesting.html#fig:ztesthyp">6.5</a>. In addition to providing us with these hypotheses, the scenario outlined above provides us with a fair amount of background knowledge that might be useful. Specifically, there are two special pieces of information that we can add:</p>
+<ol style="list-style-type: decimal">
+<li>The psychology grades are normally distributed.</li>
+<li>The true standard deviation of these scores <span class="math inline">\(\sigma\)</span> is known to be 9.5.</li>
+</ol>
+<p>For the moment, we’ll act as if these are absolutely trustworthy facts. In real life, this kind of absolutely trustworthy background knowledge doesn’t exist, and so if we want to rely on these facts we’ll just have make the <em>assumption</em> that these things are true.</p>
+<div class="figure"><span id="fig:ztesthyp"></span>
+<img src="quantrma_files/figure-html/ztesthyp-1.png" alt="Graphical illustration of the null and alternative hypotheses assumed by the one sample $z$-test (the two sided version, that is). The null and alternative hypotheses both assume that the population distribution is normal, and additionally assumes that the population standard deviation is known (fixed at some value $\sigma_0$). The null hypothesis (left) is that the population mean $\mu$ is equal to some specified value $\mu_0$. The alternative hypothesis is that the population mean differs from this value, $\mu \neq \mu_0$." width="672" />
+<p class="caption">
+Figure 6.5: Graphical illustration of the null and alternative hypotheses assumed by the one sample <span class="math inline">\(z\)</span>-test (the two sided version, that is). The null and alternative hypotheses both assume that the population distribution is normal, and additionally assumes that the population standard deviation is known (fixed at some value <span class="math inline">\(\sigma_0\)</span>). The null hypothesis (left) is that the population mean <span class="math inline">\(\mu\)</span> is equal to some specified value <span class="math inline">\(\mu_0\)</span>. The alternative hypothesis is that the population mean differs from this value, <span class="math inline">\(\mu \neq \mu_0\)</span>.
+</p>
+</div>
+<p>The next step is to figure out what we would be a good choice for a diagnostic test statistic; something that would help us discriminate between <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_1\)</span>. Given that the hypotheses all refer to the population mean <span class="math inline">\(\mu\)</span>, you’d feel pretty confident that the sample mean <span class="math inline">\(\bar{X}\)</span> would be a pretty useful place to start. What we could do, is look at the difference between the sample mean <span class="math inline">\(\bar{X}\)</span> and the value that the null hypothesis predicts for the population mean. In our example, that would mean we calculate <span class="math inline">\(\bar{X} - 67.5\)</span>. More generally, if we let <span class="math inline">\(\mu_0\)</span> refer to the value that the null hypothesis claims is our population mean, then we’d want to calculate: <span class="math display">\[
+\bar{X} - \mu_0
+\]</span> If this quantity equals or is very close to 0, things are looking good for the null hypothesis. If this quantity is a long way away from 0, then it’s looking less likely that the null hypothesis is worth retaining. But how far away from zero should it be for us to reject <span class="math inline">\(H_0\)</span>?</p>
+<p>To figure that out, we need to be a bit more sneaky, and we’ll need to rely on those two pieces of background knowledge that I wrote down previously, namely that the raw data are normally distributed, and we know the value of the population standard deviation <span class="math inline">\(\sigma\)</span>. If the null hypothesis is actually true, and the true mean is <span class="math inline">\(\mu_0\)</span>, then these facts together mean that we know the complete population distribution of the data: a normal distribution with mean <span class="math inline">\(\mu_0\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>. Adopting the notation from Section <a href="chchance.html#norm-dist">4.5.3</a>, a statistician might write this as: <span class="math display">\[
+X \sim \mbox{Normal}(\mu_0,\sigma)
+\]</span> Okay, if that’s true, then what can we say about the distribution of <span class="math inline">\(\bar{X}\)</span>? Well, as we discussed earlier (see Section <a href="chestimationsampling.html#clt">5.4</a>), the sampling distribution of the mean <span class="math inline">\(\bar{X}\)</span> is also normal, and has mean <span class="math inline">\(\mu\)</span>. But the standard deviation of this sampling distribution <span class="math inline">\(\mbox{SE}({\bar{X}})\)</span>, which is called the <em>standard error of the mean</em>, is: <span class="math display">\[
+\mbox{SE}({\bar{X}}) = \frac{\sigma}{\sqrt{N}}
+\]</span> In other words, if the null hypothesis is true then the sampling distribution of the mean can be written as follows: <span class="math display">\[
+\bar{X} \sim \mbox{Normal}(\mu_0,\mbox{SE}({\bar{X}}))
+\]</span> Now comes the trick. What we can do is convert the sample mean <span class="math inline">\(\bar{X}\)</span> into a standard score (Section <a href="chchance.html#zscore">4.6</a>). This is conventionally written as <span class="math inline">\(z\)</span>, but for now I’m going to refer to it as <span class="math inline">\(z_{\bar{X}}\)</span>. (The reason for using this expanded notation is to help you remember that we’re calculating standardised version of a sample mean, <em>not</em> a standardised version of a single observation, which is what a <span class="math inline">\(z\)</span>-score usually refers to). When we do so, the <span class="math inline">\(z\)</span>-score for our sample mean is: <span class="math display">\[
+z_{\bar{X}} = \frac{\bar{X} - \mu_0}{\mbox{SE}({\bar{X}})}
+\]</span> or, equivalently: <span class="math display">\[
+z_{\bar{X}} =  \frac{\bar{X} - \mu_0}{\sigma / \sqrt{N}}
+\]</span> This <span class="math inline">\(z\)</span>-score is our test statistic. The nice thing about using this as our test statistic is that like all <span class="math inline">\(z\)</span>-scores, it has a standard normal distribution: <span class="math display">\[
+z_{\bar{X}} \sim \mbox{Normal}(0,1)
+\]</span> In other words, regardless of what scale the original data are on, the <span class="math inline">\(z\)</span>-statistic itself always has the same interpretation: it’s equal to the number of standard errors that separate the observed sample mean <span class="math inline">\(\bar{X}\)</span> from the population mean <span class="math inline">\(\mu_0\)</span> predicted by the null hypothesis. Better yet, regardless of what the population parameters for the raw scores actually are, the 5% critical regions for <span class="math inline">\(z\)</span>-test are always the same, as illustrated in Figures <a href="chhypothesistesting.html#fig:ztest2">6.6</a> and <a href="chhypothesistesting.html#fig:ztest1">6.7</a>. And what this meant, way back in the days where people did all their statistics by hand, is that someone could publish a table like this:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">desired <span class="math inline">\(\alpha\)</span> level</th>
+<th align="center">two-sided test</th>
+<th align="center">one-sided test</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">.1</td>
+<td align="center">1.644854</td>
+<td align="center">1.281552</td>
+</tr>
+<tr class="even">
+<td align="center">.05</td>
+<td align="center">1.959964</td>
+<td align="center">1.644854</td>
+</tr>
+<tr class="odd">
+<td align="center">.01</td>
+<td align="center">2.575829</td>
+<td align="center">2.326348</td>
+</tr>
+<tr class="even">
+<td align="center">.001</td>
+<td align="center">3.290527</td>
+<td align="center">3.090232</td>
+</tr>
+</tbody>
+</table>
+<p>which in turn meant that researchers could calculate their <span class="math inline">\(z\)</span>-statistic by hand, and then look up the critical value in a text book. That was an incredibly handy thing to be able to do back then, but it’s kind of unnecessary these days, since it’s trivially easy to do it with software like R.</p>
+<div class="figure"><span id="fig:ztest2"></span>
+<img src="quantrma_files/figure-html/ztest2-1.png" alt="Rejection regions for the two-sided $z$-test" width="672" />
+<p class="caption">
+Figure 6.6: Rejection regions for the two-sided <span class="math inline">\(z\)</span>-test
+</p>
+</div>
+<div class="figure"><span id="fig:ztest1"></span>
+<img src="quantrma_files/figure-html/ztest1-1.png" alt="Rejection regions for the one-sided $z$-test" width="672" />
+<p class="caption">
+Figure 6.7: Rejection regions for the one-sided <span class="math inline">\(z\)</span>-test
+</p>
+</div>
+</div>
+<div id="a-worked-example-using-r" class="section level3" number="6.8.3">
+<h3><span class="header-section-number">6.8.3</span> A worked example using R</h3>
+<p>Now, as I mentioned earlier, the <span class="math inline">\(z\)</span>-test is almost never used in practice. It’s so rarely used in real life that the basic installation of R doesn’t have a built in function for it. However, the test is so incredibly simple that it’s really easy to do one manually. Let’s go back to the data from Dr Zeppo’s class. Having loaded the <code>grades</code> data, the first thing I need to do is calculate the sample mean:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="chhypothesistesting.html#cb51-1" aria-hidden="true" tabindex="-1"></a>sample.mean <span class="ot">&lt;-</span> <span class="fu">mean</span>( grades )</span>
+<span id="cb51-2"><a href="chhypothesistesting.html#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(sample.mean)</span></code></pre></div>
+<pre><code>## [1] 72.3</code></pre>
+<p>Then, I create variables corresponding to known population standard deviation (<span class="math inline">\(\sigma = 9.5\)</span>), and the value of the population mean that the null hypothesis specifies (<span class="math inline">\(\mu_0 = 67.5\)</span>):</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="chhypothesistesting.html#cb53-1" aria-hidden="true" tabindex="-1"></a>mu.null <span class="ot">&lt;-</span> <span class="fl">67.5</span></span>
+<span id="cb53-2"><a href="chhypothesistesting.html#cb53-2" aria-hidden="true" tabindex="-1"></a>sd <span class="ot">&lt;-</span> <span class="fl">9.5</span></span></code></pre></div>
+<p>Let’s also create a variable for the sample size. We could count up the number of observations ourselves, and type <code>N &lt;- 20</code> at the command prompt, but counting is tedious and repetitive. Let’s get R to do the tedious repetitive bit by using the <code>length()</code> function, which tells us how many elements there are in a vector:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="chhypothesistesting.html#cb54-1" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="fu">length</span>(grades)</span>
+<span id="cb54-2"><a href="chhypothesistesting.html#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(N)</span></code></pre></div>
+<pre><code>## [1] 20</code></pre>
+<p>Next, let’s calculate the standard error of the mean:</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="chhypothesistesting.html#cb56-1" aria-hidden="true" tabindex="-1"></a>sem <span class="ot">&lt;-</span> sd <span class="sc">/</span> <span class="fu">sqrt</span>(N)</span>
+<span id="cb56-2"><a href="chhypothesistesting.html#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(sem)</span></code></pre></div>
+<pre><code>## [1] 2.124265</code></pre>
+<p>And finally, we calculate our <span class="math inline">\(z\)</span>-score:</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="chhypothesistesting.html#cb58-1" aria-hidden="true" tabindex="-1"></a>z.score <span class="ot">&lt;-</span> (sample.mean <span class="sc">-</span> mu.null) <span class="sc">/</span> sem</span>
+<span id="cb58-2"><a href="chhypothesistesting.html#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(z.score)</span></code></pre></div>
+<pre><code>## [1] 2.259606</code></pre>
+<p>At this point, we would traditionally look up the value 2.26 in our table of critical values. Our original hypothesis was two-sided (we didn’t really have any theory about whether psych students would be better or worse at statistics than other students) so our hypothesis test is two-sided (or two-tailed) also.</p>
+<p>Looking at the little table that I showed earlier, we can see that 2.26 is bigger than the critical value of 1.96 that would be required to be significant at <span class="math inline">\(\alpha = .05\)</span>, but smaller than the value of 2.58 that would be required to be significant at a level of <span class="math inline">\(\alpha = .01\)</span>. Therefore, we can conclude that we have a significant effect, which we might write up by saying something like this:</p>
+<blockquote>
+<p>With a mean grade of 73.2 in the sample of psychology students, and assuming a true population standard deviation of 9.5, we can conclude that the psychology students have significantly different statistics scores to the class average (<span class="math inline">\(z = 2.26\)</span>, <span class="math inline">\(N=20\)</span>, <span class="math inline">\(p&lt;.05\)</span>).</p>
+</blockquote>
+<p>However, what if want an exact <span class="math inline">\(p\)</span>-value? Well, back in the day, the tables of critical values were huge, and so you could look up your actual <span class="math inline">\(z\)</span>-value, and find the smallest value of <span class="math inline">\(\alpha\)</span> for which your data would be significant. However, looking things up in books is tedious, and typing things into computers is awesome. So let’s do it using R instead. Now, notice that the <span class="math inline">\(\alpha\)</span> level of a <span class="math inline">\(z\)</span>-test (or any other test, for that matter) defines the total area “under the curve” for the critical region, right? That is, if we set <span class="math inline">\(\alpha = .05\)</span> for a two-sided test, then the critical region is set up such that the area under the curve for the critical region is <span class="math inline">\(.05\)</span>. And, for the <span class="math inline">\(z\)</span>-test, the critical value of 1.96 is chosen that way because the area in the lower tail (i.e., below <span class="math inline">\(-1.96\)</span>) is exactly <span class="math inline">\(.025\)</span> and the area under the upper tail (i.e., above <span class="math inline">\(1.96\)</span>) is exactly <span class="math inline">\(.025\)</span>. So, since our observed <span class="math inline">\(z\)</span>-statistic is <span class="math inline">\(2.26\)</span>, why not calculate the area under the curve below <span class="math inline">\(-2.26\)</span> or above <span class="math inline">\(2.26\)</span>? In R we can calculate this using the <code>pnorm()</code> function. For the upper tail:</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="chhypothesistesting.html#cb60-1" aria-hidden="true" tabindex="-1"></a>upper.area <span class="ot">&lt;-</span> <span class="fu">pnorm</span>(<span class="at">q =</span> z.score, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb60-2"><a href="chhypothesistesting.html#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(upper.area)</span></code></pre></div>
+<pre><code>## [1] 0.01192287</code></pre>
+<p>The <code>lower.tail = FALSE</code> is me telling R to calculate the area under the curve from 2.26 <em>and upwards</em>. If I’d told it that <code>lower.tail = TRUE</code>, then R would calculate the area from 2.26 <em>and below</em>, and it would give me an answer 0.9880771. Alternatively, to calculate the area from <span class="math inline">\(-2.26\)</span> and below, we get</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="chhypothesistesting.html#cb62-1" aria-hidden="true" tabindex="-1"></a>lower.area <span class="ot">&lt;-</span> <span class="fu">pnorm</span>(<span class="at">q =</span> <span class="sc">-</span>z.score, <span class="at">lower.tail =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb62-2"><a href="chhypothesistesting.html#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(lower.area)</span></code></pre></div>
+<pre><code>## [1] 0.01192287</code></pre>
+<p>Thus we get our <span class="math inline">\(p\)</span>-value:</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="chhypothesistesting.html#cb64-1" aria-hidden="true" tabindex="-1"></a>p.value <span class="ot">&lt;-</span> lower.area <span class="sc">+</span> upper.area</span>
+<span id="cb64-2"><a href="chhypothesistesting.html#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(p.value)</span></code></pre></div>
+<pre><code>## [1] 0.02384574</code></pre>
+</div>
+<div id="zassumptions" class="section level3" number="6.8.4">
+<h3><span class="header-section-number">6.8.4</span> Assumptions of the <span class="math inline">\(z\)</span>-test</h3>
+<p>All statistical tests make assumptions. Some tests make reasonable assumptions, while other tests do not. The test I’ve just described – the one sample <span class="math inline">\(z\)</span>-test – makes three basic assumptions. These are:</p>
+<ul>
+<li><em>Normality</em>. As usually described, the <span class="math inline">\(z\)</span>-test assumes that the true population distribution is normal.<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a> is often pretty reasonable, and not only that, it’s an assumption that we can check if we feel worried about it (but not during this course).</li>
+<li><em>Independence</em>. The second assumption of the test is that the observations in your data set are not correlated with each other, or related to each other in some funny way. This isn’t as easy to check statistically: it relies a bit on good experimental design. An obvious (and stupid) example of something that violates this assumption is a data set where you “copy” the same observation over and over again in your data file: so you end up with a massive “sample size,” consisting of only one genuine observation. More realistically, you have to ask yourself if it’s really plausible to imagine that each observation is a completely random sample from the population that you’re interested in. In practice, this assumption is never met; but we try our best to design studies that minimise the problems of correlated data.</li>
+<li><em>Known standard deviation</em>. The third assumption of the <span class="math inline">\(z\)</span>-test is that the true standard deviation of the population is known to the researcher. This is just stupid. In no real world data analysis problem do you know the standard deviation <span class="math inline">\(\sigma\)</span> of some population, but are completely ignorant about the mean <span class="math inline">\(\mu\)</span>. In other words, this assumption is <em>always</em> wrong.</li>
+</ul>
+<p>In view of the stupidity of assuming that <span class="math inline">\(\sigma\)</span> is known, let’s see if we can live without it. This takes us out of the dreary domain of the <span class="math inline">\(z\)</span>-test, and into the magical kingdom of the <span class="math inline">\(t\)</span>-test, with unicorns and fairies and leprechauns, and um…</p>
+</div>
+</div>
+<div id="onesamplettest" class="section level2" number="6.9">
+<h2><span class="header-section-number">6.9</span> The one-sample <span class="math inline">\(t\)</span>-test</h2>
+<p>After some thought, I decided that it might not be safe to assume that the psychology student grades necessarily have the same standard deviation as the other students in Dr Zeppo’s class. After all, if I’m entertaining the hypothesis that they don’t have the same mean, then why should I believe that they absolutely have the same standard deviation? In view of this, I should really stop assuming that I know the true value of <span class="math inline">\(\sigma\)</span>. This violates the assumptions of my <span class="math inline">\(z\)</span>-test, so in one sense I’m back to square one. However, it’s not like I’m completely bereft of options. After all, I’ve still got my raw data, and those raw data give me an <em>estimate</em> of the population standard deviation:</p>
+<pre><code>## [1] 9.520615</code></pre>
+<p>In other words, while I can’t say that I know that <span class="math inline">\(\sigma = 9.5\)</span>, I <em>can</em> say that <span class="math inline">\(\hat\sigma = 9.52\)</span>.</p>
+<p>Okay, cool. The obvious thing that you might think to do is run a <span class="math inline">\(z\)</span>-test, but using the estimated standard deviation of 9.52 instead of relying on my assumption that the true standard deviation is 9.5. So, we could just type this new number into R and out would come the answer. And you probably wouldn’t be surprised to hear that this would still give us a significant result. This approach is close, but it’s not <em>quite</em> correct. Because we are now relying on an <em>estimate</em> of the population standard deviation, we need to make some adjustment for the fact that we have some uncertainty about what the true population standard deviation actually is. Maybe our data are just a fluke … maybe the true population standard deviation is 11, for instance. But if that were actually true, and we ran the <span class="math inline">\(z\)</span>-test assuming <span class="math inline">\(\sigma=11\)</span>, then the result would end up being <em>non-significant</em>. That’s a problem, and it’s one we’re going to have to address.</p>
+<div id="introducing-the-t-test" class="section level3" number="6.9.1">
+<h3><span class="header-section-number">6.9.1</span> Introducing the <span class="math inline">\(t\)</span>-test</h3>
+<p>This ambiguity is annoying, and it was resolved in 1908 by a guy called William Sealy Gosset <span class="citation">(<a href="references.html#ref-Student1908" role="doc-biblioref">Student 1908</a>)</span>, who was working as a chemist for the Guinness brewery at the time <span class="citation">(see <a href="references.html#ref-Box1987" role="doc-biblioref">Box 1987</a>)</span>. Because Guinness took a dim view of its employees publishing statistical analysis (apparently they felt it was a trade secret), he published the work under the pseudonym “A Student,” and to this day, the full name of the <span class="math inline">\(t\)</span>-test is actually <strong><em>Student’s</em></strong> <span class="math inline">\(t\)</span>-test. The key thing that Gosset figured out is how we should accommodate the fact that we aren’t completely sure what the true standard deviation is.<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a> The answer is that it subtly changes the sampling distribution. In the <span class="math inline">\(t\)</span>-test, our test statistic (now called a <span class="math inline">\(t\)</span>-statistic) is calculated in exactly the same way I mentioned above. If our null hypothesis is that the true mean is <span class="math inline">\(\mu\)</span>, but our sample has mean <span class="math inline">\(\bar{X}\)</span> and our estimate of the population standard deviation is <span class="math inline">\(\hat{\sigma}\)</span>, then our <span class="math inline">\(t\)</span> statistic is: <span class="math display">\[
+t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }
+\]</span> The only thing that has changed in the equation is that instead of using the known true value <span class="math inline">\(\sigma\)</span>, we use the estimate <span class="math inline">\(\hat{\sigma}\)</span>. And if this estimate has been constructed from <span class="math inline">\(N\)</span> observations, then the sampling distribution turns into a <span class="math inline">\(t\)</span>-distribution with <span class="math inline">\(N-1\)</span> <strong><em>degrees of freedom</em></strong> (df). The <span class="math inline">\(t\)</span> distribution is very similar to the normal distribution, but has “heavier” tails, as discussed earlier in Section <a href="chchance.html#other-dist">4.5.5</a> and illustrated in Figure <a href="chhypothesistesting.html#fig:ttestdist">6.8</a>. Notice, though, that as df gets larger, the <span class="math inline">\(t\)</span>-distribution starts to look identical to the standard normal distribution. This is as it should be: if you have a sample size of <span class="math inline">\(N = 70,000,000\)</span> then your “estimate” of the standard deviation would be pretty much perfect, right? So, you should expect that for large <span class="math inline">\(N\)</span>, the <span class="math inline">\(t\)</span>-test would behave exactly the same way as a <span class="math inline">\(z\)</span>-test. And that’s exactly what happens!</p>
+<div class="figure"><span id="fig:ttestdist"></span>
+<img src="figures/tdist_3.png" alt="The $t$ distribution with 2 degrees of freedom (left) and 10 degrees of freedom (right), with a standard normal distribution (i.e., mean 0 and std dev 1) plotted as dotted lines for comparison purposes. Notice that the $t$ distribution has heavier tails (higher kurtosis) than the normal distribution; this effect is quite exaggerated when the degrees of freedom are very small, but negligible for larger values. In other words, for large $df$ the $t$ distribution is essentially identical to a normal distribution." width="561" />
+<p class="caption">
+Figure 6.8: The <span class="math inline">\(t\)</span> distribution with 2 degrees of freedom (left) and 10 degrees of freedom (right), with a standard normal distribution (i.e., mean 0 and std dev 1) plotted as dotted lines for comparison purposes. Notice that the <span class="math inline">\(t\)</span> distribution has heavier tails (higher kurtosis) than the normal distribution; this effect is quite exaggerated when the degrees of freedom are very small, but negligible for larger values. In other words, for large <span class="math inline">\(df\)</span> the <span class="math inline">\(t\)</span> distribution is essentially identical to a normal distribution.
+</p>
+</div>
+</div>
+<div id="doing-the-test-in-r" class="section level3" number="6.9.2">
+<h3><span class="header-section-number">6.9.2</span> Doing the test in R</h3>
+<p>As you might expect, the mechanics of the <span class="math inline">\(t\)</span>-test are almost identical to the mechanics of the <span class="math inline">\(z\)</span>-test. So there’s not much point in going through the tedious exercise of showing you how to do the calculations using low level commands: it’s pretty much identical to the calculations that we did earlier, except that we use the estimated standard deviation (i.e., something like <code>se.est &lt;- sd(grades)</code>), and then we test our hypothesis using the <span class="math inline">\(t\)</span> distribution rather than the normal distribution (i.e. we use <code>pt()</code> rather than <code>pnorm()</code>. During the labs, instead of going through the calculations in tedious detail, for now we’ll jump straight to showing you how <span class="math inline">\(t\)</span>-tests are done in practice using the <code>t.test()</code> command:</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="chhypothesistesting.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(grades, <span class="at">mu =</span> <span class="fl">67.5</span>)</span></code></pre></div>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  grades
+## t = 2.2547, df = 19, p-value = 0.03615
+## alternative hypothesis: true mean is not equal to 67.5
+## 95 percent confidence interval:
+##  67.84422 76.75578
+## sample estimates:
+## mean of x 
+##      72.3</code></pre>
+<p>So that seems straightforward enough. Now what do we <em>do</em> with this output? Well, since we’re pretending that we actually care about my toy example, we’re overjoyed to discover that the result is statistically significant (i.e. <span class="math inline">\(p\)</span> value below .05). We could report the result by saying something like this:</p>
+<blockquote>
+<p>With a mean grade of 72.3, the psychology students scored slightly higher than the average grade of 67.5 (<span class="math inline">\(t(19) = 2.25\)</span>, <span class="math inline">\(p = 0.036\)</span>).</p>
+</blockquote>
+<p>You can find more about reporting the results of a statistical test in the Basestone course on Canvas.</p>
+</div>
+<div id="ttestoneassumptions" class="section level3" number="6.9.3">
+<h3><span class="header-section-number">6.9.3</span> Assumptions of the one sample <span class="math inline">\(t\)</span>-test</h3>
+<p>Okay, so what assumptions does the one-sample <span class="math inline">\(t\)</span>-test make? Well, since the <span class="math inline">\(t\)</span>-test is basically a <span class="math inline">\(z\)</span>-test with the assumption of known standard deviation removed, you shouldn’t be surprised to see that it makes the same assumptions as the <span class="math inline">\(z\)</span>-test, minus the one about the known standard deviation. That is</p>
+<ul>
+<li><em>Normality</em>. We’re still assuming that the population distribution (or sampling distribution of the mean) is normal.</li>
+<li><em>Independence</em>. Once again, we have to assume that the observations in our sample are generated independently of one another. See the earlier discussion about the <span class="math inline">\(z\)</span>-test for specifics (Section <a href="chhypothesistesting.html#zassumptions">6.8.4</a>).</li>
+</ul>
+<p>Overall, these two assumptions aren’t terribly unreasonable, and as a consequence the one-sample <span class="math inline">\(t\)</span>-test is pretty widely used in practice as a way of comparing a sample mean against a hypothesized population mean.</p>
+</div>
+</div>
+<div id="the-independent-samples-t-test" class="section level2" number="6.10">
+<h2><span class="header-section-number">6.10</span> The independent samples <span class="math inline">\(t\)</span>-test</h2>
+<p>Although the one sample <span class="math inline">\(t\)</span>-test has its uses, it’s not the most typical example of a <span class="math inline">\(t\)</span>-test. A much more common situation arises when you’ve got two different groups of observations. In psychology, this tends to correspond to two different groups of participants, where each group corresponds to a different condition in your study. For each person in the study, you measure some outcome variable of interest, and the research question that you’re asking is whether or not the two groups have the same population mean. This is the situation that the independent samples <span class="math inline">\(t\)</span>-test is designed for.</p>
+<div id="the-data" class="section level3" number="6.10.1">
+<h3><span class="header-section-number">6.10.1</span> The data</h3>
+<p>Suppose we have 33 students taking Dr Harpo’s statistics lectures, and Dr Harpo doesn’t grade to a curve. Actually, Dr Harpo’s grading is a bit of a mystery, so we don’t really know anything about what the average grade is for the class as a whole. There are two tutors for the class, Anastasia and Bernadette. There are <span class="math inline">\(N_1 = 15\)</span> students in Anastasia’s tutorials, and <span class="math inline">\(N_2 = 18\)</span> in Bernadette’s tutorials. The research question I’m interested in is whether Anastasia or Bernadette is a better tutor, or if it doesn’t make much of a difference. Dr Harpo emails me the course grades as a data.frame:</p>
+<pre><code>## Rows: 33
+## Columns: 2
+## $ grade &lt;dbl&gt; 65, 72, 66, 74, 73, 71, 66, 76, 69, 79, 73, 62, 83, 76, 69, 68,…
+## $ tutor &lt;fct&gt; Anastasia, Bernadette, Bernadette, Anastasia, Anastasia, Bernad…</code></pre>
+<p>As we can see, there’s a single data frame with two variables, <code>grade</code> and <code>tutor</code>. The <code>grade</code> variable is a numeric vector, containing the grades for all <span class="math inline">\(N = 33\)</span> students taking Dr Harpo’s class; the <code>tutor</code> variable is a factor that indicates who each student’s tutor was. The first six observations in this data set are shown below:</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="chhypothesistesting.html#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(harpo)</span></code></pre></div>
+<pre><code>##   grade      tutor
+## 1    65  Anastasia
+## 2    72 Bernadette
+## 3    66 Bernadette
+## 4    74  Anastasia
+## 5    73  Anastasia
+## 6    71 Bernadette</code></pre>
+<p>We can calculate means and standard deviations, using the <code>mean()</code> and <code>sd()</code> functions. Rather than show the R output, here’s a nice little summary table:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="center">mean</th>
+<th align="center">std dev</th>
+<th align="center">N</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Anastasia’s students</td>
+<td align="center">74.53</td>
+<td align="center">9.00</td>
+<td align="center">15</td>
+</tr>
+<tr class="even">
+<td align="left">Bernadette’s students</td>
+<td align="center">69.06</td>
+<td align="center">5.77</td>
+<td align="center">18</td>
+</tr>
+</tbody>
+</table>
+<p>Since it’s always a good idea to look at your data, I’ve plotted histograms showing the distribution of grades for both tutors (Figure <a href="chhypothesistesting.html#fig:harpohistanastasia">6.9</a> and <a href="chhypothesistesting.html#fig:harpohistbernadette">6.10</a>). Inspection of these histograms suggests that the students in Anastasia’s class may be getting slightly better grades on average, though they also seem a little more variable.</p>
+<div class="figure"><span id="fig:harpohistanastasia"></span>
+<img src="quantrma_files/figure-html/harpohistanastasia-1.png" alt="Histogram showing the overall distribution of grades for students in Anastasia's class" width="672" />
+<p class="caption">
+Figure 6.9: Histogram showing the overall distribution of grades for students in Anastasia’s class
+</p>
+</div>
+<div class="figure"><span id="fig:harpohistbernadette"></span>
+<img src="quantrma_files/figure-html/harpohistbernadette-1.png" alt="Histogram showing the overall distribution of grades for students in Bernadette's class" width="672" />
+<p class="caption">
+Figure 6.10: Histogram showing the overall distribution of grades for students in Bernadette’s class
+</p>
+</div>
+</div>
+<div id="welchttest" class="section level3" number="6.10.2">
+<h3><span class="header-section-number">6.10.2</span> Introducing the test</h3>
+<p>The <strong><em>independent samples</em></strong> <span class="math inline">\(t\)</span>-test comes in two different forms: Student’s and Welch’s. The original Student <span class="math inline">\(t\)</span>-test is the simpler of the two, but relies on more restrictive assumptions than the Welch <span class="math inline">\(t\)</span>-test. As such, it is generally advised to use the Welch <span class="math inline">\(t\)</span>-test, which we’ll explain in more detail below. The biggest problem with using the Student test is that it assumes that both groups have the same standard deviation. This is rarely true in real life: if two samples don’t have the same means, why should we expect them to have the same standard deviation? There’s really no reason to expect this assumption to be true.</p>
+<p>A graphical illustration of what the <strong><em>Welch</em></strong> <span class="math inline">\(t\)</span> test assumes about the data is shown in Figure <a href="chhypothesistesting.html#fig:ttesthyp2">6.11</a>. Assuming for the moment that you want to run a two-sided test, the goal is to determine whether two “independent samples” of data are drawn from populations with the same mean (the null hypothesis) or different means (the alternative hypothesis). When we say “independent” samples, what we really mean here is that there’s no special relationship between observations in the two samples. This probably doesn’t make a lot of sense right now, but it will be clearer when we come to talk about the paired samples <span class="math inline">\(t\)</span>-test later on. For now, let’s just point out that if we have an experimental design where participants are randomly allocated to one of two groups, and we want to compare the two groups’ mean performance on some outcome measure, then an independent samples <span class="math inline">\(t\)</span>-test (rather than a paired samples <span class="math inline">\(t\)</span>-test) is what we’re after.</p>
+<div class="figure"><span id="fig:ttesthyp2"></span>
+<img src="quantrma_files/figure-html/ttesthyp2-1.png" alt="Graphical illustration of the null and alternative hypotheses assumed by the Welch $t$-test. Like the Student test we assume that both samples are drawn from a normal population; but the alternative hypothesis no longer requires the two populations to have equal variance." width="672" />
+<p class="caption">
+Figure 6.11: Graphical illustration of the null and alternative hypotheses assumed by the Welch <span class="math inline">\(t\)</span>-test. Like the Student test we assume that both samples are drawn from a normal population; but the alternative hypothesis no longer requires the two populations to have equal variance.
+</p>
+</div>
+<p>Okay, so let’s let <span class="math inline">\(\mu_1\)</span> denote the true population mean for group 1 (e.g., Anastasia’s students), and <span class="math inline">\(\mu_2\)</span> will be the true population mean for group 2 (e.g., Bernadette’s students),<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a> and as usual we’ll let <span class="math inline">\(\bar{X}_1\)</span> and <span class="math inline">\(\bar{X}_2\)</span> denote the observed sample means for both of these groups. Our null hypothesis states that the two population means are identical (<span class="math inline">\(\mu_1 = \mu_2\)</span>) and the alternative to this is that they are not (<span class="math inline">\(\mu_1 \neq \mu_2\)</span>). Written in mathematical-ese, this is…</p>
+<p><span class="math display">\[
+\begin{array}{ll}
+H_0: &amp; \mu_1 = \mu_2  \\
+H_1: &amp; \mu_1 \neq \mu_2
+\end{array}
+\]</span></p>
+<p>To construct a hypothesis test that handles this scenario, we start by noting that if the null hypothesis is true, then the difference between the population means is <em>exactly</em> zero: <span class="math inline">\(\mu_1 - \mu_2 = 0\)</span></p>
+<p>As a consequence, a diagnostic test statistic will be based on the difference between the two sample means. Because if the null hypothesis is true, then we’d expect
+<span class="math display">\[\bar{X}_1 - \bar{X}_2\]</span>
+to be <em>pretty close</em> to zero. However, just like we saw with our one-sample tests (i.e., the one-sample <span class="math inline">\(z\)</span>-test and the one-sample <span class="math inline">\(t\)</span>-test) we have to be precise about exactly <em>how close</em> to zero this difference should be. And the solution to the problem is more or less the same one: we calculate a standard error estimate (SE), just like last time, and then divide the difference between means by this estimate. So our <span class="math inline">\(t\)</span>-statistic will be of the form:
+<span class="math display">\[t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{SE}({\bar{X}_1 - \bar{X}_2})}\]</span></p>
+<p>We just need to figure out what the standard error estimate of the difference between sample means actually is. This is a bit trickier than was the case for what we’ve looked at so far, but it works out to this:</p>
+<p><span class="math display">\[
+\mbox{SE}({\bar{X}_1 - \bar{X}_2}) = \sqrt{ \frac{{\hat{\sigma}_1}^2}{N_1} + \frac{{\hat{\sigma}_2}^2}{N_2} }
+\]</span>
+Why it’s calculated this way is beyond the scope of this book. In the Welch test, the “degrees of freedom” doesn’t have to be a whole number any more, and it doesn’t correspond all that closely to the “number of data points minus the number of constraints” anymore. The degrees of freedom are, in fact…
+<span class="math display">\[
+\mbox{df} = \frac{ ({\hat{\sigma}_1}^2 / N_1 + {\hat{\sigma}_2}^2 / N_2)^2 }{  ({\hat{\sigma}_1}^2 / N_1)^2 / (N_1 -1 )  + ({\hat{\sigma}_2}^2 / N_2)^2 / (N_2 -1 ) } 
+\]</span></p>
+<p>… which is all pretty straightforward and obvious, right? Well, perhaps not. It doesn’t really matter for our purposes. Just as we saw with our one-sample test, the sampling distribution of this <span class="math inline">\(t\)</span>-statistic is a <span class="math inline">\(t\)</span>-distribution with the degrees of freedom above as long as the null hypothesis is true, and all of the assumptions of the test are met.</p>
+</div>
+<div id="doing-the-test-in-r-1" class="section level3" number="6.10.3">
+<h3><span class="header-section-number">6.10.3</span> Doing the test in R</h3>
+<p>Not surprisingly, you can run an independent samples <span class="math inline">\(t\)</span>-test using the <code>t.test()</code> function. The exact usage of <code>t.test()</code> for independent samples will be explained during the lab, but it looks as follows:</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="chhypothesistesting.html#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>( <span class="at">formula =</span> grade <span class="sc">~</span> tutor, <span class="at">data =</span> harpo )</span></code></pre></div>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  grade by tutor
+## t = 2.0342, df = 23.025, p-value = 0.05361
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.09249349 11.04804904
+## sample estimates:
+##  mean in group Anastasia mean in group Bernadette 
+##                 74.53333                 69.05556</code></pre>
+<p>The output has a very familiar form. First, it tells you what test was run, and it tells you the names of the variables that you used. The second part of the output reports the sample means and standard deviations for both groups (i.e., both tutorial groups). The third section of the output states the null hypothesis and the alternative hypothesis in a fairly explicit form. It then reports the test results: just like last time, the test results consist of a <span class="math inline">\(t\)</span>-statistic, the degrees of freedom, the <span class="math inline">\(p\)</span>-value and a confidence interval.</p>
+<p>It’s pretty important to be clear on what this confidence interval actually refers to: it is a confidence interval for the <em>difference</em> between the group means. In our example, Anastasia’s students had an average grade of 74.5, and Bernadette’s students had an average grade of 69.1, so the difference between the two sample means is 5.4. But of course the difference between population means might be bigger or smaller than this. The confidence interval tells you that there’s a 95% chance that the true difference between means lies between -0.09 and 11.05.</p>
+<p>In any case, the difference between the two groups is not significant (just barely), so we might write up the result using text like this:</p>
+<blockquote>
+<p>The mean grade in Anastasia’s class was 74.5%, whereas the mean in Bernadette’s class was 69.1%. A Welch’s independent samples <span class="math inline">\(t\)</span>-test showed that this difference was not significant, <span class="math inline">\(t(23.03) = 2.03\)</span>, <span class="math inline">\(p = 0.054\)</span>, <span class="math inline">\(\text{CI}_{95} = [-0.09, 11.05]\)</span>.</p>
+</blockquote>
+<p>You can find more about reporting the results of a statistical test in the Basestone course on Canvas.</p>
+</div>
+<div id="positive-and-negative-t-values" class="section level3" number="6.10.4">
+<h3><span class="header-section-number">6.10.4</span> Positive and negative <span class="math inline">\(t\)</span> values</h3>
+<p>Before moving on to talk about the assumptions of the <span class="math inline">\(t\)</span>-test, there’s one additional point I want to make about the use of <span class="math inline">\(t\)</span>-tests in practice. The first one relates to the sign of the <span class="math inline">\(t\)</span>-statistic (that is, whether it is a positive number or a negative one). One very common worry that students have when they start running their first <span class="math inline">\(t\)</span>-test is that they often end up with negative values for the <span class="math inline">\(t\)</span>-statistic, and don’t know how to interpret it. In fact, it’s not at all uncommon for two people working independently to end up with R outputs that are almost identical, except that one person has a negative <span class="math inline">\(t\)</span> values and the other one has a positive <span class="math inline">\(t\)</span> value. Assuming that you’re running a two-sided test, then the <span class="math inline">\(p\)</span>-values will be identical. On closer inspection, the students will notice that the confidence intervals also have the opposite signs. This is perfectly okay: whenever this happens, what you’ll find is that the two versions of the R output arise from slightly different ways of running the <span class="math inline">\(t\)</span>-test. What’s happening here is very simple. The <span class="math inline">\(t\)</span>-statistic that R is calculating here is always of the form <span class="math display">\[
+t = \frac{\mbox{(mean 1)} -\mbox{(mean 2)}}{ \mbox{(SE)}}
+\]</span> If “mean 1” is larger than “mean 2” the <span class="math inline">\(t\)</span> statistic will be positive, whereas if “mean 2” is larger then the <span class="math inline">\(t\)</span> statistic will be negative. Similarly, the confidence interval that R reports is the confidence interval for the difference “(mean 1) minus (mean 2),” which will be the reverse of what you’d get if you were calculating the confidence interval for the difference “(mean 2) minus (mean 1).”</p>
+<p>Okay, that’s pretty straightforward when you think about it, but now consider our <span class="math inline">\(t\)</span>-test comparing Anastasia’s class to Bernadette’s class. Which one should we call “mean 1” and which one should we call “mean 2.” It’s arbitrary. However, you really do need to designate one of them as “mean 1” and the other one as “mean 2.” Not surprisingly, the way that R handles this is also pretty arbitrary. In earlier versions of the book I used to try to explain it, but after a while I gave up, because it’s not really all that important, and to be honest I can never remember myself. Whenever I get a significant <span class="math inline">\(t\)</span>-test result, and I want to figure out which mean is the larger one, I don’t try to figure it out by looking at the <span class="math inline">\(t\)</span>-statistic. Why would I bother doing that? It’s foolish. It’s easier just look at the actual group means, since the R output actually shows them!</p>
+</div>
+<div id="assumptions" class="section level3" number="6.10.5">
+<h3><span class="header-section-number">6.10.5</span> Assumptions of the test</h3>
+<p>As always, our hypothesis test relies on some assumptions. So what are they? For the Welch t-test there are two assumptions, the first one we saw previously in the context of the one sample <span class="math inline">\(t\)</span>-test (see Section <a href="chhypothesistesting.html#ttestoneassumptions">6.9.3</a>):</p>
+<ul>
+<li><em>Normality</em>. Like the one-sample <span class="math inline">\(t\)</span>-test, it is assumed that the data are normally distributed. Specifically, we assume that both groups are normally distributed.</li>
+<li><em>Independence</em>. Once again, it is assumed that the observations are independently sampled. In the context of the Welch test this has two aspects to it. Firstly, we assume that the observations within each sample are independent of one another (exactly the same as for the one-sample test). However, we also assume that there are no cross-sample dependencies. If, for instance, it turns out that you included some participants in both experimental conditions of your study (e.g., by accidentally allowing the same person to sign up to different conditions), then there are some cross sample dependencies that you’d need to take into account.</li>
+</ul>
+</div>
+</div>
+<div id="pairedsamplesttest" class="section level2" number="6.11">
+<h2><span class="header-section-number">6.11</span> The paired-samples <span class="math inline">\(t\)</span>-test</h2>
+<p>An independent samples <span class="math inline">\(t\)</span>-test is intended to be used in a situation where you have two samples that are, well, independent of one another. This situation arises naturally when participants are assigned randomly to one of two experimental conditions, but it provides a very poor approximation to other sorts of research designs. In particular, a repeated measures design – in which each participant is measured (with respect to the same outcome variable) in both experimental conditions – is not suited for analysis using independent samples <span class="math inline">\(t\)</span>-tests. For example, we might be interested in whether listening to music reduces people’s working memory capacity. To that end, we could measure each person’s working memory capacity in two conditions: with music, and without music. In an experimental design such as this one each participant appears in <em>both</em> groups. This requires us to approach the problem in a different way; by using the <strong><em>paired samples</em></strong> <span class="math inline">\(t\)</span>-test.</p>
+<div id="the-data-1" class="section level3" number="6.11.1">
+<h3><span class="header-section-number">6.11.1</span> The data</h3>
+<p>The data set that we’ll use this time comes from Dr Chico’s class.<a href="#fn34" class="footnote-ref" id="fnref34"><sup>34</sup></a> In her class, students take two major tests, one early in the semester and one later in the semester. To hear her tell it, she runs a very hard class, one that most students find very challenging; but she argues that by setting hard assessments, students are encouraged to work harder. Her theory is that the first test is a bit of a “wake up call” for students: when they realise how hard her class really is, they’ll work harder for the second test and get a better mark. Is she right? To test this, let’s have a look at the data.frame she sent me:</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb74-1"><a href="chhypothesistesting.html#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(chico)     </span></code></pre></div>
+<pre><code>## Rows: 20
+## Columns: 3
+## $ id          &lt;fct&gt; student1, student2, student3, student4, student5, student…
+## $ grade_test1 &lt;dbl&gt; 42.9, 51.8, 71.7, 51.6, 63.5, 58.0, 59.8, 50.8, 62.5, 61.…
+## $ grade_test2 &lt;dbl&gt; 44.6, 54.0, 72.3, 53.4, 63.8, 59.3, 60.8, 51.6, 64.3, 63.…</code></pre>
+<p>The data frame <code>chico</code> contains three variables: an <code>id</code> variable that identifies each student in the class, the <code>grade_test1</code> variable that records the student grade for the first test, and the <code>grade_test2</code> variable that has the grades for the second test. Here’s the first six students:</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="chhypothesistesting.html#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(chico)</span></code></pre></div>
+<pre><code>##         id grade_test1 grade_test2
+## 1 student1        42.9        44.6
+## 2 student2        51.8        54.0
+## 3 student3        71.7        72.3
+## 4 student4        51.6        53.4
+## 5 student5        63.5        63.8
+## 6 student6        58.0        59.3</code></pre>
+<p>At a glance, it does seem like the class is a hard one (most grades are between 50% and 60%), but it does look like there’s an improvement from the first test to the second one. If we take a quick look at the descriptive statistics:</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="chhypothesistesting.html#cb78-1" aria-hidden="true" tabindex="-1"></a>chico <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">n =</span> <span class="fu">length</span>(grade_test1),</span>
+<span id="cb78-2"><a href="chhypothesistesting.html#cb78-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">mean_grade_test1 =</span> <span class="fu">mean</span>(grade_test1),</span>
+<span id="cb78-3"><a href="chhypothesistesting.html#cb78-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sd_grade_test1 =</span> <span class="fu">sd</span>(grade_test1),</span>
+<span id="cb78-4"><a href="chhypothesistesting.html#cb78-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">mean_grade_test2 =</span> <span class="fu">mean</span>(grade_test2),</span>
+<span id="cb78-5"><a href="chhypothesistesting.html#cb78-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sd_grade_test2 =</span> <span class="fu">sd</span>(grade_test2),) <span class="sc">%&gt;%</span></span>
+<span id="cb78-6"><a href="chhypothesistesting.html#cb78-6" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">n</th>
+<th align="right">mean_grade_test1</th>
+<th align="right">sd_grade_test1</th>
+<th align="right">mean_grade_test2</th>
+<th align="right">sd_grade_test2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">20</td>
+<td align="right">56.98</td>
+<td align="right">6.616137</td>
+<td align="right">58.385</td>
+<td align="right">6.405612</td>
+</tr>
+</tbody>
+</table>
+<p>we see that this impression seems to be supported. Across all 20 students the mean grade for the first test is 57%, but this rises to 58% for the second test. Although, given that the standard deviations are 6.6% and 6.4% respectively, it’s starting to feel like maybe the improvement is just illusory; maybe just random variation. This impression is reinforced when you see the means and confidence intervals plotted in Figure <a href="chhypothesistesting.html#fig:pairedta">6.12</a>. If we were to rely on this plot alone, we’d come to the same conclusion that we got from looking at the descriptive statistics. Looking at how wide those confidence intervals are, we’d be tempted to think that the apparent improvement in student performance is pure chance.</p>
+<div class="figure"><span id="fig:pairedta"></span>
+<img src="figures/pairedta.png" alt="Mean grade for test 1 and test 2, with associated 95% confidence intervals" width="75%" />
+<p class="caption">
+Figure 6.12: Mean grade for test 1 and test 2, with associated 95% confidence intervals
+</p>
+</div>
+<p>Nevertheless, this impression is wrong. To see why, take a look at the scatterplot of the grades for test 1 against the grades for test 2. shown in Figure <a href="chhypothesistesting.html#fig:pairedtb">6.13</a>.</p>
+<div class="figure"><span id="fig:pairedtb"></span>
+<img src="figures/pairedtb.png" alt="Scatterplot showing the individual grades for test 1 and test 2" width="75%" />
+<p class="caption">
+Figure 6.13: Scatterplot showing the individual grades for test 1 and test 2
+</p>
+</div>
+<p>In this plot, each dot corresponds to the two grades for a given student: if their grade for test 1 (<span class="math inline">\(x\)</span> co-ordinate) equals their grade for test 2 (<span class="math inline">\(y\)</span> co-ordinate), then the dot falls on the line. Points falling above the line are the students that performed better on the second test. Critically, almost all of the data points fall above the diagonal line: almost all of the students <em>do</em> seem to have improved their grade, if only by a small amount. This suggests that we should be looking at the <em>improvement</em> made by each student from one test to the next, and treating that as our raw data. To do this, we’ll need to create a new variable for the <code>improvement</code> that each student makes, and add it to the <code>chico</code> data frame. The easiest way to do this is as follows:</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="chhypothesistesting.html#cb79-1" aria-hidden="true" tabindex="-1"></a>chico<span class="sc">$</span>improvement <span class="ot">&lt;-</span> chico<span class="sc">$</span>grade_test2 <span class="sc">-</span> chico<span class="sc">$</span>grade_test1 </span></code></pre></div>
+<p>Notice that I assigned the output to a variable called <code>chico$improvement</code>. That has the effect of creating a new variable called <code>improvement</code> inside the <code>chico</code> data frame. So now when I look at the <code>chico</code> data frame, I get an output that looks like this:</p>
+<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="chhypothesistesting.html#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(chico)</span></code></pre></div>
+<pre><code>##         id grade_test1 grade_test2 improvement
+## 1 student1        42.9        44.6         1.7
+## 2 student2        51.8        54.0         2.2
+## 3 student3        71.7        72.3         0.6
+## 4 student4        51.6        53.4         1.8
+## 5 student5        63.5        63.8         0.3
+## 6 student6        58.0        59.3         1.3</code></pre>
+<p>Now that we’ve created and stored this <code>improvement</code> variable, we can draw a histogram showing the distribution of these improvement scores, shown in Figure <a href="chhypothesistesting.html#fig:pairedtc">6.14</a>.</p>
+<div class="figure"><span id="fig:pairedtc"></span>
+<img src="figures/pairedtc.png" alt="Histogram showing the improvement made by each student in Dr Chico's class. Notice that almost the entire distribution is above zero: the vast majority of students did improve their performance from the first test to the second one" width="680" />
+<p class="caption">
+Figure 6.14: Histogram showing the improvement made by each student in Dr Chico’s class. Notice that almost the entire distribution is above zero: the vast majority of students did improve their performance from the first test to the second one
+</p>
+</div>
+<p>When we look at histogram, it’s very clear that there <em>is</em> a real improvement here. The vast majority of the students scored higher on test 2 than on test 1, reflected in the fact that almost the entire histogram is above zero. So you can see, qualitatively, what’s going on: there is a real “within student” improvement (everyone improves by about 1%), but it is very small when set against the quite large “between student” differences (student grades vary by about 20% or so).</p>
+</div>
+<div id="what-is-the-paired-samples-t-test" class="section level3" number="6.11.2">
+<h3><span class="header-section-number">6.11.2</span> What is the paired samples <span class="math inline">\(t\)</span>-test?</h3>
+<p>In light of the previous exploration, let’s think about how to construct an appropriate <span class="math inline">\(t\)</span> test. One possibility would be to try to run an independent samples <span class="math inline">\(t\)</span>-test using <code>grade_test1</code> and <code>grade_test2</code> as the variables of interest. However, this is clearly the wrong thing to do: the independent samples <span class="math inline">\(t\)</span>-test assumes that there is no particular relationship between the two samples. Yet clearly that’s not true in this case, because of the repeated measures structure to the data. To use the language that I introduced in the last section, if we were to try to do an independent samples <span class="math inline">\(t\)</span>-test, we would be conflating the <strong><em>within subject</em></strong> differences (which is what we’re interested in testing) with the <strong><em>between subject</em></strong> variability (which we are not).</p>
+<p>The solution to the problem is obvious, I hope, since we already did all the hard work in the previous section. Instead of running an independent samples <span class="math inline">\(t\)</span>-test on <code>grade_test1</code> and <code>grade_test2</code>, we run a <em>one-sample</em> <span class="math inline">\(t\)</span>-test on the within-subject difference variable, <code>improvement</code>. To formalise this slightly, if <span class="math inline">\(X_{i1}\)</span> is the score that the <span class="math inline">\(i\)</span>-th participant obtained on the first variable, and <span class="math inline">\(X_{i2}\)</span> is the score that the same person obtained on the second one, then the difference score is:
+<span class="math display">\[
+D_{i} = X_{i1} - X_{i2} 
+\]</span>
+Notice that the difference scores is <em>variable 1 minus variable 2</em> and not the other way around, so if we want improvement to correspond to a positive valued difference, we actually want “test 2” to be our “variable 1.” Equally, we would say that <span class="math inline">\(\mu_D = \mu_1 - \mu_2\)</span> is the population mean for this difference variable. So, to convert this to a hypothesis test, our null hypothesis is that this mean difference is zero; the alternative hypothesis is that it is not:
+<span class="math display">\[
+\begin{array}{ll}
+H_0: &amp; \mu_D = 0  \\
+H_1: &amp; \mu_D \neq 0
+\end{array}
+\]</span>
+(this is assuming we’re talking about a two-sided test here). This is more or less identical to the way we described the hypotheses for the one-sample <span class="math inline">\(t\)</span>-test: the only difference is that the specific value that the null hypothesis predicts is 0. And so our <span class="math inline">\(t\)</span>-statistic is defined in more or less the same way too. If we let <span class="math inline">\(\bar{D}\)</span> denote the mean of the difference scores, then
+<span class="math display">\[
+t = \frac{\bar{D}}{\mbox{SE}({\bar{D}})}
+\]</span>
+which is
+<span class="math display">\[
+t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
+\]</span>
+where <span class="math inline">\(\hat\sigma_D\)</span> is the standard deviation of the difference scores. Since this is just an ordinary, one-sample <span class="math inline">\(t\)</span>-test, with nothing special about it, the degrees of freedom are still <span class="math inline">\(N-1\)</span>. And that’s it: the paired samples <span class="math inline">\(t\)</span>-test really isn’t a new test at all: it’s a one-sample <span class="math inline">\(t\)</span>-test, but applied to the difference between two variables. It’s actually very simple; the only reason it merits a discussion as long as the one we’ve just gone through is that you need to be able to recognise <em>when</em> a paired samples test is appropriate, and to understand <em>why</em> it’s better than an independent samples <span class="math inline">\(t\)</span> test.</p>
+</div>
+<div id="doing-the-test-in-r-2" class="section level3" number="6.11.3">
+<h3><span class="header-section-number">6.11.3</span> Doing the test in R</h3>
+<p>How do you do a paired samples <span class="math inline">\(t\)</span>-test in R. One possibility is to follow the process I outlined above: create a “difference” variable and then run a one sample <span class="math inline">\(t\)</span>-test on that. Since we’ve already created a variable called <code>chico$improvement</code>, let’s do that:</p>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="chhypothesistesting.html#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(chico<span class="sc">$</span>improvement, <span class="at">mu=</span><span class="dv">0</span>)</span></code></pre></div>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  chico$improvement
+## t = 6.4754, df = 19, p-value = 3.321e-06
+## alternative hypothesis: true mean is not equal to 0
+## 95 percent confidence interval:
+##  0.9508686 1.8591314
+## sample estimates:
+## mean of x 
+##     1.405</code></pre>
+<p>Alternatively you could do the following, giving you the exact same output:</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="chhypothesistesting.html#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>( <span class="at">x =</span> chico<span class="sc">$</span>grade_test2,   <span class="co"># variable 1 is the &quot;test2&quot; scores</span></span>
+<span id="cb84-2"><a href="chhypothesistesting.html#cb84-2" aria-hidden="true" tabindex="-1"></a>         <span class="at">y =</span> chico<span class="sc">$</span>grade_test1,   <span class="co"># variable 2 is the &quot;test1&quot; scores</span></span>
+<span id="cb84-3"><a href="chhypothesistesting.html#cb84-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">paired =</span> <span class="cn">TRUE</span>           <span class="co"># paired test</span></span>
+<span id="cb84-4"><a href="chhypothesistesting.html#cb84-4" aria-hidden="true" tabindex="-1"></a> )</span></code></pre></div>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  chico$grade_test2 and chico$grade_test1
+## t = 6.4754, df = 19, p-value = 3.321e-06
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  0.9508686 1.8591314
+## sample estimates:
+## mean of the differences 
+##                   1.405</code></pre>
+</div>
+</div>
+<div id="thats-it-for-this-week-5" class="section level2" number="6.12">
+<h2><span class="header-section-number">6.12</span> That’s it for this week…</h2>
+<p>… and for new materials during this course. Null hypothesis significance testing (NHST) is one of the most ubiquitous elements to statistical theory. The vast majority of scientific papers report the results of some hypothesis test or another. As a consequence it is almost impossible to get by in science without having at least a cursory understanding of NHST and what a <span class="math inline">\(p\)</span>-value means.</p>
+<p>During the labs we will walk through the formal steps of conducting NHSTs (<span class="math inline">\(t\)</span>-tests in particular), use R to run tests on our own data and discuss some of things to be mindful of when conducting statistical tests. As a reminder, there are additional practice materials for this week on <a href="https://cloud.sowiso.nl">SOWISO</a>. The materials on SOWISO have a slightly different take on NHST and show you how to do many of the calculations we do in R by hand.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="23">
+<li id="fn23"><p>Adapted nearly verbatim from Chapter 11 and 13 in Navarro, D. <a href="https://learningstatisticswithr.com">“Learning Statistics with R.”</a> R code from Emily Kothe’s Bookdown adaptation of <a href="https://github.com/ekothe/rbook">Learning statistics with R</a><a href="chhypothesistesting.html#fnref23" class="footnote-back">↩︎</a></p></li>
+<li id="fn24"><p>The quote comes from Wittgenstein’s (1922) text, <em>Tractatus Logico-Philosphicus</em>.<a href="chhypothesistesting.html#fnref24" class="footnote-back">↩︎</a></p></li>
+<li id="fn25"><p>My apologies to anyone who actually believes in this stuff, but on my reading of the literature on ESP, it’s just not reasonable to think this is real. To be fair, though, some of the studies are rigorously designed; so it’s actually an interesting area for thinking about psychological research design. And of course it’s a free country, so you can spend your own time and effort proving me wrong if you like, but I wouldn’t think that’s a terribly practical use of your intellect.<a href="chhypothesistesting.html#fnref25" class="footnote-back">↩︎</a></p></li>
+<li id="fn26"><p><span class="math inline">\(\frac{1}{0.5^{10}}\)</span> or try it in R: <code>dbinom(10,10,0.5)</code><a href="chhypothesistesting.html#fnref26" class="footnote-back">↩︎</a></p></li>
+<li id="fn27"><p>An aside regarding the language you use to talk about hypothesis testing. Firstly, one thing you really want to avoid is the word “prove”: a statistical test really doesn’t <em>prove</em> that a hypothesis is true or false. Proof implies certainty, and as the saying goes, statistics means never having to say you’re certain. On that point almost everyone would agree. However, beyond that there’s a fair amount of confusion. Some people argue that you’re only allowed to make statements like “rejected the null,” “failed to reject the null,” or possibly “retained the null.” According to this line of thinking, you can’t say things like “accept the alternative” or “accept the null.” Personally I think this is too strong: in my opinion, this conflates null hypothesis testing with Karl Popper’s falsificationist view of the scientific process. While there are similarities between falsificationism and null hypothesis testing, they aren’t equivalent. However, while I personally think it’s fine to talk about accepting a hypothesis (on the proviso that “acceptance” doesn’t actually mean that it’s necessarily true, especially in the case of the null hypothesis), many people will disagree. And more to the point, you should be aware that this particular weirdness exists, so that you’re not caught unaware by it when writing up your own results.<a href="chhypothesistesting.html#fnref27" class="footnote-back">↩︎</a></p></li>
+<li id="fn28"><p>Strictly speaking, the test I just constructed has <span class="math inline">\(\alpha = .057\)</span>, which is a bit too generous. However, if I’d chosen 39 and 61 to be the boundaries for the critical region, then the critical region only covers 3.5% of the distribution. I figured that it makes more sense to use 40 and 60 as my critical values, and be willing to tolerate a 5.7% type I error rate, since that’s as close as I can get to a value of <span class="math inline">\(\alpha = .05\)</span>.<a href="chhypothesistesting.html#fnref28" class="footnote-back">↩︎</a></p></li>
+<li id="fn29"><p>The internet seems fairly convinced that Ashley said this, though I can’t for the life of me find anyone willing to give a source for the claim.<a href="chhypothesistesting.html#fnref29" class="footnote-back">↩︎</a></p></li>
+<li id="fn30"><p>Note that the <code>p</code> here has nothing to do with a <span class="math inline">\(p\)</span> value. The <code>p</code> argument in the <code>binom.test()</code> function corresponds to the probability of making a correct response, according to the null hypothesis. In other words, it’s the <span class="math inline">\(\theta\)</span> value.<a href="chhypothesistesting.html#fnref30" class="footnote-back">↩︎</a></p></li>
+<li id="fn31"><p>Actually this is too strong. Strictly speaking the <span class="math inline">\(z\)</span> test only requires that the sampling distribution of the mean be normally distributed; if the population is normal then it necessarily follows that the sampling distribution of the mean is also normal. However, as we saw when talking about the central limit theorem, it’s quite possible (even commonplace) for the sampling distribution to be normal even if the population distribution itself is non-normal. However, in light of the sheer ridiculousness of the assumption that the true standard deviation is known, there really isn’t much point in going into details on this front!<a href="chhypothesistesting.html#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn32"><p>Well, sort of. As I understand the history, Gosset only provided a partial solution: the general solution to the problem was provided by… Sir Ronald Fisher.<a href="chhypothesistesting.html#fnref32" class="footnote-back">↩︎</a></p></li>
+<li id="fn33"><p>A funny question almost always pops up at this point: what the heck <em>is</em> the population being referred to in this case? Is it the set of students actually taking Dr Harpo’s class (all 33 of them)? The set of people who might take the class (an unknown number) of them? Or something else? Does it matter which of these we pick? It’s traditional in an introductory behavioural stats class to mumble a lot at this point, but since I get asked this question every year by my students, I’ll give a brief answer. Technically yes, it does matter: if you change your definition of what the “real world” population actually is, then the sampling distribution of your observed mean <span class="math inline">\(\bar{X}\)</span> changes too. The <span class="math inline">\(t\)</span>-test relies on an assumption that the observations are sampled at random from an infinitely large population; and to the extent that real life isn’t like that, then the <span class="math inline">\(t\)</span>-test can be wrong. In practice, however, this isn’t usually a big deal: even though the assumption is almost always wrong, it doesn’t lead to a lot of pathological behaviour from the test, so we tend to just ignore it.<a href="chhypothesistesting.html#fnref33" class="footnote-back">↩︎</a></p></li>
+<li id="fn34"><p>At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who Dr Groucho is.<a href="chhypothesistesting.html#fnref34" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="chestimationsampling.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
